@@ -1,0 +1,9 @@
+[2026-09-24 23:30:53] start: /Users/aaron/venvs/navcil/bin/python scripts/run_1a.py --device cpu --tag 1a --probe-train 
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/reference/v9/skill_bank_reverse_f1.pt
+device=cpu torch=2.11.0 budget=64 limit=None → /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/1a/fold1
+  tcga_esca  softmax 12/15  uniform 13/15  read 0.0046s  compute 0.0086s
+  tcga_rcc   softmax 73/76  uniform 73/76  read 0.0038s  compute 0.0066s
+  tcga_brca  softmax 83/93  uniform 83/93  read 0.0030s  compute 0.0082s
+  tcga_lung  softmax 80/95  uniform 79/95  read 0.0029s  compute 0.0071s
+  mean acc (softmax) = 0.8738
+[2026-09-24 23:31:03] exit=0

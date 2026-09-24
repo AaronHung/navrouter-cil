@@ -1,0 +1,5 @@
+# Mac（Apple M1 Pro）本機設定。以 NAVCIL_MACHINE=mac 選用。
+machine: mac
+dataset_root_dir: /Users/aaron/research/can_dataset
+conch_ckpt_path: /Users/aaron/research/01_navipath/checkpoints/conch/pytorch_model.bin
+device: auto

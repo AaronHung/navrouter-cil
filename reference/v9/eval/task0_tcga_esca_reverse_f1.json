@@ -1,0 +1,70 @@
+{
+  "task": 0,
+  "task_name": "tcga_esca",
+  "order": "reverse",
+  "fold": 1,
+  "budget": 64,
+  "step_size": 16,
+  "lambdas": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "normalize_base": true,
+  "results": {
+    "lambda_0.00": {
+      "zeronav_multishot": 0.8667,
+      "zeronav_oneshot": 0.8667,
+      "zeroshot_multishot": 0.6667,
+      "zeroshot_oneshot": 0.6667
+    },
+    "lambda_0.10": {
+      "zeronav_multishot": 0.8667,
+      "zeronav_oneshot": 0.8667,
+      "zeroshot_multishot": 0.6667,
+      "zeroshot_oneshot": 0.6667
+    },
+    "lambda_0.25": {
+      "zeronav_multishot": 0.8667,
+      "zeronav_oneshot": 0.8667,
+      "zeroshot_multishot": 0.6667,
+      "zeroshot_oneshot": 0.6667
+    },
+    "lambda_0.50": {
+      "zeronav_multishot": 0.8667,
+      "zeronav_oneshot": 0.8667,
+      "zeroshot_multishot": 0.6,
+      "zeroshot_oneshot": 0.6667
+    },
+    "lambda_0.75": {
+      "zeronav_multishot": 0.9333,
+      "zeronav_oneshot": 0.8667,
+      "zeroshot_multishot": 0.6667,
+      "zeroshot_oneshot": 0.6667
+    },
+    "lambda_1.00": {
+      "zeronav_multishot": 0.9333,
+      "zeronav_oneshot": 0.8667,
+      "zeroshot_multishot": 0.6,
+      "zeroshot_oneshot": 0.6667
+    },
+    "lambda_1.50": {
+      "zeronav_multishot": 0.9333,
+      "zeronav_oneshot": 0.8667,
+      "zeroshot_multishot": 0.6,
+      "zeroshot_oneshot": 0.6667
+    },
+    "lambda_2.00": {
+      "zeronav_multishot": 0.9333,
+      "zeronav_oneshot": 0.8667,
+      "zeroshot_multishot": 0.6667,
+      "zeroshot_oneshot": 0.6667
+    },
+    "n_slides": 15
+  }
+}

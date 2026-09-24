@@ -1,0 +1,50 @@
+{
+ "device": "cpu",
+ "torch": "2.11.0",
+ "python": "3.12.2",
+ "budget": 64,
+ "limit": null,
+ "mean_acc_softmax": 0.8737761743067346,
+ "tasks": [
+  {
+   "task": "tcga_esca",
+   "n": 15,
+   "correct_softmax": 12,
+   "correct_uniform": 13,
+   "t_read_mean_s": 0.004586733333333333,
+   "t_compute_mean_s": 0.008641133333333334,
+   "n_patch_mean": 3773.0666666666666,
+   "t_train_step_mean_s": 0.012759533333333333
+  },
+  {
+   "task": "tcga_rcc",
+   "n": 76,
+   "correct_softmax": 73,
+   "correct_uniform": 73,
+   "t_read_mean_s": 0.003754355263157895,
+   "t_compute_mean_s": 0.006560868421052632,
+   "n_patch_mean": 3245.4210526315787,
+   "t_train_step_mean_s": 0.011217342105263158
+  },
+  {
+   "task": "tcga_brca",
+   "n": 93,
+   "correct_softmax": 83,
+   "correct_uniform": 83,
+   "t_read_mean_s": 0.0030353010752688175,
+   "t_compute_mean_s": 0.008201849462365591,
+   "n_patch_mean": 3100.537634408602,
+   "t_train_step_mean_s": 0.010956698924731181
+  },
+  {
+   "task": "tcga_lung",
+   "n": 95,
+   "correct_softmax": 80,
+   "correct_uniform": 79,
+   "t_read_mean_s": 0.002875178947368421,
+   "t_compute_mean_s": 0.007108189473684211,
+   "n_patch_mean": 3015.9894736842107,
+   "t_train_step_mean_s": 0.010268463157894737
+  }
+ ]
+}

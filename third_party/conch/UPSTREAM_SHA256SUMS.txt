@@ -1,0 +1,7 @@
+# CONCH 官方檔案的 sha256（來源：github.com/mahmoodlab/CONCH，
+# commit 141cc09c7d4ff33d8eda562bd75169b457f71a62，2025-03-26，路徑 conch/open_clip_custom/）
+# 用途：確認 vendored 檔案未被任何人（含 QPMIL-VL）動過手腳。
+f6c51a4f3a92e3c15669b39cb04463d9b34ddc98be933ac6893c4b139db50a4b  transformer.py
+4b4a0ae3443c130aff0ccbb0c915abcf697c5bc2ea169e108ac914735e9d0f15  custom_tokenizer.py
+da350fdff87c831dc5181e2103db8bf52aca805ed20e1eb8ae7f7ec59afad1ab  model_configs/conch_ViT-B-16.json
+a3861e67c64d32670eb6725a8e52d7dbdd2a06646a4a3c7463052ae7110760fb  tokenizers/conch_byte_level_bpe_uncased.json

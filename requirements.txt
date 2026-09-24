@@ -1,0 +1,12 @@
+# 兩台（Mac mps/cpu、MSI cuda）必須用同一個 PyTorch minor 版本：2.11.x。
+# Mac：conda env navcil（Python 3.12.2）+ pip 安裝下列版本；torch 2.11.0 為 pathselect 在本機使用的版本。
+# MSI：用對應 CUDA wheel 的 torch 2.11.x（例：pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128），
+#      其餘套件同版本。MSI 不載入 CONCH，但 third_party/conch 的 import 仍需要 transformers。
+torch==2.11.0
+numpy==2.4.4
+pandas==3.0.2
+h5py==3.16.0
+pyyaml==6.0.1
+transformers==5.5.3
+tokenizers==0.22.2
+pytest==9.1.1

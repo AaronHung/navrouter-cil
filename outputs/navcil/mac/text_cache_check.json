@@ -1,0 +1,54 @@
+{
+ "torch": "2.11.0",
+ "all_equal": true,
+ "tasks": [
+  {
+   "task": "tcga_esca",
+   "shape": [
+    2,
+    512
+   ],
+   "f_txt_equal": true,
+   "f_txt_max_abs_diff": 0.0,
+   "logit_scale_equal": true,
+   "logit_scale": 56.347694396972656,
+   "class_names_equal": true
+  },
+  {
+   "task": "tcga_rcc",
+   "shape": [
+    2,
+    512
+   ],
+   "f_txt_equal": true,
+   "f_txt_max_abs_diff": 0.0,
+   "logit_scale_equal": true,
+   "logit_scale": 56.347694396972656,
+   "class_names_equal": true
+  },
+  {
+   "task": "tcga_brca",
+   "shape": [
+    2,
+    512
+   ],
+   "f_txt_equal": true,
+   "f_txt_max_abs_diff": 0.0,
+   "logit_scale_equal": true,
+   "logit_scale": 56.347694396972656,
+   "class_names_equal": true
+  },
+  {
+   "task": "tcga_lung",
+   "shape": [
+    2,
+    512
+   ],
+   "f_txt_equal": true,
+   "f_txt_max_abs_diff": 0.0,
+   "logit_scale_equal": true,
+   "logit_scale": 56.347694396972656,
+   "class_names_equal": true
+  }
+ ]
+}

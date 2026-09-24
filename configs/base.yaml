@@ -1,0 +1,42 @@
+# NavCIL — 方法設定（不含任何外部方法相依、不含任何絕對路徑）
+# 來源：pathselect@081bdcd configs/pathselect.yaml
+# 機器相關設定（dataset_root_dir、conch_ckpt_path、device）放在
+# configs/machine_<name>.yaml，由環境變數 NAVCIL_MACHINE 選擇，覆寫本檔同名鍵。
+# 用法：from selector.text_encoder import load_config, build_f_txt
+
+device: auto                    # auto: cuda > mps > cpu
+feat_dim: 512                   # CONCH contrastive embedding 維度
+
+# ── CONCH（只用 text tower 重建 f_txt）────────────────────────────────────────
+# conch_ckpt_path 在 machine 檔；只有 Mac 需要（MSI 不載入 CONCH）。權重不隨 repo 發佈。
+conch_model_cfg: conch_ViT-B-16
+
+# ── class prompt ensemble ────────────────────────────────────────────────────
+class_prompt_path: data/class_prompts.json
+f_txt_cache_dir: cache/text      # f_txt_{task}.pt，Mac 算一次後 commit
+
+# ── 操作點（PI 裁定 A）──────────────────────────────────────────────────────
+# B=8 是最佳點，不是飽和點：Exp 0 的完整 K 曲線顯示四 task 平均在 K=8 達到峰值
+# 0.8797，K=16 之後開始下降。B=64 會讓方法操作在最佳點之外，該區間的邊際 patch
+# 是負貢獻，E_t 條件化在那裡學不到東西。
+# c=1 時每輪加入的 patch 佔總證據 1/8，e_t 的槓桿最大。
+# B=8 時 c=8 即為 one-shot，所以 statefulness ablation 直接是 c ∈ {8,4,2,1}。
+# 兩者仍為 CLI 參數（--budget / --chunk）。
+budget: 8
+chunk: 1
+
+# ── 任務序（與 reference/v9 的 reverse order 一致）────────────────────────────
+tasks:
+  - tcga_esca
+  - tcga_rcc
+  - tcga_brca
+  - tcga_lung
+
+# ── 資料（TCGA patch features，CONCH l1-s256）────────────────────────────────
+# dataset_root_dir 在 machine 檔
+path_split: /{}/datasplit/fold_{}.npz
+path_feat: /{}/feats-l1-s256_{}/pt_files
+path_table: /{}/table/{}_path_subtype_x10_processed.csv
+conch_path_feat: CONCH
+feat_format: pt
+fold: 1

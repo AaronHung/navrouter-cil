@@ -1,0 +1,70 @@
+{
+  "task": 3,
+  "task_name": "tcga_lung",
+  "order": "reverse",
+  "fold": 1,
+  "budget": 64,
+  "step_size": 16,
+  "lambdas": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "normalize_base": true,
+  "results": {
+    "lambda_0.00": {
+      "zeronav_multishot": 0.9053,
+      "zeronav_oneshot": 0.9053,
+      "zeroshot_multishot": 0.8632,
+      "zeroshot_oneshot": 0.8632
+    },
+    "lambda_0.10": {
+      "zeronav_multishot": 0.9053,
+      "zeronav_oneshot": 0.9053,
+      "zeroshot_multishot": 0.8632,
+      "zeroshot_oneshot": 0.8632
+    },
+    "lambda_0.25": {
+      "zeronav_multishot": 0.9053,
+      "zeronav_oneshot": 0.9053,
+      "zeroshot_multishot": 0.8632,
+      "zeroshot_oneshot": 0.8632
+    },
+    "lambda_0.50": {
+      "zeronav_multishot": 0.9053,
+      "zeronav_oneshot": 0.9053,
+      "zeroshot_multishot": 0.8632,
+      "zeroshot_oneshot": 0.8632
+    },
+    "lambda_0.75": {
+      "zeronav_multishot": 0.9053,
+      "zeronav_oneshot": 0.9053,
+      "zeroshot_multishot": 0.8737,
+      "zeroshot_oneshot": 0.8632
+    },
+    "lambda_1.00": {
+      "zeronav_multishot": 0.9053,
+      "zeronav_oneshot": 0.9053,
+      "zeroshot_multishot": 0.8737,
+      "zeroshot_oneshot": 0.8632
+    },
+    "lambda_1.50": {
+      "zeronav_multishot": 0.9053,
+      "zeronav_oneshot": 0.9053,
+      "zeroshot_multishot": 0.8737,
+      "zeroshot_oneshot": 0.8632
+    },
+    "lambda_2.00": {
+      "zeronav_multishot": 0.9053,
+      "zeronav_oneshot": 0.9053,
+      "zeroshot_multishot": 0.8842,
+      "zeroshot_oneshot": 0.8632
+    },
+    "n_slides": 95
+  }
+}

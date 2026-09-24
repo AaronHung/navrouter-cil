@@ -1,0 +1,30 @@
+{
+ "device": "mps",
+ "torch": "2.11.0",
+ "python": "3.12.2",
+ "budget": 64,
+ "limit": 50,
+ "mean_acc_softmax": 0.8857142857142857,
+ "tasks": [
+  {
+   "task": "tcga_esca",
+   "n": 15,
+   "correct_softmax": 12,
+   "correct_uniform": 13,
+   "t_read_mean_s": 0.0045486,
+   "t_compute_mean_s": 0.3092988,
+   "n_patch_mean": 3773.0666666666666,
+   "t_train_step_mean_s": 0.2815064
+  },
+  {
+   "task": "tcga_rcc",
+   "n": 35,
+   "correct_softmax": 34,
+   "correct_uniform": 34,
+   "t_read_mean_s": 0.0036026,
+   "t_compute_mean_s": 0.04636808571428572,
+   "n_patch_mean": 2830.0285714285715,
+   "t_train_step_mean_s": 0.03328328571428571
+  }
+ ]
+}

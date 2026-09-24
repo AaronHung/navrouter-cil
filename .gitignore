@@ -1,0 +1,21 @@
+# 資料與權重不進 repo
+can_dataset/
+*.bin
+*.safetensors
+*.h5
+*.npz
+**/pt_files/
+checkpoints/
+# 產物：大檔與逐張記錄不進版控；彙總表、MACHINE.md、log 可 commit
+outputs/**/*.pt
+outputs/**/per_slide*/
+# cache/text/ 的 f_txt_*.pt 例外：Mac 用 CONCH 算一次後 commit（MSI 直接讀）
+!cache/text/*.pt
+# reference/v9 的封存檔例外（有 SHA256SUMS.txt）
+!reference/v9/*.pt
+# Python / OS
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.venv/

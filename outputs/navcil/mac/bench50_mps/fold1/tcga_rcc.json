@@ -1,0 +1,360 @@
+{
+ "task": "tcga_rcc",
+ "task_pos": 1,
+ "fold": 1,
+ "device": "mps",
+ "budget": 64,
+ "wall_s": 2.961,
+ "records": [
+  {
+   "slide_id": "TCGA-B3-4103-01Z-00-DX1.76bba2e9-0a6d-460b-8ae8-c38a1109456e",
+   "n_patch": 2170,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.004728,
+   "t_compute_s": 0.033815,
+   "t_train_step_s": 0.027447
+  },
+  {
+   "slide_id": "TCGA-AL-3468-01Z-00-DX1.F86A4811-D60C-4845-A7A5-B7C7BE202202",
+   "n_patch": 1520,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.002319,
+   "t_compute_s": 0.110348,
+   "t_train_step_s": 0.155281
+  },
+  {
+   "slide_id": "TCGA-AL-3468-01Z-00-DX2.B7D8DCCE-C015-4284-96EF-ED7F4A7771B7",
+   "n_patch": 868,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.002093,
+   "t_compute_s": 0.121708,
+   "t_train_step_s": 0.108262
+  },
+  {
+   "slide_id": "TCGA-BQ-7058-01Z-00-DX1.b2419f7a-e4af-467d-a0ee-c00b7ac33bdc",
+   "n_patch": 4737,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.009247,
+   "t_compute_s": 0.037933,
+   "t_train_step_s": 0.028566
+  },
+  {
+   "slide_id": "TCGA-EV-5902-01Z-00-DX1.dfbe9f70-a570-422e-a883-4b2f0e9a3024",
+   "n_patch": 3857,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.003454,
+   "t_compute_s": 0.035326,
+   "t_train_step_s": 0.030952
+  },
+  {
+   "slide_id": "TCGA-2Z-A9JP-01Z-00-DX1.8B0F498B-85AC-494F-866C-0FDAB54D216B",
+   "n_patch": 2311,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.003839,
+   "t_compute_s": 0.03417,
+   "t_train_step_s": 0.024061
+  },
+  {
+   "slide_id": "TCGA-SX-A7SP-01Z-00-DX1.093B9AC2-423B-4E58-BDD9-47FD5A6EA94A",
+   "n_patch": 1415,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.002733,
+   "t_compute_s": 0.036575,
+   "t_train_step_s": 0.023292
+  },
+  {
+   "slide_id": "TCGA-A4-A5XZ-01Z-00-DX1.91B936FA-1697-4571-800D-F45B68596A58",
+   "n_patch": 626,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.001574,
+   "t_compute_s": 0.036612,
+   "t_train_step_s": 0.024566
+  },
+  {
+   "slide_id": "TCGA-BQ-5879-01Z-00-DX1.682ab315-998b-4379-8492-3b422ce06308",
+   "n_patch": 5505,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.006782,
+   "t_compute_s": 0.041075,
+   "t_train_step_s": 0.031332
+  },
+  {
+   "slide_id": "TCGA-B0-4691-01Z-00-DX1.789de56b-23df-47c5-a075-705edc9e6d44",
+   "n_patch": 4176,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.00416,
+   "t_compute_s": 0.035374,
+   "t_train_step_s": 0.036168
+  },
+  {
+   "slide_id": "TCGA-AK-3428-01Z-00-DX1.E437BB00-F731-4B71-9A78-5BC7CA0F08AF",
+   "n_patch": 929,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.002725,
+   "t_compute_s": 0.036997,
+   "t_train_step_s": 0.025404
+  },
+  {
+   "slide_id": "TCGA-B8-A54D-01Z-00-DX1.DCD17375-918C-4AEA-96F0-7FF8FCF4D00B",
+   "n_patch": 2313,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.003799,
+   "t_compute_s": 0.034383,
+   "t_train_step_s": 0.02391
+  },
+  {
+   "slide_id": "TCGA-B8-4619-01Z-00-DX1.2738922d-4a07-45b3-968b-83994e9a0ed6",
+   "n_patch": 878,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.001685,
+   "t_compute_s": 0.034064,
+   "t_train_step_s": 0.024394
+  },
+  {
+   "slide_id": "TCGA-BP-5192-01Z-00-DX1.a907179e-7b54-4315-bed1-6f1f12609cc9",
+   "n_patch": 3302,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.003811,
+   "t_compute_s": 0.041424,
+   "t_train_step_s": 0.02889
+  },
+  {
+   "slide_id": "TCGA-BP-5169-01Z-00-DX1.b9739d1e-6d86-44ab-a064-9fe50d393613",
+   "n_patch": 7311,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.007222,
+   "t_compute_s": 0.193975,
+   "t_train_step_s": 0.036315
+  },
+  {
+   "slide_id": "TCGA-CJ-5677-01Z-00-DX1.46FEF9C4-445C-4046-9ACC-54402E3702A9",
+   "n_patch": 1725,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.002942,
+   "t_compute_s": 0.037136,
+   "t_train_step_s": 0.025751
+  },
+  {
+   "slide_id": "TCGA-BP-4354-01Z-00-DX1.9f53f9e2-ea72-4be4-9848-1a3f5634dac0",
+   "n_patch": 4589,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.003348,
+   "t_compute_s": 0.041347,
+   "t_train_step_s": 0.029694
+  },
+  {
+   "slide_id": "TCGA-CJ-5678-01Z-00-DX1.E71A7F98-7D7F-4DFC-920F-27000010217F",
+   "n_patch": 1832,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.002642,
+   "t_compute_s": 0.037301,
+   "t_train_step_s": 0.026256
+  },
+  {
+   "slide_id": "TCGA-BP-4782-01Z-00-DX1.1da979ff-efd3-4c2b-920c-a458f52ef89a",
+   "n_patch": 2819,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.003881,
+   "t_compute_s": 0.036865,
+   "t_train_step_s": 0.025295
+  },
+  {
+   "slide_id": "TCGA-A3-3308-01Z-00-DX1.bbd79ced-9fb9-4601-8ba0-b343da5f6f5b",
+   "n_patch": 1712,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.003571,
+   "t_compute_s": 0.037287,
+   "t_train_step_s": 0.027451
+  },
+  {
+   "slide_id": "TCGA-B2-5635-01Z-00-DX1.04222a5c-a2b2-4206-8a54-66c7474982d8",
+   "n_patch": 1058,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.001918,
+   "t_compute_s": 0.040574,
+   "t_train_step_s": 0.023643
+  },
+  {
+   "slide_id": "TCGA-EU-5907-01Z-00-DX1.22c3e851-d286-437f-b7ac-50350a001888",
+   "n_patch": 3583,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.00303,
+   "t_compute_s": 0.037846,
+   "t_train_step_s": 0.028214
+  },
+  {
+   "slide_id": "TCGA-CJ-4874-01Z-00-DX1.614D8D7D-E9FA-464D-A90F-C5C789664287",
+   "n_patch": 4545,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.00394,
+   "t_compute_s": 0.036438,
+   "t_train_step_s": 0.059281
+  },
+  {
+   "slide_id": "TCGA-BP-4327-01Z-00-DX1.fd80b9b2-ec68-4e6a-b0ce-a08c9baba9b7",
+   "n_patch": 4476,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.009142,
+   "t_compute_s": 0.038103,
+   "t_train_step_s": 0.029355
+  },
+  {
+   "slide_id": "TCGA-AK-3454-01Z-00-DX1.C6853BCF-0ECF-443A-8516-6D544C9BD456",
+   "n_patch": 1041,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.002129,
+   "t_compute_s": 0.035185,
+   "t_train_step_s": 0.025099
+  },
+  {
+   "slide_id": "TCGA-DW-7836-01Z-00-DX1.A8A28E5B-0D97-42D5-B04E-BD0D007CC30A",
+   "n_patch": 393,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.00131,
+   "t_compute_s": 0.032991,
+   "t_train_step_s": 0.022445
+  },
+  {
+   "slide_id": "TCGA-P4-AAVK-01Z-00-DX1.D23DE669-A54A-4921-AB4C-398A2ED7CB93",
+   "n_patch": 4223,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.003404,
+   "t_compute_s": 0.033596,
+   "t_train_step_s": 0.024865
+  },
+  {
+   "slide_id": "TCGA-B1-A47M-01Z-00-DX1.B049A5A8-406C-4208-BB5E-2CA42D063D16",
+   "n_patch": 4856,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.003684,
+   "t_compute_s": 0.032279,
+   "t_train_step_s": 0.023897
+  },
+  {
+   "slide_id": "TCGA-B9-5156-01Z-00-DX1.200621df-b59f-4c69-957c-65aebfe855a8",
+   "n_patch": 1564,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.002212,
+   "t_compute_s": 0.031701,
+   "t_train_step_s": 0.021123
+  },
+  {
+   "slide_id": "TCGA-BQ-7055-01Z-00-DX1.a27d276d-8321-4bc3-a1fa-a9a68150353a",
+   "n_patch": 5900,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.004316,
+   "t_compute_s": 0.032856,
+   "t_train_step_s": 0.0277
+  },
+  {
+   "slide_id": "TCGA-IA-A40Y-01Z-00-DX1.E8D91A02-A0BD-4974-8CF9-68DC1AF506EF",
+   "n_patch": 4004,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.00364,
+   "t_compute_s": 0.039503,
+   "t_train_step_s": 0.02528
+  },
+  {
+   "slide_id": "TCGA-AL-3472-01Z-00-DX1.66FF9A6E-2851-4E32-A10C-62EB7568AFC3",
+   "n_patch": 797,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.002016,
+   "t_compute_s": 0.032145,
+   "t_train_step_s": 0.021723
+  },
+  {
+   "slide_id": "TCGA-AL-3472-01Z-00-DX2.C7BF0356-F099-4070-8824-1AC3339E9F59",
+   "n_patch": 798,
+   "true": 3,
+   "pred_softmax": 3,
+   "pred_uniform": 3,
+   "t_read_s": 0.00164,
+   "t_compute_s": 0.033411,
+   "t_train_step_s": 0.022104
+  },
+  {
+   "slide_id": "TCGA-PJ-A5Z8-01Z-00-DX1.84E38F4E-BCF7-4383-AFEC-67C2C15DD3CF",
+   "n_patch": 3027,
+   "true": 3,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.003629,
+   "t_compute_s": 0.039349,
+   "t_train_step_s": 0.024058
+  },
+  {
+   "slide_id": "TCGA-B0-5694-01Z-00-DX1.d33b7c17-1d59-467f-9f33-47158ab5bdf7",
+   "n_patch": 4191,
+   "true": 2,
+   "pred_softmax": 2,
+   "pred_uniform": 2,
+   "t_read_s": 0.003526,
+   "t_compute_s": 0.073191,
+   "t_train_step_s": 0.022841
+  }
+ ]
+}
