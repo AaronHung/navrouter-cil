@@ -1,0 +1,361 @@
+[2026-09-24 23:50:09] start: /Users/aaron/venvs/navcil/bin/python scripts/nc1_pipeline.py --device cpu --folds 1-10 
+[23:50:11] machine=mac device=cpu torch=2.11.0 threads=8 subsets=['0', '0,1', '0,1,2', '0,1,2,3', '3', '2,3', '1,2,3']
+[23:50:12] fold 1 tcga_esca: train n=120
+[23:50:14]     epoch 1/5 n=120 loss=0.0868 read=0.4s compute=1.1s
+[23:50:16]     epoch 2/5 n=120 loss=0.0621 read=0.2s compute=1.1s
+[23:50:17]     epoch 3/5 n=120 loss=0.0162 read=0.2s compute=1.1s
+[23:50:18]     epoch 4/5 n=120 loss=0.0036 read=0.2s compute=1.0s
+[23:50:19]     epoch 5/5 n=120 loss=0.0032 read=0.2s compute=1.0s
+[23:50:20] fold 1 tcga_rcc: train n=616
+[23:50:28]     epoch 1/5 n=616 loss=0.2008 read=1.9s compute=6.0s
+[23:50:35]     epoch 2/5 n=616 loss=0.1471 read=1.8s compute=5.9s
+[23:50:43]     epoch 3/5 n=616 loss=0.1407 read=1.7s compute=5.8s
+[23:50:51]     epoch 4/5 n=616 loss=0.0993 read=1.8s compute=5.9s
+[23:50:59]     epoch 5/5 n=616 loss=0.1178 read=1.8s compute=6.2s
+[23:50:59] fold 1 tcga_brca: train n=763
+[23:51:08]     epoch 1/5 n=763 loss=0.3137 read=2.0s compute=6.2s
+[23:51:16]     epoch 2/5 n=763 loss=0.2222 read=1.8s compute=6.2s
+[23:51:24]     epoch 3/5 n=763 loss=0.2180 read=1.8s compute=6.1s
+[23:51:33]     epoch 4/5 n=763 loss=0.2009 read=1.9s compute=6.5s
+[23:51:41]     epoch 5/5 n=763 loss=0.1911 read=1.9s compute=6.1s
+[23:51:41] fold 1 tcga_lung: train n=774
+[23:51:50]     epoch 1/5 n=774 loss=0.3439 read=2.2s compute=7.1s
+[23:52:00]     epoch 2/5 n=774 loss=0.2378 read=2.2s compute=7.2s
+[23:52:10]     epoch 3/5 n=774 loss=0.2065 read=2.2s compute=7.8s
+[23:52:19]     epoch 4/5 n=774 loss=0.1893 read=2.1s compute=6.7s
+[23:52:28]     epoch 5/5 n=774 loss=0.1534 read=2.0s compute=6.8s
+[SelectorBank] saved 4 skills → /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold1.pt
+[23:52:30]   cache fold1_val_tcga_esca: n=15 read=0.1s compute=1.8s
+[23:52:39]   cache fold1_val_tcga_rcc: n=76 read=0.3s compute=8.6s
+[23:52:50]   cache fold1_val_tcga_brca: n=96 read=0.3s compute=10.3s
+[23:53:01]   cache fold1_val_tcga_lung: n=96 read=0.4s compute=11.3s
+[23:53:01]   λ=0.0: val mean masked ACC 0.9200  esca=0.9333 rcc=0.9342 brca=0.8958 lung=0.9167
+[23:53:01]   λ=0.5: val mean masked ACC 0.9174  esca=0.9333 rcc=0.9342 brca=0.8958 lung=0.9062
+[23:53:01]   λ=1.0: val mean masked ACC 0.9200  esca=0.9333 rcc=0.9342 brca=0.9062 lung=0.9062
+[23:53:01]   λ=1.5: val mean masked ACC 0.9226  esca=0.9333 rcc=0.9342 brca=0.9167 lung=0.9062
+[23:53:01]   λ=2.0: val mean masked ACC 0.9226  esca=0.9333 rcc=0.9342 brca=0.9167 lung=0.9062
+[23:53:01]   λ* = 1.5
+[23:53:03]   cache fold1_test_tcga_esca: n=15 read=0.1s compute=1.1s
+[23:53:09]   cache fold1_test_tcga_rcc: n=76 read=0.3s compute=5.6s
+[23:53:16]   cache fold1_test_tcga_brca: n=93 read=0.4s compute=7.1s
+[23:53:24]   cache fold1_test_tcga_lung: n=95 read=0.3s compute=7.4s
+[23:53:24] fold 1 除錯檢查（test，Masked ACC）
+[23:53:24]   task           a_zs_all   b_zs_top64   c_random64    d_oneshot  e_fourround d_oneshot_so e_fourround_
+[23:53:24]   tcga_esca        0.6667       0.9333       0.6800       0.9333       1.0000       1.0000       1.0000
+[23:53:24]   tcga_rcc         0.8947       0.9474       0.8921       0.9605       0.9605       0.9605       0.9605
+[23:53:24]   tcga_brca        0.6022       0.7849       0.6065       0.9247       0.9140       0.8710       0.8710
+[23:53:24]   tcga_lung        0.8211       0.8316       0.8189       0.8947       0.8947       0.8947       0.8947
+[23:53:25]   cache fold1_train_tcga_esca: n=120 read=0.4s compute=1.2s
+[23:53:35]   cache fold1_train_tcga_rcc: n=616 read=2.1s compute=7.4s
+[23:53:45]   cache fold1_train_tcga_brca: n=763 read=2.2s compute=7.5s
+[23:53:55]   cache fold1_train_tcga_lung: n=774 read=2.4s compute=7.7s
+[23:53:55] fold 1 完成（224s）
+[23:53:55] fold 2 tcga_esca: train n=120
+[23:53:57]     epoch 1/5 n=120 loss=0.2163 read=0.3s compute=1.1s
+[23:53:58]     epoch 2/5 n=120 loss=0.0696 read=0.2s compute=1.1s
+[23:53:59]     epoch 3/5 n=120 loss=0.0113 read=0.2s compute=1.1s
+[23:54:01]     epoch 4/5 n=120 loss=0.0066 read=0.2s compute=1.2s
+[23:54:02]     epoch 5/5 n=120 loss=0.0030 read=0.2s compute=1.1s
+[23:54:02] fold 2 tcga_rcc: train n=613
+[23:54:11]     epoch 1/5 n=613 loss=0.2484 read=1.8s compute=6.1s
+[23:54:18]     epoch 2/5 n=613 loss=0.1784 read=1.6s compute=5.9s
+[23:54:26]     epoch 3/5 n=613 loss=0.1709 read=1.7s compute=6.1s
+[23:54:34]     epoch 4/5 n=613 loss=0.1148 read=1.7s compute=6.2s
+[23:54:42]     epoch 5/5 n=613 loss=0.0968 read=1.7s compute=6.0s
+[23:54:42] fold 2 tcga_brca: train n=764
+[23:54:51]     epoch 1/5 n=764 loss=0.2941 read=2.0s compute=7.0s
+[23:55:01]     epoch 2/5 n=764 loss=0.2574 read=2.0s compute=7.6s
+[23:55:11]     epoch 3/5 n=764 loss=0.2404 read=2.1s compute=8.1s
+[23:55:21]     epoch 4/5 n=764 loss=0.2250 read=2.0s compute=7.7s
+[23:55:32]     epoch 5/5 n=764 loss=0.2287 read=2.1s compute=8.3s
+[23:55:32] fold 2 tcga_lung: train n=761
+[23:55:42]     epoch 1/5 n=761 loss=0.3939 read=2.2s compute=7.3s
+[23:55:51]     epoch 2/5 n=761 loss=0.2725 read=2.0s compute=6.7s
+[23:55:59]     epoch 3/5 n=761 loss=0.2552 read=1.9s compute=6.6s
+[23:56:09]     epoch 4/5 n=761 loss=0.2259 read=2.1s compute=7.6s
+[23:56:18]     epoch 5/5 n=761 loss=0.2025 read=2.0s compute=6.7s
+[SelectorBank] saved 4 skills → /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold2.pt
+[23:56:19]   cache fold2_test_tcga_esca: n=15 read=0.0s compute=1.2s
+[23:56:27]   cache fold2_test_tcga_rcc: n=81 read=0.3s compute=6.8s
+[23:56:35]   cache fold2_test_tcga_brca: n=95 read=0.3s compute=7.6s
+[23:56:42]   cache fold2_test_tcga_lung: n=95 read=0.3s compute=7.4s
+[23:56:44]   cache fold2_train_tcga_esca: n=120 read=0.4s compute=1.1s
+[23:56:52]   cache fold2_train_tcga_rcc: n=613 read=1.9s compute=6.1s
+[23:57:01]   cache fold2_train_tcga_brca: n=764 read=2.3s compute=6.6s
+[23:57:10]   cache fold2_train_tcga_lung: n=761 read=2.3s compute=6.7s
+[23:57:10] fold 2 完成（195s）
+[23:57:10] fold 3 tcga_esca: train n=120
+[23:57:12]     epoch 1/5 n=120 loss=0.0977 read=0.3s compute=1.1s
+[23:57:13]     epoch 2/5 n=120 loss=0.0797 read=0.2s compute=1.1s
+[23:57:14]     epoch 3/5 n=120 loss=0.0142 read=0.2s compute=1.0s
+[23:57:15]     epoch 4/5 n=120 loss=0.0075 read=0.2s compute=1.0s
+[23:57:17]     epoch 5/5 n=120 loss=0.0042 read=0.2s compute=1.0s
+[23:57:17] fold 3 tcga_rcc: train n=617
+[23:57:25]     epoch 1/5 n=617 loss=0.2193 read=1.7s compute=5.9s
+[23:57:32]     epoch 2/5 n=617 loss=0.1794 read=1.6s compute=5.8s
+[23:57:40]     epoch 3/5 n=617 loss=0.1377 read=1.6s compute=5.7s
+[23:57:47]     epoch 4/5 n=617 loss=0.1095 read=1.6s compute=5.6s
+[23:57:55]     epoch 5/5 n=617 loss=0.0839 read=1.6s compute=5.9s
+[23:57:55] fold 3 tcga_brca: train n=763
+[23:58:03]     epoch 1/5 n=763 loss=0.2946 read=1.9s compute=6.1s
+[23:58:11]     epoch 2/5 n=763 loss=0.2541 read=1.8s compute=6.0s
+[23:58:19]     epoch 3/5 n=763 loss=0.2390 read=1.7s compute=5.9s
+[23:58:27]     epoch 4/5 n=763 loss=0.2440 read=1.8s compute=6.1s
+[23:58:35]     epoch 5/5 n=763 loss=0.2246 read=1.8s compute=6.0s
+[23:58:35] fold 3 tcga_lung: train n=765
+[23:58:44]     epoch 1/5 n=765 loss=0.3780 read=2.1s compute=6.8s
+[23:58:53]     epoch 2/5 n=765 loss=0.2610 read=2.0s compute=6.6s
+[23:59:01]     epoch 3/5 n=765 loss=0.2536 read=2.0s compute=6.7s
+[23:59:10]     epoch 4/5 n=765 loss=0.2102 read=1.9s compute=6.5s
+[23:59:19]     epoch 5/5 n=765 loss=0.1865 read=2.0s compute=6.5s
+[SelectorBank] saved 4 skills → /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold3.pt
+[23:59:20]   cache fold3_test_tcga_esca: n=15 read=0.1s compute=1.0s
+[23:59:26]   cache fold3_test_tcga_rcc: n=76 read=0.3s compute=6.2s
+[23:59:33]   cache fold3_test_tcga_brca: n=96 read=0.3s compute=6.5s
+[23:59:42]   cache fold3_test_tcga_lung: n=107 read=0.4s compute=8.1s
+[23:59:43]   cache fold3_train_tcga_esca: n=120 read=0.3s compute=1.1s
+[23:59:51]   cache fold3_train_tcga_rcc: n=617 read=1.9s compute=6.1s
+[00:00:00]   cache fold3_train_tcga_brca: n=763 read=2.1s compute=6.7s
+[00:00:10]   cache fold3_train_tcga_lung: n=765 read=2.2s compute=7.0s
+[00:00:10] fold 3 完成（180s）
+[00:00:10] fold 4 tcga_esca: train n=119
+[00:00:11]     epoch 1/5 n=119 loss=0.2116 read=0.3s compute=1.0s
+[00:00:12]     epoch 2/5 n=119 loss=0.0390 read=0.2s compute=1.0s
+[00:00:13]     epoch 3/5 n=119 loss=0.0275 read=0.2s compute=1.0s
+[00:00:15]     epoch 4/5 n=119 loss=0.0109 read=0.2s compute=1.0s
+[00:00:16]     epoch 5/5 n=119 loss=0.0243 read=0.2s compute=1.0s
+[00:00:16] fold 4 tcga_rcc: train n=613
+[00:00:24]     epoch 1/5 n=613 loss=0.1518 read=1.8s compute=5.7s
+[00:00:31]     epoch 2/5 n=613 loss=0.0999 read=1.7s compute=5.7s
+[00:00:39]     epoch 3/5 n=613 loss=0.1033 read=1.6s compute=5.7s
+[00:00:46]     epoch 4/5 n=613 loss=0.0942 read=1.7s compute=5.7s
+[00:00:54]     epoch 5/5 n=613 loss=0.0970 read=1.6s compute=5.8s
+[00:00:54] fold 4 tcga_brca: train n=762
+[00:01:02]     epoch 1/5 n=762 loss=0.2899 read=1.9s compute=5.9s
+[00:01:09]     epoch 2/5 n=762 loss=0.2513 read=1.7s compute=5.7s
+[00:01:17]     epoch 3/5 n=762 loss=0.2249 read=1.8s compute=5.7s
+[00:01:25]     epoch 4/5 n=762 loss=0.1961 read=1.7s compute=5.9s
+[00:01:32]     epoch 5/5 n=762 loss=0.1908 read=1.7s compute=5.8s
+[00:01:33] fold 4 tcga_lung: train n=756
+[00:01:43]     epoch 1/5 n=756 loss=0.4218 read=2.3s compute=7.7s
+[00:01:52]     epoch 2/5 n=756 loss=0.2510 read=2.0s compute=7.0s
+[00:02:02]     epoch 3/5 n=756 loss=0.2328 read=2.1s compute=7.9s
+[00:02:12]     epoch 4/5 n=756 loss=0.2140 read=2.1s compute=7.2s
+[00:02:21]     epoch 5/5 n=756 loss=0.2070 read=2.0s compute=6.8s
+[SelectorBank] saved 4 skills → /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold4.pt
+[00:02:22]   cache fold4_test_tcga_esca: n=16 read=0.0s compute=1.2s
+[00:02:29]   cache fold4_test_tcga_rcc: n=78 read=0.3s compute=6.6s
+[00:02:36]   cache fold4_test_tcga_brca: n=94 read=0.3s compute=7.1s
+[00:02:46]   cache fold4_test_tcga_lung: n=112 read=0.4s compute=8.6s
+[00:02:47]   cache fold4_train_tcga_esca: n=119 read=0.4s compute=1.3s
+[00:02:56]   cache fold4_train_tcga_rcc: n=613 read=2.0s compute=6.7s
+[00:03:06]   cache fold4_train_tcga_brca: n=762 read=2.2s compute=7.3s
+[00:03:16]   cache fold4_train_tcga_lung: n=756 read=2.4s compute=7.4s
+[00:03:16] fold 4 完成（186s）
+[00:03:16] fold 5 tcga_esca: train n=120
+[00:03:17]     epoch 1/5 n=120 loss=0.1778 read=0.3s compute=1.0s
+[00:03:18]     epoch 2/5 n=120 loss=0.0618 read=0.2s compute=1.1s
+[00:03:20]     epoch 3/5 n=120 loss=0.1174 read=0.2s compute=1.1s
+[00:03:21]     epoch 4/5 n=120 loss=0.0149 read=0.2s compute=1.2s
+[00:03:23]     epoch 5/5 n=120 loss=0.0066 read=0.2s compute=1.2s
+[00:03:23] fold 5 tcga_rcc: train n=619
+[00:03:31]     epoch 1/5 n=619 loss=0.2078 read=1.8s compute=6.1s
+[00:03:39]     epoch 2/5 n=619 loss=0.1750 read=1.8s compute=6.4s
+[00:03:47]     epoch 3/5 n=619 loss=0.1255 read=1.8s compute=6.4s
+[00:03:56]     epoch 4/5 n=619 loss=0.1302 read=1.8s compute=6.4s
+[00:04:04]     epoch 5/5 n=619 loss=0.0896 read=1.8s compute=6.2s
+[00:04:04] fold 5 tcga_brca: train n=763
+[00:04:13]     epoch 1/5 n=763 loss=0.3275 read=2.0s compute=6.5s
+[00:04:21]     epoch 2/5 n=763 loss=0.2498 read=1.8s compute=6.3s
+[00:04:29]     epoch 3/5 n=763 loss=0.2288 read=1.9s compute=6.5s
+[00:04:38]     epoch 4/5 n=763 loss=0.1946 read=1.9s compute=6.5s
+[00:04:47]     epoch 5/5 n=763 loss=0.1789 read=1.9s compute=6.6s
+[00:04:47] fold 5 tcga_lung: train n=764
+[00:04:57]     epoch 1/5 n=764 loss=0.3013 read=2.2s compute=7.3s
+[00:05:06]     epoch 2/5 n=764 loss=0.2494 read=2.1s compute=7.3s
+[2026-09-25 00:05:09] heartbeat
+[00:05:16]     epoch 3/5 n=764 loss=0.2064 read=2.1s compute=7.5s
+[00:05:26]     epoch 4/5 n=764 loss=0.2054 read=2.2s compute=7.3s
+[00:05:35]     epoch 5/5 n=764 loss=0.1689 read=2.1s compute=7.1s
+[SelectorBank] saved 4 skills → /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold5.pt
+[00:05:37]   cache fold5_test_tcga_esca: n=15 read=0.1s compute=1.7s
+[00:05:44]   cache fold5_test_tcga_rcc: n=74 read=0.3s compute=6.4s
+[00:05:51]   cache fold5_test_tcga_brca: n=94 read=0.3s compute=7.2s
+[00:06:00]   cache fold5_test_tcga_lung: n=96 read=0.3s compute=8.2s
+[00:06:01]   cache fold5_train_tcga_esca: n=120 read=0.4s compute=1.1s
+[00:06:10]   cache fold5_train_tcga_rcc: n=619 read=2.0s compute=6.9s
+[00:06:19]   cache fold5_train_tcga_brca: n=763 read=2.1s compute=7.0s
+[00:06:30]   cache fold5_train_tcga_lung: n=764 read=2.4s compute=8.2s
+[00:06:30] fold 5 完成（194s）
+[00:06:30] fold 6 tcga_esca: train n=119
+[00:06:32]     epoch 1/5 n=119 loss=0.1296 read=0.3s compute=1.1s
+[00:06:33]     epoch 2/5 n=119 loss=0.1046 read=0.2s compute=1.3s
+[00:06:35]     epoch 3/5 n=119 loss=0.0113 read=0.2s compute=1.3s
+[00:06:36]     epoch 4/5 n=119 loss=0.0042 read=0.2s compute=1.0s
+[00:06:37]     epoch 5/5 n=119 loss=0.0023 read=0.2s compute=1.0s
+[00:06:37] fold 6 tcga_rcc: train n=616
+[00:06:45]     epoch 1/5 n=616 loss=0.1836 read=1.8s compute=6.0s
+[00:06:54]     epoch 2/5 n=616 loss=0.1593 read=1.8s compute=6.7s
+[00:07:02]     epoch 3/5 n=616 loss=0.1326 read=1.8s compute=6.5s
+[00:07:11]     epoch 4/5 n=616 loss=0.1084 read=1.8s compute=6.4s
+[00:07:18]     epoch 5/5 n=616 loss=0.1229 read=1.7s compute=6.0s
+[00:07:19] fold 6 tcga_brca: train n=758
+[00:07:27]     epoch 1/5 n=758 loss=0.2806 read=1.9s compute=6.3s
+[00:07:36]     epoch 2/5 n=758 loss=0.2185 read=1.9s compute=6.7s
+[00:07:44]     epoch 3/5 n=758 loss=0.2093 read=1.8s compute=6.4s
+[00:07:53]     epoch 4/5 n=758 loss=0.2114 read=1.9s compute=6.5s
+[00:08:02]     epoch 5/5 n=758 loss=0.2002 read=2.0s compute=6.9s
+[00:08:02] fold 6 tcga_lung: train n=759
+[00:08:11]     epoch 1/5 n=759 loss=0.4423 read=2.1s compute=6.6s
+[00:08:21]     epoch 2/5 n=759 loss=0.3340 read=2.1s compute=7.4s
+[00:08:30]     epoch 3/5 n=759 loss=0.2812 read=2.1s compute=7.2s
+[00:08:40]     epoch 4/5 n=759 loss=0.2499 read=2.2s compute=7.2s
+[00:08:49]     epoch 5/5 n=759 loss=0.2293 read=2.0s compute=6.8s
+[SelectorBank] saved 4 skills → /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold6.pt
+[00:08:50]   cache fold6_test_tcga_esca: n=16 read=0.1s compute=1.2s
+[00:08:57]   cache fold6_test_tcga_rcc: n=77 read=0.3s compute=6.5s
+[00:09:04]   cache fold6_test_tcga_brca: n=98 read=0.3s compute=7.1s
+[00:09:11]   cache fold6_test_tcga_lung: n=88 read=0.3s compute=6.5s
+[00:09:12]   cache fold6_train_tcga_esca: n=119 read=0.3s compute=1.1s
+[00:09:20]   cache fold6_train_tcga_rcc: n=616 read=1.8s compute=6.0s
+[00:09:29]   cache fold6_train_tcga_brca: n=758 read=2.0s compute=6.5s
+[00:09:39]   cache fold6_train_tcga_lung: n=759 read=2.2s compute=7.7s
+[00:09:39] fold 6 完成（189s）
+[00:09:39] fold 7 tcga_esca: train n=120
+[00:09:41]     epoch 1/5 n=120 loss=0.1766 read=0.3s compute=1.2s
+[00:09:42]     epoch 2/5 n=120 loss=0.0434 read=0.2s compute=1.2s
+[00:09:43]     epoch 3/5 n=120 loss=0.0080 read=0.2s compute=1.2s
+[00:09:45]     epoch 4/5 n=120 loss=0.0052 read=0.2s compute=1.1s
+[00:09:46]     epoch 5/5 n=120 loss=0.0038 read=0.2s compute=1.1s
+[00:09:46] fold 7 tcga_rcc: train n=615
+[00:09:55]     epoch 1/5 n=615 loss=0.1829 read=1.7s compute=6.5s
+[00:10:03]     epoch 2/5 n=615 loss=0.2117 read=1.6s compute=6.5s
+[00:10:11]     epoch 3/5 n=615 loss=0.1267 read=1.6s compute=6.4s
+[00:10:19]     epoch 4/5 n=615 loss=0.1407 read=1.6s compute=6.4s
+[00:10:28]     epoch 5/5 n=615 loss=0.1016 read=1.6s compute=6.5s
+[00:10:28] fold 7 tcga_brca: train n=760
+[00:10:37]     epoch 1/5 n=760 loss=0.3013 read=1.8s compute=6.9s
+[00:10:45]     epoch 2/5 n=760 loss=0.2595 read=1.7s compute=6.8s
+[00:10:54]     epoch 3/5 n=760 loss=0.2411 read=1.7s compute=7.0s
+[00:11:03]     epoch 4/5 n=760 loss=0.2328 read=1.7s compute=6.7s
+[00:11:12]     epoch 5/5 n=760 loss=0.2190 read=1.8s compute=6.9s
+[00:11:12] fold 7 tcga_lung: train n=774
+[00:11:21]     epoch 1/5 n=774 loss=0.4095 read=2.0s compute=7.3s
+[00:11:31]     epoch 2/5 n=774 loss=0.2887 read=2.0s compute=7.4s
+[00:11:40]     epoch 3/5 n=774 loss=0.2502 read=1.9s compute=7.3s
+[00:11:50]     epoch 4/5 n=774 loss=0.2230 read=2.0s compute=7.2s
+[00:11:59]     epoch 5/5 n=774 loss=0.2345 read=2.0s compute=7.4s
+[SelectorBank] saved 4 skills → /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold7.pt
+[00:12:00]   cache fold7_test_tcga_esca: n=15 read=0.0s compute=1.2s
+[00:12:08]   cache fold7_test_tcga_rcc: n=75 read=0.3s compute=7.0s
+[00:12:15]   cache fold7_test_tcga_brca: n=96 read=0.3s compute=7.1s
+[00:12:24]   cache fold7_test_tcga_lung: n=97 read=0.3s compute=8.5s
+[00:12:26]   cache fold7_train_tcga_esca: n=120 read=0.3s compute=1.3s
+[00:12:34]   cache fold7_train_tcga_rcc: n=615 read=1.9s compute=6.9s
+[00:12:44]   cache fold7_train_tcga_brca: n=760 read=2.0s compute=7.5s
+[00:12:54]   cache fold7_train_tcga_lung: n=774 read=2.2s compute=7.8s
+[00:12:54] fold 7 完成（195s）
+[00:12:54] fold 8 tcga_esca: train n=120
+[00:12:56]     epoch 1/5 n=120 loss=0.0960 read=0.3s compute=1.2s
+[00:12:57]     epoch 2/5 n=120 loss=0.0161 read=0.2s compute=1.2s
+[00:12:59]     epoch 3/5 n=120 loss=0.0043 read=0.2s compute=1.2s
+[00:13:00]     epoch 4/5 n=120 loss=0.0037 read=0.2s compute=1.2s
+[00:13:01]     epoch 5/5 n=120 loss=0.0018 read=0.2s compute=1.2s
+[00:13:01] fold 8 tcga_rcc: train n=617
+[00:13:10]     epoch 1/5 n=617 loss=0.2235 read=1.7s compute=6.4s
+[00:13:18]     epoch 2/5 n=617 loss=0.1601 read=1.6s compute=6.3s
+[00:13:26]     epoch 3/5 n=617 loss=0.1471 read=1.6s compute=6.5s
+[00:13:34]     epoch 4/5 n=617 loss=0.1216 read=1.6s compute=6.4s
+[00:13:43]     epoch 5/5 n=617 loss=0.1098 read=1.6s compute=6.4s
+[00:13:43] fold 8 tcga_brca: train n=762
+[00:13:52]     epoch 1/5 n=762 loss=0.3087 read=1.9s compute=6.8s
+[00:14:01]     epoch 2/5 n=762 loss=0.2553 read=1.8s compute=7.1s
+[00:14:09]     epoch 3/5 n=762 loss=0.2315 read=1.7s compute=6.7s
+[00:14:18]     epoch 4/5 n=762 loss=0.2190 read=1.7s compute=6.8s
+[00:14:27]     epoch 5/5 n=762 loss=0.2061 read=1.7s compute=6.8s
+[00:14:27] fold 8 tcga_lung: train n=777
+[00:14:36]     epoch 1/5 n=777 loss=0.3035 read=2.0s compute=7.4s
+[00:14:46]     epoch 2/5 n=777 loss=0.2546 read=1.9s compute=7.4s
+[00:14:55]     epoch 3/5 n=777 loss=0.2079 read=2.0s compute=7.4s
+[00:15:05]     epoch 4/5 n=777 loss=0.2018 read=1.9s compute=7.5s
+[00:15:15]     epoch 5/5 n=777 loss=0.1852 read=1.9s compute=7.3s
+[SelectorBank] saved 4 skills → /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold8.pt
+[00:15:16]   cache fold8_test_tcga_esca: n=15 read=0.0s compute=1.1s
+[00:15:23]   cache fold8_test_tcga_rcc: n=76 read=0.3s compute=6.8s
+[00:15:31]   cache fold8_test_tcga_brca: n=96 read=0.3s compute=7.8s
+[00:15:40]   cache fold8_test_tcga_lung: n=93 read=0.3s compute=8.4s
+[00:15:41]   cache fold8_train_tcga_esca: n=120 read=0.3s compute=1.3s
+[00:15:50]   cache fold8_train_tcga_rcc: n=617 read=1.9s compute=7.1s
+[00:16:00]   cache fold8_train_tcga_brca: n=762 read=2.0s compute=7.6s
+[00:16:11]   cache fold8_train_tcga_lung: n=777 read=2.2s compute=8.1s
+[00:16:11] fold 8 完成（196s）
+[00:16:11] fold 9 tcga_esca: train n=121
+[00:16:12]     epoch 1/5 n=121 loss=0.1076 read=0.3s compute=1.2s
+[00:16:14]     epoch 2/5 n=121 loss=0.0703 read=0.2s compute=1.1s
+[00:16:15]     epoch 3/5 n=121 loss=0.0709 read=0.2s compute=1.2s
+[00:16:16]     epoch 4/5 n=121 loss=0.0095 read=0.2s compute=1.1s
+[00:16:18]     epoch 5/5 n=121 loss=0.0055 read=0.2s compute=1.1s
+[00:16:18] fold 9 tcga_rcc: train n=612
+[00:16:26]     epoch 1/5 n=612 loss=0.1884 read=1.7s compute=6.3s
+[00:16:34]     epoch 2/5 n=612 loss=0.1228 read=1.6s compute=6.2s
+[00:16:42]     epoch 3/5 n=612 loss=0.1167 read=1.6s compute=6.2s
+[00:16:50]     epoch 4/5 n=612 loss=0.1312 read=1.6s compute=6.2s
+[00:16:58]     epoch 5/5 n=612 loss=0.0961 read=1.6s compute=6.4s
+[00:16:58] fold 9 tcga_brca: train n=760
+[00:17:07]     epoch 1/5 n=760 loss=0.3143 read=1.9s compute=6.7s
+[00:17:15]     epoch 2/5 n=760 loss=0.2633 read=1.7s compute=6.7s
+[00:17:24]     epoch 3/5 n=760 loss=0.2373 read=1.7s compute=6.7s
+[00:17:32]     epoch 4/5 n=760 loss=0.2308 read=1.7s compute=6.7s
+[00:17:41]     epoch 5/5 n=760 loss=0.2155 read=1.7s compute=6.5s
+[00:17:41] fold 9 tcga_lung: train n=762
+[00:17:50]     epoch 1/5 n=762 loss=0.4081 read=2.0s compute=7.2s
+[00:18:00]     epoch 2/5 n=762 loss=0.2840 read=1.9s compute=7.4s
+[00:18:09]     epoch 3/5 n=762 loss=0.2405 read=1.8s compute=7.2s
+[00:18:18]     epoch 4/5 n=762 loss=0.2142 read=1.8s compute=7.0s
+[00:18:27]     epoch 5/5 n=762 loss=0.2119 read=1.9s compute=7.3s
+[SelectorBank] saved 4 skills → /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold9.pt
+[00:18:29]   cache fold9_test_tcga_esca: n=14 read=0.1s compute=1.2s
+[00:18:36]   cache fold9_test_tcga_rcc: n=81 read=0.3s compute=7.3s
+[00:18:45]   cache fold9_test_tcga_brca: n=99 read=0.3s compute=8.0s
+[00:18:53]   cache fold9_test_tcga_lung: n=92 read=0.3s compute=7.8s
+[00:18:55]   cache fold9_train_tcga_esca: n=121 read=0.4s compute=1.4s
+[00:19:04]   cache fold9_train_tcga_rcc: n=612 read=1.9s compute=7.1s
+[00:19:13]   cache fold9_train_tcga_brca: n=760 read=2.0s compute=7.6s
+[00:19:23]   cache fold9_train_tcga_lung: n=762 read=2.1s compute=7.8s
+[00:19:23] fold 9 完成（193s）
+[00:19:23] fold 10 tcga_esca: train n=121
+[00:19:25]     epoch 1/5 n=121 loss=0.4071 read=0.3s compute=1.2s
+[00:19:27]     epoch 2/5 n=121 loss=0.0410 read=0.2s compute=1.2s
+[00:19:28]     epoch 3/5 n=121 loss=0.1199 read=0.2s compute=1.2s
+[00:19:29]     epoch 4/5 n=121 loss=0.0083 read=0.2s compute=1.2s
+[00:19:31]     epoch 5/5 n=121 loss=0.0046 read=0.2s compute=1.2s
+[00:19:31] fold 10 tcga_rcc: train n=618
+[00:19:39]     epoch 1/5 n=618 loss=0.2214 read=1.7s compute=6.1s
+[00:19:47]     epoch 2/5 n=618 loss=0.1585 read=1.6s compute=6.1s
+[00:19:55]     epoch 3/5 n=618 loss=0.1201 read=1.6s compute=6.2s
+[00:20:03]     epoch 4/5 n=618 loss=0.1268 read=1.6s compute=6.2s
+[2026-09-25 00:20:09] heartbeat
+[00:20:10]     epoch 5/5 n=618 loss=0.1011 read=1.6s compute=6.1s
+[00:20:10] fold 10 tcga_brca: train n=763
+[00:20:19]     epoch 1/5 n=763 loss=0.2567 read=1.8s compute=6.7s
+[00:20:28]     epoch 2/5 n=763 loss=0.2414 read=1.7s compute=6.7s
+[00:20:36]     epoch 3/5 n=763 loss=0.2021 read=1.7s compute=6.8s
+[00:20:45]     epoch 4/5 n=763 loss=0.2229 read=1.7s compute=6.6s
+[00:20:53]     epoch 5/5 n=763 loss=0.2008 read=1.7s compute=6.7s
+[00:20:54] fold 10 tcga_lung: train n=771
+[00:21:03]     epoch 1/5 n=771 loss=0.3632 read=2.1s compute=7.4s
+[00:21:13]     epoch 2/5 n=771 loss=0.2744 read=1.9s compute=7.3s
+[00:21:22]     epoch 3/5 n=771 loss=0.2461 read=1.9s compute=7.3s
+[00:21:31]     epoch 4/5 n=771 loss=0.2267 read=1.9s compute=7.4s
+[00:21:41]     epoch 5/5 n=771 loss=0.1928 read=1.9s compute=7.2s
+[SelectorBank] saved 4 skills → /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold10.pt
+[00:21:42]   cache fold10_test_tcga_esca: n=14 read=0.0s compute=1.0s
+[00:21:49]   cache fold10_test_tcga_rcc: n=74 read=0.3s compute=6.7s
+[00:21:57]   cache fold10_test_tcga_brca: n=91 read=0.3s compute=7.6s
+[00:22:05]   cache fold10_test_tcga_lung: n=90 read=0.3s compute=7.5s
+[00:22:06]   cache fold10_train_tcga_esca: n=121 read=0.4s compute=1.3s
+[00:22:15]   cache fold10_train_tcga_rcc: n=618 read=1.9s compute=6.9s
+[00:22:25]   cache fold10_train_tcga_brca: n=763 read=2.0s compute=7.4s
+[00:22:35]   cache fold10_train_tcga_lung: n=771 read=2.1s compute=7.8s
+[00:22:35] fold 10 完成（191s）
+[2026-09-25 00:22:35] exit=0
