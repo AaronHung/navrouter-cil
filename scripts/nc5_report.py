@@ -149,11 +149,13 @@ def val_acc(d, C5, AR, name, order, fold) -> float:
 
 # ── C：AR 與 LIN8 ───────────────────────────────────────────────────────────
 def aug(X):
-    return torch.cat([X, torch.ones(X.shape[0], 1)], 1)
+    """mean_vec 接常數 1；AMENDMENT-2：AR／LIN8 的累加、求解、打分一律 float64（CPU）。"""
+    X = X.to(torch.float64)
+    return torch.cat([X, torch.ones(X.shape[0], 1, dtype=torch.float64)], 1)
 
 
 class Ridge:
-    """依序累加的解析式 router／8 類線性基線（float32）。"""
+    """依序累加的解析式 router／8 類線性基線（AMENDMENT-2：float64）。"""
 
     def __init__(self, d, C5, inp=None):
         self.d, self.C5, self.inp = d, C5, inp        # inp = None（mean_vec）或 (src, q)
@@ -171,7 +173,7 @@ class Ridge:
         k = (fold, order, t, gamma, lin8)
         if k not in self._W:
             pos = [self.d.tasks.index(x) for x in ORDERS[order]]
-            A = torch.zeros(513, 513)
+            A = torch.zeros(513, 513, dtype=torch.float64)
             cols = []
             for p in pos[:t]:
                 Xj = aug(self.train_X(fold, order, p))
@@ -181,7 +183,7 @@ class Ridge:
                     cols += [Xj[y == 0].sum(0), Xj[y == 1].sum(0)]
                 else:
                     cols.append(Xj.sum(0))
-            self._W[k] = torch.linalg.solve(A + gamma * torch.eye(513), torch.stack(cols, 1))
+            self._W[k] = torch.linalg.solve(A + gamma * torch.eye(513, dtype=torch.float64), torch.stack(cols, 1))
         return self._W[k]
 
     def input(self, fold, order, split, g, seen):
@@ -273,7 +275,7 @@ def main() -> int:
     for g_ in GAMMAS:
         X = [aug(d.c(1, "train", t)["mean_vec"]) for t in d.tasks]
         Xa = torch.cat(X)
-        W1 = torch.linalg.solve(Xa.t() @ Xa + g_ * torch.eye(513), torch.stack([x.sum(0) for x in X], 1))
+        W1 = torch.linalg.solve(Xa.t() @ Xa + g_ * torch.eye(513, dtype=torch.float64), torch.stack([x.sum(0) for x in X], 1))
         for o in ORDERS:
             pos = [d.tasks.index(x) for x in ORDERS[o]]
             Wi = RG.W(1, o, 4, g_)
@@ -284,7 +286,7 @@ def main() -> int:
     ar_check_ok = all(check[f"{ar_gamma}|{o}"] < 1e-4 for o in ORDERS)
     if not ar_check_ok:
         (d.out / "nc5").mkdir(exist_ok=True)
-        (d.out / "nc5" / "ar_check_failed.json").write_text(json.dumps(check, indent=1))
+        (d.out / "nc5" / "ar_check_failed_float64.json").write_text(json.dumps(check, indent=1))
         print(f"⚠️ AR 一致性檢查未達 < 1e-4（γ = {ar_gamma}）：{check} —— 停下回報。")
         return 7
     ar_test = evaluate(d, C5, RG.router(ar_gamma), "AR")
@@ -368,6 +370,9 @@ def write(d, M, test, th_router, ar_test, two, lin8, main_sys, t_rep):
     out = ["# REPORT — NC-5：背景分派 ctx、機制診斷、對照組 AR／LIN8、主系統指標（Mac CPU，十折兩序）", "",
            "機器：mac（Apple M1 Pro）、`--device cpu`、`torch.set_num_threads(8)`、torch 2.11.0；所有數字來自同一台、"
            "同一批；全部只做推論。判準見 `PREREG-5.md`（commit a219456）。", "",
+           "**C 段（AR、LIN8）依 `AMENDMENT-2.md`（commit b8949df）改用 float64**：累加、求解與打分在 CPU 上以 float64 計算，"
+           "γ 在 float64 下重新以 validation 選定。float32 下的 AR／LIN8 結果全部作廢，本報告不報、不引用。"
+           "A、B、D 不使用 AR／LIN8，不受影響。", "",
            "## PREREG-5 判準落點", "", "| 判準 | 數值 | 所在表格 | 結果 |", "|---|---|---|---|",
            f"| 選法（validation t = 4 CIL，c、e 取兩序平均） | 選出 **{sel}**（{M['val_mean'][sel]:.4f}；基準 "
            f"{M['val_mean']['基準']:.4f}） | T1 | — |"]
@@ -381,7 +386,9 @@ def write(d, M, test, th_router, ar_test, two, lin8, main_sys, t_rep):
             f"| B、C、D | 不設門檻，必報 | T2–T5 | 已報 |",
             f"| C：AR 一致性檢查（fold 1、t = 4、γ = {ar_g}） | "
             + "、".join(f"{o} {M['ar']['check_fold1'][f'{ar_g}|{o}']:.2e}" for o in ORDERS)
-            + " | T4 | < 1e-4 **符合** |",
+            + " | T4 | < 1e-4 **通過**（AMENDMENT-2：float64） |",
+            f"| AMENDMENT-2：γ 在 float64 下以十折 validation 重選（同分取小）；float32 結果作廢 | "
+            f"AR γ\\* = {ar_g}、LIN8 γ\\* = {M['lin8']['gamma']} | T4 | 已執行 |",
             f"| D：每折 BWT = −Forgetting | reverse {sum(M['bwt_check']['reverse'])}/10、paper {sum(M['bwt_check']['paper'])}/10 | "
             f"T5 | {'全部成立' if all(M['bwt_check']['reverse'] + M['bwt_check']['paper']) else '有不成立的折'} |", ""]
 
@@ -461,7 +468,8 @@ def write(d, M, test, th_router, ar_test, two, lin8, main_sys, t_rep):
             + " | TP macro | TP micro | ESCA→Lung | Lung→ESCA | CIL ACC |", "|---|---|" + "---|" * 4 + "---|---|---|---|---|"]
     for o in ORDERS:
         out.append(diag_row("AR", ar_test, o))
-    out += ["", f"儲存：A 共用 1,052,676 bytes；每任務 b_j 2,052 bytes。", ""]
+    out += ["", "儲存（依 PREREG-5 操作定義 11，以 fp32 計）：A 共用 1,052,676 bytes；每任務 b_j 2,052 bytes。"
+            "AMENDMENT-2 以 float64 計算；若以 float64 保存則為 2,105,352 與 4,104 bytes。", ""]
     if two:
         out += [f"### T4-b 2 × 2（router × 輸入；test t = 4 CIL ACC，兩序）", "",
                 f"AR ＋ 背景（{sel}）的 γ = {two['gamma']}（validation 選）。", "",
