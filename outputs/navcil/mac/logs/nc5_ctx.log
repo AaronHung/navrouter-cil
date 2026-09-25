@@ -1,0 +1,24 @@
+[2026-09-25 21:51:58] start: /Users/aaron/venvs/navcil/bin/python scripts/nc5_ctx_cache.py --device cpu --folds 1-10 
+[21:52:00] NC-5 ctx cache threads=8 subsets=['0', '0,1', '0,1,2', '0,1,2,3', '3', '2,3', '1,2,3']
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold1.pt
+[21:53:53] fold 1 NC-5 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold2.pt
+[21:55:47] fold 2 NC-5 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold3.pt
+[21:57:41] fold 3 NC-5 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold4.pt
+[21:59:36] fold 4 NC-5 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold5.pt
+[22:01:32] fold 5 NC-5 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold6.pt
+[22:03:27] fold 6 NC-5 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold7.pt
+[22:05:18] fold 7 NC-5 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold8.pt
+[2026-09-25 22:06:58] heartbeat
+[22:07:10] fold 8 NC-5 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold9.pt
+[22:09:08] fold 9 NC-5 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold10.pt
+[22:11:11] fold 10 NC-5 cache 完成
+[2026-09-25 22:11:11] exit=0
