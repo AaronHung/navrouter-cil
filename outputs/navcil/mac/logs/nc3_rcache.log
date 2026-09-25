@@ -1,0 +1,53 @@
+[2026-09-25 16:24:44] start: /Users/aaron/venvs/navcil/bin/python scripts/nc3_r_cache.py --device cpu --folds 1-10 
+[16:24:46] NC-3 R cache threads=8 subsets=['0', '0,1', '0,1,2', '0,1,2,3', '3', '2,3', '1,2,3']
+[16:24:51]   fold 1 tcga_esca: keys from 120 slides, 23738 patches
+[16:25:08]   fold 1 tcga_rcc: keys from 616 slides, 123137 patches
+[16:25:28]   fold 1 tcga_brca: keys from 763 slides, 152209 patches
+[16:25:48]   fold 1 tcga_lung: keys from 774 slides, 154377 patches
+[16:25:56] fold 1 NC-3 cache 完成
+[16:26:00]   fold 2 tcga_esca: keys from 120 slides, 23738 patches
+[16:26:23]   fold 2 tcga_rcc: keys from 613 slides, 122537 patches
+[16:26:45]   fold 2 tcga_brca: keys from 764 slides, 152528 patches
+[16:27:09]   fold 2 tcga_lung: keys from 761 slides, 151980 patches
+[16:27:17] fold 2 NC-3 cache 完成
+[16:27:22]   fold 3 tcga_esca: keys from 120 slides, 23738 patches
+[16:27:43]   fold 3 tcga_rcc: keys from 617 slides, 123400 patches
+[16:28:03]   fold 3 tcga_brca: keys from 763 slides, 152209 patches
+[16:28:21]   fold 3 tcga_lung: keys from 765 slides, 152807 patches
+[16:28:29] fold 3 NC-3 cache 完成
+[16:28:33]   fold 4 tcga_esca: keys from 119 slides, 23722 patches
+[16:28:56]   fold 4 tcga_rcc: keys from 613 slides, 122537 patches
+[16:29:21]   fold 4 tcga_brca: keys from 762 slides, 152171 patches
+[16:29:43]   fold 4 tcga_lung: keys from 756 slides, 150777 patches
+[16:29:52] fold 4 NC-3 cache 完成
+[16:29:56]   fold 5 tcga_esca: keys from 120 slides, 23738 patches
+[16:30:20]   fold 5 tcga_rcc: keys from 619 slides, 123737 patches
+[16:30:38]   fold 5 tcga_brca: keys from 763 slides, 152402 patches
+[16:31:07]   fold 5 tcga_lung: keys from 764 slides, 152377 patches
+[16:31:15] fold 5 NC-3 cache 完成
+[16:31:19]   fold 6 tcga_esca: keys from 119 slides, 23538 patches
+[16:31:39]   fold 6 tcga_rcc: keys from 616 slides, 123137 patches
+[16:32:01]   fold 6 tcga_brca: keys from 758 slides, 151360 patches
+[16:32:25]   fold 6 tcga_lung: keys from 759 slides, 151445 patches
+[16:32:33] fold 6 NC-3 cache 完成
+[16:32:38]   fold 7 tcga_esca: keys from 120 slides, 23738 patches
+[16:33:00]   fold 7 tcga_rcc: keys from 615 slides, 122937 patches
+[16:33:19]   fold 7 tcga_brca: keys from 760 slides, 151791 patches
+[16:33:40]   fold 7 tcga_lung: keys from 774 slides, 154377 patches
+[16:33:47] fold 7 NC-3 cache 完成
+[16:33:51]   fold 8 tcga_esca: keys from 120 slides, 23738 patches
+[16:34:11]   fold 8 tcga_rcc: keys from 617 slides, 123337 patches
+[16:34:37]   fold 8 tcga_brca: keys from 762 slides, 152009 patches
+[16:35:04]   fold 8 tcga_lung: keys from 777 slides, 155230 patches
+[16:35:13] fold 8 NC-3 cache 完成
+[16:35:17]   fold 9 tcga_esca: keys from 121 slides, 23938 patches
+[16:35:39]   fold 9 tcga_rcc: keys from 612 slides, 122337 patches
+[16:36:04]   fold 9 tcga_brca: keys from 760 slides, 151609 patches
+[16:36:33]   fold 9 tcga_lung: keys from 762 slides, 152132 patches
+[16:36:42] fold 9 NC-3 cache 完成
+[16:36:47]   fold 10 tcga_esca: keys from 121 slides, 24016 patches
+[16:37:10]   fold 10 tcga_rcc: keys from 618 slides, 123537 patches
+[16:37:30]   fold 10 tcga_brca: keys from 763 slides, 152360 patches
+[16:37:57]   fold 10 tcga_lung: keys from 771 slides, 153796 patches
+[16:38:05] fold 10 NC-3 cache 完成
+[2026-09-25 16:38:06] exit=0

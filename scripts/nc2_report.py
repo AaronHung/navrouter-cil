@@ -156,6 +156,73 @@ def t0b(d: D2) -> dict:
             "macro_verdict": verdict}
 
 
+def compute_L(d, L0_mean: float, tag: str = "lora"):
+    """L 線（L1(r) 各序十折）與 PREREG-2 的 L-pass；tag = lora（v1）或 lora_v2（AMENDMENT-1 後）。"""
+    L = {}
+    for r in R_LIST:
+        for order in ORDERS:
+            files = [d.out / tag / f"r{r}" / order / f"fold{f}_eval.pt" for f in FOLDS]
+            if not all(p.exists() for p in files):
+                L[(r, order)] = None
+                continue
+            first = d.tasks.index(ORDERS[order][0])
+            wp, wp_task, prs, jac, fro, jm = [], {p: [] for p in range(4)}, {}, {}, {}, {}
+            l2 = []
+            evs = [torch.load(p, map_location="cpu") for p in files]
+            for ev in evs:
+                accs = []
+                for p, t in enumerate(d.tasks):
+                    e = ev["tasks"][t]
+                    rr = torch.tensor(task_rows(p))
+                    a = (rr[e["l1_cos8"][:, p][:, rr].argmax(-1)] == e["labels"]).float().mean().item()
+                    accs.append(a); wp_task[p].append(a)
+                    if p != first:
+                        prs.setdefault(t, []).append(e["pearson_l0"].mean().item())
+                        jac.setdefault(t, []).append(e["jaccard_l0"].mean().item())
+                    jm.setdefault(t, []).append(e["jaccard_m_l1"].mean().item())
+                wp.append(sum(accs) / 4)
+                for t, x in ev["fro_BA"].items():
+                    fro.setdefault(t, []).append(x)
+
+                def stage(seen, ev=ev):
+                    ti = len(seen) - 1
+                    labs = torch.cat([ev["tasks"][d.tasks[p]]["labels"] for p in seen])
+                    task = torch.cat([torch.full((len(ev["tasks"][d.tasks[p]]["labels"]),), p)
+                                      for p in seen])
+                    c8 = torch.cat([ev["tasks"][d.tasks[p]]["m_cos8"][:, ti] for p in seen])
+                    rows = torch.tensor([x for p in seen for x in task_rows(p)])
+                    pred = rows[c8[:, rows].argmax(-1)]
+                    rt = torch.stack([2 * task, 2 * task + 1], -1)
+                    mk = rt.gather(1, c8.gather(1, rt).argmax(-1, keepdim=True)).squeeze(-1)
+                    return pred, mk, {"labels": labs, "task": task}
+                l2.append(cil_from(stage, order, d.tasks))
+            n_nan = sum(1 for ev in evs for x in ev["fro_BA"].values() if x != x)
+            L[(r, order)] = {"n_nan": n_nan, "n_inc": sum(len(ev["fro_BA"]) for ev in evs),
+                             "wp": wp, "wp_task": wp_task, "pearson": prs, "jaccard_l0": jac,
+                             "fro": fro, "jaccard_m_l1": jm, "l2": l2, "evs": evs,
+                             "params": {t: (FULL_PARAMS if d.tasks.index(t) == first
+                                            else lora_params(r)) for t in d.tasks}}
+    passing = [r for r in R_LIST if all(L.get((r, o)) for o in ORDERS)
+               and all(mean_sd(L[(r, o)]["wp"])[0] >= L0_mean - 0.01 for o in ORDERS)]
+    l_pass_r = min(passing) if passing else None
+    l_pass = l_pass_r is not None and l_pass_r <= 4
+    if l_pass:
+        r_star, r_star_note = l_pass_r, "通過 L-pass"
+    else:
+        done_r = [r for r in R_LIST if all(L.get((r, o)) for o in ORDERS)]
+        r_star = max(done_r, key=lambda r: min(mean_sd(L[(r, o)]["wp"])[0] for o in ORDERS)) \
+            if done_r else None
+        r_star_note = "未通過 L-pass（操作定義 11 的備援）"
+    invalid = [r for r in R_LIST if any(L.get((r, o)) and L[(r, o)]["n_nan"] for o in ORDERS)]
+    provisional = any(r < (r_star or 99) for r in invalid)
+    if provisional:
+        r_star_note += f"；**暫定**：r = {invalid} 的訓練出現 NaN、結果無效，較小的 r 未能判定"
+    gates = {"L0_mean": L0_mean, "passing_r": passing, "L_pass": l_pass,
+                    "r_star": r_star, "note": r_star_note, "invalid_r": invalid,
+                    "provisional": provisional}
+    return L, gates
+
+
 def main() -> int:
     t0 = time.perf_counter()
     d = D2()
@@ -243,68 +310,8 @@ def main() -> int:
     # ── T2/T3 L 線 ──────────────────────────────────────────────────────────
     L0 = M1["stage1"]["fold_mean"]["e_fourround"]
     L0_mean = mean_sd(L0)[0]
-    L = {}
-    for r in R_LIST:
-        for order in ORDERS:
-            files = [d.out / "lora" / f"r{r}" / order / f"fold{f}_eval.pt" for f in FOLDS]
-            if not all(p.exists() for p in files):
-                L[(r, order)] = None
-                continue
-            first = d.tasks.index(ORDERS[order][0])
-            wp, wp_task, prs, jac, fro, jm = [], {p: [] for p in range(4)}, {}, {}, {}, {}
-            l2 = []
-            evs = [torch.load(p, map_location="cpu") for p in files]
-            for ev in evs:
-                accs = []
-                for p, t in enumerate(d.tasks):
-                    e = ev["tasks"][t]
-                    rr = torch.tensor(task_rows(p))
-                    a = (rr[e["l1_cos8"][:, p][:, rr].argmax(-1)] == e["labels"]).float().mean().item()
-                    accs.append(a); wp_task[p].append(a)
-                    if p != first:
-                        prs.setdefault(t, []).append(e["pearson_l0"].mean().item())
-                        jac.setdefault(t, []).append(e["jaccard_l0"].mean().item())
-                    jm.setdefault(t, []).append(e["jaccard_m_l1"].mean().item())
-                wp.append(sum(accs) / 4)
-                for t, x in ev["fro_BA"].items():
-                    fro.setdefault(t, []).append(x)
-
-                def stage(seen, ev=ev):
-                    ti = len(seen) - 1
-                    labs = torch.cat([ev["tasks"][d.tasks[p]]["labels"] for p in seen])
-                    task = torch.cat([torch.full((len(ev["tasks"][d.tasks[p]]["labels"]),), p)
-                                      for p in seen])
-                    c8 = torch.cat([ev["tasks"][d.tasks[p]]["m_cos8"][:, ti] for p in seen])
-                    rows = torch.tensor([x for p in seen for x in task_rows(p)])
-                    pred = rows[c8[:, rows].argmax(-1)]
-                    rt = torch.stack([2 * task, 2 * task + 1], -1)
-                    mk = rt.gather(1, c8.gather(1, rt).argmax(-1, keepdim=True)).squeeze(-1)
-                    return pred, mk, {"labels": labs, "task": task}
-                l2.append(cil_from(stage, order, d.tasks))
-            n_nan = sum(1 for ev in evs for x in ev["fro_BA"].values() if x != x)
-            L[(r, order)] = {"n_nan": n_nan, "n_inc": sum(len(ev["fro_BA"]) for ev in evs),
-                             "wp": wp, "wp_task": wp_task, "pearson": prs, "jaccard_l0": jac,
-                             "fro": fro, "jaccard_m_l1": jm, "l2": l2, "evs": evs,
-                             "params": {t: (FULL_PARAMS if d.tasks.index(t) == first
-                                            else lora_params(r)) for t in d.tasks}}
-    passing = [r for r in R_LIST if all(L.get((r, o)) for o in ORDERS)
-               and all(mean_sd(L[(r, o)]["wp"])[0] >= L0_mean - 0.01 for o in ORDERS)]
-    l_pass_r = min(passing) if passing else None
-    l_pass = l_pass_r is not None and l_pass_r <= 4
-    if l_pass:
-        r_star, r_star_note = l_pass_r, "通過 L-pass"
-    else:
-        done_r = [r for r in R_LIST if all(L.get((r, o)) for o in ORDERS)]
-        r_star = max(done_r, key=lambda r: min(mean_sd(L[(r, o)]["wp"])[0] for o in ORDERS)) \
-            if done_r else None
-        r_star_note = "未通過 L-pass（操作定義 11 的備援）"
-    invalid = [r for r in R_LIST if any(L.get((r, o)) and L[(r, o)]["n_nan"] for o in ORDERS)]
-    provisional = any(r < (r_star or 99) for r in invalid)
-    if provisional:
-        r_star_note += f"；**暫定**：r = {invalid} 的訓練出現 NaN、結果無效，較小的 r 未能判定"
-    M["gates_L"] = {"L0_mean": L0_mean, "passing_r": passing, "L_pass": l_pass,
-                    "r_star": r_star, "note": r_star_note, "invalid_r": invalid,
-                    "provisional": provisional}
+    L, M["gates_L"] = compute_L(d, L0_mean)
+    r_star = M["gates_L"]["r_star"]
 
     # ── T4 完整系統列 ────────────────────────────────────────────────────────
     full = {}
