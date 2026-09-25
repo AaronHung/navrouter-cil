@@ -36,6 +36,7 @@
    `NAVCIL_MACHINE` 選擇，覆寫 `configs/base.yaml` 的同名鍵。
 3. 一律 float32；`torch.load(..., map_location="cpu")` 後再 `.to(device)`；不用 CUDA
    專用 API（計時同步用 `torch.accelerator.synchronize()`）。
+   例外（AMENDMENT-2）：513 × 513 以內的封閉解（例如 AR／LIN8 的累加與求解）可在 CPU 上用 float64。
 4. 兩台用同一個 PyTorch minor 版本（目前 2.11.x），寫在 `requirements.txt`。
 5. 每個（關卡、fold、任務）完成就寫 done 標記（`<task>.done`），重跑自動跳過。
 6. 輸出放 `outputs/navcil/<machine>/`。
