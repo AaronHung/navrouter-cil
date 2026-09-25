@@ -134,7 +134,7 @@ def eval_order_fold(ctx, r, order, fold, bank, experts, out) -> None:
                      "m_cos8": torch.stack(m_cos8), "m_idx": torch.stack(m_idx).to(torch.int32),
                      "jaccard_m_l1": torch.tensor(jm),
                      "t_read_s": torch.tensor(t_read), "t_compute_s": torch.tensor(t_comp)}
-    fro = {ctx.tasks[p]: float((experts[p].B @ experts[p].A).norm()) for p in pos[1:]}
+    fro = {ctx.tasks[p]: float(experts[p].delta_W1().norm()) for p in pos[1:]}
     n_tr = {ctx.tasks[p]: experts[p].n_trainable() for p in pos[1:]}
     torch.save({"tasks": res, "fro_BA": fro, "n_trainable": n_tr, "r": r, "order": order,
                 "fold": fold, "lambda": lam}, out / f"fold{fold}_eval.pt")
@@ -150,17 +150,18 @@ def main() -> int:
     ap.add_argument("--orders", default="reverse,paper")
     ap.add_argument("--folds", default="1-10")
     ap.add_argument("--threads", type=int, default=0)
+    ap.add_argument("--tag", default="lora", help="輸出子目錄；AMENDMENT-1 後的 L 線 v2 用 lora_v2")
     args = ap.parse_args()
     if args.device != "cpu":
         raise SystemExit("NC-2 規定 --device cpu")
-    if args.threads:
-        torch.set_num_threads(args.threads)
-    ctx = P.Ctx(torch.device("cpu"))
-    root = ctx.out / "lora" / f"r{args.r}"
-    ctx.timing_path = ctx.out / "nc2" / f"timing_lora_r{args.r}.json"
+    ctx = P.Ctx(torch.device("cpu"))                   # 設定 machine 檔的固定執行緒數
+    if args.threads and args.threads != torch.get_num_threads():
+        raise SystemExit(f"AMENDMENT-1：執行緒數固定為 {torch.get_num_threads()}，不得以 --threads 覆寫")
+    root = ctx.out / args.tag / f"r{args.r}"
+    ctx.timing_path = ctx.out / "nc2" / f"timing_{args.tag}_r{args.r}.json"
     ctx.timing_path.parent.mkdir(parents=True, exist_ok=True)
     ctx.timing = json.loads(ctx.timing_path.read_text()) if ctx.timing_path.exists() else {}
-    log(f"L line r={args.r} orders={args.orders} threads={torch.get_num_threads()} λ*={ctx.lam()}")
+    log(f"L line {args.tag} r={args.r} orders={args.orders} threads={torch.get_num_threads()} λ*={ctx.lam()}")
     t_run = time.perf_counter()
     for order in args.orders.split(","):
         out = root / order

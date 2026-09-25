@@ -29,14 +29,30 @@ class LowRankExpert(nn.Module):
         self.fc2.load_state_dict(base.mlp[2].state_dict())
         self.r = r
 
+    def lora(self, u: torch.Tensor) -> torch.Tensor:
+        """低秩分支 (u @ Aᵀ) @ Bᵀ。
+
+        r = 1 改用廣播乘法加總（AMENDMENT-1）：數學等價，前向與反向都不經 BLAS gemv
+        （r = 1 時 u @ Aᵀ 走 gemv，其反向在本機 Accelerate 上會在尾端欄位產生 NaN）。
+        """
+        if self.r == 1:
+            return (u * self.A[0]).sum(-1, keepdim=True) * self.B[:, 0]
+        return (u @ self.A.t()) @ self.B.t()
+
+    def delta_W1(self) -> torch.Tensor:
+        """B·A；r = 1 時以廣播外積計算（AMENDMENT-1）。"""
+        if self.r == 1:
+            return self.B[:, 0].unsqueeze(1) * self.A[0].unsqueeze(0)
+        return self.B @ self.A
+
     def forward(self, Z: torch.Tensor, f_txt: torch.Tensor) -> torch.Tensor:
         u = torch.cat([Z, text_nav_feats(Z, f_txt)], dim=-1)       # [n, 514]
-        h = F.linear(u, self.W1_base, self.b1) + (u @ self.A.t()) @ self.B.t()
+        h = F.linear(u, self.W1_base, self.b1) + self.lora(u)
         return self.fc2(F.gelu(h)).squeeze(-1)
 
     def delta(self) -> dict:
         """相對底座的增量（合併用）。"""
-        return {"W1": (self.B @ self.A).detach(),
+        return {"W1": self.delta_W1().detach(),
                 "b1": self.b1.detach(), "W2": self.fc2.weight.detach(),
                 "b2": self.fc2.bias.detach()}
 

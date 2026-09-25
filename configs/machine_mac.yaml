@@ -3,3 +3,4 @@ machine: mac
 dataset_root_dir: /Users/aaron/research/can_dataset
 conch_ckpt_path: /Users/aaron/research/01_navipath/checkpoints/conch/pytorch_model.bin
 device: auto
+threads: 8                      # AMENDMENT-1：固定 CPU 執行緒數（torch.set_num_threads）

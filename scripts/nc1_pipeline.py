@@ -54,6 +54,8 @@ def parse_folds(s: str) -> list[int]:
 class Ctx:
     def __init__(self, device):
         self.cfg = load_config()
+        if self.cfg.get("threads"):                    # AMENDMENT-1：固定執行緒數
+            torch.set_num_threads(int(self.cfg["threads"]))
         self.machine = self.cfg["machine"]
         self.tasks = list(self.cfg["tasks"])
         self.device = device

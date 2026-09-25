@@ -1,7 +1,21 @@
 {
-  "note": "外部參考列（已發表值，只引用、不重算、不做 paired 比較）。來源：pathselect@081bdcd sota/external_baselines.py。",
+  "note": "外部參考列（已發表值，只引用、不重算、不做 paired 比較）。來源：pathselect@081bdcd sota/external_baselines.py。 NC-3 起加入 Masked ACC 與 Forgetting；paper 序即 forward。",
   "method": "QPMIL-VL",
   "bibkey": "gou2025qpmil",
-  "acc": {"reverse": 0.859, "paper": 0.890},
-  "table": {"reverse": "Tab. 2 (0.859±0.032)", "paper": "Tab. 1 (0.890±0.021)"}
+  "acc": {
+    "reverse": 0.859,
+    "paper": 0.89
+  },
+  "table": {
+    "reverse": "Tab. 2 (0.859±0.032)",
+    "paper": "Tab. 1 (0.890±0.021)"
+  },
+  "masked_acc": {
+    "reverse": 0.925,
+    "paper": 0.93
+  },
+  "forgetting": {
+    "reverse": 0.064,
+    "paper": 0.027
+  }
 }

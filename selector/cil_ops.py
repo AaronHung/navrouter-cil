@@ -49,6 +49,19 @@ def one_shot(base: torch.Tensor, budget: int = BUDGET) -> torch.Tensor:
     return top_k_select(base, budget)
 
 
+class NonFiniteError(RuntimeError):
+    """訓練中參數或梯度出現 NaN／Inf（AMENDMENT-1：立刻停下回報）。"""
+
+
+def check_finite(model, what: str, where: str) -> None:
+    for name, p in model.named_parameters():
+        if not p.requires_grad:
+            continue
+        t = p.grad if what == "grad" else p
+        if t is not None and not bool(torch.isfinite(t).all()):
+            raise NonFiniteError(f"{where}: {what} of {name} 非有限")
+
+
 def train_selector(slides, f_txt_task: torch.Tensor, logit_scale, *, epochs: int,
                    lr: float, weight_decay: float, seed: int, budget: int = BUDGET,
                    log=print, model=None):
@@ -78,7 +91,9 @@ def train_selector(slides, f_txt_task: torch.Tensor, logit_scale, *, epochs: int
             loss = F.cross_entropy(logits, torch.tensor([y]))
             opt.zero_grad(set_to_none=True)
             loss.backward()
+            check_finite(sel, "grad", f"epoch {ep + 1} step {n} slide {sid}")
             opt.step()
+            check_finite(sel, "param", f"epoch {ep + 1} step {n} slide {sid}")
             tc = time.perf_counter() - t0
             tot += float(loss.detach()); n += 1; t_read += tr; t_comp += tc
             per_slide.append([sid, round(tr, 6), round(tc, 6)])
