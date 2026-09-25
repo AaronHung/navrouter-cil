@@ -14,6 +14,13 @@
    同一張表。
 5. **輸出一律放 `outputs/navcil/<machine>/`**。
 
+## 命名原則（NC-2 起）
+
+- 每任務的選片器稱 **expert**；程式沿用 `selector`（`EvidenceSelector`、`SelectorBank`）。
+- 把 slide 分派到某個 expert 的模組稱 **router**（`selector/router.py`）。
+- 方法名稱不用 navigation、zero 字樣（zero-shot 基線的描述不在此限）。
+- `zeronav` 與 QPMIL 相關識別字仍由 `tests/test_no_banned_deps.py` 禁用；`router` 已解禁。
+
 ## 執行方式
 
 - 長時間指令一律在 tmux 裡跑，用 `scripts/run_stage.sh`（macOS 上自動包

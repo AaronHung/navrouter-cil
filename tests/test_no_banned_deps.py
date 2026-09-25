@@ -2,7 +2,7 @@
 
 指導教授已否決 QPMIL：selector/ data/ scripts/ configs/ sota/ 底下不得再出現該方法的
 任何識別字（`sota/` 於 DR-048 加入 —— PI 紅線「sota/ 內亦不得引入 QPMIL 程式碼，
-只能讀其切分／manifest 檔」在此之前沒有被任何測試強制），舊的 ZeroNav / Router 命名也一併淘汰。
+只能讀其切分／manifest 檔」在此之前沒有被任何測試強制），舊的 ZeroNav 命名也一併淘汰（navcil NC-2 起 router 解禁，見 AGENTS.md 命名原則）。
 
 third_party/ 也一起掃：那裡是 CONCH text tower 的原樣複製，必須確認它沒有夾帶
 任何舊方法的東西（實測四個 vendored 檔案含 BPE 詞表都零命中）。"conch" 是模型
@@ -30,7 +30,6 @@ BANNED = {
     "prompt_learner": "QPMIL 的 PromptLearner",
     "tunable_v": "QPMIL 的 Tunable Vector",
     "zeronav": "舊命名，改用 EvidenceSelector / SelectorBank",
-    "router": "舊命名，改用 selector",
     "aggregate_and_predict": "QPMIL backbone 前向；改用 conch_classify",
     "class_text_features": "QPMIL 的 class-feature enhancement；改用 selector.text_encoder",
 }
@@ -62,7 +61,8 @@ ALLOWED = {
 assert not (BANNED.keys() & ALLOWED.keys())
 
 # 匯入 selector 後不該出現在 sys.modules 裡的模組名片段
-BANNED_MODULE_RE = re.compile(r"qpmil|zeronav|routers?\b", re.IGNORECASE)
+# navcil NC-2：router 已解禁（分派到 expert 的模組即 selector/router.py），zeronav 維持禁用。
+BANNED_MODULE_RE = re.compile(r"qpmil|zeronav", re.IGNORECASE)
 
 
 def _scanned_files() -> list[Path]:

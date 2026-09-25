@@ -18,10 +18,10 @@ import torch.nn.functional as F
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
-from selector.cil_eval import (mean_sd, nav_scores, stage1_task,          # noqa: E402
-                               subset_key, zrow)
+from selector.cil_eval import mean_sd, stage1_task, subset_key          # noqa: E402
 from selector.cil_ops import LAMBDAS, ORDERS, task_rows                  # noqa: E402
 from selector.flat_selector import EvidenceSelector                      # noqa: E402
+from selector.router import tp_pred, tp_scores                           # noqa: E402
 from selector.text_encoder import _abs, build_f_txt, load_config         # noqa: E402
 
 T_GRID = (0.01, 0.02, 0.05, 0.1)
@@ -87,39 +87,6 @@ def gather(d: Data, fold: int, split: str, seen: list[int]) -> dict:
         for k in ("zs8_top64_cos8", "emax_cos8", "vote_counts", "vote_msum"):
             g[k] = torch.cat([c[k][:, si] for c in parts])
     return g
-
-
-def tp_scores(d: Data, fold: int, g: dict, seen: list[int], variant: str) -> torch.Tensor:
-    """[N, len(seen)] 每個候選任務的分數（依 seen 的順序）。"""
-    if variant == "oracle":
-        return (g["task"].unsqueeze(1) == torch.tensor(seen)).float()
-    if variant == "text-class":
-        return torch.stack([g["mean_cos8"][:, task_rows(p)].amax(-1) for p in seen], -1)
-    if variant == "text-organ":
-        return g["mean_vec"] @ d.organ["features"][seen].t()
-    if variant == "patch-vote":
-        return (g["vote_counts"][:, seen].double() * 1e6 + g["vote_msum"][:, seen].double())
-    if variant == "proto":
-        return g["mean_vec"] @ d.proto(fold)[seen].t()
-    if variant == "nav":
-        return nav_scores(g["four"], seen)
-    if variant == "nav-cal":
-        raw = nav_scores(g["four"], seen)
-        cols = []
-        for j, p in enumerate(seen):
-            tr = d.c(fold, "train", d.tasks[p])["four_cos8_uni"]
-            X = torch.zeros(tr.shape[0], len(d.tasks), 8)
-            X[:, p] = tr
-            s_tr = nav_scores(X, seen)[:, j]
-            cols.append((raw[:, j] - s_tr.mean()) / s_tr.std().clamp_min(1e-12))
-        return torch.stack(cols, -1)
-    if variant == "fuse":
-        return zrow(tp_scores(d, fold, g, seen, "text-class")) + zrow(nav_scores(g["four"], seen))
-    raise ValueError(variant)
-
-
-def tp_pred(d, fold, g, seen, variant) -> torch.Tensor:
-    return torch.tensor(seen)[tp_scores(d, fold, g, seen, variant).argmax(-1)]
 
 
 def cil_scores(d, fold, g, seen, method, T=None) -> torch.Tensor:

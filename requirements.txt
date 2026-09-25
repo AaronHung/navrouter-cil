@@ -10,3 +10,4 @@ pyyaml==6.0.1
 transformers==5.5.3
 tokenizers==0.22.2
 pytest==9.1.1
+scikit-learn==1.8.0   # NC-2 R3 multi-proto 的 KMeans
