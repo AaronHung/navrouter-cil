@@ -1,0 +1,23 @@
+[2026-09-25 17:58:07] start: /Users/aaron/venvs/navcil/bin/python scripts/nc4_i7_cache.py --device cpu --folds 1-10 
+[17:58:09] NC-4 I7 cache threads=8 λ*=1.5
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold1.pt
+[17:59:07] fold 1 I7 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold2.pt
+[18:00:03] fold 2 I7 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold3.pt
+[18:01:02] fold 3 I7 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold4.pt
+[18:02:02] fold 4 I7 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold5.pt
+[18:02:53] fold 5 I7 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold6.pt
+[18:03:45] fold 6 I7 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold7.pt
+[18:04:33] fold 7 I7 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold8.pt
+[18:05:18] fold 8 I7 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold9.pt
+[18:06:07] fold 9 I7 cache 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold10.pt
+[18:06:53] fold 10 I7 cache 完成
+[2026-09-25 18:06:54] exit=0
