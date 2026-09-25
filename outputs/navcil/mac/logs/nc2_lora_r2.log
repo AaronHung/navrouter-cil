@@ -1,0 +1,409 @@
+[2026-09-25 11:05:01] start: /Users/aaron/venvs/navcil/bin/python scripts/nc2_lora.py --device cpu --r 2 --threads 3 
+[11:05:03] L line r=2 orders=reverse,paper threads=3 λ*=1.5
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold1.pt
+[11:05:04] reverse r=2 fold 1 tcga_rcc: train n=616 trainable=2053
+[11:05:16]     epoch 1/5 n=616 loss=0.3201 read=1.4s compute=10.2s
+[11:05:28]     epoch 2/5 n=616 loss=0.1936 read=1.2s compute=9.8s
+[11:05:39]     epoch 3/5 n=616 loss=0.1626 read=1.2s compute=10.0s
+[11:05:51]     epoch 4/5 n=616 loss=0.1450 read=1.2s compute=10.1s
+[11:06:03]     epoch 5/5 n=616 loss=0.1405 read=1.3s compute=10.6s
+[11:06:03] reverse r=2 fold 1 tcga_brca: train n=763 trainable=2053
+[11:06:16]     epoch 1/5 n=763 loss=0.3225 read=1.3s compute=10.7s
+[11:06:28]     epoch 2/5 n=763 loss=0.2779 read=1.3s compute=11.1s
+[11:06:40]     epoch 3/5 n=763 loss=0.2680 read=1.3s compute=10.1s
+[11:06:52]     epoch 4/5 n=763 loss=0.2469 read=1.7s compute=10.2s
+[11:07:05]     epoch 5/5 n=763 loss=0.2357 read=1.8s compute=10.4s
+[11:07:05] reverse r=2 fold 1 tcga_lung: train n=774 trainable=2053
+[11:07:19]     epoch 1/5 n=774 loss=0.4070 read=2.1s compute=11.3s
+[11:07:34]     epoch 2/5 n=774 loss=0.2731 read=2.3s compute=12.7s
+[11:07:50]     epoch 3/5 n=774 loss=0.2473 read=2.3s compute=12.7s
+[11:08:05]     epoch 4/5 n=774 loss=0.2222 read=2.3s compute=12.8s
+[11:08:19]     epoch 5/5 n=774 loss=0.1992 read=2.1s compute=11.4s
+[11:08:50] reverse r=2 fold 1: eval 31s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold2.pt
+[11:08:50] reverse r=2 fold 2 tcga_rcc: train n=613 trainable=2053
+[11:09:02]     epoch 1/5 n=613 loss=0.4244 read=1.2s compute=10.1s
+[11:09:14]     epoch 2/5 n=613 loss=0.2103 read=1.3s compute=10.4s
+[11:09:25]     epoch 3/5 n=613 loss=0.2046 read=1.2s compute=9.6s
+[11:09:36]     epoch 4/5 n=613 loss=0.1847 read=1.2s compute=9.4s
+[11:09:47]     epoch 5/5 n=613 loss=0.1701 read=1.2s compute=9.5s
+[11:09:47] reverse r=2 fold 2 tcga_brca: train n=764 trainable=2053
+[11:09:59]     epoch 1/5 n=764 loss=0.3273 read=1.6s compute=10.2s
+[11:10:11]     epoch 2/5 n=764 loss=0.2806 read=1.5s compute=10.3s
+[11:10:23]     epoch 3/5 n=764 loss=0.2588 read=1.4s compute=9.9s
+[11:10:35]     epoch 4/5 n=764 loss=0.2484 read=1.5s compute=10.2s
+[11:10:47]     epoch 5/5 n=764 loss=0.2345 read=1.7s compute=10.1s
+[11:10:47] reverse r=2 fold 2 tcga_lung: train n=761 trainable=2053
+[11:11:02]     epoch 1/5 n=761 loss=0.4605 read=1.7s compute=12.0s
+[11:11:15]     epoch 2/5 n=761 loss=0.3136 read=1.8s compute=11.0s
+[11:11:28]     epoch 3/5 n=761 loss=0.2847 read=1.8s compute=10.9s
+[11:11:41]     epoch 4/5 n=761 loss=0.2637 read=2.0s compute=10.6s
+[11:11:54]     epoch 5/5 n=761 loss=0.2551 read=2.0s compute=10.7s
+[11:12:25] reverse r=2 fold 2: eval 32s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold3.pt
+[11:12:26] reverse r=2 fold 3 tcga_rcc: train n=617 trainable=2053
+[11:12:37]     epoch 1/5 n=617 loss=0.2518 read=1.2s compute=9.7s
+[11:12:48]     epoch 2/5 n=617 loss=0.1807 read=1.2s compute=9.7s
+[11:12:59]     epoch 3/5 n=617 loss=0.1669 read=1.2s compute=9.9s
+[11:13:11]     epoch 4/5 n=617 loss=0.1589 read=1.2s compute=9.8s
+[11:13:22]     epoch 5/5 n=617 loss=0.1473 read=1.6s compute=9.7s
+[11:13:22] reverse r=2 fold 3 tcga_brca: train n=763 trainable=2053
+[11:13:34]     epoch 1/5 n=763 loss=0.3722 read=1.5s compute=10.2s
+[11:13:46]     epoch 2/5 n=763 loss=0.2783 read=1.4s compute=10.3s
+[11:13:59]     epoch 3/5 n=763 loss=0.2624 read=1.7s compute=10.6s
+[11:14:12]     epoch 4/5 n=763 loss=0.2546 read=1.7s compute=10.3s
+[11:14:24]     epoch 5/5 n=763 loss=0.2474 read=1.8s compute=10.3s
+[11:14:24] reverse r=2 fold 3 tcga_lung: train n=765 trainable=2053
+[11:14:37]     epoch 1/5 n=765 loss=0.4775 read=1.6s compute=11.2s
+[11:14:50]     epoch 2/5 n=765 loss=0.3510 read=1.9s compute=11.0s
+[11:15:04]     epoch 3/5 n=765 loss=0.2913 read=2.1s compute=11.3s
+[11:15:18]     epoch 4/5 n=765 loss=0.2590 read=2.1s compute=11.0s
+[11:15:31]     epoch 5/5 n=765 loss=0.2443 read=2.2s compute=11.1s
+[11:16:05] reverse r=2 fold 3: eval 34s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold4.pt
+[11:16:05] reverse r=2 fold 4 tcga_rcc: train n=613 trainable=2053
+[11:16:17]     epoch 1/5 n=613 loss=0.3083 read=1.3s compute=10.4s
+[11:16:29]     epoch 2/5 n=613 loss=0.1339 read=1.3s compute=10.4s
+[11:16:41]     epoch 3/5 n=613 loss=0.1215 read=1.5s compute=10.3s
+[11:16:53]     epoch 4/5 n=613 loss=0.1014 read=1.6s compute=10.3s
+[11:17:05]     epoch 5/5 n=613 loss=0.0885 read=1.6s compute=10.4s
+[11:17:06] reverse r=2 fold 4 tcga_brca: train n=762 trainable=2053
+[11:17:18]     epoch 1/5 n=762 loss=0.4890 read=1.6s compute=10.7s
+[11:17:31]     epoch 2/5 n=762 loss=0.3133 read=1.7s compute=10.9s
+[11:17:46]     epoch 3/5 n=762 loss=0.2638 read=1.9s compute=12.7s
+[11:18:01]     epoch 4/5 n=762 loss=0.2495 read=1.9s compute=12.2s
+[11:18:16]     epoch 5/5 n=762 loss=0.2396 read=1.9s compute=12.5s
+[11:18:16] reverse r=2 fold 4 tcga_lung: train n=756 trainable=2053
+[11:18:30]     epoch 1/5 n=756 loss=0.5706 read=1.8s compute=11.7s
+[11:18:43]     epoch 2/5 n=756 loss=0.3562 read=2.0s compute=11.2s
+[11:18:57]     epoch 3/5 n=756 loss=0.3126 read=2.0s compute=11.3s
+[11:19:13]     epoch 4/5 n=756 loss=0.2871 read=2.2s compute=13.1s
+[11:19:29]     epoch 5/5 n=756 loss=0.2788 read=2.3s compute=13.7s
+[2026-09-25 11:20:01] heartbeat
+[11:20:07] reverse r=2 fold 4: eval 38s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold5.pt
+[11:20:07] reverse r=2 fold 5 tcga_rcc: train n=619 trainable=2053
+[11:20:19]     epoch 1/5 n=619 loss=0.2896 read=1.2s compute=10.0s
+[11:20:32]     epoch 2/5 n=619 loss=0.1773 read=1.5s compute=11.4s
+[11:20:48]     epoch 3/5 n=619 loss=0.1554 read=2.1s compute=13.0s
+[11:21:02]     epoch 4/5 n=619 loss=0.1390 read=2.2s compute=11.9s
+[11:21:15]     epoch 5/5 n=619 loss=0.1212 read=2.1s compute=10.8s
+[11:21:15] reverse r=2 fold 5 tcga_brca: train n=763 trainable=2053
+[11:21:30]     epoch 1/5 n=763 loss=0.3947 read=2.3s compute=11.5s
+[11:21:43]     epoch 2/5 n=763 loss=0.2957 read=2.3s compute=10.9s
+[11:21:58]     epoch 3/5 n=763 loss=0.2587 read=2.3s compute=11.7s
+[11:22:12]     epoch 4/5 n=763 loss=0.2486 read=2.3s compute=11.9s
+[11:22:27]     epoch 5/5 n=763 loss=0.2452 read=2.4s compute=12.2s
+[11:22:27] reverse r=2 fold 5 tcga_lung: train n=764 trainable=2053
+[11:22:43]     epoch 1/5 n=764 loss=0.3704 read=2.5s compute=12.5s
+[11:22:58]     epoch 2/5 n=764 loss=0.2939 read=2.5s compute=12.6s
+[11:23:14]     epoch 3/5 n=764 loss=0.2482 read=2.5s compute=12.8s
+[11:23:29]     epoch 4/5 n=764 loss=0.2501 read=2.4s compute=12.1s
+[11:23:45]     epoch 5/5 n=764 loss=0.2307 read=2.6s compute=13.1s
+[11:24:21] reverse r=2 fold 5: eval 36s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold6.pt
+[11:24:21] reverse r=2 fold 6 tcga_rcc: train n=616 trainable=2053
+[11:24:34]     epoch 1/5 n=616 loss=0.2421 read=2.1s compute=11.2s
+[11:24:48]     epoch 2/5 n=616 loss=0.1938 read=2.1s compute=11.5s
+[11:25:02]     epoch 3/5 n=616 loss=0.1602 read=2.1s compute=11.3s
+[11:25:16]     epoch 4/5 n=616 loss=0.1478 read=2.1s compute=11.4s
+[11:25:29]     epoch 5/5 n=616 loss=0.1404 read=2.1s compute=10.9s
+[11:25:29] reverse r=2 fold 6 tcga_brca: train n=758 trainable=2053
+[11:25:45]     epoch 1/5 n=758 loss=0.3673 read=2.4s compute=13.2s
+[11:26:01]     epoch 2/5 n=758 loss=0.2625 read=2.4s compute=12.6s
+[11:26:15]     epoch 3/5 n=758 loss=0.2304 read=2.2s compute=11.4s
+[11:26:30]     epoch 4/5 n=758 loss=0.1962 read=2.2s compute=12.2s
+[11:26:44]     epoch 5/5 n=758 loss=0.1873 read=2.3s compute=11.6s
+[11:26:44] reverse r=2 fold 6 tcga_lung: train n=759 trainable=2053
+[11:27:00]     epoch 1/5 n=759 loss=0.6324 read=2.6s compute=13.4s
+[11:27:16]     epoch 2/5 n=759 loss=0.4282 read=2.5s compute=12.9s
+[11:27:31]     epoch 3/5 n=759 loss=0.3654 read=2.4s compute=12.6s
+[11:27:46]     epoch 4/5 n=759 loss=0.3425 read=2.4s compute=12.1s
+[11:28:02]     epoch 5/5 n=759 loss=0.3083 read=2.5s compute=12.5s
+[11:28:35] reverse r=2 fold 6: eval 33s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold7.pt
+[11:28:35] reverse r=2 fold 7 tcga_rcc: train n=615 trainable=2053
+[11:28:49]     epoch 1/5 n=615 loss=0.3572 read=2.0s compute=11.4s
+[11:29:02]     epoch 2/5 n=615 loss=0.1666 read=2.0s compute=10.9s
+[11:29:14]     epoch 3/5 n=615 loss=0.1517 read=1.9s compute=10.4s
+[11:29:28]     epoch 4/5 n=615 loss=0.1388 read=2.0s compute=10.8s
+[11:29:40]     epoch 5/5 n=615 loss=0.1355 read=2.0s compute=10.2s
+[11:29:40] reverse r=2 fold 7 tcga_brca: train n=760 trainable=2053
+[11:29:54]     epoch 1/5 n=760 loss=0.3835 read=2.1s compute=11.3s
+[11:30:08]     epoch 2/5 n=760 loss=0.3064 read=2.1s compute=11.6s
+[11:30:22]     epoch 3/5 n=760 loss=0.2861 read=2.0s compute=11.2s
+[11:30:35]     epoch 4/5 n=760 loss=0.2623 read=2.1s compute=11.2s
+[11:30:49]     epoch 5/5 n=760 loss=0.2368 read=2.3s compute=11.0s
+[11:30:49] reverse r=2 fold 7 tcga_lung: train n=774 trainable=2053
+[11:31:04]     epoch 1/5 n=774 loss=0.5560 read=2.4s compute=12.4s
+[11:31:19]     epoch 2/5 n=774 loss=0.3446 read=2.3s compute=12.4s
+[11:31:35]     epoch 3/5 n=774 loss=0.3004 read=2.4s compute=12.8s
+[11:31:53]     epoch 4/5 n=774 loss=0.2748 read=2.7s compute=14.7s
+[11:32:09]     epoch 5/5 n=774 loss=0.2748 read=2.6s compute=13.1s
+[11:32:44] reverse r=2 fold 7: eval 35s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold8.pt
+[11:32:44] reverse r=2 fold 8 tcga_rcc: train n=617 trainable=2053
+[11:33:01]     epoch 1/5 n=617 loss=0.3056 read=2.4s compute=14.5s
+[11:33:15]     epoch 2/5 n=617 loss=0.1611 read=2.1s compute=11.8s
+[11:33:31]     epoch 3/5 n=617 loss=0.1504 read=2.3s compute=13.0s
+[11:33:45]     epoch 4/5 n=617 loss=0.1342 read=2.1s compute=11.3s
+[11:33:58]     epoch 5/5 n=617 loss=0.1202 read=2.2s compute=10.6s
+[11:33:58] reverse r=2 fold 8 tcga_brca: train n=762 trainable=2053
+[11:34:12]     epoch 1/5 n=762 loss=0.3339 read=2.1s compute=11.6s
+[11:34:26]     epoch 2/5 n=762 loss=0.2851 read=2.1s compute=12.0s
+[11:34:42]     epoch 3/5 n=762 loss=0.2707 read=2.4s compute=13.1s
+[11:34:58]     epoch 4/5 n=762 loss=0.2511 read=2.4s compute=12.7s
+[2026-09-25 11:35:01] heartbeat
+[11:35:13]     epoch 5/5 n=762 loss=0.2420 read=2.4s compute=11.9s
+[11:35:13] reverse r=2 fold 8 tcga_lung: train n=777 trainable=2053
+[11:35:29]     epoch 1/5 n=777 loss=0.4346 read=2.6s compute=13.6s
+[11:35:45]     epoch 2/5 n=777 loss=0.2700 read=2.5s compute=12.6s
+[11:36:03]     epoch 3/5 n=777 loss=0.2439 read=2.8s compute=15.6s
+[11:36:19]     epoch 4/5 n=777 loss=0.2438 read=2.5s compute=12.4s
+[11:36:34]     epoch 5/5 n=777 loss=0.2233 read=2.5s compute=11.9s
+[11:37:07] reverse r=2 fold 8: eval 33s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold9.pt
+[11:37:07] reverse r=2 fold 9 tcga_rcc: train n=612 trainable=2053
+[11:37:19]     epoch 1/5 n=612 loss=0.3258 read=1.9s compute=10.1s
+[11:37:32]     epoch 2/5 n=612 loss=0.1488 read=1.9s compute=10.5s
+[11:37:45]     epoch 3/5 n=612 loss=0.1379 read=2.0s compute=10.8s
+[11:37:58]     epoch 4/5 n=612 loss=0.1337 read=2.1s compute=11.2s
+[11:38:12]     epoch 5/5 n=612 loss=0.1243 read=2.1s compute=10.9s
+[11:38:12] reverse r=2 fold 9 tcga_brca: train n=760 trainable=2053
+[11:38:26]     epoch 1/5 n=760 loss=0.3455 read=2.1s compute=11.5s
+[11:38:42]     epoch 2/5 n=760 loss=0.2989 read=2.3s compute=12.8s
+[11:38:57]     epoch 3/5 n=760 loss=0.2713 read=2.4s compute=12.9s
+[11:39:13]     epoch 4/5 n=760 loss=0.2516 read=2.4s compute=12.6s
+[11:39:27]     epoch 5/5 n=760 loss=0.2378 read=2.3s compute=11.9s
+[11:39:27] reverse r=2 fold 9 tcga_lung: train n=762 trainable=2053
+[11:39:43]     epoch 1/5 n=762 loss=0.4693 read=2.4s compute=12.5s
+[11:39:58]     epoch 2/5 n=762 loss=0.3331 read=2.5s compute=13.0s
+[11:40:14]     epoch 3/5 n=762 loss=0.2866 read=2.3s compute=12.4s
+[11:40:29]     epoch 4/5 n=762 loss=0.2670 read=2.4s compute=12.5s
+[11:40:44]     epoch 5/5 n=762 loss=0.2605 read=2.3s compute=12.5s
+[11:41:19] reverse r=2 fold 9: eval 35s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold10.pt
+[11:41:19] reverse r=2 fold 10 tcga_rcc: train n=618 trainable=2053
+[11:41:32]     epoch 1/5 n=618 loss=0.3403 read=2.0s compute=10.8s
+[11:41:47]     epoch 2/5 n=618 loss=0.1979 read=2.1s compute=12.3s
+[11:42:01]     epoch 3/5 n=618 loss=0.1843 read=2.1s compute=11.7s
+[11:42:14]     epoch 4/5 n=618 loss=0.1864 read=2.1s compute=10.8s
+[11:42:27]     epoch 5/5 n=618 loss=0.1703 read=2.1s compute=10.3s
+[11:42:27] reverse r=2 fold 10 tcga_brca: train n=763 trainable=2053
+[11:42:40]     epoch 1/5 n=763 loss=0.3188 read=2.0s compute=10.7s
+[11:42:53]     epoch 2/5 n=763 loss=0.2710 read=1.9s compute=10.6s
+[11:43:08]     epoch 3/5 n=763 loss=0.2399 read=2.2s compute=12.3s
+[11:43:23]     epoch 4/5 n=763 loss=0.2185 read=2.4s compute=12.6s
+[11:43:39]     epoch 5/5 n=763 loss=0.2066 read=2.6s compute=13.0s
+[11:43:40] reverse r=2 fold 10 tcga_lung: train n=771 trainable=2053
+[11:43:58]     epoch 1/5 n=771 loss=0.5213 read=2.7s compute=15.0s
+[11:44:15]     epoch 2/5 n=771 loss=0.3552 read=2.6s compute=13.8s
+[11:44:31]     epoch 3/5 n=771 loss=0.3158 read=2.6s compute=13.9s
+[11:44:46]     epoch 4/5 n=771 loss=0.2894 read=2.4s compute=12.3s
+[11:45:02]     epoch 5/5 n=771 loss=0.2644 read=2.4s compute=12.4s
+[11:45:34] reverse r=2 fold 10: eval 32s
+[11:45:34] reverse r=2 完成（2430s）
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold1.pt
+[11:45:34] paper r=2 fold 1 tcga_brca: train n=763 trainable=2053
+[11:45:50]     epoch 1/5 n=763 loss=0.3926 read=2.3s compute=13.0s
+[11:46:05]     epoch 2/5 n=763 loss=0.2868 read=2.1s compute=12.4s
+[11:46:19]     epoch 3/5 n=763 loss=0.2543 read=2.2s compute=12.0s
+[11:46:34]     epoch 4/5 n=763 loss=0.2344 read=2.4s compute=12.3s
+[11:46:50]     epoch 5/5 n=763 loss=0.2301 read=2.5s compute=13.2s
+[11:46:51] paper r=2 fold 1 tcga_rcc: train n=616 trainable=2053
+[11:47:04]     epoch 1/5 n=616 loss=0.2566 read=2.0s compute=11.4s
+[11:47:17]     epoch 2/5 n=616 loss=0.1813 read=1.9s compute=11.0s
+[11:47:31]     epoch 3/5 n=616 loss=0.1662 read=2.0s compute=11.2s
+[11:47:43]     epoch 4/5 n=616 loss=0.1511 read=1.9s compute=10.3s
+[11:47:56]     epoch 5/5 n=616 loss=0.1411 read=2.0s compute=10.5s
+[11:47:56] paper r=2 fold 1 tcga_esca: train n=120 trainable=2053
+[11:47:59]     epoch 1/5 n=120 loss=1.2847 read=0.4s compute=1.8s
+[11:48:01]     epoch 2/5 n=120 loss=0.2551 read=0.2s compute=1.8s
+[11:48:03]     epoch 3/5 n=120 loss=0.2077 read=0.2s compute=1.8s
+[11:48:05]     epoch 4/5 n=120 loss=0.0693 read=0.2s compute=1.9s
+[11:48:07]     epoch 5/5 n=120 loss=0.0547 read=0.3s compute=1.7s
+[11:48:44] paper r=2 fold 1: eval 37s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold2.pt
+[11:48:44] paper r=2 fold 2 tcga_brca: train n=764 trainable=2053
+[11:48:58]     epoch 1/5 n=764 loss=0.3335 read=2.1s compute=11.6s
+[11:49:12]     epoch 2/5 n=764 loss=0.2612 read=2.1s compute=11.5s
+[11:49:25]     epoch 3/5 n=764 loss=0.2400 read=2.1s compute=11.1s
+[11:49:39]     epoch 4/5 n=764 loss=0.2306 read=2.2s compute=10.6s
+[11:49:53]     epoch 5/5 n=764 loss=0.2207 read=2.3s compute=11.4s
+[11:49:53] paper r=2 fold 2 tcga_rcc: train n=613 trainable=2053
+[2026-09-25 11:50:01] heartbeat
+[11:50:05]     epoch 1/5 n=613 loss=0.2930 read=1.8s compute=10.1s
+[11:50:17]     epoch 2/5 n=613 loss=0.2115 read=1.8s compute=9.6s
+[11:50:29]     epoch 3/5 n=613 loss=0.1957 read=1.8s compute=10.0s
+[11:50:41]     epoch 4/5 n=613 loss=0.1591 read=2.0s compute=10.0s
+[11:50:55]     epoch 5/5 n=613 loss=0.1396 read=2.1s compute=11.2s
+[11:50:55] paper r=2 fold 2 tcga_esca: train n=120 trainable=2053
+[11:50:57]     epoch 1/5 n=120 loss=2.1375 read=0.4s compute=2.0s
+[11:50:59]     epoch 2/5 n=120 loss=0.1192 read=0.3s compute=1.8s
+[11:51:02]     epoch 3/5 n=120 loss=0.0535 read=0.3s compute=1.9s
+[11:51:04]     epoch 4/5 n=120 loss=0.0539 read=0.3s compute=2.0s
+[11:51:06]     epoch 5/5 n=120 loss=0.0378 read=0.3s compute=1.9s
+[11:51:42] paper r=2 fold 2: eval 36s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold3.pt
+[11:51:42] paper r=2 fold 3 tcga_brca: train n=763 trainable=2053
+[11:51:56]     epoch 1/5 n=763 loss=0.3413 read=2.1s compute=11.2s
+[11:52:09]     epoch 2/5 n=763 loss=0.2860 read=2.1s compute=10.9s
+[11:52:22]     epoch 3/5 n=763 loss=0.2627 read=2.1s compute=11.0s
+[11:52:36]     epoch 4/5 n=763 loss=0.2422 read=2.3s compute=11.1s
+[11:52:50]     epoch 5/5 n=763 loss=0.2183 read=2.3s compute=11.0s
+[11:52:50] paper r=2 fold 3 tcga_rcc: train n=617 trainable=2053
+[11:53:03]     epoch 1/5 n=617 loss=0.2867 read=2.0s compute=10.7s
+[11:53:15]     epoch 2/5 n=617 loss=0.2023 read=1.8s compute=10.3s
+[11:53:28]     epoch 3/5 n=617 loss=0.1677 read=1.9s compute=10.4s
+[11:53:40]     epoch 4/5 n=617 loss=0.1622 read=2.0s compute=10.1s
+[11:53:53]     epoch 5/5 n=617 loss=0.1491 read=2.0s compute=10.2s
+[11:53:53] paper r=2 fold 3 tcga_esca: train n=120 trainable=2053
+[11:53:55]     epoch 1/5 n=120 loss=1.4968 read=0.4s compute=2.0s
+[11:53:58]     epoch 2/5 n=120 loss=0.2584 read=0.3s compute=1.8s
+[11:54:00]     epoch 3/5 n=120 loss=0.1237 read=0.3s compute=1.8s
+[11:54:02]     epoch 4/5 n=120 loss=0.0573 read=0.3s compute=1.8s
+[11:54:04]     epoch 5/5 n=120 loss=0.0566 read=0.3s compute=1.9s
+[11:54:42] paper r=2 fold 3: eval 38s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold4.pt
+[11:54:42] paper r=2 fold 4 tcga_brca: train n=762 trainable=2053
+[11:54:56]     epoch 1/5 n=762 loss=0.3093 read=2.1s compute=11.5s
+[11:55:09]     epoch 2/5 n=762 loss=0.2705 read=2.1s compute=10.9s
+[11:55:23]     epoch 3/5 n=762 loss=0.2442 read=2.2s compute=11.1s
+[11:55:36]     epoch 4/5 n=762 loss=0.2251 read=2.3s compute=10.8s
+[11:55:50]     epoch 5/5 n=762 loss=0.2179 read=2.2s compute=10.9s
+[11:55:50] paper r=2 fold 4 tcga_rcc: train n=613 trainable=2053
+[11:56:02]     epoch 1/5 n=613 loss=0.3168 read=1.9s compute=10.3s
+[11:56:17]     epoch 2/5 n=613 loss=0.1605 read=2.1s compute=12.0s
+[11:56:29]     epoch 3/5 n=613 loss=0.1150 read=2.0s compute=10.2s
+[11:56:42]     epoch 4/5 n=613 loss=0.1094 read=2.0s compute=10.1s
+[11:56:54]     epoch 5/5 n=613 loss=0.0966 read=2.2s compute=10.3s
+[11:56:55] paper r=2 fold 4 tcga_esca: train n=119 trainable=2053
+[11:56:57]     epoch 1/5 n=119 loss=1.2212 read=0.4s compute=1.8s
+[11:56:59]     epoch 2/5 n=119 loss=0.2578 read=0.3s compute=2.0s
+[11:57:01]     epoch 3/5 n=119 loss=0.2105 read=0.3s compute=1.9s
+[11:57:03]     epoch 4/5 n=119 loss=0.1408 read=0.3s compute=1.8s
+[11:57:06]     epoch 5/5 n=119 loss=0.0893 read=0.3s compute=1.8s
+[11:57:45] paper r=2 fold 4: eval 39s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold5.pt
+[11:57:45] paper r=2 fold 5 tcga_brca: train n=763 trainable=2053
+[11:57:59]     epoch 1/5 n=763 loss=0.3890 read=2.2s compute=11.2s
+[11:58:12]     epoch 2/5 n=763 loss=0.2781 read=2.1s compute=10.8s
+[11:58:26]     epoch 3/5 n=763 loss=0.2378 read=2.2s compute=10.9s
+[11:58:39]     epoch 4/5 n=763 loss=0.2215 read=2.2s compute=10.8s
+[11:58:53]     epoch 5/5 n=763 loss=0.2078 read=2.2s compute=11.0s
+[11:58:53] paper r=2 fold 5 tcga_rcc: train n=619 trainable=2053
+[11:59:05]     epoch 1/5 n=619 loss=0.2922 read=1.9s compute=10.4s
+[11:59:18]     epoch 2/5 n=619 loss=0.1704 read=1.9s compute=10.2s
+[11:59:30]     epoch 3/5 n=619 loss=0.1472 read=2.0s compute=10.2s
+[11:59:43]     epoch 4/5 n=619 loss=0.1408 read=2.0s compute=10.2s
+[11:59:55]     epoch 5/5 n=619 loss=0.1248 read=2.0s compute=10.2s
+[11:59:55] paper r=2 fold 5 tcga_esca: train n=120 trainable=2053
+[11:59:58]     epoch 1/5 n=120 loss=0.7471 read=0.4s compute=1.8s
+[12:00:00]     epoch 2/5 n=120 loss=0.2231 read=0.2s compute=1.8s
+[12:00:02]     epoch 3/5 n=120 loss=0.1393 read=0.3s compute=1.9s
+[12:00:04]     epoch 4/5 n=120 loss=0.1749 read=0.3s compute=1.8s
+[12:00:06]     epoch 5/5 n=120 loss=0.1266 read=0.3s compute=1.8s
+[12:00:42] paper r=2 fold 5: eval 36s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold6.pt
+[12:00:42] paper r=2 fold 6 tcga_brca: train n=758 trainable=2053
+[12:00:56]     epoch 1/5 n=758 loss=0.2682 read=2.1s compute=11.0s
+[12:01:09]     epoch 2/5 n=758 loss=0.2460 read=2.0s compute=10.7s
+[12:01:22]     epoch 3/5 n=758 loss=0.2277 read=2.1s compute=10.7s
+[12:01:37]     epoch 4/5 n=758 loss=0.2082 read=2.3s compute=12.2s
+[12:01:51]     epoch 5/5 n=758 loss=0.1979 read=2.1s compute=10.8s
+[12:01:51] paper r=2 fold 6 tcga_rcc: train n=616 trainable=2053
+[12:02:03]     epoch 1/5 n=616 loss=0.3392 read=1.9s compute=10.5s
+[12:02:16]     epoch 2/5 n=616 loss=0.1926 read=1.9s compute=10.0s
+[12:02:31]     epoch 3/5 n=616 loss=0.1779 read=2.3s compute=12.4s
+[12:02:44]     epoch 4/5 n=616 loss=0.1675 read=2.1s compute=10.7s
+[12:02:57]     epoch 5/5 n=616 loss=0.1533 read=2.0s compute=11.2s
+[12:02:57] paper r=2 fold 6 tcga_esca: train n=119 trainable=2053
+[12:03:00]     epoch 1/5 n=119 loss=1.2495 read=0.4s compute=1.9s
+[12:03:02]     epoch 2/5 n=119 loss=0.1125 read=0.3s compute=2.0s
+[12:03:04]     epoch 3/5 n=119 loss=0.0824 read=0.3s compute=2.2s
+[12:03:07]     epoch 4/5 n=119 loss=0.0658 read=0.3s compute=2.2s
+[12:03:09]     epoch 5/5 n=119 loss=0.0497 read=0.3s compute=1.9s
+[12:03:47] paper r=2 fold 6: eval 37s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold7.pt
+[12:03:47] paper r=2 fold 7 tcga_brca: train n=760 trainable=2053
+[12:04:01]     epoch 1/5 n=760 loss=0.3695 read=2.2s compute=11.7s
+[12:04:15]     epoch 2/5 n=760 loss=0.2601 read=2.0s compute=11.5s
+[12:04:30]     epoch 3/5 n=760 loss=0.2405 read=2.3s compute=12.0s
+[12:04:44]     epoch 4/5 n=760 loss=0.2168 read=2.3s compute=11.8s
+[12:04:59]     epoch 5/5 n=760 loss=0.2113 read=2.2s compute=12.0s
+[12:04:59] paper r=2 fold 7 tcga_rcc: train n=615 trainable=2053
+[2026-09-25 12:05:01] heartbeat
+[12:05:12]     epoch 1/5 n=615 loss=0.3578 read=1.9s compute=10.5s
+[12:05:24]     epoch 2/5 n=615 loss=0.2150 read=1.9s compute=9.9s
+[12:05:38]     epoch 3/5 n=615 loss=0.1512 read=2.2s compute=11.5s
+[12:05:51]     epoch 4/5 n=615 loss=0.1389 read=2.0s compute=11.0s
+[12:06:05]     epoch 5/5 n=615 loss=0.1307 read=2.0s compute=11.1s
+[12:06:05] paper r=2 fold 7 tcga_esca: train n=120 trainable=2053
+[12:06:07]     epoch 1/5 n=120 loss=1.4685 read=0.4s compute=2.0s
+[12:06:10]     epoch 2/5 n=120 loss=0.3416 read=0.3s compute=2.0s
+[12:06:12]     epoch 3/5 n=120 loss=0.1362 read=0.3s compute=1.9s
+[12:06:14]     epoch 4/5 n=120 loss=0.0723 read=0.3s compute=1.9s
+[12:06:16]     epoch 5/5 n=120 loss=0.0693 read=0.3s compute=1.9s
+[12:06:51] paper r=2 fold 7: eval 35s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold8.pt
+[12:06:52] paper r=2 fold 8 tcga_brca: train n=762 trainable=2053
+[12:07:05]     epoch 1/5 n=762 loss=0.3340 read=2.2s compute=11.3s
+[12:07:20]     epoch 2/5 n=762 loss=0.2788 read=2.1s compute=11.9s
+[12:07:35]     epoch 3/5 n=762 loss=0.2637 read=2.4s compute=12.3s
+[12:07:49]     epoch 4/5 n=762 loss=0.2458 read=2.3s compute=11.7s
+[12:08:06]     epoch 5/5 n=762 loss=0.2356 read=2.5s compute=14.0s
+[12:08:06] paper r=2 fold 8 tcga_rcc: train n=617 trainable=2053
+[12:08:20]     epoch 1/5 n=617 loss=0.2408 read=2.0s compute=10.8s
+[12:08:32]     epoch 2/5 n=617 loss=0.1634 read=1.9s compute=10.2s
+[12:08:44]     epoch 3/5 n=617 loss=0.1528 read=1.9s compute=9.9s
+[12:08:56]     epoch 4/5 n=617 loss=0.1428 read=1.9s compute=10.1s
+[12:09:10]     epoch 5/5 n=617 loss=0.1273 read=2.0s compute=11.0s
+[12:09:10] paper r=2 fold 8 tcga_esca: train n=120 trainable=2053
+[12:09:12]     epoch 1/5 n=120 loss=1.6016 read=0.4s compute=2.0s
+[12:09:15]     epoch 2/5 n=120 loss=0.1408 read=0.3s compute=2.0s
+[12:09:17]     epoch 3/5 n=120 loss=0.0725 read=0.3s compute=2.0s
+[12:09:19]     epoch 4/5 n=120 loss=0.0688 read=0.4s compute=2.0s
+[12:09:22]     epoch 5/5 n=120 loss=0.0622 read=0.4s compute=2.1s
+[12:09:57] paper r=2 fold 8: eval 35s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold9.pt
+[12:09:57] paper r=2 fold 9 tcga_brca: train n=760 trainable=2053
+[12:10:09]     epoch 1/5 n=760 loss=0.3004 read=1.8s compute=9.5s
+[12:10:19]     epoch 2/5 n=760 loss=0.2565 read=1.7s compute=8.6s
+[12:10:31]     epoch 3/5 n=760 loss=0.2423 read=2.0s compute=8.9s
+[12:10:44]     epoch 4/5 n=760 loss=0.2294 read=2.2s compute=10.9s
+[12:10:56]     epoch 5/5 n=760 loss=0.2187 read=2.1s compute=9.8s
+[12:10:57] paper r=2 fold 9 tcga_rcc: train n=612 trainable=2053
+[12:11:08]     epoch 1/5 n=612 loss=0.2722 read=1.7s compute=9.0s
+[12:11:19]     epoch 2/5 n=612 loss=0.1412 read=1.8s compute=8.9s
+[12:11:30]     epoch 3/5 n=612 loss=0.1239 read=1.9s compute=9.0s
+[12:11:40]     epoch 4/5 n=612 loss=0.1144 read=1.8s compute=8.4s
+[12:11:50]     epoch 5/5 n=612 loss=0.1048 read=1.7s compute=8.2s
+[12:11:50] paper r=2 fold 9 tcga_esca: train n=121 trainable=2053
+[12:11:52]     epoch 1/5 n=121 loss=1.4316 read=0.4s compute=1.6s
+[12:11:54]     epoch 2/5 n=121 loss=0.1015 read=0.3s compute=1.7s
+[12:11:56]     epoch 3/5 n=121 loss=0.0990 read=0.2s compute=1.6s
+[12:11:58]     epoch 4/5 n=121 loss=0.0825 read=0.2s compute=1.5s
+[12:12:00]     epoch 5/5 n=121 loss=0.0728 read=0.2s compute=1.5s
+[12:12:27] paper r=2 fold 9: eval 28s
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold10.pt
+[12:12:28] paper r=2 fold 10 tcga_brca: train n=763 trainable=2053
+[12:12:38]     epoch 1/5 n=763 loss=0.3186 read=1.7s compute=8.4s
+[12:12:49]     epoch 2/5 n=763 loss=0.2446 read=1.9s compute=9.3s
+[12:13:02]     epoch 3/5 n=763 loss=0.2180 read=2.1s compute=9.7s
+[12:13:14]     epoch 4/5 n=763 loss=0.2144 read=2.1s compute=9.6s
+[12:13:27]     epoch 5/5 n=763 loss=0.2054 read=2.2s compute=10.2s
+[12:13:27] paper r=2 fold 10 tcga_rcc: train n=618 trainable=2053
+[12:13:38]     epoch 1/5 n=618 loss=0.2784 read=1.8s compute=9.3s
+[12:13:49]     epoch 2/5 n=618 loss=0.2116 read=1.8s compute=8.4s
+[12:14:00]     epoch 3/5 n=618 loss=0.1804 read=1.9s compute=9.1s
+[12:14:10]     epoch 4/5 n=618 loss=0.1631 read=1.8s compute=8.6s
+[12:14:20]     epoch 5/5 n=618 loss=0.1316 read=1.6s compute=7.7s
+[12:14:20] paper r=2 fold 10 tcga_esca: train n=121 trainable=2053
+[12:14:22]     epoch 1/5 n=121 loss=1.4781 read=0.3s compute=1.3s
+[12:14:23]     epoch 2/5 n=121 loss=0.5404 read=0.2s compute=1.3s
+[12:14:25]     epoch 3/5 n=121 loss=0.2099 read=0.2s compute=1.3s
+[12:14:26]     epoch 4/5 n=121 loss=0.1928 read=0.2s compute=1.3s
+[12:14:28]     epoch 5/5 n=121 loss=0.0832 read=0.2s compute=1.3s
+[12:14:49] paper r=2 fold 10: eval 21s
+[12:14:49] paper r=2 完成（1755s）
+[2026-09-25 12:14:49] exit=0

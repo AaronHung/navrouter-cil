@@ -1,0 +1,1 @@
+`pytest -q`（NAVCIL_MACHINE=mac）：54 passed in 5.78s

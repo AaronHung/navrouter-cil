@@ -51,16 +51,19 @@ def one_shot(base: torch.Tensor, budget: int = BUDGET) -> torch.Tensor:
 
 def train_selector(slides, f_txt_task: torch.Tensor, logit_scale, *, epochs: int,
                    lr: float, weight_decay: float, seed: int, budget: int = BUDGET,
-                   log=print):
+                   log=print, model=None):
     """訓練一個 EvidenceSelector（只看該任務自己的 2 類文字）。
 
     slides: 可重複呼叫的 callable(order) → iterator of (t_read, sid, Z, local_label)。
     每步一張 slide：分數 → top-K → softmax(top-K 分數) 加權聚合 → CE。
+    model：給定時訓練它（只更新 requires_grad 的參數，例如 L 線的低秩 expert）；
+    None 時新建 EvidenceSelector（第一關）。
     回傳 (selector, per-epoch 記錄)。
     """
     torch.manual_seed(seed)
-    sel = EvidenceSelector()
-    opt = torch.optim.Adam(sel.parameters(), lr=lr, weight_decay=weight_decay)
+    sel = EvidenceSelector() if model is None else model
+    opt = torch.optim.Adam([p for p in sel.parameters() if p.requires_grad],
+                           lr=lr, weight_decay=weight_decay)
     history = []
     for ep in range(epochs):
         sel.train()

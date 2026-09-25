@@ -1,0 +1,37 @@
+{
+ "repo": "AaronHung/T-hard",
+ "commit": "3dfb1289772236e5a42413deadfa5496c260c3f9",
+ "file": "pathselect_query/PROVENANCE.md",
+ "f_txt": [
+  {
+   "task": "tcga_esca",
+   "local_sha256": "a494ccb0199a5617952f5be660031cd80a27f96fc115d427b0f062d71c59da10",
+   "t_hard_sha256": "a494ccb0199a5617952f5be660031cd80a27f96fc115d427b0f062d71c59da10",
+   "equal": true
+  },
+  {
+   "task": "tcga_rcc",
+   "local_sha256": "a8b94e7ace24a928137c32008845b04b11ce65c6f4f637d055eb5245688284a5",
+   "t_hard_sha256": "a8b94e7ace24a928137c32008845b04b11ce65c6f4f637d055eb5245688284a5",
+   "equal": true
+  },
+  {
+   "task": "tcga_brca",
+   "local_sha256": "b9e55223b2588940c3679d84967ec4cac2aa6239313aa624c96b9705b1b12ddc",
+   "t_hard_sha256": "b9e55223b2588940c3679d84967ec4cac2aa6239313aa624c96b9705b1b12ddc",
+   "equal": true
+  },
+  {
+   "task": "tcga_lung",
+   "local_sha256": "4cb678ce07f6ab121f98e456eff2e93dda7e5864dbc2dfa8e5d4f82c12317098",
+   "t_hard_sha256": "4cb678ce07f6ab121f98e456eff2e93dda7e5864dbc2dfa8e5d4f82c12317098",
+   "equal": true
+  }
+ ],
+ "class_prompts": {
+  "local": "09b6a32d6a572516abde28be494db6e0c67974f663b7ccc8e257c88c687a6a8a",
+  "t_hard": "09b6a32d6a572516abde28be494db6e0c67974f663b7ccc8e257c88c687a6a8a",
+  "equal": true
+ },
+ "all_equal": true
+}

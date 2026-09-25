@@ -12,6 +12,7 @@ outputs/**/per_slide*/
 # 導覽器權重與離線快取（連同 .done 標記）只留在本機，避免別台 clone 後誤跳過
 outputs/navcil/*/bank/
 outputs/navcil/*/cache/
+outputs/navcil/*/lora/
 # cache/text/ 的 f_txt_*.pt 例外：Mac 用 CONCH 算一次後 commit（MSI 直接讀）
 !cache/text/*.pt
 # reference/v9 的封存檔例外（有 SHA256SUMS.txt）
