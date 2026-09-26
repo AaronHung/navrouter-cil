@@ -1,0 +1,23 @@
+[2026-09-26 14:37:41] start: /Users/aaron/venvs/navcil/bin/python scripts/nc8_batch.py --device cpu 
+[14:37:44] NC-8 batch threads=8 λ*=1.5
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold1.pt
+[14:38:43] fold 1 NC-8 batch 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold2.pt
+[14:39:39] fold 2 NC-8 batch 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold3.pt
+[14:40:34] fold 3 NC-8 batch 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold4.pt
+[14:41:28] fold 4 NC-8 batch 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold5.pt
+[14:42:20] fold 5 NC-8 batch 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold6.pt
+[14:43:10] fold 6 NC-8 batch 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold7.pt
+[14:44:00] fold 7 NC-8 batch 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold8.pt
+[14:44:49] fold 8 NC-8 batch 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold9.pt
+[14:45:39] fold 9 NC-8 batch 完成
+[SelectorBank] loaded 4 skills from /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/bank/fold10.pt
+[14:46:27] fold 10 NC-8 batch 完成
+[2026-09-26 14:46:27] exit=0

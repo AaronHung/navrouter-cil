@@ -1,0 +1,5 @@
+true\pred,tcga_esca,tcga_rcc,tcga_brca,tcga_lung
+tcga_esca,140,1,3,6
+tcga_rcc,1,761,4,2
+tcga_brca,1,1,940,10
+tcga_lung,2,2,8,953
