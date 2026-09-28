@@ -1,0 +1,1401 @@
+{
+ "navcil": {
+  "config": "configs/base.yaml + configs/machine_mac.yaml",
+  "dataset_root_dir": "/Users/aaron/research/can_dataset",
+  "path_split": "/{}/datasplit/fold_{}.npz",
+  "files": {
+   "tcga_esca/fold_1": {
+    "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_1.npz",
+    "sha256": "28a6b008f14841847c2947b13f27cae91e249ca7640b8c24c5affa91748b280f",
+    "bytes": 4070,
+    "n": {
+     "train": 118,
+     "val": 15,
+     "test": 15
+    }
+   },
+   "tcga_esca/fold_2": {
+    "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_2.npz",
+    "sha256": "c978cc43e0483912ffaf13a4daf34dee27d9d23ea9e67547dfcd89be3b46849b",
+    "bytes": 4070,
+    "n": {
+     "train": 118,
+     "val": 15,
+     "test": 15
+    }
+   },
+   "tcga_esca/fold_3": {
+    "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_3.npz",
+    "sha256": "41a60595d526981fbd2292ed69d9ebfee4a2438b5bacc55b96d2526f1268f002",
+    "bytes": 4070,
+    "n": {
+     "train": 118,
+     "val": 15,
+     "test": 15
+    }
+   },
+   "tcga_esca/fold_4": {
+    "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_4.npz",
+    "sha256": "d374634a92959213c22752d603f7c9f3d689c14c82fa68854cbc0b17f4e01d0c",
+    "bytes": 4070,
+    "n": {
+     "train": 118,
+     "val": 15,
+     "test": 15
+    }
+   },
+   "tcga_esca/fold_5": {
+    "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_5.npz",
+    "sha256": "5d851d23a8260d36e0ba502d1321f408990bc5adb389ed6af31639b70582ddf1",
+    "bytes": 4070,
+    "n": {
+     "train": 118,
+     "val": 15,
+     "test": 15
+    }
+   },
+   "tcga_esca/fold_6": {
+    "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_6.npz",
+    "sha256": "f289f2112571c46c9f7765dc386440f40c76c5441f10ad52eed6e102a113b3e3",
+    "bytes": 4070,
+    "n": {
+     "train": 118,
+     "val": 15,
+     "test": 15
+    }
+   },
+   "tcga_esca/fold_7": {
+    "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_7.npz",
+    "sha256": "4bc06bda6ec5f9819081b2f1b36d85629a2e47561a44f4ea1a1be36cffbbee5e",
+    "bytes": 4070,
+    "n": {
+     "train": 118,
+     "val": 15,
+     "test": 15
+    }
+   },
+   "tcga_esca/fold_8": {
+    "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_8.npz",
+    "sha256": "41d4d47fc574b1856544fcb213675842f45b7e6ec1a56c188cc3759f5e84df9b",
+    "bytes": 4070,
+    "n": {
+     "train": 118,
+     "val": 15,
+     "test": 15
+    }
+   },
+   "tcga_esca/fold_9": {
+    "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_9.npz",
+    "sha256": "1457478d09db999af00e59cc31958d43813bd814ea1ad152122d3873f6de50a0",
+    "bytes": 4070,
+    "n": {
+     "train": 119,
+     "val": 15,
+     "test": 14
+    }
+   },
+   "tcga_esca/fold_10": {
+    "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_10.npz",
+    "sha256": "eb3d0b6b65fb761fb710567b7312a2b17146a951132d47e291d6523e86f29dd2",
+    "bytes": 4070,
+    "n": {
+     "train": 119,
+     "val": 15,
+     "test": 14
+    }
+   },
+   "tcga_rcc/fold_1": {
+    "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_1.npz",
+    "sha256": "1d9d2392201d7dc7936c999dcec778fcda739ca1092564cf0977594c560aed3c",
+    "bytes": 16328,
+    "n": {
+     "train": 590,
+     "val": 74,
+     "test": 74
+    }
+   },
+   "tcga_rcc/fold_2": {
+    "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_2.npz",
+    "sha256": "ad395a006f10a8c7977233fe62366e9c4509c232256a2b4839a219a3817cf1e5",
+    "bytes": 16328,
+    "n": {
+     "train": 590,
+     "val": 74,
+     "test": 74
+    }
+   },
+   "tcga_rcc/fold_3": {
+    "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_3.npz",
+    "sha256": "65d6d201a7b5aeab69be8f3a70efd0072eda8cfddd1b3161b1e622a6a0d64da4",
+    "bytes": 16328,
+    "n": {
+     "train": 590,
+     "val": 74,
+     "test": 74
+    }
+   },
+   "tcga_rcc/fold_4": {
+    "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_4.npz",
+    "sha256": "174bb1aae0e95e1efb1b83ca83df59bd6e836e80a903775079be4d26a00a6507",
+    "bytes": 16328,
+    "n": {
+     "train": 590,
+     "val": 74,
+     "test": 74
+    }
+   },
+   "tcga_rcc/fold_5": {
+    "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_5.npz",
+    "sha256": "e289bb712a2a510409478676a48b5fbaf83766c96a123a46dcf7f332d0df77a9",
+    "bytes": 16328,
+    "n": {
+     "train": 590,
+     "val": 74,
+     "test": 74
+    }
+   },
+   "tcga_rcc/fold_6": {
+    "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_6.npz",
+    "sha256": "bd2734771f58e36ff4673d682c36c2d27b2e03ae631b1ada3796443d989ad4aa",
+    "bytes": 16328,
+    "n": {
+     "train": 590,
+     "val": 74,
+     "test": 74
+    }
+   },
+   "tcga_rcc/fold_7": {
+    "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_7.npz",
+    "sha256": "6124f4bc830c852f175b3b22833ca19402740f10a197411273e6807460cacdea",
+    "bytes": 16328,
+    "n": {
+     "train": 590,
+     "val": 74,
+     "test": 74
+    }
+   },
+   "tcga_rcc/fold_8": {
+    "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_8.npz",
+    "sha256": "c4f6f4eb101bd397a399e4d9556864afd14ba442eccae751da01262e84579565",
+    "bytes": 16328,
+    "n": {
+     "train": 590,
+     "val": 74,
+     "test": 74
+    }
+   },
+   "tcga_rcc/fold_9": {
+    "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_9.npz",
+    "sha256": "e5d351125d988c3d09ff83b2d19391a41081d51a9fc4132768374dc893a33c85",
+    "bytes": 16331,
+    "n": {
+     "train": 591,
+     "val": 74,
+     "test": 73
+    }
+   },
+   "tcga_rcc/fold_10": {
+    "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_10.npz",
+    "sha256": "79e4ab1960382ce216ec2a6635a8e0668a0b368f47799dfe4d36e74470e1fb18",
+    "bytes": 16331,
+    "n": {
+     "train": 591,
+     "val": 74,
+     "test": 73
+    }
+   },
+   "tcga_brca/fold_1": {
+    "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_1.npz",
+    "sha256": "8508790e82973e2eb76358d7e443dad6080ad161bcf190bcd1f945c83354fe23",
+    "bytes": 19601,
+    "n": {
+     "train": 712,
+     "val": 89,
+     "test": 90
+    }
+   },
+   "tcga_brca/fold_2": {
+    "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_2.npz",
+    "sha256": "109d639bf3721c6bdcb60b56e2547bada9c82119cfacf3547f76e63f031c2e3e",
+    "bytes": 19601,
+    "n": {
+     "train": 712,
+     "val": 90,
+     "test": 89
+    }
+   },
+   "tcga_brca/fold_3": {
+    "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_3.npz",
+    "sha256": "b237195c7b40f54b8ecda7d7b025b4d0cbb33e6526d2fcc8599a6d7a73495572",
+    "bytes": 19601,
+    "n": {
+     "train": 712,
+     "val": 90,
+     "test": 89
+    }
+   },
+   "tcga_brca/fold_4": {
+    "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_4.npz",
+    "sha256": "13c15149394d5c3388bb2dbcc15d9492f626a1d1766a464aeb2c1266d6c98632",
+    "bytes": 19601,
+    "n": {
+     "train": 712,
+     "val": 90,
+     "test": 89
+    }
+   },
+   "tcga_brca/fold_5": {
+    "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_5.npz",
+    "sha256": "2763ec8f11a0a37ae24d748517630deecd6c7b5b07e9ad491a50c64a848c4b46",
+    "bytes": 19601,
+    "n": {
+     "train": 712,
+     "val": 90,
+     "test": 89
+    }
+   },
+   "tcga_brca/fold_6": {
+    "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_6.npz",
+    "sha256": "4b3a38b16b9724f8aa9d732eee9f35d0d62a4121ab6c4bbf3b1d9f5ad9c5f267",
+    "bytes": 19601,
+    "n": {
+     "train": 712,
+     "val": 90,
+     "test": 89
+    }
+   },
+   "tcga_brca/fold_7": {
+    "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_7.npz",
+    "sha256": "49c540f792f710c0e4e8c2a41ba066ae22820813c64ab2b031a964d356e329ff",
+    "bytes": 19601,
+    "n": {
+     "train": 712,
+     "val": 90,
+     "test": 89
+    }
+   },
+   "tcga_brca/fold_8": {
+    "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_8.npz",
+    "sha256": "db1a65f7e46f409f2b19eef8a3c53d82c4b53db53dc153869a960e118f8b07f4",
+    "bytes": 19601,
+    "n": {
+     "train": 712,
+     "val": 90,
+     "test": 89
+    }
+   },
+   "tcga_brca/fold_9": {
+    "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_9.npz",
+    "sha256": "55293ba02e7d13501e43eb679235a5ab6ec117f3c2c84e4bb8ed67f1cf44d0dd",
+    "bytes": 19601,
+    "n": {
+     "train": 712,
+     "val": 90,
+     "test": 89
+    }
+   },
+   "tcga_brca/fold_10": {
+    "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_10.npz",
+    "sha256": "2c9e342eac98327d6c910c72f79bc2077b0131e796aad9f93918e60e92209123",
+    "bytes": 19601,
+    "n": {
+     "train": 712,
+     "val": 90,
+     "test": 89
+    }
+   },
+   "tcga_lung/fold_1": {
+    "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_1.npz",
+    "sha256": "2543ea6401651eeda8c37b4f28f4d0a75a8e709b428f3105fa58cdbe99a86a13",
+    "bytes": 19110,
+    "n": {
+     "train": 694,
+     "val": 87,
+     "test": 87
+    }
+   },
+   "tcga_lung/fold_2": {
+    "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_2.npz",
+    "sha256": "e18329e28fad96d614fce28c60365d732e6b99e95c8d406c179d3dd180751fa5",
+    "bytes": 19110,
+    "n": {
+     "train": 694,
+     "val": 87,
+     "test": 87
+    }
+   },
+   "tcga_lung/fold_3": {
+    "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_3.npz",
+    "sha256": "1a27fc71e0aed6bfb567c0a87c52e6fbb523e576a15c835397904942743e20ee",
+    "bytes": 19110,
+    "n": {
+     "train": 694,
+     "val": 87,
+     "test": 87
+    }
+   },
+   "tcga_lung/fold_4": {
+    "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_4.npz",
+    "sha256": "fb61430263d385d869ca73a73224507ac3de7dced1b0955b7a0e06f64400e475",
+    "bytes": 19110,
+    "n": {
+     "train": 694,
+     "val": 87,
+     "test": 87
+    }
+   },
+   "tcga_lung/fold_5": {
+    "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_5.npz",
+    "sha256": "e5e9fbadd053a0bf4d2ebc36438a5799953b4f080b88acf8d7239d38b1580abe",
+    "bytes": 19110,
+    "n": {
+     "train": 694,
+     "val": 87,
+     "test": 87
+    }
+   },
+   "tcga_lung/fold_6": {
+    "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_6.npz",
+    "sha256": "6039693694c0cc05dd361df69a79e682fa98ed867cf3c44f48d559e04fe131e1",
+    "bytes": 19110,
+    "n": {
+     "train": 694,
+     "val": 87,
+     "test": 87
+    }
+   },
+   "tcga_lung/fold_7": {
+    "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_7.npz",
+    "sha256": "66bc7edd94ad17bd229a1b697d5d1508ba44bf1ede4b5c8d5eb8e6cb1afef5b1",
+    "bytes": 19110,
+    "n": {
+     "train": 694,
+     "val": 87,
+     "test": 87
+    }
+   },
+   "tcga_lung/fold_8": {
+    "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_8.npz",
+    "sha256": "6c0d8c311d6aa98c554c0986a74f5773540634519a3af1cb7cec510ace16494b",
+    "bytes": 19110,
+    "n": {
+     "train": 694,
+     "val": 87,
+     "test": 87
+    }
+   },
+   "tcga_lung/fold_9": {
+    "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_9.npz",
+    "sha256": "915bdaa9703fa8931496901f6bc0c5535d758a422da8d50af09e6a3f87b06a99",
+    "bytes": 19113,
+    "n": {
+     "train": 695,
+     "val": 87,
+     "test": 86
+    }
+   },
+   "tcga_lung/fold_10": {
+    "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_10.npz",
+    "sha256": "ae7e56d3ff80c57c6469bd691a36a26a10984dc259eb3ce175032db8ffb18a70",
+    "bytes": 19113,
+    "n": {
+     "train": 695,
+     "val": 87,
+     "test": 86
+    }
+   }
+  }
+ },
+ "pathselect": {
+  "/Users/aaron/research/02_pathselect": {
+   "head": "2435d0da9d13c8463264e5ce7776191c9b1edf44",
+   "config": "configs/pathselect.yaml",
+   "dataset_root_dir": "/Users/aaron/research/can_dataset",
+   "path_split": "/{}/datasplit/fold_{}.npz",
+   "n_files": 40,
+   "n_different": 0,
+   "files": {
+    "tcga_esca/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "28a6b008f14841847c2947b13f27cae91e249ca7640b8c24c5affa91748b280f",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "c978cc43e0483912ffaf13a4daf34dee27d9d23ea9e67547dfcd89be3b46849b",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "41a60595d526981fbd2292ed69d9ebfee4a2438b5bacc55b96d2526f1268f002",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "d374634a92959213c22752d603f7c9f3d689c14c82fa68854cbc0b17f4e01d0c",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "5d851d23a8260d36e0ba502d1321f408990bc5adb389ed6af31639b70582ddf1",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "f289f2112571c46c9f7765dc386440f40c76c5441f10ad52eed6e102a113b3e3",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "4bc06bda6ec5f9819081b2f1b36d85629a2e47561a44f4ea1a1be36cffbbee5e",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "41d4d47fc574b1856544fcb213675842f45b7e6ec1a56c188cc3759f5e84df9b",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "1457478d09db999af00e59cc31958d43813bd814ea1ad152122d3873f6de50a0",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "eb3d0b6b65fb761fb710567b7312a2b17146a951132d47e291d6523e86f29dd2",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "1d9d2392201d7dc7936c999dcec778fcda739ca1092564cf0977594c560aed3c",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "ad395a006f10a8c7977233fe62366e9c4509c232256a2b4839a219a3817cf1e5",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "65d6d201a7b5aeab69be8f3a70efd0072eda8cfddd1b3161b1e622a6a0d64da4",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "174bb1aae0e95e1efb1b83ca83df59bd6e836e80a903775079be4d26a00a6507",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "e289bb712a2a510409478676a48b5fbaf83766c96a123a46dcf7f332d0df77a9",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "bd2734771f58e36ff4673d682c36c2d27b2e03ae631b1ada3796443d989ad4aa",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "6124f4bc830c852f175b3b22833ca19402740f10a197411273e6807460cacdea",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "c4f6f4eb101bd397a399e4d9556864afd14ba442eccae751da01262e84579565",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "e5d351125d988c3d09ff83b2d19391a41081d51a9fc4132768374dc893a33c85",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "79e4ab1960382ce216ec2a6635a8e0668a0b368f47799dfe4d36e74470e1fb18",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "8508790e82973e2eb76358d7e443dad6080ad161bcf190bcd1f945c83354fe23",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "109d639bf3721c6bdcb60b56e2547bada9c82119cfacf3547f76e63f031c2e3e",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "b237195c7b40f54b8ecda7d7b025b4d0cbb33e6526d2fcc8599a6d7a73495572",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "13c15149394d5c3388bb2dbcc15d9492f626a1d1766a464aeb2c1266d6c98632",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "2763ec8f11a0a37ae24d748517630deecd6c7b5b07e9ad491a50c64a848c4b46",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "4b3a38b16b9724f8aa9d732eee9f35d0d62a4121ab6c4bbf3b1d9f5ad9c5f267",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "49c540f792f710c0e4e8c2a41ba066ae22820813c64ab2b031a964d356e329ff",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "db1a65f7e46f409f2b19eef8a3c53d82c4b53db53dc153869a960e118f8b07f4",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "55293ba02e7d13501e43eb679235a5ab6ec117f3c2c84e4bb8ed67f1cf44d0dd",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "2c9e342eac98327d6c910c72f79bc2077b0131e796aad9f93918e60e92209123",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "2543ea6401651eeda8c37b4f28f4d0a75a8e709b428f3105fa58cdbe99a86a13",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "e18329e28fad96d614fce28c60365d732e6b99e95c8d406c179d3dd180751fa5",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "1a27fc71e0aed6bfb567c0a87c52e6fbb523e576a15c835397904942743e20ee",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "fb61430263d385d869ca73a73224507ac3de7dced1b0955b7a0e06f64400e475",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "e5e9fbadd053a0bf4d2ebc36438a5799953b4f080b88acf8d7239d38b1580abe",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "6039693694c0cc05dd361df69a79e682fa98ed867cf3c44f48d559e04fe131e1",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "66bc7edd94ad17bd229a1b697d5d1508ba44bf1ede4b5c8d5eb8e6cb1afef5b1",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "6c0d8c311d6aa98c554c0986a74f5773540634519a3af1cb7cec510ace16494b",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "915bdaa9703fa8931496901f6bc0c5535d758a422da8d50af09e6a3f87b06a99",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "ae7e56d3ff80c57c6469bd691a36a26a10984dc259eb3ce175032db8ffb18a70",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    }
+   }
+  },
+  "/Users/aaron/research/pathselect-paper": {
+   "head": "081bdcd165bdc02180c7544962e09ef80d80b98f",
+   "config": "configs/pathselect.yaml",
+   "dataset_root_dir": "/Users/aaron/research/can_dataset",
+   "path_split": "/{}/datasplit/fold_{}.npz",
+   "n_files": 40,
+   "n_different": 0,
+   "files": {
+    "tcga_esca/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "28a6b008f14841847c2947b13f27cae91e249ca7640b8c24c5affa91748b280f",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "c978cc43e0483912ffaf13a4daf34dee27d9d23ea9e67547dfcd89be3b46849b",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "41a60595d526981fbd2292ed69d9ebfee4a2438b5bacc55b96d2526f1268f002",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "d374634a92959213c22752d603f7c9f3d689c14c82fa68854cbc0b17f4e01d0c",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "5d851d23a8260d36e0ba502d1321f408990bc5adb389ed6af31639b70582ddf1",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "f289f2112571c46c9f7765dc386440f40c76c5441f10ad52eed6e102a113b3e3",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "4bc06bda6ec5f9819081b2f1b36d85629a2e47561a44f4ea1a1be36cffbbee5e",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "41d4d47fc574b1856544fcb213675842f45b7e6ec1a56c188cc3759f5e84df9b",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "1457478d09db999af00e59cc31958d43813bd814ea1ad152122d3873f6de50a0",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "eb3d0b6b65fb761fb710567b7312a2b17146a951132d47e291d6523e86f29dd2",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "1d9d2392201d7dc7936c999dcec778fcda739ca1092564cf0977594c560aed3c",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "ad395a006f10a8c7977233fe62366e9c4509c232256a2b4839a219a3817cf1e5",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "65d6d201a7b5aeab69be8f3a70efd0072eda8cfddd1b3161b1e622a6a0d64da4",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "174bb1aae0e95e1efb1b83ca83df59bd6e836e80a903775079be4d26a00a6507",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "e289bb712a2a510409478676a48b5fbaf83766c96a123a46dcf7f332d0df77a9",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "bd2734771f58e36ff4673d682c36c2d27b2e03ae631b1ada3796443d989ad4aa",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "6124f4bc830c852f175b3b22833ca19402740f10a197411273e6807460cacdea",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "c4f6f4eb101bd397a399e4d9556864afd14ba442eccae751da01262e84579565",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "e5d351125d988c3d09ff83b2d19391a41081d51a9fc4132768374dc893a33c85",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "79e4ab1960382ce216ec2a6635a8e0668a0b368f47799dfe4d36e74470e1fb18",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "8508790e82973e2eb76358d7e443dad6080ad161bcf190bcd1f945c83354fe23",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "109d639bf3721c6bdcb60b56e2547bada9c82119cfacf3547f76e63f031c2e3e",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "b237195c7b40f54b8ecda7d7b025b4d0cbb33e6526d2fcc8599a6d7a73495572",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "13c15149394d5c3388bb2dbcc15d9492f626a1d1766a464aeb2c1266d6c98632",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "2763ec8f11a0a37ae24d748517630deecd6c7b5b07e9ad491a50c64a848c4b46",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "4b3a38b16b9724f8aa9d732eee9f35d0d62a4121ab6c4bbf3b1d9f5ad9c5f267",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "49c540f792f710c0e4e8c2a41ba066ae22820813c64ab2b031a964d356e329ff",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "db1a65f7e46f409f2b19eef8a3c53d82c4b53db53dc153869a960e118f8b07f4",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "55293ba02e7d13501e43eb679235a5ab6ec117f3c2c84e4bb8ed67f1cf44d0dd",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "2c9e342eac98327d6c910c72f79bc2077b0131e796aad9f93918e60e92209123",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "2543ea6401651eeda8c37b4f28f4d0a75a8e709b428f3105fa58cdbe99a86a13",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "e18329e28fad96d614fce28c60365d732e6b99e95c8d406c179d3dd180751fa5",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "1a27fc71e0aed6bfb567c0a87c52e6fbb523e576a15c835397904942743e20ee",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "fb61430263d385d869ca73a73224507ac3de7dced1b0955b7a0e06f64400e475",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "e5e9fbadd053a0bf4d2ebc36438a5799953b4f080b88acf8d7239d38b1580abe",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "6039693694c0cc05dd361df69a79e682fa98ed867cf3c44f48d559e04fe131e1",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "66bc7edd94ad17bd229a1b697d5d1508ba44bf1ede4b5c8d5eb8e6cb1afef5b1",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "6c0d8c311d6aa98c554c0986a74f5773540634519a3af1cb7cec510ace16494b",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "915bdaa9703fa8931496901f6bc0c5535d758a422da8d50af09e6a3f87b06a99",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "ae7e56d3ff80c57c6469bd691a36a26a10984dc259eb3ce175032db8ffb18a70",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    }
+   }
+  },
+  "/Users/aaron/research/pathselect-exp5": {
+   "head": "1529c0be97679d7b738d7183522c74f621586ce3",
+   "config": "configs/pathselect.yaml",
+   "dataset_root_dir": "/Users/aaron/research/can_dataset",
+   "path_split": "/{}/datasplit/fold_{}.npz",
+   "n_files": 40,
+   "n_different": 0,
+   "files": {
+    "tcga_esca/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "28a6b008f14841847c2947b13f27cae91e249ca7640b8c24c5affa91748b280f",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "c978cc43e0483912ffaf13a4daf34dee27d9d23ea9e67547dfcd89be3b46849b",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "41a60595d526981fbd2292ed69d9ebfee4a2438b5bacc55b96d2526f1268f002",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "d374634a92959213c22752d603f7c9f3d689c14c82fa68854cbc0b17f4e01d0c",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "5d851d23a8260d36e0ba502d1321f408990bc5adb389ed6af31639b70582ddf1",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "f289f2112571c46c9f7765dc386440f40c76c5441f10ad52eed6e102a113b3e3",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "4bc06bda6ec5f9819081b2f1b36d85629a2e47561a44f4ea1a1be36cffbbee5e",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "41d4d47fc574b1856544fcb213675842f45b7e6ec1a56c188cc3759f5e84df9b",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "1457478d09db999af00e59cc31958d43813bd814ea1ad152122d3873f6de50a0",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_esca/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_esca/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "eb3d0b6b65fb761fb710567b7312a2b17146a951132d47e291d6523e86f29dd2",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "1d9d2392201d7dc7936c999dcec778fcda739ca1092564cf0977594c560aed3c",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "ad395a006f10a8c7977233fe62366e9c4509c232256a2b4839a219a3817cf1e5",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "65d6d201a7b5aeab69be8f3a70efd0072eda8cfddd1b3161b1e622a6a0d64da4",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "174bb1aae0e95e1efb1b83ca83df59bd6e836e80a903775079be4d26a00a6507",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "e289bb712a2a510409478676a48b5fbaf83766c96a123a46dcf7f332d0df77a9",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "bd2734771f58e36ff4673d682c36c2d27b2e03ae631b1ada3796443d989ad4aa",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "6124f4bc830c852f175b3b22833ca19402740f10a197411273e6807460cacdea",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "c4f6f4eb101bd397a399e4d9556864afd14ba442eccae751da01262e84579565",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "e5d351125d988c3d09ff83b2d19391a41081d51a9fc4132768374dc893a33c85",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_rcc/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_rcc/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "79e4ab1960382ce216ec2a6635a8e0668a0b368f47799dfe4d36e74470e1fb18",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "8508790e82973e2eb76358d7e443dad6080ad161bcf190bcd1f945c83354fe23",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "109d639bf3721c6bdcb60b56e2547bada9c82119cfacf3547f76e63f031c2e3e",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "b237195c7b40f54b8ecda7d7b025b4d0cbb33e6526d2fcc8599a6d7a73495572",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "13c15149394d5c3388bb2dbcc15d9492f626a1d1766a464aeb2c1266d6c98632",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "2763ec8f11a0a37ae24d748517630deecd6c7b5b07e9ad491a50c64a848c4b46",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "4b3a38b16b9724f8aa9d732eee9f35d0d62a4121ab6c4bbf3b1d9f5ad9c5f267",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "49c540f792f710c0e4e8c2a41ba066ae22820813c64ab2b031a964d356e329ff",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "db1a65f7e46f409f2b19eef8a3c53d82c4b53db53dc153869a960e118f8b07f4",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "55293ba02e7d13501e43eb679235a5ab6ec117f3c2c84e4bb8ed67f1cf44d0dd",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_brca/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_brca/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "2c9e342eac98327d6c910c72f79bc2077b0131e796aad9f93918e60e92209123",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_1": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_1.npz",
+     "same_realpath": true,
+     "sha256": "2543ea6401651eeda8c37b4f28f4d0a75a8e709b428f3105fa58cdbe99a86a13",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_2": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_2.npz",
+     "same_realpath": true,
+     "sha256": "e18329e28fad96d614fce28c60365d732e6b99e95c8d406c179d3dd180751fa5",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_3": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_3.npz",
+     "same_realpath": true,
+     "sha256": "1a27fc71e0aed6bfb567c0a87c52e6fbb523e576a15c835397904942743e20ee",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_4": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_4.npz",
+     "same_realpath": true,
+     "sha256": "fb61430263d385d869ca73a73224507ac3de7dced1b0955b7a0e06f64400e475",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_5": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_5.npz",
+     "same_realpath": true,
+     "sha256": "e5e9fbadd053a0bf4d2ebc36438a5799953b4f080b88acf8d7239d38b1580abe",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_6": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_6.npz",
+     "same_realpath": true,
+     "sha256": "6039693694c0cc05dd361df69a79e682fa98ed867cf3c44f48d559e04fe131e1",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_7": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_7.npz",
+     "same_realpath": true,
+     "sha256": "66bc7edd94ad17bd229a1b697d5d1508ba44bf1ede4b5c8d5eb8e6cb1afef5b1",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_8": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_8.npz",
+     "same_realpath": true,
+     "sha256": "6c0d8c311d6aa98c554c0986a74f5773540634519a3af1cb7cec510ace16494b",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_9": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_9.npz",
+     "same_realpath": true,
+     "sha256": "915bdaa9703fa8931496901f6bc0c5535d758a422da8d50af09e6a3f87b06a99",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    },
+    "tcga_lung/fold_10": {
+     "path": "/Users/aaron/research/can_dataset/tcga_lung/datasplit/fold_10.npz",
+     "same_realpath": true,
+     "sha256": "ae7e56d3ff80c57c6469bd691a36a26a10984dc259eb3ce175032db8ffb18a70",
+     "sha256_equal": true,
+     "patient_lists_equal": true,
+     "diff": {}
+    }
+   }
+  }
+ }
+}
