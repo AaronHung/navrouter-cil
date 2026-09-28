@@ -1,0 +1,20 @@
+{
+ "nc11.select.four16.known.reverse.acc": 0.9339697867631912,
+ "nc11.select.four16.known.reverse.acc_sd": 0.020229309408115993,
+ "nc11.select.four16.known.paper.acc": 0.9339697867631912,
+ "nc11.select.four16.known.paper.acc_sd": 0.020229309408115993,
+ "nc11.select.four16.inferred.reverse.acc": 0.9128020942211151,
+ "nc11.select.four16.inferred.reverse.acc_sd": 0.025804597159915423,
+ "nc11.select.four16.inferred.paper.acc": 0.9128020942211151,
+ "nc11.select.four16.inferred.paper.acc_sd": 0.025804597159915423,
+ "nc11.select.oneshot64.known.reverse.acc": 0.9371812760829925,
+ "nc11.select.oneshot64.known.reverse.acc_sd": 0.020859730699143368,
+ "nc11.select.oneshot64.known.paper.acc": 0.9371812760829925,
+ "nc11.select.oneshot64.known.paper.acc_sd": 0.020859730699143368,
+ "nc11.select.oneshot64.inferred.reverse.acc": 0.9160135865211487,
+ "nc11.select.oneshot64.inferred.reverse.acc_sd": 0.026406350912596497,
+ "nc11.select.oneshot64.inferred.paper.acc": 0.9160135865211487,
+ "nc11.select.oneshot64.inferred.paper.acc_sd": 0.026406350912596497,
+ "nc11.select.jaccard_own.mean": 0.833317756652832,
+ "nc11.select.cos8_four16_vs_nc8_maxabs": 0.0
+}

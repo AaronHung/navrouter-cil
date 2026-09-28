@@ -1,0 +1,5 @@
+[2026-09-29 00:10:14] start: caffeinate -dimsu /Users/aaron/venvs/navcil/bin/python scripts/nc11_ablation.py paired --cache-dir /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/cache 
+[00:10:18] 開始 3.1 paired：完成 0/1，失敗 0
+[00:10:24] 結束 3.1 paired：完成 1/1，失敗 0
+[00:10:24] 3.1：AR 與 nc8 第 6 列相同 True；混淆十折合計與 nc10 相同 True；檢定 12 次
+[2026-09-29 00:10:25] exit=0
