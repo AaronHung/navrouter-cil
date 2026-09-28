@@ -1,0 +1,11 @@
+[2026-09-28 23:48:04] start: /Users/aaron/venvs/navcil/bin/python scripts/nc10_dispatch_compare.py --cache-dir /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/cache 
+→ /Users/aaron/research/01_navrouter-cil-ws2/outputs/navcil/mac/REPORT_stage12.md
+  一致性 AR|reverse: 符合
+  一致性 AR|paper: 符合
+  一致性 oracle|reverse: 符合
+  一致性 oracle|paper: 符合
+  一致性 R3|confusion: 符合
+  一致性 R0|tp|reverse: 符合
+  一致性 R0|tp|paper: 符合
+  方向性預測（AR micro 勝 R0 ≥ 8/10，兩序）：成立
+[2026-09-28 23:48:15] exit=0
