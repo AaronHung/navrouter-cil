@@ -1,0 +1,20 @@
+[2026-09-28 23:15:27] start: /Users/aaron/venvs/navcil/bin/python scripts/nc9_incremental.py 
+→ /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/REPORT_stage11.md
+  判準 1_d3: 通過
+  判準 2_tau_d3: 通過
+  判準 3_conf_ar: 通過
+  判準 4_arbal: 通過
+  判準 5_W: 通過
+  判準 7_reads: 通過
+  判準 6_pytest: 通過
+[2026-09-28 23:15:41] exit=0
+[2026-09-28 23:16:35] start: /Users/aaron/venvs/navcil/bin/python scripts/nc9_incremental.py 
+→ /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/REPORT_stage11.md
+  判準 1_d3: 通過
+  判準 2_tau_d3: 通過
+  判準 3_conf_ar: 通過
+  判準 4_arbal: 通過
+  判準 5_W: 通過
+  判準 7_reads: 通過
+  判準 6_pytest: 通過
+[2026-09-28 23:16:50] exit=0

@@ -1,0 +1,1602 @@
+[
+ {
+  "fold": 1,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold1_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 1,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold1_train_tcga_rcc.pt"
+  ],
+  "n_slides": 616
+ },
+ {
+  "fold": 1,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold1_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 1,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold1_train_tcga_lung.pt"
+  ],
+  "n_slides": 774
+ },
+ {
+  "fold": 1,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold1_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 1,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold1_train_tcga_rcc.pt"
+  ],
+  "n_slides": 616
+ },
+ {
+  "fold": 1,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold1_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 1,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold1_train_tcga_lung.pt"
+  ],
+  "n_slides": 774
+ },
+ {
+  "fold": 1,
+  "order": "paper",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold1_train_tcga_lung.pt"
+  ],
+  "n_slides": 774
+ },
+ {
+  "fold": 1,
+  "order": "paper",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold1_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 1,
+  "order": "paper",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold1_train_tcga_rcc.pt"
+  ],
+  "n_slides": 616
+ },
+ {
+  "fold": 1,
+  "order": "paper",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold1_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 1,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold1_train_tcga_lung.pt"
+  ],
+  "n_slides": 774
+ },
+ {
+  "fold": 1,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold1_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 1,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold1_train_tcga_rcc.pt"
+  ],
+  "n_slides": 616
+ },
+ {
+  "fold": 1,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold1_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 2,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold2_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 2,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold2_train_tcga_rcc.pt"
+  ],
+  "n_slides": 613
+ },
+ {
+  "fold": 2,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold2_train_tcga_brca.pt"
+  ],
+  "n_slides": 764
+ },
+ {
+  "fold": 2,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold2_train_tcga_lung.pt"
+  ],
+  "n_slides": 761
+ },
+ {
+  "fold": 2,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold2_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 2,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold2_train_tcga_rcc.pt"
+  ],
+  "n_slides": 613
+ },
+ {
+  "fold": 2,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold2_train_tcga_brca.pt"
+  ],
+  "n_slides": 764
+ },
+ {
+  "fold": 2,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold2_train_tcga_lung.pt"
+  ],
+  "n_slides": 761
+ },
+ {
+  "fold": 2,
+  "order": "paper",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold2_train_tcga_lung.pt"
+  ],
+  "n_slides": 761
+ },
+ {
+  "fold": 2,
+  "order": "paper",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold2_train_tcga_brca.pt"
+  ],
+  "n_slides": 764
+ },
+ {
+  "fold": 2,
+  "order": "paper",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold2_train_tcga_rcc.pt"
+  ],
+  "n_slides": 613
+ },
+ {
+  "fold": 2,
+  "order": "paper",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold2_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 2,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold2_train_tcga_lung.pt"
+  ],
+  "n_slides": 761
+ },
+ {
+  "fold": 2,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold2_train_tcga_brca.pt"
+  ],
+  "n_slides": 764
+ },
+ {
+  "fold": 2,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold2_train_tcga_rcc.pt"
+  ],
+  "n_slides": 613
+ },
+ {
+  "fold": 2,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold2_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 3,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold3_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 3,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold3_train_tcga_rcc.pt"
+  ],
+  "n_slides": 617
+ },
+ {
+  "fold": 3,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold3_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 3,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold3_train_tcga_lung.pt"
+  ],
+  "n_slides": 765
+ },
+ {
+  "fold": 3,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold3_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 3,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold3_train_tcga_rcc.pt"
+  ],
+  "n_slides": 617
+ },
+ {
+  "fold": 3,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold3_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 3,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold3_train_tcga_lung.pt"
+  ],
+  "n_slides": 765
+ },
+ {
+  "fold": 3,
+  "order": "paper",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold3_train_tcga_lung.pt"
+  ],
+  "n_slides": 765
+ },
+ {
+  "fold": 3,
+  "order": "paper",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold3_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 3,
+  "order": "paper",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold3_train_tcga_rcc.pt"
+  ],
+  "n_slides": 617
+ },
+ {
+  "fold": 3,
+  "order": "paper",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold3_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 3,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold3_train_tcga_lung.pt"
+  ],
+  "n_slides": 765
+ },
+ {
+  "fold": 3,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold3_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 3,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold3_train_tcga_rcc.pt"
+  ],
+  "n_slides": 617
+ },
+ {
+  "fold": 3,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold3_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 4,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold4_train_tcga_esca.pt"
+  ],
+  "n_slides": 119
+ },
+ {
+  "fold": 4,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold4_train_tcga_rcc.pt"
+  ],
+  "n_slides": 613
+ },
+ {
+  "fold": 4,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold4_train_tcga_brca.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 4,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold4_train_tcga_lung.pt"
+  ],
+  "n_slides": 756
+ },
+ {
+  "fold": 4,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold4_train_tcga_esca.pt"
+  ],
+  "n_slides": 119
+ },
+ {
+  "fold": 4,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold4_train_tcga_rcc.pt"
+  ],
+  "n_slides": 613
+ },
+ {
+  "fold": 4,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold4_train_tcga_brca.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 4,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold4_train_tcga_lung.pt"
+  ],
+  "n_slides": 756
+ },
+ {
+  "fold": 4,
+  "order": "paper",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold4_train_tcga_lung.pt"
+  ],
+  "n_slides": 756
+ },
+ {
+  "fold": 4,
+  "order": "paper",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold4_train_tcga_brca.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 4,
+  "order": "paper",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold4_train_tcga_rcc.pt"
+  ],
+  "n_slides": 613
+ },
+ {
+  "fold": 4,
+  "order": "paper",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold4_train_tcga_esca.pt"
+  ],
+  "n_slides": 119
+ },
+ {
+  "fold": 4,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold4_train_tcga_lung.pt"
+  ],
+  "n_slides": 756
+ },
+ {
+  "fold": 4,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold4_train_tcga_brca.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 4,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold4_train_tcga_rcc.pt"
+  ],
+  "n_slides": 613
+ },
+ {
+  "fold": 4,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold4_train_tcga_esca.pt"
+  ],
+  "n_slides": 119
+ },
+ {
+  "fold": 5,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold5_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 5,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold5_train_tcga_rcc.pt"
+  ],
+  "n_slides": 619
+ },
+ {
+  "fold": 5,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold5_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 5,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold5_train_tcga_lung.pt"
+  ],
+  "n_slides": 764
+ },
+ {
+  "fold": 5,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold5_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 5,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold5_train_tcga_rcc.pt"
+  ],
+  "n_slides": 619
+ },
+ {
+  "fold": 5,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold5_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 5,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold5_train_tcga_lung.pt"
+  ],
+  "n_slides": 764
+ },
+ {
+  "fold": 5,
+  "order": "paper",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold5_train_tcga_lung.pt"
+  ],
+  "n_slides": 764
+ },
+ {
+  "fold": 5,
+  "order": "paper",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold5_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 5,
+  "order": "paper",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold5_train_tcga_rcc.pt"
+  ],
+  "n_slides": 619
+ },
+ {
+  "fold": 5,
+  "order": "paper",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold5_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 5,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold5_train_tcga_lung.pt"
+  ],
+  "n_slides": 764
+ },
+ {
+  "fold": 5,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold5_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 5,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold5_train_tcga_rcc.pt"
+  ],
+  "n_slides": 619
+ },
+ {
+  "fold": 5,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold5_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 6,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold6_train_tcga_esca.pt"
+  ],
+  "n_slides": 119
+ },
+ {
+  "fold": 6,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold6_train_tcga_rcc.pt"
+  ],
+  "n_slides": 616
+ },
+ {
+  "fold": 6,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold6_train_tcga_brca.pt"
+  ],
+  "n_slides": 758
+ },
+ {
+  "fold": 6,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold6_train_tcga_lung.pt"
+  ],
+  "n_slides": 759
+ },
+ {
+  "fold": 6,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold6_train_tcga_esca.pt"
+  ],
+  "n_slides": 119
+ },
+ {
+  "fold": 6,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold6_train_tcga_rcc.pt"
+  ],
+  "n_slides": 616
+ },
+ {
+  "fold": 6,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold6_train_tcga_brca.pt"
+  ],
+  "n_slides": 758
+ },
+ {
+  "fold": 6,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold6_train_tcga_lung.pt"
+  ],
+  "n_slides": 759
+ },
+ {
+  "fold": 6,
+  "order": "paper",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold6_train_tcga_lung.pt"
+  ],
+  "n_slides": 759
+ },
+ {
+  "fold": 6,
+  "order": "paper",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold6_train_tcga_brca.pt"
+  ],
+  "n_slides": 758
+ },
+ {
+  "fold": 6,
+  "order": "paper",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold6_train_tcga_rcc.pt"
+  ],
+  "n_slides": 616
+ },
+ {
+  "fold": 6,
+  "order": "paper",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold6_train_tcga_esca.pt"
+  ],
+  "n_slides": 119
+ },
+ {
+  "fold": 6,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold6_train_tcga_lung.pt"
+  ],
+  "n_slides": 759
+ },
+ {
+  "fold": 6,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold6_train_tcga_brca.pt"
+  ],
+  "n_slides": 758
+ },
+ {
+  "fold": 6,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold6_train_tcga_rcc.pt"
+  ],
+  "n_slides": 616
+ },
+ {
+  "fold": 6,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold6_train_tcga_esca.pt"
+  ],
+  "n_slides": 119
+ },
+ {
+  "fold": 7,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold7_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 7,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold7_train_tcga_rcc.pt"
+  ],
+  "n_slides": 615
+ },
+ {
+  "fold": 7,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold7_train_tcga_brca.pt"
+  ],
+  "n_slides": 760
+ },
+ {
+  "fold": 7,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold7_train_tcga_lung.pt"
+  ],
+  "n_slides": 774
+ },
+ {
+  "fold": 7,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold7_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 7,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold7_train_tcga_rcc.pt"
+  ],
+  "n_slides": 615
+ },
+ {
+  "fold": 7,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold7_train_tcga_brca.pt"
+  ],
+  "n_slides": 760
+ },
+ {
+  "fold": 7,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold7_train_tcga_lung.pt"
+  ],
+  "n_slides": 774
+ },
+ {
+  "fold": 7,
+  "order": "paper",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold7_train_tcga_lung.pt"
+  ],
+  "n_slides": 774
+ },
+ {
+  "fold": 7,
+  "order": "paper",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold7_train_tcga_brca.pt"
+  ],
+  "n_slides": 760
+ },
+ {
+  "fold": 7,
+  "order": "paper",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold7_train_tcga_rcc.pt"
+  ],
+  "n_slides": 615
+ },
+ {
+  "fold": 7,
+  "order": "paper",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold7_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 7,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold7_train_tcga_lung.pt"
+  ],
+  "n_slides": 774
+ },
+ {
+  "fold": 7,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold7_train_tcga_brca.pt"
+  ],
+  "n_slides": 760
+ },
+ {
+  "fold": 7,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold7_train_tcga_rcc.pt"
+  ],
+  "n_slides": 615
+ },
+ {
+  "fold": 7,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold7_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 8,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold8_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 8,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold8_train_tcga_rcc.pt"
+  ],
+  "n_slides": 617
+ },
+ {
+  "fold": 8,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold8_train_tcga_brca.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 8,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold8_train_tcga_lung.pt"
+  ],
+  "n_slides": 777
+ },
+ {
+  "fold": 8,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold8_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 8,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold8_train_tcga_rcc.pt"
+  ],
+  "n_slides": 617
+ },
+ {
+  "fold": 8,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold8_train_tcga_brca.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 8,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold8_train_tcga_lung.pt"
+  ],
+  "n_slides": 777
+ },
+ {
+  "fold": 8,
+  "order": "paper",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold8_train_tcga_lung.pt"
+  ],
+  "n_slides": 777
+ },
+ {
+  "fold": 8,
+  "order": "paper",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold8_train_tcga_brca.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 8,
+  "order": "paper",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold8_train_tcga_rcc.pt"
+  ],
+  "n_slides": 617
+ },
+ {
+  "fold": 8,
+  "order": "paper",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold8_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 8,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold8_train_tcga_lung.pt"
+  ],
+  "n_slides": 777
+ },
+ {
+  "fold": 8,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold8_train_tcga_brca.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 8,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold8_train_tcga_rcc.pt"
+  ],
+  "n_slides": 617
+ },
+ {
+  "fold": 8,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold8_train_tcga_esca.pt"
+  ],
+  "n_slides": 120
+ },
+ {
+  "fold": 9,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold9_train_tcga_esca.pt"
+  ],
+  "n_slides": 121
+ },
+ {
+  "fold": 9,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold9_train_tcga_rcc.pt"
+  ],
+  "n_slides": 612
+ },
+ {
+  "fold": 9,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold9_train_tcga_brca.pt"
+  ],
+  "n_slides": 760
+ },
+ {
+  "fold": 9,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold9_train_tcga_lung.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 9,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold9_train_tcga_esca.pt"
+  ],
+  "n_slides": 121
+ },
+ {
+  "fold": 9,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold9_train_tcga_rcc.pt"
+  ],
+  "n_slides": 612
+ },
+ {
+  "fold": 9,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold9_train_tcga_brca.pt"
+  ],
+  "n_slides": 760
+ },
+ {
+  "fold": 9,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold9_train_tcga_lung.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 9,
+  "order": "paper",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold9_train_tcga_lung.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 9,
+  "order": "paper",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold9_train_tcga_brca.pt"
+  ],
+  "n_slides": 760
+ },
+ {
+  "fold": 9,
+  "order": "paper",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold9_train_tcga_rcc.pt"
+  ],
+  "n_slides": 612
+ },
+ {
+  "fold": 9,
+  "order": "paper",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold9_train_tcga_esca.pt"
+  ],
+  "n_slides": 121
+ },
+ {
+  "fold": 9,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold9_train_tcga_lung.pt"
+  ],
+  "n_slides": 762
+ },
+ {
+  "fold": 9,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold9_train_tcga_brca.pt"
+  ],
+  "n_slides": 760
+ },
+ {
+  "fold": 9,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold9_train_tcga_rcc.pt"
+  ],
+  "n_slides": 612
+ },
+ {
+  "fold": 9,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold9_train_tcga_esca.pt"
+  ],
+  "n_slides": 121
+ },
+ {
+  "fold": 10,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold10_train_tcga_esca.pt"
+  ],
+  "n_slides": 121
+ },
+ {
+  "fold": 10,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold10_train_tcga_rcc.pt"
+  ],
+  "n_slides": 618
+ },
+ {
+  "fold": 10,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold10_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 10,
+  "order": "reverse",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold10_train_tcga_lung.pt"
+  ],
+  "n_slides": 771
+ },
+ {
+  "fold": 10,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold10_train_tcga_esca.pt"
+  ],
+  "n_slides": 121
+ },
+ {
+  "fold": 10,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold10_train_tcga_rcc.pt"
+  ],
+  "n_slides": 618
+ },
+ {
+  "fold": 10,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold10_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 10,
+  "order": "reverse",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold10_train_tcga_lung.pt"
+  ],
+  "n_slides": 771
+ },
+ {
+  "fold": 10,
+  "order": "paper",
+  "router": "AR",
+  "stage": 1,
+  "files": [
+   "nc8_fold10_train_tcga_lung.pt"
+  ],
+  "n_slides": 771
+ },
+ {
+  "fold": 10,
+  "order": "paper",
+  "router": "AR",
+  "stage": 2,
+  "files": [
+   "nc8_fold10_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 10,
+  "order": "paper",
+  "router": "AR",
+  "stage": 3,
+  "files": [
+   "nc8_fold10_train_tcga_rcc.pt"
+  ],
+  "n_slides": 618
+ },
+ {
+  "fold": 10,
+  "order": "paper",
+  "router": "AR",
+  "stage": 4,
+  "files": [
+   "nc8_fold10_train_tcga_esca.pt"
+  ],
+  "n_slides": 121
+ },
+ {
+  "fold": 10,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 1,
+  "files": [
+   "nc8_fold10_train_tcga_lung.pt"
+  ],
+  "n_slides": 771
+ },
+ {
+  "fold": 10,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 2,
+  "files": [
+   "nc8_fold10_train_tcga_brca.pt"
+  ],
+  "n_slides": 763
+ },
+ {
+  "fold": 10,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 3,
+  "files": [
+   "nc8_fold10_train_tcga_rcc.pt"
+  ],
+  "n_slides": 618
+ },
+ {
+  "fold": 10,
+  "order": "paper",
+  "router": "AR-bal",
+  "stage": 4,
+  "files": [
+   "nc8_fold10_train_tcga_esca.pt"
+  ],
+  "n_slides": 121
+ }
+]
