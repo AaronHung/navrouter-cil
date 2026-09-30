@@ -1,0 +1,13 @@
+check lora.r2.inferred.reverse: 0.9176 vs 0.9176（REPORT_stage10.md:15）符合；nc8 逐折最大差 0.0e+00
+check lora.r2.inferred.paper: 0.9132 vs 0.9132（REPORT_stage10.md:28）符合；nc8 逐折最大差 0.0e+00
+check lora.r2.known.reverse: 0.9401 vs 0.9401（REPORT_stage5.md:43）符合
+check lora.r2.known.paper: 0.9339 vs 0.9339（REPORT_stage5.md:44）符合
+check head.known.reverse: 0.9340 vs 0.9340（REPORT_stage10.md:18）符合；nc8 逐折最大差 0.0e+00
+check head.known.paper: 0.9340 vs 0.9340（REPORT_stage10.md:31）符合；nc8 逐折最大差 0.0e+00
+check head.inferred.reverse: 0.9128 vs 0.9128（REPORT_stage10.md:16）符合；nc8 逐折最大差 0.0e+00
+check head.inferred.paper: 0.9128 vs 0.9128（REPORT_stage10.md:29）符合；nc8 逐折最大差 0.0e+00
+known.reverse: 修正頭 0.9340  LoRA r*=1 0.9403  差 -0.0063  不在 0.005 內
+known.paper: 修正頭 0.9340  LoRA r*=1 0.9295  差 +0.0045  在 0.005 內
+inferred.reverse: 修正頭 0.9128  LoRA r*=1 0.9180  差 -0.0052  不在 0.005 內
+inferred.paper: 修正頭 0.9128  LoRA r*=1 0.9119  差 +0.0009  在 0.005 內
+→ /Users/aaron/research/01_navrouter-cil-lora-val/outputs/navcil/mac/nc15/result.json

@@ -107,6 +107,10 @@ def main() -> int:
                        f"{'是' if g['within_tol'] else '否'} | {g['head_higher']}/10（平 {g['ties']}） | "
                        f"{fid(f'nc15.lora.r{rs}.{kind}.{o}.acc')}；{fid(f'nc15.head.{kind}.{o}.acc')}；"
                        f"{fid(f'nc15.gap.{kind}.{o}')} |")
+    if rs == 1:
+        ok1 = (f"{V['lora.r1.known.reverse']['mean']:.4f}", f"{V['lora.r1.known.paper']['mean']:.4f}") == ("0.9403", "0.9295")
+        out += ["", f"另報（非判準）：L1(r = 1) 的 task-known WP 與 REPORT_stage5.md:41、:42（0.9403／0.9295）"
+                f"{'四位相同' if ok1 else '**不同**'}。"]
     if rs != 2:
         out += ["", "參考（既有 r = 2，本輪重算）：", "",
                 "| 指標 | 序 | L1(r = 2) | fact-id |", "|---|---|---|---|"]
