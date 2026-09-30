@@ -1,0 +1,20 @@
+[2026-09-29 00:10:37] start: caffeinate -dimsu /Users/aaron/venvs/navcil/bin/python scripts/nc11_ablation.py select --cache-dir /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/cache --i6-ref-dir /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/i6/r2 
+[00:10:39] 開始 3.3 select：完成 0/10，失敗 0
+[00:10:39] 3.3 threads=8 λ*=1.5
+[00:10:53] 3.3 fold 1 完成
+[00:11:13] 3.3 fold 2 完成
+[00:11:27] 3.3 fold 3 完成
+[00:11:41] 3.3 fold 4 完成
+[00:11:54] 3.3 fold 5 完成
+[00:12:05] 3.3 fold 6 完成
+[00:12:15] 3.3 fold 7 完成
+[00:12:26] 3.3 fold 8 完成
+[00:12:38] 3.3 fold 9 完成
+[00:12:49] 3.3 fold 10 完成
+[00:12:49] 3.3 重現 known|reverse: 0.9340 ± 0.0202 vs 0.9340 ± 0.0202 → 符合
+[00:12:49] 3.3 重現 known|paper: 0.9340 ± 0.0202 vs 0.9340 ± 0.0202 → 符合
+[00:12:49] 3.3 重現 inferred|reverse: 0.9128 ± 0.0258 vs 0.9128 ± 0.0258 → 符合
+[00:12:49] 3.3 重現 inferred|paper: 0.9128 ± 0.0258 vs 0.9128 ± 0.0258 → 符合
+[00:12:49] 3.3 four16 對 NC-8 I6_cos8 最大差 0.00e+00
+[00:12:49] 結束 3.3 select：完成 10/10，失敗 0
+[2026-09-29 00:12:50] exit=0
