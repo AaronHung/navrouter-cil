@@ -27,3 +27,6 @@ __pycache__/
 .DS_Store
 .venv/
 reference/papers/
+# NC-15：L1(r=3) 權重與 validation 逐張評估（連同 .done）只留在本機
+outputs/navcil/*/nc15/lora_r3/
+outputs/navcil/*/nc15/val/
