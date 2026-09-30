@@ -1,0 +1,16 @@
+[2026-09-30 09:28:48] start: /Users/aaron/venvs/navcil/bin/python scripts/nc12_order_traj.py --cache-dir /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/cache 
+Traceback (most recent call last):
+  File "/Users/aaron/research/01_navrouter-cil-ws34/scripts/nc12_order_traj.py", line 207, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/aaron/research/01_navrouter-cil-ws34/scripts/nc12_order_traj.py", line 89, in main
+    res = {o: [run(b, o, names, f) for f in FOLDS] for o, names in O.items()}
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaron/research/01_navrouter-cil-ws34/scripts/nc12_order_traj.py", line 61, in run
+    g = b.gather(f, seen)
+        ^^^^^^^^^^^^^^^^^
+  File "/Users/aaron/research/01_navrouter-cil-ws34/scripts/nc8_report.py", line 58, in gather
+    si = parts[0]["subsets"].index(subset_key(seen))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: '1,3' is not in list
+[2026-09-30 09:28:51] exit=1
