@@ -1,0 +1,7 @@
+[2026-09-30 09:38:08] start: /Users/aaron/venvs/navcil/bin/python scripts/nc12_order_traj.py --cache-dir /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/cache 
+→ /Users/aaron/research/01_navrouter-cil-ws34/outputs/navcil/mac/REPORT_stage14.md
+  判準 1_tau: 通過
+  判準 2_acc: 通過
+  判準 3_W: 通過
+  判準 4_traj_nc8: 通過
+[2026-09-30 09:38:12] exit=0
