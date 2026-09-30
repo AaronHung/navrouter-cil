@@ -1,0 +1,47 @@
+[2026-09-29 23:43:16] start: /Users/aaron/venvs/navcil/bin/python scripts/nc13_head_contrib.py --cache-dir /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/cache --i6-dir /Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/i6/r2 --folds 1-10 
+[23:43:18] NC-13 threads=8 λ*=1.5 cache=/Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/cache i6=/Users/aaron/research/01_navrouter-cil/outputs/navcil/mac/i6/r2
+[23:43:19] fold 1 tcga_esca: n=15 (a)-vs-NC8 maxabs=0.0e+00
+[23:43:24] fold 1 tcga_rcc: n=76 (a)-vs-NC8 maxabs=0.0e+00
+[23:43:29] fold 1 tcga_brca: n=93 (a)-vs-NC8 maxabs=0.0e+00
+[23:43:34] fold 1 tcga_lung: n=95 (a)-vs-NC8 maxabs=0.0e+00
+[23:43:34] bottleneck tcga_esca: r=0.9948 h1>3 0.322 h2>3 0.345
+[23:43:34] bottleneck tcga_rcc: r=0.9996 h1>3 0.769 h2>3 0.769
+[23:43:34] bottleneck tcga_brca: r=-0.8244 h1>3 0.214 h2>3 0.666
+[23:43:34] bottleneck tcga_lung: r=-0.8426 h1>3 0.531 h2>3 0.874
+[23:43:35] fold 2 tcga_esca: n=15 (a)-vs-NC8 maxabs=0.0e+00
+[23:43:40] fold 2 tcga_rcc: n=81 (a)-vs-NC8 maxabs=0.0e+00
+[23:43:45] fold 2 tcga_brca: n=95 (a)-vs-NC8 maxabs=0.0e+00
+[23:43:50] fold 2 tcga_lung: n=95 (a)-vs-NC8 maxabs=0.0e+00
+[23:43:51] fold 3 tcga_esca: n=15 (a)-vs-NC8 maxabs=0.0e+00
+[23:43:56] fold 3 tcga_rcc: n=76 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:01] fold 3 tcga_brca: n=96 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:06] fold 3 tcga_lung: n=107 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:07] fold 4 tcga_esca: n=16 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:13] fold 4 tcga_rcc: n=78 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:17] fold 4 tcga_brca: n=94 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:24] fold 4 tcga_lung: n=112 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:25] fold 5 tcga_esca: n=15 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:29] fold 5 tcga_rcc: n=74 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:34] fold 5 tcga_brca: n=94 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:40] fold 5 tcga_lung: n=96 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:41] fold 6 tcga_esca: n=16 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:46] fold 6 tcga_rcc: n=77 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:52] fold 6 tcga_brca: n=98 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:57] fold 6 tcga_lung: n=88 (a)-vs-NC8 maxabs=0.0e+00
+[23:44:58] fold 7 tcga_esca: n=15 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:03] fold 7 tcga_rcc: n=75 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:08] fold 7 tcga_brca: n=96 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:13] fold 7 tcga_lung: n=97 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:14] fold 8 tcga_esca: n=15 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:19] fold 8 tcga_rcc: n=76 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:24] fold 8 tcga_brca: n=96 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:29] fold 8 tcga_lung: n=93 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:30] fold 9 tcga_esca: n=14 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:35] fold 9 tcga_rcc: n=81 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:40] fold 9 tcga_brca: n=99 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:45] fold 9 tcga_lung: n=92 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:45] fold 10 tcga_esca: n=14 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:50] fold 10 tcga_rcc: n=74 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:55] fold 10 tcga_brca: n=91 (a)-vs-NC8 maxabs=0.0e+00
+[23:45:59] fold 10 tcga_lung: n=90 (a)-vs-NC8 maxabs=0.0e+00
+[2026-09-29 23:46:00] exit=0
