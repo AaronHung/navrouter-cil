@@ -1,0 +1,666 @@
+{
+ "reverse": [
+  {
+   "fold": 1,
+   "acc_q": 0.9116581827402115,
+   "masked_q": 0.920323982834816,
+   "forg_q": 0.011554400126139322,
+   "forg_o": 0.011554400126139322,
+   "forg_terms_q": [
+    0.0,
+    0.013157844543457031,
+    0.021505355834960938
+   ],
+   "forg_terms_o": [
+    0.0,
+    0.013157844543457031,
+    0.021505355834960938
+   ],
+   "stored": {
+    "acc": 0.9116581827402115,
+    "masked": 0.920323982834816,
+    "forgetting": 0.011554400126139322
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 2,
+   "acc_q": 0.9372319728136063,
+   "masked_q": 0.9569850564002991,
+   "forg_q": 0.02633744478225708,
+   "forg_o": 0.02633744478225708,
+   "forg_terms_q": [
+    0.06666666269302368,
+    0.012345671653747559,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.06666666269302368,
+    0.012345671653747559,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.9372319728136063,
+    "masked": 0.9569850564002991,
+    "forgetting": 0.02633744478225708
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 3,
+   "acc_q": 0.9414235502481461,
+   "masked_q": 0.9473171979188919,
+   "forg_q": 0.0,
+   "forg_o": 0.0,
+   "forg_terms_q": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.9414235502481461,
+    "masked": 0.9473171979188919,
+    "forgetting": 0.0
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 4,
+   "acc_q": 0.8913873136043549,
+   "masked_q": 0.9306160360574722,
+   "forg_q": 0.045212765534718834,
+   "forg_o": 0.045212765534718834,
+   "forg_terms_q": [
+    0.125,
+    0.0,
+    0.010638296604156494
+   ],
+   "forg_terms_o": [
+    0.125,
+    0.0,
+    0.010638296604156494
+   ],
+   "stored": {
+    "acc": 0.8913873136043549,
+    "masked": 0.9306160360574722,
+    "forgetting": 0.045212765534718834
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 5,
+   "acc_q": 0.9582824259996414,
+   "masked_q": 0.9643203765153885,
+   "forg_q": 0.004504501819610596,
+   "forg_o": 0.004504501819610596,
+   "forg_terms_q": [
+    0.0,
+    0.013513505458831787,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.0,
+    0.013513505458831787,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.9582824259996414,
+    "masked": 0.9643203765153885,
+    "forgetting": 0.004504501819610596
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 6,
+   "acc_q": 0.9164250940084457,
+   "masked_q": 0.9348910003900528,
+   "forg_q": 0.020833333333333332,
+   "forg_o": 0.020833333333333332,
+   "forg_terms_q": [
+    0.0625,
+    0.0,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.0625,
+    0.0,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.9164250940084457,
+    "masked": 0.9348910003900528,
+    "forgetting": 0.020833333333333332
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 7,
+   "acc_q": 0.8900869786739349,
+   "masked_q": 0.9259976297616959,
+   "forg_q": 0.04888888200124105,
+   "forg_o": 0.04888888200124105,
+   "forg_terms_q": [
+    0.13333332538604736,
+    0.013333320617675781,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.13333332538604736,
+    0.013333320617675781,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.8900869786739349,
+    "masked": 0.9259976297616959,
+    "forgetting": 0.04888888200124105
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 8,
+   "acc_q": 0.8771611452102661,
+   "masked_q": 0.8912033140659332,
+   "forg_q": 0.004385968049367269,
+   "forg_o": 0.004385968049367269,
+   "forg_terms_q": [
+    0.0,
+    0.013157904148101807,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.0,
+    0.013157904148101807,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.8771611452102661,
+    "masked": 0.8912033140659332,
+    "forgetting": 0.004385968049367269
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 9,
+   "acc_q": 0.8987485021352768,
+   "masked_q": 0.9117590636014938,
+   "forg_q": 0.033910552660624184,
+   "forg_o": 0.033910552660624184,
+   "forg_terms_q": [
+    0.07142859697341919,
+    0.0,
+    0.03030306100845337
+   ],
+   "forg_terms_o": [
+    0.07142859697341919,
+    0.0,
+    0.03030306100845337
+   ],
+   "stored": {
+    "acc": 0.8987485021352768,
+    "masked": 0.9117590636014938,
+    "forgetting": 0.033910552660624184
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 10,
+   "acc_q": 0.9056157767772675,
+   "masked_q": 0.9289979636669159,
+   "forg_q": 0.02831403414408366,
+   "forg_o": 0.02831403414408366,
+   "forg_terms_q": [
+    0.07142859697341919,
+    0.013513505458831787,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.07142859697341919,
+    0.013513505458831787,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.9056157767772675,
+    "masked": 0.9289979636669159,
+    "forgetting": 0.02831403414408366
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  }
+ ],
+ "paper": [
+  {
+   "fold": 1,
+   "acc_q": 0.9116581827402115,
+   "masked_q": 0.920323982834816,
+   "forg_q": 0.007970174153645834,
+   "forg_o": 0.007970174153645834,
+   "forg_terms_q": [
+    0.0,
+    0.010752677917480469,
+    0.013157844543457031
+   ],
+   "forg_terms_o": [
+    0.0,
+    0.010752677917480469,
+    0.013157844543457031
+   ],
+   "stored": {
+    "acc": 0.9116581827402115,
+    "masked": 0.920323982834816,
+    "forgetting": 0.007970174153645834
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 2,
+   "acc_q": 0.9372319728136063,
+   "masked_q": 0.9569850564002991,
+   "forg_q": 0.0,
+   "forg_o": -0.003508766492207845,
+   "forg_terms_q": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.0,
+    -0.010526299476623535,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.9372319728136063,
+    "masked": 0.9569850564002991,
+    "forgetting": -0.003508766492207845
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 3,
+   "acc_q": 0.9414235502481461,
+   "masked_q": 0.9473171979188919,
+   "forg_q": 0.0,
+   "forg_o": 0.0,
+   "forg_terms_q": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.9414235502481461,
+    "masked": 0.9473171979188919,
+    "forgetting": 0.0
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 4,
+   "acc_q": 0.8913873136043549,
+   "masked_q": 0.9306160360574722,
+   "forg_q": 0.0,
+   "forg_o": 0.0,
+   "forg_terms_q": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.8913873136043549,
+    "masked": 0.9306160360574722,
+    "forgetting": 0.0
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 5,
+   "acc_q": 0.9582824259996414,
+   "masked_q": 0.9643203765153885,
+   "forg_q": 0.0,
+   "forg_o": 0.0,
+   "forg_terms_q": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.9582824259996414,
+    "masked": 0.9643203765153885,
+    "forgetting": 0.0
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 6,
+   "acc_q": 0.9164250940084457,
+   "masked_q": 0.9348910003900528,
+   "forg_q": 0.0037878751754760742,
+   "forg_o": 0.0037878751754760742,
+   "forg_terms_q": [
+    0.011363625526428223,
+    0.0,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.011363625526428223,
+    0.0,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.9164250940084457,
+    "masked": 0.9348910003900528,
+    "forgetting": 0.0037878751754760742
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 7,
+   "acc_q": 0.8900869786739349,
+   "masked_q": 0.9259976297616959,
+   "forg_q": 0.003436426321665446,
+   "forg_o": 0.003436426321665446,
+   "forg_terms_q": [
+    0.010309278964996338,
+    0.0,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.010309278964996338,
+    0.0,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.8900869786739349,
+    "masked": 0.9259976297616959,
+    "forgetting": 0.003436426321665446
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 8,
+   "acc_q": 0.8771611452102661,
+   "masked_q": 0.8912033140659332,
+   "forg_q": 0.014336923758188883,
+   "forg_o": 0.014336923758188883,
+   "forg_terms_q": [
+    0.04301077127456665,
+    0.0,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.04301077127456665,
+    0.0,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.8771611452102661,
+    "masked": 0.8912033140659332,
+    "forgetting": 0.014336923758188883
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 9,
+   "acc_q": 0.8987485021352768,
+   "masked_q": 0.9117590636014938,
+   "forg_q": 0.010869582494099935,
+   "forg_o": 0.010869582494099935,
+   "forg_terms_q": [
+    0.032608747482299805,
+    0.0,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.032608747482299805,
+    0.0,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.8987485021352768,
+    "masked": 0.9117590636014938,
+    "forgetting": 0.010869582494099935
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  },
+  {
+   "fold": 10,
+   "acc_q": 0.9056157767772675,
+   "masked_q": 0.9289979636669159,
+   "forg_q": 0.0037037134170532227,
+   "forg_o": 0.0037037134170532227,
+   "forg_terms_q": [
+    0.011111140251159668,
+    0.0,
+    0.0
+   ],
+   "forg_terms_o": [
+    0.011111140251159668,
+    0.0,
+    0.0
+   ],
+   "stored": {
+    "acc": 0.9056157767772675,
+    "masked": 0.9289979636669159,
+    "forgetting": 0.0037037134170532227
+   },
+   "same_R_nc9": true,
+   "same_Rm_nc9": true,
+   "same_R_nc12": true,
+   "fold_checks": {
+    "1_acc_bitwise": true,
+    "2_masked_bitwise": true,
+    "3_forg_o_bitwise": true,
+    "4_R_nc8_nc9": true,
+    "4_Rm_nc8_nc9": true,
+    "4_R_nc8_nc12": true
+   }
+  }
+ ]
+}
