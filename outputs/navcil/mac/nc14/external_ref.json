@@ -1,0 +1,8 @@
+{
+  "note": "外部參考方法的已發表 sd，抄自 reference/papers/2410.10573v3（Tab. 1 p.5 = forward = paper 序；Tab. 2 p.6 = reverse）。平均值以 reference/external_baselines.json 為準，此檔只補 sd。",
+  "sd": {
+    "reverse": {"acc": 0.032, "masked_acc": 0.018, "forgetting": 0.031},
+    "paper": {"acc": 0.021, "masked_acc": 0.018, "forgetting": 0.014}
+  },
+  "table": {"reverse": "Tab. 2 (p.6)", "paper": "Tab. 1 (p.5)"}
+}

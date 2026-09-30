@@ -1,0 +1,64 @@
+{
+ "pass": true,
+ "checks": {
+  "reverse": {
+   "1_acc_bitwise": true,
+   "1_acc_mean4": true,
+   "2_masked_bitwise": true,
+   "2_masked_mean4": true,
+   "3_forg_o_bitwise": true,
+   "3_forg_o_mean4": true,
+   "4_R_nc8_nc9": true,
+   "4_Rm_nc8_nc9": true,
+   "4_R_nc8_nc12": true,
+   "means": {
+    "acc_q": [
+     0.9128020942211151,
+     0.025804597159915423
+    ],
+    "masked_q": [
+     0.9312411621212959,
+     0.021508206084223377
+    ],
+    "forg_q": [
+     0.022394188245137534,
+     0.01722933732003373
+    ],
+    "forg_o": [
+     0.022394188245137534,
+     0.01722933732003373
+    ]
+   }
+  },
+  "paper": {
+   "1_acc_bitwise": true,
+   "1_acc_mean4": true,
+   "2_masked_bitwise": true,
+   "2_masked_mean4": true,
+   "3_forg_o_bitwise": true,
+   "3_forg_o_mean4": true,
+   "4_R_nc8_nc9": true,
+   "4_Rm_nc8_nc9": true,
+   "4_R_nc8_nc12": true,
+   "means": {
+    "acc_q": [
+     0.9128020942211151,
+     0.025804597159915423
+    ],
+    "masked_q": [
+     0.9312411621212959,
+     0.021508206084223377
+    ],
+    "forg_q": [
+     0.004410469532012939,
+     0.00508342606298315
+    ],
+    "forg_o": [
+     0.004059592882792154,
+     0.005523705462470773
+    ]
+   }
+  }
+ },
+ "seconds": 0.008
+}
