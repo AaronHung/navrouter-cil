@@ -344,7 +344,7 @@ def main() -> int:
     gm3["pass"] = gm3["pass_i"] and gm3["pass_ii"]
     res["gates"] = {"G-M3": gm3, "G-M2": gm2}
 
-    head = ["# REPORT — MOE-0：WP 稽核之外的 MoE 前置診斷（只推論；Mac CPU，十折，reverse 與 forward〔= repo 的 paper〕兩序）", "",
+    head = ["# REPORT — MOE-0：MoE 前置診斷 B1–B5（只推論；Mac CPU，十折，reverse 與 forward〔= repo 的 paper〕兩序）", "",
             "機器：mac（Apple M1 Pro）、`--device cpu`、`torch.set_num_threads(8)`、torch 2.11.0。所有數字來自同一台、同一批：NC-8 同批快取（train mean_vec、test I6_cos8）"
             f"＋本輪新推論（`scripts/moe0_infer.py`；validation 十折與 test 十折，見 T6）。判準與操作定義見 `PREREG-16.md`（commit 146344f）；"
             f"選 λ、T 只讀 validation（`selection.json`，commit {commit_sel}）。A 段稽核見 `AUDIT_wp.md`。",
@@ -360,6 +360,10 @@ def main() -> int:
             f"| (i) U（B3 至少一個對，四任務等權）− WP₄ | {gm3['U']:.4f} − {gm3['WP4']:.4f} = {gm3['diff_i']:+.4f} | ≥ +0.02 | {'滿足' if gm3['pass_i'] else '不滿足'} |",
             f"| (ii) λ\\* = {lam_star} 的 validation Masked ACC − 主系統 validation WP | {gm3['val_fused']:.4f} − {gm3['val_main']:.4f} = {gm3['diff_ii']:+.4f} | ≥ +0.005 | {'滿足' if gm3['pass_ii'] else '不滿足'} |",
             f"| **G-M3** | | (i) 且 (ii) | **{'通過' if gm3['pass'] else '未通過'}** |", "",
+            f"參考（不改變判定）：(ii) 在附帶版本 z′（只除以 σ、不減平均；PREREG-16 操作定義 17）為 λ\\* = {sel['B4']['zprime']['lambda_star']} 的 validation "
+            f"{sel['B4']['zprime']['val_masked_by_lambda'][str(sel['B4']['zprime']['lambda_star'])]:.4f} − {val_main:.4f} = "
+            f"{sel['B4']['zprime']['val_masked_by_lambda'][str(sel['B4']['zprime']['lambda_star'])] - val_main:+.4f}；"
+            f"主要版本 z 的 λ = 0（只置中、不融合）validation 為 {sel['B4']['z']['val_masked_by_lambda']['0.0']:.4f}（T4）。", "",
             "### G-M2（操作定義 23）", "",
             "| 格 | 該格 | 對角線 | 對角線 − 該格 | 門檻 | 結果 |", "|---|---|---|---|---|---|",
             f"| LUNG head 用在 ESCA slides | {gm2['cell_lung_head_on_esca']:.4f} | {gm2['diag_esca']:.4f}（ESCA head、ESCA） | {gm2['gap1']:+.4f} | < 0.01 | {'滿足' if gm2['gap1'] < 0.01 else '不滿足'} |",
