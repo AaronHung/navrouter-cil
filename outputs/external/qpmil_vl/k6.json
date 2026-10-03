@@ -1,0 +1,1871 @@
+{
+ "batches": {
+  "reverse_b8": {
+   "order": "reverse",
+   "n_cells": 120,
+   "n_same": 120,
+   "test_cells_same": 40,
+   "pass": true,
+   "diffs": [],
+   "cells": {
+    "1|tcga_esca|train": {
+     "n": 120,
+     "sha256": "312811e67ca69106ec89e3fdfc469bc1268001a5abfd2c66661ec4cb8ba5782d",
+     "same": true
+    },
+    "1|tcga_esca|val": {
+     "n": 15,
+     "sha256": "19fe760719839d72281272b53bbca1cec8fa69094cc3fc5ad5639c68d3b5dc60",
+     "same": true
+    },
+    "1|tcga_esca|test": {
+     "n": 15,
+     "sha256": "3992a393ec3fc1d4aee9bbb4fb31a565ce9061d30576576d76af605036adbb6c",
+     "same": true
+    },
+    "1|tcga_rcc|train": {
+     "n": 616,
+     "sha256": "3c0294abe80c9faabc3c8eb13d3505f667a8d2f8c34a0ca1972ab926921dbbcd",
+     "same": true
+    },
+    "1|tcga_rcc|val": {
+     "n": 76,
+     "sha256": "93fe04481e80d2ed2d8259b59f166afecad44854b2974618cf84924344b2b217",
+     "same": true
+    },
+    "1|tcga_rcc|test": {
+     "n": 76,
+     "sha256": "a702174b5a6e4882894d0577cdea9ab4efcd7d6e8e4c7ab5259e2e2bbd8f683c",
+     "same": true
+    },
+    "1|tcga_brca|train": {
+     "n": 763,
+     "sha256": "3e44b9b7d50c6ac01b8216b112f0a40d8743ccf434ebf3bb419956ed40e9a789",
+     "same": true
+    },
+    "1|tcga_brca|val": {
+     "n": 96,
+     "sha256": "05e96efb915f42c1d87e664a37b741e4185505a8d16e441a56cce67d17fd8cc0",
+     "same": true
+    },
+    "1|tcga_brca|test": {
+     "n": 93,
+     "sha256": "90736888266ca2fc22786ef998e8c6f2990ffeb124960461c0efeebd0596c06f",
+     "same": true
+    },
+    "1|tcga_lung|train": {
+     "n": 774,
+     "sha256": "d2a8d6761c37153ed48e90fb32a24929cfa970ded178f5f9c092f792aff2ca13",
+     "same": true
+    },
+    "1|tcga_lung|val": {
+     "n": 96,
+     "sha256": "8314f5fbcbb10fd136b88f2f107d8153035c037359c3f61de5fd638fdb2556be",
+     "same": true
+    },
+    "1|tcga_lung|test": {
+     "n": 95,
+     "sha256": "83449edaf563974acf461674dbac7e3617f5164e8db9d6ec2d72cc1b2953373b",
+     "same": true
+    },
+    "2|tcga_esca|train": {
+     "n": 120,
+     "sha256": "cc060784ba2cbe1073c1094cb1fd70ac94cdd28770fd437ec802b6d78bcf4b6e",
+     "same": true
+    },
+    "2|tcga_esca|val": {
+     "n": 15,
+     "sha256": "3fa5c0aa9ac5c04c4972662c55b5665f0ba1746ecf358c576e9e40fc35bbe361",
+     "same": true
+    },
+    "2|tcga_esca|test": {
+     "n": 15,
+     "sha256": "58298aa5343ada3eb405d5ae7abf58549c3d6aef73cca7b42b28e9939f32c6b6",
+     "same": true
+    },
+    "2|tcga_rcc|train": {
+     "n": 613,
+     "sha256": "cb96ccd266a7af0b78d0951841ad0738dc9698743cddab5b659deae235f66992",
+     "same": true
+    },
+    "2|tcga_rcc|val": {
+     "n": 74,
+     "sha256": "471ab0a0233c2a63fe0c0533c10f8aee345c0a1aed967d9ed57e9dfcf63dcbfc",
+     "same": true
+    },
+    "2|tcga_rcc|test": {
+     "n": 81,
+     "sha256": "aa6b6c8cb7cef0e60c87a2371c2e0b0fdd35cac7e339f005544bc9fb32975098",
+     "same": true
+    },
+    "2|tcga_brca|train": {
+     "n": 764,
+     "sha256": "61b20401de673a08ee6d8d5615d61d3020ba0da6b9fd2b9b09ac686d92ae7e75",
+     "same": true
+    },
+    "2|tcga_brca|val": {
+     "n": 93,
+     "sha256": "6cc5434401723fc5b5e22f25bfcbe54ceb94cffc2f4bbf77aeff0000befd3d6e",
+     "same": true
+    },
+    "2|tcga_brca|test": {
+     "n": 95,
+     "sha256": "ca8766d063655d80dfc00c32a6ab6739bcc795b069cc17e789dee34ca26d33e4",
+     "same": true
+    },
+    "2|tcga_lung|train": {
+     "n": 761,
+     "sha256": "2fee1821fbb9b0f7d77a90527f544287d7a70974e300432802f6adf1e176e8ba",
+     "same": true
+    },
+    "2|tcga_lung|val": {
+     "n": 109,
+     "sha256": "b7e281b6752a084b5ec18709827a9a14dfb6efcdf02c7bd664e4f2e29e25e9f0",
+     "same": true
+    },
+    "2|tcga_lung|test": {
+     "n": 95,
+     "sha256": "b79e4f57f6c7f2adf98da499273741a2f64d9ae5c6b9d405de2e53c699304b3f",
+     "same": true
+    },
+    "3|tcga_esca|train": {
+     "n": 120,
+     "sha256": "7979fa91aa068a9bbf20b089dc0a3f55dcf35a968dc8ab3e661183ee94fd5b3f",
+     "same": true
+    },
+    "3|tcga_esca|val": {
+     "n": 15,
+     "sha256": "2bf3eb313c8222c00ce2f46365806e82484579ad491d7812ceee4eed662845ed",
+     "same": true
+    },
+    "3|tcga_esca|test": {
+     "n": 15,
+     "sha256": "4da61bf0de02b751d4a4207152eebb4f4d61381c6d747f079d536e4714290796",
+     "same": true
+    },
+    "3|tcga_rcc|train": {
+     "n": 617,
+     "sha256": "9f4c8f2a088699d685521541f4695b6d3d48f8da9c8ffcd9d9d8ea4df562dee6",
+     "same": true
+    },
+    "3|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "bb265c8bf0c014d4c19ad818d86e5b4488c3ecf0b9cdcc021c233beccc14047d",
+     "same": true
+    },
+    "3|tcga_rcc|test": {
+     "n": 76,
+     "sha256": "57ca389dc6a1c72ab79bfdd9e4eb54103717cf5add7145bdc58ac7b403d83723",
+     "same": true
+    },
+    "3|tcga_brca|train": {
+     "n": 763,
+     "sha256": "9b8a42f8f473b69757abddff2029fae588d209382c0a936a372f38113833e0b2",
+     "same": true
+    },
+    "3|tcga_brca|val": {
+     "n": 93,
+     "sha256": "3a3c507b3aeba00ef7364036e02d0e36f08f35c2b9d5e6ec5328ddf8ed018a79",
+     "same": true
+    },
+    "3|tcga_brca|test": {
+     "n": 96,
+     "sha256": "b372ddfefe4f209528a8320acb4548b46a60bb5c597434c33938e0120dc7d184",
+     "same": true
+    },
+    "3|tcga_lung|train": {
+     "n": 765,
+     "sha256": "219e6319ebed0bcdd6390bece5944657af59049fa920eef1f838866e1307b0a2",
+     "same": true
+    },
+    "3|tcga_lung|val": {
+     "n": 93,
+     "sha256": "a4acf4393da171e2d08bed89d5949a760394f713e730fa691f85d038e162829f",
+     "same": true
+    },
+    "3|tcga_lung|test": {
+     "n": 107,
+     "sha256": "c2d9329fedb629ffc6cd1b043c77b41b6026764628c690c1093ab626a3563992",
+     "same": true
+    },
+    "4|tcga_esca|train": {
+     "n": 119,
+     "sha256": "39983f3d5ae5b39f137a6313569064ddd0c4a8351de00cfad9ff25093910d992",
+     "same": true
+    },
+    "4|tcga_esca|val": {
+     "n": 15,
+     "sha256": "6c0cd5087336a320fe40299badf2b0cee8f1c5b1c6f5559a0c3480f8293d7f62",
+     "same": true
+    },
+    "4|tcga_esca|test": {
+     "n": 16,
+     "sha256": "4c8ccfba2b69a0f942ff1184ec4af269cb321ac95bbd746c66c5a4e759a27ce0",
+     "same": true
+    },
+    "4|tcga_rcc|train": {
+     "n": 613,
+     "sha256": "e637ca60b6314c68cbe97caff2e8349a45a9dd718fa444acb0fbdd157cdd32aa",
+     "same": true
+    },
+    "4|tcga_rcc|val": {
+     "n": 77,
+     "sha256": "5315e71b003267a138c9b13b1889514ace34c257a621bbdb05126f9c68677d84",
+     "same": true
+    },
+    "4|tcga_rcc|test": {
+     "n": 78,
+     "sha256": "49ba2921c3651c0afec7f789125c1415eca14eec653e6a56c5b40412a7168f83",
+     "same": true
+    },
+    "4|tcga_brca|train": {
+     "n": 762,
+     "sha256": "5221729b660a53f9e6c8b927abb3665f2d713541c3e71fb9a8f2ac4e5d058c8f",
+     "same": true
+    },
+    "4|tcga_brca|val": {
+     "n": 96,
+     "sha256": "c362b380493502ad23333aae19ae8a44879a0f6ca81c2225f7dc949308d735d8",
+     "same": true
+    },
+    "4|tcga_brca|test": {
+     "n": 94,
+     "sha256": "588f8e047dff07fc642f05536577162c8df222a845ae3e6dee2f9af9014a4bb3",
+     "same": true
+    },
+    "4|tcga_lung|train": {
+     "n": 756,
+     "sha256": "acd57e72143aef8de691b1a46599864729bff1d1e13f483ad8534b15ee2216b7",
+     "same": true
+    },
+    "4|tcga_lung|val": {
+     "n": 97,
+     "sha256": "5496636f7a74760557b26653f8a3db6632d31aba68609e2337bd7c574363c3cc",
+     "same": true
+    },
+    "4|tcga_lung|test": {
+     "n": 112,
+     "sha256": "8a56f3d497d6b0158c025017757edc1a9d1c50b0d12fc609b64c1f64d7ac031e",
+     "same": true
+    },
+    "5|tcga_esca|train": {
+     "n": 120,
+     "sha256": "e33a9e3031628323762249ddad6627bb607d14696757b3027a3ae1edd74c2de4",
+     "same": true
+    },
+    "5|tcga_esca|val": {
+     "n": 15,
+     "sha256": "9c110f19a22ac1bf8db6618d8edf9365bde25f3c6f8c0154255363ba46a9495e",
+     "same": true
+    },
+    "5|tcga_esca|test": {
+     "n": 15,
+     "sha256": "40d7744fdb0178b4aa8d293b267a554d01cb935f30cde27c6fa82e9a7df1a0a7",
+     "same": true
+    },
+    "5|tcga_rcc|train": {
+     "n": 619,
+     "sha256": "4357b05d8618e4c5585e53d30ea740240c2fac8e8afc53ecb70fc12ada6babca",
+     "same": true
+    },
+    "5|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "3b484336cfe49cb13830497c84faa24e8a2ee1ed4b0587a6a403fdcdeadb8620",
+     "same": true
+    },
+    "5|tcga_rcc|test": {
+     "n": 74,
+     "sha256": "ad8d160e4e969d209a597728821e7a17845134a6d9077fca279f9b80ff91640d",
+     "same": true
+    },
+    "5|tcga_brca|train": {
+     "n": 763,
+     "sha256": "29503af6b736ea40383e92736d1988781eca88713a303cebe2b18bac22026f7b",
+     "same": true
+    },
+    "5|tcga_brca|val": {
+     "n": 95,
+     "sha256": "6cae883e8bc9ac687099aa40a0b140ea0337278bcb9f72c965e56d5f26983359",
+     "same": true
+    },
+    "5|tcga_brca|test": {
+     "n": 94,
+     "sha256": "decb2a03949b0fbd6a8f39c060e4be894b3f099d3bb4df45a55ca575599d92ca",
+     "same": true
+    },
+    "5|tcga_lung|train": {
+     "n": 764,
+     "sha256": "412011e5ca3b76965d1c71c2f3e0bca60d7c6bbaba6d90eba97f0cbacc5e77aa",
+     "same": true
+    },
+    "5|tcga_lung|val": {
+     "n": 105,
+     "sha256": "b7c5e322f5cdbf2cf1f7087617787cc608c0140532c21f8c1b330e7ce179c641",
+     "same": true
+    },
+    "5|tcga_lung|test": {
+     "n": 96,
+     "sha256": "1f49a0decc177e79c8d601829e8222309a80c8d201477ba5f522f60e7c370093",
+     "same": true
+    },
+    "6|tcga_esca|train": {
+     "n": 119,
+     "sha256": "0465a6c4a2b833b6bdebc3d9243637435924a36fb1c3b2cd6ba325898873dee8",
+     "same": true
+    },
+    "6|tcga_esca|val": {
+     "n": 15,
+     "sha256": "c5e5b021f14790a00d5163293ce6c9dd3c89fb9d09a205a974d5ef7e1e313278",
+     "same": true
+    },
+    "6|tcga_esca|test": {
+     "n": 16,
+     "sha256": "f7c83afc82838ccd5c2380d6c1ecfd8f036c3f4fca55b458e2adfaf0420e1419",
+     "same": true
+    },
+    "6|tcga_rcc|train": {
+     "n": 616,
+     "sha256": "52d554450dab55ba0f9c317d88d60cdc5e8985f50f43bc7d99b2d03faee617b9",
+     "same": true
+    },
+    "6|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "fb79778301bea719099929a9ce7978f6bbc3f1c5febe28d46a40a19c32720012",
+     "same": true
+    },
+    "6|tcga_rcc|test": {
+     "n": 77,
+     "sha256": "426b1caa2562ad3e5b62daea0bbc6ef76d6ec14a4a0e8a3531ba3edd3250f208",
+     "same": true
+    },
+    "6|tcga_brca|train": {
+     "n": 758,
+     "sha256": "59e0da80927717a6064218fb8ff00f2f2bbc708cd29b30468a186af432b5c5af",
+     "same": true
+    },
+    "6|tcga_brca|val": {
+     "n": 96,
+     "sha256": "8d4a3eb3306db74be838a8cc7b0953ce66fed9a347d8713e573f88974945f263",
+     "same": true
+    },
+    "6|tcga_brca|test": {
+     "n": 98,
+     "sha256": "a6016754ddb53d0ffd3b599e74311fab9edbfb12103952a620555f3639b3176d",
+     "same": true
+    },
+    "6|tcga_lung|train": {
+     "n": 759,
+     "sha256": "80749753e2fe3bc722d990c30f16fc7cde6fadb8c142a827aa3f24c0ad6f192d",
+     "same": true
+    },
+    "6|tcga_lung|val": {
+     "n": 118,
+     "sha256": "a40d161ec17fdef5ded8efc7ee690ed5a2ae5c7237968ef2c8759c4b546a4f5c",
+     "same": true
+    },
+    "6|tcga_lung|test": {
+     "n": 88,
+     "sha256": "caf049f8704c4b1d4d31f94c450cd737e81898bc7591615fd0939d90152a866a",
+     "same": true
+    },
+    "7|tcga_esca|train": {
+     "n": 120,
+     "sha256": "72599629b376ade29745bd3711e9b952b43192f2d3ab7b3c8507d0dad79423da",
+     "same": true
+    },
+    "7|tcga_esca|val": {
+     "n": 15,
+     "sha256": "00e7599e49ed24ca5745ca354dafa9dba771825c12902613892a4abef34a846f",
+     "same": true
+    },
+    "7|tcga_esca|test": {
+     "n": 15,
+     "sha256": "7d7db4db26c48769b1cdaf658a0a5849b92a50dba7666e4ef60febb58f135ebf",
+     "same": true
+    },
+    "7|tcga_rcc|train": {
+     "n": 615,
+     "sha256": "044a3becaef64e98816b648cc4efb4bdb3cc2b8e45b99f82c51ae79dca8808a4",
+     "same": true
+    },
+    "7|tcga_rcc|val": {
+     "n": 78,
+     "sha256": "d848d09f8373823a6dd2dd1711a47eabefce932483ffecccfadb161b81601314",
+     "same": true
+    },
+    "7|tcga_rcc|test": {
+     "n": 75,
+     "sha256": "42df379702b99d78260afdc99afd1827b355c2e49a53819f66eade0226d70c21",
+     "same": true
+    },
+    "7|tcga_brca|train": {
+     "n": 760,
+     "sha256": "ca48d4b76f14b6f42ad6f34b7e7050be8f4a70feef577869f8aef2d8801eee79",
+     "same": true
+    },
+    "7|tcga_brca|val": {
+     "n": 96,
+     "sha256": "331a3359b8ff270376f07b638b8258bb234521be745de5e255c28e901fb7d129",
+     "same": true
+    },
+    "7|tcga_brca|test": {
+     "n": 96,
+     "sha256": "deb39a33d4c60c1ef8ccaa451001845232d7863b31221635ead959fddab0b6a0",
+     "same": true
+    },
+    "7|tcga_lung|train": {
+     "n": 774,
+     "sha256": "414d7f6ff09f1441e2a46c32972be04783650ceef706e8909c08325de2d383bb",
+     "same": true
+    },
+    "7|tcga_lung|val": {
+     "n": 94,
+     "sha256": "355bd1655912189c8f0ec8a15c21dda8d3501cdca2cfdbf7674df3c6368bdf4d",
+     "same": true
+    },
+    "7|tcga_lung|test": {
+     "n": 97,
+     "sha256": "6e45f6b5e1410987b0eac7af0a99f27ddf53f5cf5211861377cb5c2a8b46cb33",
+     "same": true
+    },
+    "8|tcga_esca|train": {
+     "n": 120,
+     "sha256": "4a8d467fa358c9cb3662d3a1f76a0eb9b423b4afc8717cc10959b377ca4be6ad",
+     "same": true
+    },
+    "8|tcga_esca|val": {
+     "n": 15,
+     "sha256": "c4992da2ffcc82d563b9b0d6affad81614560b45271810456b45a786c89656d0",
+     "same": true
+    },
+    "8|tcga_esca|test": {
+     "n": 15,
+     "sha256": "8b042c77cfc236234e1e5b1142947ef80d084742428c5877176de04ced995cf6",
+     "same": true
+    },
+    "8|tcga_rcc|train": {
+     "n": 617,
+     "sha256": "959df844c6c1a4d1953d3ad8d874c9d09d93599504f52e29ce1970100fedddad",
+     "same": true
+    },
+    "8|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "b4040b2d8907207b497809c46a5430e6ca854bd583093b336f4df2174237c87c",
+     "same": true
+    },
+    "8|tcga_rcc|test": {
+     "n": 76,
+     "sha256": "fadbe17e2eedd1c1bb8e5b01f78e366d843ae3d5ebd8668f909a608f88e039c6",
+     "same": true
+    },
+    "8|tcga_brca|train": {
+     "n": 762,
+     "sha256": "6c8904ce46088773100a2362ce25728f51ec61707d5623d26678cc137d9d1d53",
+     "same": true
+    },
+    "8|tcga_brca|val": {
+     "n": 94,
+     "sha256": "3c032db71f6d790f169c01fd3fb2aa91b17baf580613ae591f786019478e5972",
+     "same": true
+    },
+    "8|tcga_brca|test": {
+     "n": 96,
+     "sha256": "c2ddbc5c8c3ba9210e043079949edc9e821ad1d13a91a3c7dc7ac535e31037d9",
+     "same": true
+    },
+    "8|tcga_lung|train": {
+     "n": 777,
+     "sha256": "b6703f89fe4ad6e37d10bebf2cdb32bdcf9cf280b10d25d4613cf57d4d443a3b",
+     "same": true
+    },
+    "8|tcga_lung|val": {
+     "n": 95,
+     "sha256": "16de388e2c6c50d0675f19c02c3fc58577b435006bc83566f94f2244338c4ee2",
+     "same": true
+    },
+    "8|tcga_lung|test": {
+     "n": 93,
+     "sha256": "5810e87a27490a9589a82745a783be375d42fa8df36d1286d548305d81b23376",
+     "same": true
+    },
+    "9|tcga_esca|train": {
+     "n": 121,
+     "sha256": "880de8a8a28260457ba964aa5ab38f23e8d1ec0202bf272854fc0bd65e1e8a17",
+     "same": true
+    },
+    "9|tcga_esca|val": {
+     "n": 15,
+     "sha256": "0727e0419a0005981e29e870539802ffcd6e2a05c3cf14e99305863d536e2b24",
+     "same": true
+    },
+    "9|tcga_esca|test": {
+     "n": 14,
+     "sha256": "5d7aacdbcb1fa8703b598d6a94450685925581d29f1858f2a51797e2c4d9242f",
+     "same": true
+    },
+    "9|tcga_rcc|train": {
+     "n": 612,
+     "sha256": "a49e34a4792814ce0f515fb0204f0ff7d78ebe756f8b1a078793c6cfa259dd28",
+     "same": true
+    },
+    "9|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "1fc08fc10a9278461930989d39d39562f7872a053a38a999d35ccaebbb11cb26",
+     "same": true
+    },
+    "9|tcga_rcc|test": {
+     "n": 81,
+     "sha256": "652a26e08cc32d97009c7425a7eb325717299c1dae65dc816ea249ae215a94b4",
+     "same": true
+    },
+    "9|tcga_brca|train": {
+     "n": 760,
+     "sha256": "aac803be6cf6b0a8143e24b61c55e062c238c66733e91b913d2914053ece9d36",
+     "same": true
+    },
+    "9|tcga_brca|val": {
+     "n": 93,
+     "sha256": "514eb31083844d199c1e3c7936c118199e93ee3eeb27322c3354cfe80c70f852",
+     "same": true
+    },
+    "9|tcga_brca|test": {
+     "n": 99,
+     "sha256": "f5ae1faa20d19cd31f9e5f6f403db6f1b9d5efe7debc53fe75c3383e37a84728",
+     "same": true
+    },
+    "9|tcga_lung|train": {
+     "n": 762,
+     "sha256": "d4d44296f3d25d7fb4b02f3b8e6cfe4c85a7e51e8b8bb956413677d525655760",
+     "same": true
+    },
+    "9|tcga_lung|val": {
+     "n": 111,
+     "sha256": "8a41b93bcd304ddd44a52c8e395b0e3a40ceeba20b8d9423ea2e4bef8b7812b2",
+     "same": true
+    },
+    "9|tcga_lung|test": {
+     "n": 92,
+     "sha256": "c4c5cb8bff30f40188653cfedbfd64236d2e2df71d93080191c603d133eb25e2",
+     "same": true
+    },
+    "10|tcga_esca|train": {
+     "n": 121,
+     "sha256": "a7859a55d6bf98ad40df38751b98c3bf2e7811835bab1a5f7adf94e08d2d51b5",
+     "same": true
+    },
+    "10|tcga_esca|val": {
+     "n": 15,
+     "sha256": "6630b6a38f2d901918953843d18062777613ad1ba7af451c4460a82ff91d5144",
+     "same": true
+    },
+    "10|tcga_esca|test": {
+     "n": 14,
+     "sha256": "54d5f87f813f20ca224c933a507b8a539edb1424681b9b0f38fb5722aa41471e",
+     "same": true
+    },
+    "10|tcga_rcc|train": {
+     "n": 618,
+     "sha256": "f1b33c1932a684b1dfc876ce845b6e46dc8efc3c48df0abd6810f89d2618e65d",
+     "same": true
+    },
+    "10|tcga_rcc|val": {
+     "n": 76,
+     "sha256": "81c6e91dd9965800ade942851b3754d1b2f195e18bed6a75ae2af6774b7f3491",
+     "same": true
+    },
+    "10|tcga_rcc|test": {
+     "n": 74,
+     "sha256": "ba1edf3fac5ce9597d4c645be1e8034da79ab554b981f7de1d4555a9042227bf",
+     "same": true
+    },
+    "10|tcga_brca|train": {
+     "n": 763,
+     "sha256": "90c7a3eafdbc4cbbd0bdfb8cd91c30bda1e489c3b36d94aa964d578026b25115",
+     "same": true
+    },
+    "10|tcga_brca|val": {
+     "n": 98,
+     "sha256": "4663ca67d58ab4516edef79329b69cf2e0f2a0583cabab751e0d07c8997303bd",
+     "same": true
+    },
+    "10|tcga_brca|test": {
+     "n": 91,
+     "sha256": "a4357b6ebc34f83c04a6a388362483616b0e2c797d8174629f07f49866161d8c",
+     "same": true
+    },
+    "10|tcga_lung|train": {
+     "n": 771,
+     "sha256": "addf741bc83a68ba8fc2b8f928e2dc3ebf70025868b602cc17d0eacde693739a",
+     "same": true
+    },
+    "10|tcga_lung|val": {
+     "n": 104,
+     "sha256": "d8a1206b05745fc0aa478fdc1da6655c19607d0af38b226e94fd9029d0773128",
+     "same": true
+    },
+    "10|tcga_lung|test": {
+     "n": 90,
+     "sha256": "dbafba6824592d209cbb23978da50b458075e376ad064e51d9ca739849292e8b",
+     "same": true
+    }
+   }
+  },
+  "paper_b16": {
+   "order": "paper",
+   "n_cells": 120,
+   "n_same": 120,
+   "test_cells_same": 40,
+   "pass": true,
+   "diffs": [],
+   "cells": {
+    "1|tcga_esca|train": {
+     "n": 120,
+     "sha256": "312811e67ca69106ec89e3fdfc469bc1268001a5abfd2c66661ec4cb8ba5782d",
+     "same": true
+    },
+    "1|tcga_esca|val": {
+     "n": 15,
+     "sha256": "19fe760719839d72281272b53bbca1cec8fa69094cc3fc5ad5639c68d3b5dc60",
+     "same": true
+    },
+    "1|tcga_esca|test": {
+     "n": 15,
+     "sha256": "3992a393ec3fc1d4aee9bbb4fb31a565ce9061d30576576d76af605036adbb6c",
+     "same": true
+    },
+    "1|tcga_rcc|train": {
+     "n": 616,
+     "sha256": "3c0294abe80c9faabc3c8eb13d3505f667a8d2f8c34a0ca1972ab926921dbbcd",
+     "same": true
+    },
+    "1|tcga_rcc|val": {
+     "n": 76,
+     "sha256": "93fe04481e80d2ed2d8259b59f166afecad44854b2974618cf84924344b2b217",
+     "same": true
+    },
+    "1|tcga_rcc|test": {
+     "n": 76,
+     "sha256": "a702174b5a6e4882894d0577cdea9ab4efcd7d6e8e4c7ab5259e2e2bbd8f683c",
+     "same": true
+    },
+    "1|tcga_brca|train": {
+     "n": 763,
+     "sha256": "3e44b9b7d50c6ac01b8216b112f0a40d8743ccf434ebf3bb419956ed40e9a789",
+     "same": true
+    },
+    "1|tcga_brca|val": {
+     "n": 96,
+     "sha256": "05e96efb915f42c1d87e664a37b741e4185505a8d16e441a56cce67d17fd8cc0",
+     "same": true
+    },
+    "1|tcga_brca|test": {
+     "n": 93,
+     "sha256": "90736888266ca2fc22786ef998e8c6f2990ffeb124960461c0efeebd0596c06f",
+     "same": true
+    },
+    "1|tcga_lung|train": {
+     "n": 774,
+     "sha256": "d2a8d6761c37153ed48e90fb32a24929cfa970ded178f5f9c092f792aff2ca13",
+     "same": true
+    },
+    "1|tcga_lung|val": {
+     "n": 96,
+     "sha256": "8314f5fbcbb10fd136b88f2f107d8153035c037359c3f61de5fd638fdb2556be",
+     "same": true
+    },
+    "1|tcga_lung|test": {
+     "n": 95,
+     "sha256": "83449edaf563974acf461674dbac7e3617f5164e8db9d6ec2d72cc1b2953373b",
+     "same": true
+    },
+    "2|tcga_esca|train": {
+     "n": 120,
+     "sha256": "cc060784ba2cbe1073c1094cb1fd70ac94cdd28770fd437ec802b6d78bcf4b6e",
+     "same": true
+    },
+    "2|tcga_esca|val": {
+     "n": 15,
+     "sha256": "3fa5c0aa9ac5c04c4972662c55b5665f0ba1746ecf358c576e9e40fc35bbe361",
+     "same": true
+    },
+    "2|tcga_esca|test": {
+     "n": 15,
+     "sha256": "58298aa5343ada3eb405d5ae7abf58549c3d6aef73cca7b42b28e9939f32c6b6",
+     "same": true
+    },
+    "2|tcga_rcc|train": {
+     "n": 613,
+     "sha256": "cb96ccd266a7af0b78d0951841ad0738dc9698743cddab5b659deae235f66992",
+     "same": true
+    },
+    "2|tcga_rcc|val": {
+     "n": 74,
+     "sha256": "471ab0a0233c2a63fe0c0533c10f8aee345c0a1aed967d9ed57e9dfcf63dcbfc",
+     "same": true
+    },
+    "2|tcga_rcc|test": {
+     "n": 81,
+     "sha256": "aa6b6c8cb7cef0e60c87a2371c2e0b0fdd35cac7e339f005544bc9fb32975098",
+     "same": true
+    },
+    "2|tcga_brca|train": {
+     "n": 764,
+     "sha256": "61b20401de673a08ee6d8d5615d61d3020ba0da6b9fd2b9b09ac686d92ae7e75",
+     "same": true
+    },
+    "2|tcga_brca|val": {
+     "n": 93,
+     "sha256": "6cc5434401723fc5b5e22f25bfcbe54ceb94cffc2f4bbf77aeff0000befd3d6e",
+     "same": true
+    },
+    "2|tcga_brca|test": {
+     "n": 95,
+     "sha256": "ca8766d063655d80dfc00c32a6ab6739bcc795b069cc17e789dee34ca26d33e4",
+     "same": true
+    },
+    "2|tcga_lung|train": {
+     "n": 761,
+     "sha256": "2fee1821fbb9b0f7d77a90527f544287d7a70974e300432802f6adf1e176e8ba",
+     "same": true
+    },
+    "2|tcga_lung|val": {
+     "n": 109,
+     "sha256": "b7e281b6752a084b5ec18709827a9a14dfb6efcdf02c7bd664e4f2e29e25e9f0",
+     "same": true
+    },
+    "2|tcga_lung|test": {
+     "n": 95,
+     "sha256": "b79e4f57f6c7f2adf98da499273741a2f64d9ae5c6b9d405de2e53c699304b3f",
+     "same": true
+    },
+    "3|tcga_esca|train": {
+     "n": 120,
+     "sha256": "7979fa91aa068a9bbf20b089dc0a3f55dcf35a968dc8ab3e661183ee94fd5b3f",
+     "same": true
+    },
+    "3|tcga_esca|val": {
+     "n": 15,
+     "sha256": "2bf3eb313c8222c00ce2f46365806e82484579ad491d7812ceee4eed662845ed",
+     "same": true
+    },
+    "3|tcga_esca|test": {
+     "n": 15,
+     "sha256": "4da61bf0de02b751d4a4207152eebb4f4d61381c6d747f079d536e4714290796",
+     "same": true
+    },
+    "3|tcga_rcc|train": {
+     "n": 617,
+     "sha256": "9f4c8f2a088699d685521541f4695b6d3d48f8da9c8ffcd9d9d8ea4df562dee6",
+     "same": true
+    },
+    "3|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "bb265c8bf0c014d4c19ad818d86e5b4488c3ecf0b9cdcc021c233beccc14047d",
+     "same": true
+    },
+    "3|tcga_rcc|test": {
+     "n": 76,
+     "sha256": "57ca389dc6a1c72ab79bfdd9e4eb54103717cf5add7145bdc58ac7b403d83723",
+     "same": true
+    },
+    "3|tcga_brca|train": {
+     "n": 763,
+     "sha256": "9b8a42f8f473b69757abddff2029fae588d209382c0a936a372f38113833e0b2",
+     "same": true
+    },
+    "3|tcga_brca|val": {
+     "n": 93,
+     "sha256": "3a3c507b3aeba00ef7364036e02d0e36f08f35c2b9d5e6ec5328ddf8ed018a79",
+     "same": true
+    },
+    "3|tcga_brca|test": {
+     "n": 96,
+     "sha256": "b372ddfefe4f209528a8320acb4548b46a60bb5c597434c33938e0120dc7d184",
+     "same": true
+    },
+    "3|tcga_lung|train": {
+     "n": 765,
+     "sha256": "219e6319ebed0bcdd6390bece5944657af59049fa920eef1f838866e1307b0a2",
+     "same": true
+    },
+    "3|tcga_lung|val": {
+     "n": 93,
+     "sha256": "a4acf4393da171e2d08bed89d5949a760394f713e730fa691f85d038e162829f",
+     "same": true
+    },
+    "3|tcga_lung|test": {
+     "n": 107,
+     "sha256": "c2d9329fedb629ffc6cd1b043c77b41b6026764628c690c1093ab626a3563992",
+     "same": true
+    },
+    "4|tcga_esca|train": {
+     "n": 119,
+     "sha256": "39983f3d5ae5b39f137a6313569064ddd0c4a8351de00cfad9ff25093910d992",
+     "same": true
+    },
+    "4|tcga_esca|val": {
+     "n": 15,
+     "sha256": "6c0cd5087336a320fe40299badf2b0cee8f1c5b1c6f5559a0c3480f8293d7f62",
+     "same": true
+    },
+    "4|tcga_esca|test": {
+     "n": 16,
+     "sha256": "4c8ccfba2b69a0f942ff1184ec4af269cb321ac95bbd746c66c5a4e759a27ce0",
+     "same": true
+    },
+    "4|tcga_rcc|train": {
+     "n": 613,
+     "sha256": "e637ca60b6314c68cbe97caff2e8349a45a9dd718fa444acb0fbdd157cdd32aa",
+     "same": true
+    },
+    "4|tcga_rcc|val": {
+     "n": 77,
+     "sha256": "5315e71b003267a138c9b13b1889514ace34c257a621bbdb05126f9c68677d84",
+     "same": true
+    },
+    "4|tcga_rcc|test": {
+     "n": 78,
+     "sha256": "49ba2921c3651c0afec7f789125c1415eca14eec653e6a56c5b40412a7168f83",
+     "same": true
+    },
+    "4|tcga_brca|train": {
+     "n": 762,
+     "sha256": "5221729b660a53f9e6c8b927abb3665f2d713541c3e71fb9a8f2ac4e5d058c8f",
+     "same": true
+    },
+    "4|tcga_brca|val": {
+     "n": 96,
+     "sha256": "c362b380493502ad23333aae19ae8a44879a0f6ca81c2225f7dc949308d735d8",
+     "same": true
+    },
+    "4|tcga_brca|test": {
+     "n": 94,
+     "sha256": "588f8e047dff07fc642f05536577162c8df222a845ae3e6dee2f9af9014a4bb3",
+     "same": true
+    },
+    "4|tcga_lung|train": {
+     "n": 756,
+     "sha256": "acd57e72143aef8de691b1a46599864729bff1d1e13f483ad8534b15ee2216b7",
+     "same": true
+    },
+    "4|tcga_lung|val": {
+     "n": 97,
+     "sha256": "5496636f7a74760557b26653f8a3db6632d31aba68609e2337bd7c574363c3cc",
+     "same": true
+    },
+    "4|tcga_lung|test": {
+     "n": 112,
+     "sha256": "8a56f3d497d6b0158c025017757edc1a9d1c50b0d12fc609b64c1f64d7ac031e",
+     "same": true
+    },
+    "5|tcga_esca|train": {
+     "n": 120,
+     "sha256": "e33a9e3031628323762249ddad6627bb607d14696757b3027a3ae1edd74c2de4",
+     "same": true
+    },
+    "5|tcga_esca|val": {
+     "n": 15,
+     "sha256": "9c110f19a22ac1bf8db6618d8edf9365bde25f3c6f8c0154255363ba46a9495e",
+     "same": true
+    },
+    "5|tcga_esca|test": {
+     "n": 15,
+     "sha256": "40d7744fdb0178b4aa8d293b267a554d01cb935f30cde27c6fa82e9a7df1a0a7",
+     "same": true
+    },
+    "5|tcga_rcc|train": {
+     "n": 619,
+     "sha256": "4357b05d8618e4c5585e53d30ea740240c2fac8e8afc53ecb70fc12ada6babca",
+     "same": true
+    },
+    "5|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "3b484336cfe49cb13830497c84faa24e8a2ee1ed4b0587a6a403fdcdeadb8620",
+     "same": true
+    },
+    "5|tcga_rcc|test": {
+     "n": 74,
+     "sha256": "ad8d160e4e969d209a597728821e7a17845134a6d9077fca279f9b80ff91640d",
+     "same": true
+    },
+    "5|tcga_brca|train": {
+     "n": 763,
+     "sha256": "29503af6b736ea40383e92736d1988781eca88713a303cebe2b18bac22026f7b",
+     "same": true
+    },
+    "5|tcga_brca|val": {
+     "n": 95,
+     "sha256": "6cae883e8bc9ac687099aa40a0b140ea0337278bcb9f72c965e56d5f26983359",
+     "same": true
+    },
+    "5|tcga_brca|test": {
+     "n": 94,
+     "sha256": "decb2a03949b0fbd6a8f39c060e4be894b3f099d3bb4df45a55ca575599d92ca",
+     "same": true
+    },
+    "5|tcga_lung|train": {
+     "n": 764,
+     "sha256": "412011e5ca3b76965d1c71c2f3e0bca60d7c6bbaba6d90eba97f0cbacc5e77aa",
+     "same": true
+    },
+    "5|tcga_lung|val": {
+     "n": 105,
+     "sha256": "b7c5e322f5cdbf2cf1f7087617787cc608c0140532c21f8c1b330e7ce179c641",
+     "same": true
+    },
+    "5|tcga_lung|test": {
+     "n": 96,
+     "sha256": "1f49a0decc177e79c8d601829e8222309a80c8d201477ba5f522f60e7c370093",
+     "same": true
+    },
+    "6|tcga_esca|train": {
+     "n": 119,
+     "sha256": "0465a6c4a2b833b6bdebc3d9243637435924a36fb1c3b2cd6ba325898873dee8",
+     "same": true
+    },
+    "6|tcga_esca|val": {
+     "n": 15,
+     "sha256": "c5e5b021f14790a00d5163293ce6c9dd3c89fb9d09a205a974d5ef7e1e313278",
+     "same": true
+    },
+    "6|tcga_esca|test": {
+     "n": 16,
+     "sha256": "f7c83afc82838ccd5c2380d6c1ecfd8f036c3f4fca55b458e2adfaf0420e1419",
+     "same": true
+    },
+    "6|tcga_rcc|train": {
+     "n": 616,
+     "sha256": "52d554450dab55ba0f9c317d88d60cdc5e8985f50f43bc7d99b2d03faee617b9",
+     "same": true
+    },
+    "6|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "fb79778301bea719099929a9ce7978f6bbc3f1c5febe28d46a40a19c32720012",
+     "same": true
+    },
+    "6|tcga_rcc|test": {
+     "n": 77,
+     "sha256": "426b1caa2562ad3e5b62daea0bbc6ef76d6ec14a4a0e8a3531ba3edd3250f208",
+     "same": true
+    },
+    "6|tcga_brca|train": {
+     "n": 758,
+     "sha256": "59e0da80927717a6064218fb8ff00f2f2bbc708cd29b30468a186af432b5c5af",
+     "same": true
+    },
+    "6|tcga_brca|val": {
+     "n": 96,
+     "sha256": "8d4a3eb3306db74be838a8cc7b0953ce66fed9a347d8713e573f88974945f263",
+     "same": true
+    },
+    "6|tcga_brca|test": {
+     "n": 98,
+     "sha256": "a6016754ddb53d0ffd3b599e74311fab9edbfb12103952a620555f3639b3176d",
+     "same": true
+    },
+    "6|tcga_lung|train": {
+     "n": 759,
+     "sha256": "80749753e2fe3bc722d990c30f16fc7cde6fadb8c142a827aa3f24c0ad6f192d",
+     "same": true
+    },
+    "6|tcga_lung|val": {
+     "n": 118,
+     "sha256": "a40d161ec17fdef5ded8efc7ee690ed5a2ae5c7237968ef2c8759c4b546a4f5c",
+     "same": true
+    },
+    "6|tcga_lung|test": {
+     "n": 88,
+     "sha256": "caf049f8704c4b1d4d31f94c450cd737e81898bc7591615fd0939d90152a866a",
+     "same": true
+    },
+    "7|tcga_esca|train": {
+     "n": 120,
+     "sha256": "72599629b376ade29745bd3711e9b952b43192f2d3ab7b3c8507d0dad79423da",
+     "same": true
+    },
+    "7|tcga_esca|val": {
+     "n": 15,
+     "sha256": "00e7599e49ed24ca5745ca354dafa9dba771825c12902613892a4abef34a846f",
+     "same": true
+    },
+    "7|tcga_esca|test": {
+     "n": 15,
+     "sha256": "7d7db4db26c48769b1cdaf658a0a5849b92a50dba7666e4ef60febb58f135ebf",
+     "same": true
+    },
+    "7|tcga_rcc|train": {
+     "n": 615,
+     "sha256": "044a3becaef64e98816b648cc4efb4bdb3cc2b8e45b99f82c51ae79dca8808a4",
+     "same": true
+    },
+    "7|tcga_rcc|val": {
+     "n": 78,
+     "sha256": "d848d09f8373823a6dd2dd1711a47eabefce932483ffecccfadb161b81601314",
+     "same": true
+    },
+    "7|tcga_rcc|test": {
+     "n": 75,
+     "sha256": "42df379702b99d78260afdc99afd1827b355c2e49a53819f66eade0226d70c21",
+     "same": true
+    },
+    "7|tcga_brca|train": {
+     "n": 760,
+     "sha256": "ca48d4b76f14b6f42ad6f34b7e7050be8f4a70feef577869f8aef2d8801eee79",
+     "same": true
+    },
+    "7|tcga_brca|val": {
+     "n": 96,
+     "sha256": "331a3359b8ff270376f07b638b8258bb234521be745de5e255c28e901fb7d129",
+     "same": true
+    },
+    "7|tcga_brca|test": {
+     "n": 96,
+     "sha256": "deb39a33d4c60c1ef8ccaa451001845232d7863b31221635ead959fddab0b6a0",
+     "same": true
+    },
+    "7|tcga_lung|train": {
+     "n": 774,
+     "sha256": "414d7f6ff09f1441e2a46c32972be04783650ceef706e8909c08325de2d383bb",
+     "same": true
+    },
+    "7|tcga_lung|val": {
+     "n": 94,
+     "sha256": "355bd1655912189c8f0ec8a15c21dda8d3501cdca2cfdbf7674df3c6368bdf4d",
+     "same": true
+    },
+    "7|tcga_lung|test": {
+     "n": 97,
+     "sha256": "6e45f6b5e1410987b0eac7af0a99f27ddf53f5cf5211861377cb5c2a8b46cb33",
+     "same": true
+    },
+    "8|tcga_esca|train": {
+     "n": 120,
+     "sha256": "4a8d467fa358c9cb3662d3a1f76a0eb9b423b4afc8717cc10959b377ca4be6ad",
+     "same": true
+    },
+    "8|tcga_esca|val": {
+     "n": 15,
+     "sha256": "c4992da2ffcc82d563b9b0d6affad81614560b45271810456b45a786c89656d0",
+     "same": true
+    },
+    "8|tcga_esca|test": {
+     "n": 15,
+     "sha256": "8b042c77cfc236234e1e5b1142947ef80d084742428c5877176de04ced995cf6",
+     "same": true
+    },
+    "8|tcga_rcc|train": {
+     "n": 617,
+     "sha256": "959df844c6c1a4d1953d3ad8d874c9d09d93599504f52e29ce1970100fedddad",
+     "same": true
+    },
+    "8|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "b4040b2d8907207b497809c46a5430e6ca854bd583093b336f4df2174237c87c",
+     "same": true
+    },
+    "8|tcga_rcc|test": {
+     "n": 76,
+     "sha256": "fadbe17e2eedd1c1bb8e5b01f78e366d843ae3d5ebd8668f909a608f88e039c6",
+     "same": true
+    },
+    "8|tcga_brca|train": {
+     "n": 762,
+     "sha256": "6c8904ce46088773100a2362ce25728f51ec61707d5623d26678cc137d9d1d53",
+     "same": true
+    },
+    "8|tcga_brca|val": {
+     "n": 94,
+     "sha256": "3c032db71f6d790f169c01fd3fb2aa91b17baf580613ae591f786019478e5972",
+     "same": true
+    },
+    "8|tcga_brca|test": {
+     "n": 96,
+     "sha256": "c2ddbc5c8c3ba9210e043079949edc9e821ad1d13a91a3c7dc7ac535e31037d9",
+     "same": true
+    },
+    "8|tcga_lung|train": {
+     "n": 777,
+     "sha256": "b6703f89fe4ad6e37d10bebf2cdb32bdcf9cf280b10d25d4613cf57d4d443a3b",
+     "same": true
+    },
+    "8|tcga_lung|val": {
+     "n": 95,
+     "sha256": "16de388e2c6c50d0675f19c02c3fc58577b435006bc83566f94f2244338c4ee2",
+     "same": true
+    },
+    "8|tcga_lung|test": {
+     "n": 93,
+     "sha256": "5810e87a27490a9589a82745a783be375d42fa8df36d1286d548305d81b23376",
+     "same": true
+    },
+    "9|tcga_esca|train": {
+     "n": 121,
+     "sha256": "880de8a8a28260457ba964aa5ab38f23e8d1ec0202bf272854fc0bd65e1e8a17",
+     "same": true
+    },
+    "9|tcga_esca|val": {
+     "n": 15,
+     "sha256": "0727e0419a0005981e29e870539802ffcd6e2a05c3cf14e99305863d536e2b24",
+     "same": true
+    },
+    "9|tcga_esca|test": {
+     "n": 14,
+     "sha256": "5d7aacdbcb1fa8703b598d6a94450685925581d29f1858f2a51797e2c4d9242f",
+     "same": true
+    },
+    "9|tcga_rcc|train": {
+     "n": 612,
+     "sha256": "a49e34a4792814ce0f515fb0204f0ff7d78ebe756f8b1a078793c6cfa259dd28",
+     "same": true
+    },
+    "9|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "1fc08fc10a9278461930989d39d39562f7872a053a38a999d35ccaebbb11cb26",
+     "same": true
+    },
+    "9|tcga_rcc|test": {
+     "n": 81,
+     "sha256": "652a26e08cc32d97009c7425a7eb325717299c1dae65dc816ea249ae215a94b4",
+     "same": true
+    },
+    "9|tcga_brca|train": {
+     "n": 760,
+     "sha256": "aac803be6cf6b0a8143e24b61c55e062c238c66733e91b913d2914053ece9d36",
+     "same": true
+    },
+    "9|tcga_brca|val": {
+     "n": 93,
+     "sha256": "514eb31083844d199c1e3c7936c118199e93ee3eeb27322c3354cfe80c70f852",
+     "same": true
+    },
+    "9|tcga_brca|test": {
+     "n": 99,
+     "sha256": "f5ae1faa20d19cd31f9e5f6f403db6f1b9d5efe7debc53fe75c3383e37a84728",
+     "same": true
+    },
+    "9|tcga_lung|train": {
+     "n": 762,
+     "sha256": "d4d44296f3d25d7fb4b02f3b8e6cfe4c85a7e51e8b8bb956413677d525655760",
+     "same": true
+    },
+    "9|tcga_lung|val": {
+     "n": 111,
+     "sha256": "8a41b93bcd304ddd44a52c8e395b0e3a40ceeba20b8d9423ea2e4bef8b7812b2",
+     "same": true
+    },
+    "9|tcga_lung|test": {
+     "n": 92,
+     "sha256": "c4c5cb8bff30f40188653cfedbfd64236d2e2df71d93080191c603d133eb25e2",
+     "same": true
+    },
+    "10|tcga_esca|train": {
+     "n": 121,
+     "sha256": "a7859a55d6bf98ad40df38751b98c3bf2e7811835bab1a5f7adf94e08d2d51b5",
+     "same": true
+    },
+    "10|tcga_esca|val": {
+     "n": 15,
+     "sha256": "6630b6a38f2d901918953843d18062777613ad1ba7af451c4460a82ff91d5144",
+     "same": true
+    },
+    "10|tcga_esca|test": {
+     "n": 14,
+     "sha256": "54d5f87f813f20ca224c933a507b8a539edb1424681b9b0f38fb5722aa41471e",
+     "same": true
+    },
+    "10|tcga_rcc|train": {
+     "n": 618,
+     "sha256": "f1b33c1932a684b1dfc876ce845b6e46dc8efc3c48df0abd6810f89d2618e65d",
+     "same": true
+    },
+    "10|tcga_rcc|val": {
+     "n": 76,
+     "sha256": "81c6e91dd9965800ade942851b3754d1b2f195e18bed6a75ae2af6774b7f3491",
+     "same": true
+    },
+    "10|tcga_rcc|test": {
+     "n": 74,
+     "sha256": "ba1edf3fac5ce9597d4c645be1e8034da79ab554b981f7de1d4555a9042227bf",
+     "same": true
+    },
+    "10|tcga_brca|train": {
+     "n": 763,
+     "sha256": "90c7a3eafdbc4cbbd0bdfb8cd91c30bda1e489c3b36d94aa964d578026b25115",
+     "same": true
+    },
+    "10|tcga_brca|val": {
+     "n": 98,
+     "sha256": "4663ca67d58ab4516edef79329b69cf2e0f2a0583cabab751e0d07c8997303bd",
+     "same": true
+    },
+    "10|tcga_brca|test": {
+     "n": 91,
+     "sha256": "a4357b6ebc34f83c04a6a388362483616b0e2c797d8174629f07f49866161d8c",
+     "same": true
+    },
+    "10|tcga_lung|train": {
+     "n": 771,
+     "sha256": "addf741bc83a68ba8fc2b8f928e2dc3ebf70025868b602cc17d0eacde693739a",
+     "same": true
+    },
+    "10|tcga_lung|val": {
+     "n": 104,
+     "sha256": "d8a1206b05745fc0aa478fdc1da6655c19607d0af38b226e94fd9029d0773128",
+     "same": true
+    },
+    "10|tcga_lung|test": {
+     "n": 90,
+     "sha256": "dbafba6824592d209cbb23978da50b458075e376ad064e51d9ca739849292e8b",
+     "same": true
+    }
+   }
+  },
+  "reverse_b16": {
+   "order": "reverse",
+   "n_cells": 120,
+   "n_same": 114,
+   "test_cells_same": 38,
+   "pass": false,
+   "diffs": [
+    {
+     "cell": "7|tcga_brca|train",
+     "reason": "log 內沒有這一格的 slide ID 清單"
+    },
+    {
+     "cell": "7|tcga_brca|val",
+     "reason": "log 內沒有這一格的 slide ID 清單"
+    },
+    {
+     "cell": "7|tcga_brca|test",
+     "reason": "log 內沒有這一格的 slide ID 清單"
+    },
+    {
+     "cell": "7|tcga_lung|train",
+     "reason": "log 內沒有這一格的 slide ID 清單"
+    },
+    {
+     "cell": "7|tcga_lung|val",
+     "reason": "log 內沒有這一格的 slide ID 清單"
+    },
+    {
+     "cell": "7|tcga_lung|test",
+     "reason": "log 內沒有這一格的 slide ID 清單"
+    }
+   ],
+   "cells": {
+    "1|tcga_esca|train": {
+     "n": 120,
+     "sha256": "312811e67ca69106ec89e3fdfc469bc1268001a5abfd2c66661ec4cb8ba5782d",
+     "same": true
+    },
+    "1|tcga_esca|val": {
+     "n": 15,
+     "sha256": "19fe760719839d72281272b53bbca1cec8fa69094cc3fc5ad5639c68d3b5dc60",
+     "same": true
+    },
+    "1|tcga_esca|test": {
+     "n": 15,
+     "sha256": "3992a393ec3fc1d4aee9bbb4fb31a565ce9061d30576576d76af605036adbb6c",
+     "same": true
+    },
+    "1|tcga_rcc|train": {
+     "n": 616,
+     "sha256": "3c0294abe80c9faabc3c8eb13d3505f667a8d2f8c34a0ca1972ab926921dbbcd",
+     "same": true
+    },
+    "1|tcga_rcc|val": {
+     "n": 76,
+     "sha256": "93fe04481e80d2ed2d8259b59f166afecad44854b2974618cf84924344b2b217",
+     "same": true
+    },
+    "1|tcga_rcc|test": {
+     "n": 76,
+     "sha256": "a702174b5a6e4882894d0577cdea9ab4efcd7d6e8e4c7ab5259e2e2bbd8f683c",
+     "same": true
+    },
+    "1|tcga_brca|train": {
+     "n": 763,
+     "sha256": "3e44b9b7d50c6ac01b8216b112f0a40d8743ccf434ebf3bb419956ed40e9a789",
+     "same": true
+    },
+    "1|tcga_brca|val": {
+     "n": 96,
+     "sha256": "05e96efb915f42c1d87e664a37b741e4185505a8d16e441a56cce67d17fd8cc0",
+     "same": true
+    },
+    "1|tcga_brca|test": {
+     "n": 93,
+     "sha256": "90736888266ca2fc22786ef998e8c6f2990ffeb124960461c0efeebd0596c06f",
+     "same": true
+    },
+    "1|tcga_lung|train": {
+     "n": 774,
+     "sha256": "d2a8d6761c37153ed48e90fb32a24929cfa970ded178f5f9c092f792aff2ca13",
+     "same": true
+    },
+    "1|tcga_lung|val": {
+     "n": 96,
+     "sha256": "8314f5fbcbb10fd136b88f2f107d8153035c037359c3f61de5fd638fdb2556be",
+     "same": true
+    },
+    "1|tcga_lung|test": {
+     "n": 95,
+     "sha256": "83449edaf563974acf461674dbac7e3617f5164e8db9d6ec2d72cc1b2953373b",
+     "same": true
+    },
+    "2|tcga_esca|train": {
+     "n": 120,
+     "sha256": "cc060784ba2cbe1073c1094cb1fd70ac94cdd28770fd437ec802b6d78bcf4b6e",
+     "same": true
+    },
+    "2|tcga_esca|val": {
+     "n": 15,
+     "sha256": "3fa5c0aa9ac5c04c4972662c55b5665f0ba1746ecf358c576e9e40fc35bbe361",
+     "same": true
+    },
+    "2|tcga_esca|test": {
+     "n": 15,
+     "sha256": "58298aa5343ada3eb405d5ae7abf58549c3d6aef73cca7b42b28e9939f32c6b6",
+     "same": true
+    },
+    "2|tcga_rcc|train": {
+     "n": 613,
+     "sha256": "cb96ccd266a7af0b78d0951841ad0738dc9698743cddab5b659deae235f66992",
+     "same": true
+    },
+    "2|tcga_rcc|val": {
+     "n": 74,
+     "sha256": "471ab0a0233c2a63fe0c0533c10f8aee345c0a1aed967d9ed57e9dfcf63dcbfc",
+     "same": true
+    },
+    "2|tcga_rcc|test": {
+     "n": 81,
+     "sha256": "aa6b6c8cb7cef0e60c87a2371c2e0b0fdd35cac7e339f005544bc9fb32975098",
+     "same": true
+    },
+    "2|tcga_brca|train": {
+     "n": 764,
+     "sha256": "61b20401de673a08ee6d8d5615d61d3020ba0da6b9fd2b9b09ac686d92ae7e75",
+     "same": true
+    },
+    "2|tcga_brca|val": {
+     "n": 93,
+     "sha256": "6cc5434401723fc5b5e22f25bfcbe54ceb94cffc2f4bbf77aeff0000befd3d6e",
+     "same": true
+    },
+    "2|tcga_brca|test": {
+     "n": 95,
+     "sha256": "ca8766d063655d80dfc00c32a6ab6739bcc795b069cc17e789dee34ca26d33e4",
+     "same": true
+    },
+    "2|tcga_lung|train": {
+     "n": 761,
+     "sha256": "2fee1821fbb9b0f7d77a90527f544287d7a70974e300432802f6adf1e176e8ba",
+     "same": true
+    },
+    "2|tcga_lung|val": {
+     "n": 109,
+     "sha256": "b7e281b6752a084b5ec18709827a9a14dfb6efcdf02c7bd664e4f2e29e25e9f0",
+     "same": true
+    },
+    "2|tcga_lung|test": {
+     "n": 95,
+     "sha256": "b79e4f57f6c7f2adf98da499273741a2f64d9ae5c6b9d405de2e53c699304b3f",
+     "same": true
+    },
+    "3|tcga_esca|train": {
+     "n": 120,
+     "sha256": "7979fa91aa068a9bbf20b089dc0a3f55dcf35a968dc8ab3e661183ee94fd5b3f",
+     "same": true
+    },
+    "3|tcga_esca|val": {
+     "n": 15,
+     "sha256": "2bf3eb313c8222c00ce2f46365806e82484579ad491d7812ceee4eed662845ed",
+     "same": true
+    },
+    "3|tcga_esca|test": {
+     "n": 15,
+     "sha256": "4da61bf0de02b751d4a4207152eebb4f4d61381c6d747f079d536e4714290796",
+     "same": true
+    },
+    "3|tcga_rcc|train": {
+     "n": 617,
+     "sha256": "9f4c8f2a088699d685521541f4695b6d3d48f8da9c8ffcd9d9d8ea4df562dee6",
+     "same": true
+    },
+    "3|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "bb265c8bf0c014d4c19ad818d86e5b4488c3ecf0b9cdcc021c233beccc14047d",
+     "same": true
+    },
+    "3|tcga_rcc|test": {
+     "n": 76,
+     "sha256": "57ca389dc6a1c72ab79bfdd9e4eb54103717cf5add7145bdc58ac7b403d83723",
+     "same": true
+    },
+    "3|tcga_brca|train": {
+     "n": 763,
+     "sha256": "9b8a42f8f473b69757abddff2029fae588d209382c0a936a372f38113833e0b2",
+     "same": true
+    },
+    "3|tcga_brca|val": {
+     "n": 93,
+     "sha256": "3a3c507b3aeba00ef7364036e02d0e36f08f35c2b9d5e6ec5328ddf8ed018a79",
+     "same": true
+    },
+    "3|tcga_brca|test": {
+     "n": 96,
+     "sha256": "b372ddfefe4f209528a8320acb4548b46a60bb5c597434c33938e0120dc7d184",
+     "same": true
+    },
+    "3|tcga_lung|train": {
+     "n": 765,
+     "sha256": "219e6319ebed0bcdd6390bece5944657af59049fa920eef1f838866e1307b0a2",
+     "same": true
+    },
+    "3|tcga_lung|val": {
+     "n": 93,
+     "sha256": "a4acf4393da171e2d08bed89d5949a760394f713e730fa691f85d038e162829f",
+     "same": true
+    },
+    "3|tcga_lung|test": {
+     "n": 107,
+     "sha256": "c2d9329fedb629ffc6cd1b043c77b41b6026764628c690c1093ab626a3563992",
+     "same": true
+    },
+    "4|tcga_esca|train": {
+     "n": 119,
+     "sha256": "39983f3d5ae5b39f137a6313569064ddd0c4a8351de00cfad9ff25093910d992",
+     "same": true
+    },
+    "4|tcga_esca|val": {
+     "n": 15,
+     "sha256": "6c0cd5087336a320fe40299badf2b0cee8f1c5b1c6f5559a0c3480f8293d7f62",
+     "same": true
+    },
+    "4|tcga_esca|test": {
+     "n": 16,
+     "sha256": "4c8ccfba2b69a0f942ff1184ec4af269cb321ac95bbd746c66c5a4e759a27ce0",
+     "same": true
+    },
+    "4|tcga_rcc|train": {
+     "n": 613,
+     "sha256": "e637ca60b6314c68cbe97caff2e8349a45a9dd718fa444acb0fbdd157cdd32aa",
+     "same": true
+    },
+    "4|tcga_rcc|val": {
+     "n": 77,
+     "sha256": "5315e71b003267a138c9b13b1889514ace34c257a621bbdb05126f9c68677d84",
+     "same": true
+    },
+    "4|tcga_rcc|test": {
+     "n": 78,
+     "sha256": "49ba2921c3651c0afec7f789125c1415eca14eec653e6a56c5b40412a7168f83",
+     "same": true
+    },
+    "4|tcga_brca|train": {
+     "n": 762,
+     "sha256": "5221729b660a53f9e6c8b927abb3665f2d713541c3e71fb9a8f2ac4e5d058c8f",
+     "same": true
+    },
+    "4|tcga_brca|val": {
+     "n": 96,
+     "sha256": "c362b380493502ad23333aae19ae8a44879a0f6ca81c2225f7dc949308d735d8",
+     "same": true
+    },
+    "4|tcga_brca|test": {
+     "n": 94,
+     "sha256": "588f8e047dff07fc642f05536577162c8df222a845ae3e6dee2f9af9014a4bb3",
+     "same": true
+    },
+    "4|tcga_lung|train": {
+     "n": 756,
+     "sha256": "acd57e72143aef8de691b1a46599864729bff1d1e13f483ad8534b15ee2216b7",
+     "same": true
+    },
+    "4|tcga_lung|val": {
+     "n": 97,
+     "sha256": "5496636f7a74760557b26653f8a3db6632d31aba68609e2337bd7c574363c3cc",
+     "same": true
+    },
+    "4|tcga_lung|test": {
+     "n": 112,
+     "sha256": "8a56f3d497d6b0158c025017757edc1a9d1c50b0d12fc609b64c1f64d7ac031e",
+     "same": true
+    },
+    "5|tcga_esca|train": {
+     "n": 120,
+     "sha256": "e33a9e3031628323762249ddad6627bb607d14696757b3027a3ae1edd74c2de4",
+     "same": true
+    },
+    "5|tcga_esca|val": {
+     "n": 15,
+     "sha256": "9c110f19a22ac1bf8db6618d8edf9365bde25f3c6f8c0154255363ba46a9495e",
+     "same": true
+    },
+    "5|tcga_esca|test": {
+     "n": 15,
+     "sha256": "40d7744fdb0178b4aa8d293b267a554d01cb935f30cde27c6fa82e9a7df1a0a7",
+     "same": true
+    },
+    "5|tcga_rcc|train": {
+     "n": 619,
+     "sha256": "4357b05d8618e4c5585e53d30ea740240c2fac8e8afc53ecb70fc12ada6babca",
+     "same": true
+    },
+    "5|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "3b484336cfe49cb13830497c84faa24e8a2ee1ed4b0587a6a403fdcdeadb8620",
+     "same": true
+    },
+    "5|tcga_rcc|test": {
+     "n": 74,
+     "sha256": "ad8d160e4e969d209a597728821e7a17845134a6d9077fca279f9b80ff91640d",
+     "same": true
+    },
+    "5|tcga_brca|train": {
+     "n": 763,
+     "sha256": "29503af6b736ea40383e92736d1988781eca88713a303cebe2b18bac22026f7b",
+     "same": true
+    },
+    "5|tcga_brca|val": {
+     "n": 95,
+     "sha256": "6cae883e8bc9ac687099aa40a0b140ea0337278bcb9f72c965e56d5f26983359",
+     "same": true
+    },
+    "5|tcga_brca|test": {
+     "n": 94,
+     "sha256": "decb2a03949b0fbd6a8f39c060e4be894b3f099d3bb4df45a55ca575599d92ca",
+     "same": true
+    },
+    "5|tcga_lung|train": {
+     "n": 764,
+     "sha256": "412011e5ca3b76965d1c71c2f3e0bca60d7c6bbaba6d90eba97f0cbacc5e77aa",
+     "same": true
+    },
+    "5|tcga_lung|val": {
+     "n": 105,
+     "sha256": "b7c5e322f5cdbf2cf1f7087617787cc608c0140532c21f8c1b330e7ce179c641",
+     "same": true
+    },
+    "5|tcga_lung|test": {
+     "n": 96,
+     "sha256": "1f49a0decc177e79c8d601829e8222309a80c8d201477ba5f522f60e7c370093",
+     "same": true
+    },
+    "6|tcga_esca|train": {
+     "n": 119,
+     "sha256": "0465a6c4a2b833b6bdebc3d9243637435924a36fb1c3b2cd6ba325898873dee8",
+     "same": true
+    },
+    "6|tcga_esca|val": {
+     "n": 15,
+     "sha256": "c5e5b021f14790a00d5163293ce6c9dd3c89fb9d09a205a974d5ef7e1e313278",
+     "same": true
+    },
+    "6|tcga_esca|test": {
+     "n": 16,
+     "sha256": "f7c83afc82838ccd5c2380d6c1ecfd8f036c3f4fca55b458e2adfaf0420e1419",
+     "same": true
+    },
+    "6|tcga_rcc|train": {
+     "n": 616,
+     "sha256": "52d554450dab55ba0f9c317d88d60cdc5e8985f50f43bc7d99b2d03faee617b9",
+     "same": true
+    },
+    "6|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "fb79778301bea719099929a9ce7978f6bbc3f1c5febe28d46a40a19c32720012",
+     "same": true
+    },
+    "6|tcga_rcc|test": {
+     "n": 77,
+     "sha256": "426b1caa2562ad3e5b62daea0bbc6ef76d6ec14a4a0e8a3531ba3edd3250f208",
+     "same": true
+    },
+    "6|tcga_brca|train": {
+     "n": 758,
+     "sha256": "59e0da80927717a6064218fb8ff00f2f2bbc708cd29b30468a186af432b5c5af",
+     "same": true
+    },
+    "6|tcga_brca|val": {
+     "n": 96,
+     "sha256": "8d4a3eb3306db74be838a8cc7b0953ce66fed9a347d8713e573f88974945f263",
+     "same": true
+    },
+    "6|tcga_brca|test": {
+     "n": 98,
+     "sha256": "a6016754ddb53d0ffd3b599e74311fab9edbfb12103952a620555f3639b3176d",
+     "same": true
+    },
+    "6|tcga_lung|train": {
+     "n": 759,
+     "sha256": "80749753e2fe3bc722d990c30f16fc7cde6fadb8c142a827aa3f24c0ad6f192d",
+     "same": true
+    },
+    "6|tcga_lung|val": {
+     "n": 118,
+     "sha256": "a40d161ec17fdef5ded8efc7ee690ed5a2ae5c7237968ef2c8759c4b546a4f5c",
+     "same": true
+    },
+    "6|tcga_lung|test": {
+     "n": 88,
+     "sha256": "caf049f8704c4b1d4d31f94c450cd737e81898bc7591615fd0939d90152a866a",
+     "same": true
+    },
+    "7|tcga_esca|train": {
+     "n": 120,
+     "sha256": "72599629b376ade29745bd3711e9b952b43192f2d3ab7b3c8507d0dad79423da",
+     "same": true
+    },
+    "7|tcga_esca|val": {
+     "n": 15,
+     "sha256": "00e7599e49ed24ca5745ca354dafa9dba771825c12902613892a4abef34a846f",
+     "same": true
+    },
+    "7|tcga_esca|test": {
+     "n": 15,
+     "sha256": "7d7db4db26c48769b1cdaf658a0a5849b92a50dba7666e4ef60febb58f135ebf",
+     "same": true
+    },
+    "7|tcga_rcc|train": {
+     "n": 615,
+     "sha256": "044a3becaef64e98816b648cc4efb4bdb3cc2b8e45b99f82c51ae79dca8808a4",
+     "same": true
+    },
+    "7|tcga_rcc|val": {
+     "n": 78,
+     "sha256": "d848d09f8373823a6dd2dd1711a47eabefce932483ffecccfadb161b81601314",
+     "same": true
+    },
+    "7|tcga_rcc|test": {
+     "n": 75,
+     "sha256": "42df379702b99d78260afdc99afd1827b355c2e49a53819f66eade0226d70c21",
+     "same": true
+    },
+    "7|tcga_brca|train": {
+     "n": null,
+     "sha256": null,
+     "same": false
+    },
+    "7|tcga_brca|val": {
+     "n": null,
+     "sha256": null,
+     "same": false
+    },
+    "7|tcga_brca|test": {
+     "n": null,
+     "sha256": null,
+     "same": false
+    },
+    "7|tcga_lung|train": {
+     "n": null,
+     "sha256": null,
+     "same": false
+    },
+    "7|tcga_lung|val": {
+     "n": null,
+     "sha256": null,
+     "same": false
+    },
+    "7|tcga_lung|test": {
+     "n": null,
+     "sha256": null,
+     "same": false
+    },
+    "8|tcga_esca|train": {
+     "n": 120,
+     "sha256": "4a8d467fa358c9cb3662d3a1f76a0eb9b423b4afc8717cc10959b377ca4be6ad",
+     "same": true
+    },
+    "8|tcga_esca|val": {
+     "n": 15,
+     "sha256": "c4992da2ffcc82d563b9b0d6affad81614560b45271810456b45a786c89656d0",
+     "same": true
+    },
+    "8|tcga_esca|test": {
+     "n": 15,
+     "sha256": "8b042c77cfc236234e1e5b1142947ef80d084742428c5877176de04ced995cf6",
+     "same": true
+    },
+    "8|tcga_rcc|train": {
+     "n": 617,
+     "sha256": "959df844c6c1a4d1953d3ad8d874c9d09d93599504f52e29ce1970100fedddad",
+     "same": true
+    },
+    "8|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "b4040b2d8907207b497809c46a5430e6ca854bd583093b336f4df2174237c87c",
+     "same": true
+    },
+    "8|tcga_rcc|test": {
+     "n": 76,
+     "sha256": "fadbe17e2eedd1c1bb8e5b01f78e366d843ae3d5ebd8668f909a608f88e039c6",
+     "same": true
+    },
+    "8|tcga_brca|train": {
+     "n": 762,
+     "sha256": "6c8904ce46088773100a2362ce25728f51ec61707d5623d26678cc137d9d1d53",
+     "same": true
+    },
+    "8|tcga_brca|val": {
+     "n": 94,
+     "sha256": "3c032db71f6d790f169c01fd3fb2aa91b17baf580613ae591f786019478e5972",
+     "same": true
+    },
+    "8|tcga_brca|test": {
+     "n": 96,
+     "sha256": "c2ddbc5c8c3ba9210e043079949edc9e821ad1d13a91a3c7dc7ac535e31037d9",
+     "same": true
+    },
+    "8|tcga_lung|train": {
+     "n": 777,
+     "sha256": "b6703f89fe4ad6e37d10bebf2cdb32bdcf9cf280b10d25d4613cf57d4d443a3b",
+     "same": true
+    },
+    "8|tcga_lung|val": {
+     "n": 95,
+     "sha256": "16de388e2c6c50d0675f19c02c3fc58577b435006bc83566f94f2244338c4ee2",
+     "same": true
+    },
+    "8|tcga_lung|test": {
+     "n": 93,
+     "sha256": "5810e87a27490a9589a82745a783be375d42fa8df36d1286d548305d81b23376",
+     "same": true
+    },
+    "9|tcga_esca|train": {
+     "n": 121,
+     "sha256": "880de8a8a28260457ba964aa5ab38f23e8d1ec0202bf272854fc0bd65e1e8a17",
+     "same": true
+    },
+    "9|tcga_esca|val": {
+     "n": 15,
+     "sha256": "0727e0419a0005981e29e870539802ffcd6e2a05c3cf14e99305863d536e2b24",
+     "same": true
+    },
+    "9|tcga_esca|test": {
+     "n": 14,
+     "sha256": "5d7aacdbcb1fa8703b598d6a94450685925581d29f1858f2a51797e2c4d9242f",
+     "same": true
+    },
+    "9|tcga_rcc|train": {
+     "n": 612,
+     "sha256": "a49e34a4792814ce0f515fb0204f0ff7d78ebe756f8b1a078793c6cfa259dd28",
+     "same": true
+    },
+    "9|tcga_rcc|val": {
+     "n": 75,
+     "sha256": "1fc08fc10a9278461930989d39d39562f7872a053a38a999d35ccaebbb11cb26",
+     "same": true
+    },
+    "9|tcga_rcc|test": {
+     "n": 81,
+     "sha256": "652a26e08cc32d97009c7425a7eb325717299c1dae65dc816ea249ae215a94b4",
+     "same": true
+    },
+    "9|tcga_brca|train": {
+     "n": 760,
+     "sha256": "aac803be6cf6b0a8143e24b61c55e062c238c66733e91b913d2914053ece9d36",
+     "same": true
+    },
+    "9|tcga_brca|val": {
+     "n": 93,
+     "sha256": "514eb31083844d199c1e3c7936c118199e93ee3eeb27322c3354cfe80c70f852",
+     "same": true
+    },
+    "9|tcga_brca|test": {
+     "n": 99,
+     "sha256": "f5ae1faa20d19cd31f9e5f6f403db6f1b9d5efe7debc53fe75c3383e37a84728",
+     "same": true
+    },
+    "9|tcga_lung|train": {
+     "n": 762,
+     "sha256": "d4d44296f3d25d7fb4b02f3b8e6cfe4c85a7e51e8b8bb956413677d525655760",
+     "same": true
+    },
+    "9|tcga_lung|val": {
+     "n": 111,
+     "sha256": "8a41b93bcd304ddd44a52c8e395b0e3a40ceeba20b8d9423ea2e4bef8b7812b2",
+     "same": true
+    },
+    "9|tcga_lung|test": {
+     "n": 92,
+     "sha256": "c4c5cb8bff30f40188653cfedbfd64236d2e2df71d93080191c603d133eb25e2",
+     "same": true
+    },
+    "10|tcga_esca|train": {
+     "n": 121,
+     "sha256": "a7859a55d6bf98ad40df38751b98c3bf2e7811835bab1a5f7adf94e08d2d51b5",
+     "same": true
+    },
+    "10|tcga_esca|val": {
+     "n": 15,
+     "sha256": "6630b6a38f2d901918953843d18062777613ad1ba7af451c4460a82ff91d5144",
+     "same": true
+    },
+    "10|tcga_esca|test": {
+     "n": 14,
+     "sha256": "54d5f87f813f20ca224c933a507b8a539edb1424681b9b0f38fb5722aa41471e",
+     "same": true
+    },
+    "10|tcga_rcc|train": {
+     "n": 618,
+     "sha256": "f1b33c1932a684b1dfc876ce845b6e46dc8efc3c48df0abd6810f89d2618e65d",
+     "same": true
+    },
+    "10|tcga_rcc|val": {
+     "n": 76,
+     "sha256": "81c6e91dd9965800ade942851b3754d1b2f195e18bed6a75ae2af6774b7f3491",
+     "same": true
+    },
+    "10|tcga_rcc|test": {
+     "n": 74,
+     "sha256": "ba1edf3fac5ce9597d4c645be1e8034da79ab554b981f7de1d4555a9042227bf",
+     "same": true
+    },
+    "10|tcga_brca|train": {
+     "n": 763,
+     "sha256": "90c7a3eafdbc4cbbd0bdfb8cd91c30bda1e489c3b36d94aa964d578026b25115",
+     "same": true
+    },
+    "10|tcga_brca|val": {
+     "n": 98,
+     "sha256": "4663ca67d58ab4516edef79329b69cf2e0f2a0583cabab751e0d07c8997303bd",
+     "same": true
+    },
+    "10|tcga_brca|test": {
+     "n": 91,
+     "sha256": "a4357b6ebc34f83c04a6a388362483616b0e2c797d8174629f07f49866161d8c",
+     "same": true
+    },
+    "10|tcga_lung|train": {
+     "n": 771,
+     "sha256": "addf741bc83a68ba8fc2b8f928e2dc3ebf70025868b602cc17d0eacde693739a",
+     "same": true
+    },
+    "10|tcga_lung|val": {
+     "n": 104,
+     "sha256": "d8a1206b05745fc0aa478fdc1da6655c19607d0af38b226e94fd9029d0773128",
+     "same": true
+    },
+    "10|tcga_lung|test": {
+     "n": 90,
+     "sha256": "dbafba6824592d209cbb23978da50b458075e376ad064e51d9ca739849292e8b",
+     "same": true
+    }
+   }
+  }
+ },
+ "notes": {
+  "reverse_b8": [],
+  "paper_b16": [],
+  "reverse_b16": [
+   "fold 7: log 沒有逐階段 masked 行，t=4 的 MaskedACC 取 test_mask_acc.txt"
+  ]
+ },
+ "descriptions": {
+  "reverse_b8": "bp_every_batch 8（論文 reverse 設定）；A100",
+  "paper_b16": "bp_every_batch 16（程式預設）；RTX 4090",
+  "reverse_b16": "bp_every_batch 16（程式預設）；RTX 4090"
+ }
+}

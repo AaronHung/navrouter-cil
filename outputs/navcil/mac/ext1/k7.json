@@ -1,0 +1,74 @@
+{
+ "tol": 0.0001,
+ "cells": 4292,
+ "n_bad": 0,
+ "pass": true,
+ "groups": {
+  "nc8/per_fold.json": {
+   "cells": 600,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "moe1/s2.json": {
+   "cells": 400,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "moe2/e7.json": {
+   "cells": 200,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "moe3/f2.json": {
+   "cells": 1000,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "moe3/f5.json": {
+   "cells": 160,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "moe1/s6.json": {
+   "cells": 80,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "moe1/s7_rf.json": {
+   "cells": 40,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "moe0/results.json B5": {
+   "cells": 20,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "moe4/f2.json per_fold": {
+   "cells": 900,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "moe4/f2.json h1": {
+   "cells": 600,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "moe4/f2.json h1_avg": {
+   "cells": 120,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "moe0/results.json B2": {
+   "cells": 20,
+   "max_abs": 0.0,
+   "bad": 0
+  },
+  "FINAL_RESULTS.md（印出值，四位小數）": {
+   "cells": 152,
+   "max_abs": 0.0,
+   "bad": 0
+  }
+ },
+ "bad": []
+}

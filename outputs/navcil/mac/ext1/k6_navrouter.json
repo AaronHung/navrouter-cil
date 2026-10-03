@@ -1,0 +1,1326 @@
+{
+ "definition": "sha256('\\n'.join(sorted(slide_ids)).encode('utf-8'))；slide ID = WSIClf.sids 的字串",
+ "tasks": [
+  "tcga_esca",
+  "tcga_rcc",
+  "tcga_brca",
+  "tcga_lung"
+ ],
+ "folds": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "splits": [
+  "train",
+  "val",
+  "test"
+ ],
+ "cells": {
+  "1|tcga_esca|train": {
+   "n": 120,
+   "n_unique": 120,
+   "sha256": "312811e67ca69106ec89e3fdfc469bc1268001a5abfd2c66661ec4cb8ba5782d"
+  },
+  "1|tcga_esca|val": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "19fe760719839d72281272b53bbca1cec8fa69094cc3fc5ad5639c68d3b5dc60"
+  },
+  "1|tcga_esca|test": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "3992a393ec3fc1d4aee9bbb4fb31a565ce9061d30576576d76af605036adbb6c"
+  },
+  "2|tcga_esca|train": {
+   "n": 120,
+   "n_unique": 120,
+   "sha256": "cc060784ba2cbe1073c1094cb1fd70ac94cdd28770fd437ec802b6d78bcf4b6e"
+  },
+  "2|tcga_esca|val": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "3fa5c0aa9ac5c04c4972662c55b5665f0ba1746ecf358c576e9e40fc35bbe361"
+  },
+  "2|tcga_esca|test": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "58298aa5343ada3eb405d5ae7abf58549c3d6aef73cca7b42b28e9939f32c6b6"
+  },
+  "3|tcga_esca|train": {
+   "n": 120,
+   "n_unique": 120,
+   "sha256": "7979fa91aa068a9bbf20b089dc0a3f55dcf35a968dc8ab3e661183ee94fd5b3f"
+  },
+  "3|tcga_esca|val": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "2bf3eb313c8222c00ce2f46365806e82484579ad491d7812ceee4eed662845ed"
+  },
+  "3|tcga_esca|test": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "4da61bf0de02b751d4a4207152eebb4f4d61381c6d747f079d536e4714290796"
+  },
+  "4|tcga_esca|train": {
+   "n": 119,
+   "n_unique": 119,
+   "sha256": "39983f3d5ae5b39f137a6313569064ddd0c4a8351de00cfad9ff25093910d992"
+  },
+  "4|tcga_esca|val": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "6c0cd5087336a320fe40299badf2b0cee8f1c5b1c6f5559a0c3480f8293d7f62"
+  },
+  "4|tcga_esca|test": {
+   "n": 16,
+   "n_unique": 16,
+   "sha256": "4c8ccfba2b69a0f942ff1184ec4af269cb321ac95bbd746c66c5a4e759a27ce0"
+  },
+  "5|tcga_esca|train": {
+   "n": 120,
+   "n_unique": 120,
+   "sha256": "e33a9e3031628323762249ddad6627bb607d14696757b3027a3ae1edd74c2de4"
+  },
+  "5|tcga_esca|val": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "9c110f19a22ac1bf8db6618d8edf9365bde25f3c6f8c0154255363ba46a9495e"
+  },
+  "5|tcga_esca|test": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "40d7744fdb0178b4aa8d293b267a554d01cb935f30cde27c6fa82e9a7df1a0a7"
+  },
+  "6|tcga_esca|train": {
+   "n": 119,
+   "n_unique": 119,
+   "sha256": "0465a6c4a2b833b6bdebc3d9243637435924a36fb1c3b2cd6ba325898873dee8"
+  },
+  "6|tcga_esca|val": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "c5e5b021f14790a00d5163293ce6c9dd3c89fb9d09a205a974d5ef7e1e313278"
+  },
+  "6|tcga_esca|test": {
+   "n": 16,
+   "n_unique": 16,
+   "sha256": "f7c83afc82838ccd5c2380d6c1ecfd8f036c3f4fca55b458e2adfaf0420e1419"
+  },
+  "7|tcga_esca|train": {
+   "n": 120,
+   "n_unique": 120,
+   "sha256": "72599629b376ade29745bd3711e9b952b43192f2d3ab7b3c8507d0dad79423da"
+  },
+  "7|tcga_esca|val": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "00e7599e49ed24ca5745ca354dafa9dba771825c12902613892a4abef34a846f"
+  },
+  "7|tcga_esca|test": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "7d7db4db26c48769b1cdaf658a0a5849b92a50dba7666e4ef60febb58f135ebf"
+  },
+  "8|tcga_esca|train": {
+   "n": 120,
+   "n_unique": 120,
+   "sha256": "4a8d467fa358c9cb3662d3a1f76a0eb9b423b4afc8717cc10959b377ca4be6ad"
+  },
+  "8|tcga_esca|val": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "c4992da2ffcc82d563b9b0d6affad81614560b45271810456b45a786c89656d0"
+  },
+  "8|tcga_esca|test": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "8b042c77cfc236234e1e5b1142947ef80d084742428c5877176de04ced995cf6"
+  },
+  "9|tcga_esca|train": {
+   "n": 121,
+   "n_unique": 121,
+   "sha256": "880de8a8a28260457ba964aa5ab38f23e8d1ec0202bf272854fc0bd65e1e8a17"
+  },
+  "9|tcga_esca|val": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "0727e0419a0005981e29e870539802ffcd6e2a05c3cf14e99305863d536e2b24"
+  },
+  "9|tcga_esca|test": {
+   "n": 14,
+   "n_unique": 14,
+   "sha256": "5d7aacdbcb1fa8703b598d6a94450685925581d29f1858f2a51797e2c4d9242f"
+  },
+  "10|tcga_esca|train": {
+   "n": 121,
+   "n_unique": 121,
+   "sha256": "a7859a55d6bf98ad40df38751b98c3bf2e7811835bab1a5f7adf94e08d2d51b5"
+  },
+  "10|tcga_esca|val": {
+   "n": 15,
+   "n_unique": 15,
+   "sha256": "6630b6a38f2d901918953843d18062777613ad1ba7af451c4460a82ff91d5144"
+  },
+  "10|tcga_esca|test": {
+   "n": 14,
+   "n_unique": 14,
+   "sha256": "54d5f87f813f20ca224c933a507b8a539edb1424681b9b0f38fb5722aa41471e"
+  },
+  "1|tcga_rcc|train": {
+   "n": 616,
+   "n_unique": 616,
+   "sha256": "3c0294abe80c9faabc3c8eb13d3505f667a8d2f8c34a0ca1972ab926921dbbcd"
+  },
+  "1|tcga_rcc|val": {
+   "n": 76,
+   "n_unique": 76,
+   "sha256": "93fe04481e80d2ed2d8259b59f166afecad44854b2974618cf84924344b2b217"
+  },
+  "1|tcga_rcc|test": {
+   "n": 76,
+   "n_unique": 76,
+   "sha256": "a702174b5a6e4882894d0577cdea9ab4efcd7d6e8e4c7ab5259e2e2bbd8f683c"
+  },
+  "2|tcga_rcc|train": {
+   "n": 613,
+   "n_unique": 613,
+   "sha256": "cb96ccd266a7af0b78d0951841ad0738dc9698743cddab5b659deae235f66992"
+  },
+  "2|tcga_rcc|val": {
+   "n": 74,
+   "n_unique": 74,
+   "sha256": "471ab0a0233c2a63fe0c0533c10f8aee345c0a1aed967d9ed57e9dfcf63dcbfc"
+  },
+  "2|tcga_rcc|test": {
+   "n": 81,
+   "n_unique": 81,
+   "sha256": "aa6b6c8cb7cef0e60c87a2371c2e0b0fdd35cac7e339f005544bc9fb32975098"
+  },
+  "3|tcga_rcc|train": {
+   "n": 617,
+   "n_unique": 617,
+   "sha256": "9f4c8f2a088699d685521541f4695b6d3d48f8da9c8ffcd9d9d8ea4df562dee6"
+  },
+  "3|tcga_rcc|val": {
+   "n": 75,
+   "n_unique": 75,
+   "sha256": "bb265c8bf0c014d4c19ad818d86e5b4488c3ecf0b9cdcc021c233beccc14047d"
+  },
+  "3|tcga_rcc|test": {
+   "n": 76,
+   "n_unique": 76,
+   "sha256": "57ca389dc6a1c72ab79bfdd9e4eb54103717cf5add7145bdc58ac7b403d83723"
+  },
+  "4|tcga_rcc|train": {
+   "n": 613,
+   "n_unique": 613,
+   "sha256": "e637ca60b6314c68cbe97caff2e8349a45a9dd718fa444acb0fbdd157cdd32aa"
+  },
+  "4|tcga_rcc|val": {
+   "n": 77,
+   "n_unique": 77,
+   "sha256": "5315e71b003267a138c9b13b1889514ace34c257a621bbdb05126f9c68677d84"
+  },
+  "4|tcga_rcc|test": {
+   "n": 78,
+   "n_unique": 78,
+   "sha256": "49ba2921c3651c0afec7f789125c1415eca14eec653e6a56c5b40412a7168f83"
+  },
+  "5|tcga_rcc|train": {
+   "n": 619,
+   "n_unique": 619,
+   "sha256": "4357b05d8618e4c5585e53d30ea740240c2fac8e8afc53ecb70fc12ada6babca"
+  },
+  "5|tcga_rcc|val": {
+   "n": 75,
+   "n_unique": 75,
+   "sha256": "3b484336cfe49cb13830497c84faa24e8a2ee1ed4b0587a6a403fdcdeadb8620"
+  },
+  "5|tcga_rcc|test": {
+   "n": 74,
+   "n_unique": 74,
+   "sha256": "ad8d160e4e969d209a597728821e7a17845134a6d9077fca279f9b80ff91640d"
+  },
+  "6|tcga_rcc|train": {
+   "n": 616,
+   "n_unique": 616,
+   "sha256": "52d554450dab55ba0f9c317d88d60cdc5e8985f50f43bc7d99b2d03faee617b9"
+  },
+  "6|tcga_rcc|val": {
+   "n": 75,
+   "n_unique": 75,
+   "sha256": "fb79778301bea719099929a9ce7978f6bbc3f1c5febe28d46a40a19c32720012"
+  },
+  "6|tcga_rcc|test": {
+   "n": 77,
+   "n_unique": 77,
+   "sha256": "426b1caa2562ad3e5b62daea0bbc6ef76d6ec14a4a0e8a3531ba3edd3250f208"
+  },
+  "7|tcga_rcc|train": {
+   "n": 615,
+   "n_unique": 615,
+   "sha256": "044a3becaef64e98816b648cc4efb4bdb3cc2b8e45b99f82c51ae79dca8808a4"
+  },
+  "7|tcga_rcc|val": {
+   "n": 78,
+   "n_unique": 78,
+   "sha256": "d848d09f8373823a6dd2dd1711a47eabefce932483ffecccfadb161b81601314"
+  },
+  "7|tcga_rcc|test": {
+   "n": 75,
+   "n_unique": 75,
+   "sha256": "42df379702b99d78260afdc99afd1827b355c2e49a53819f66eade0226d70c21"
+  },
+  "8|tcga_rcc|train": {
+   "n": 617,
+   "n_unique": 617,
+   "sha256": "959df844c6c1a4d1953d3ad8d874c9d09d93599504f52e29ce1970100fedddad"
+  },
+  "8|tcga_rcc|val": {
+   "n": 75,
+   "n_unique": 75,
+   "sha256": "b4040b2d8907207b497809c46a5430e6ca854bd583093b336f4df2174237c87c"
+  },
+  "8|tcga_rcc|test": {
+   "n": 76,
+   "n_unique": 76,
+   "sha256": "fadbe17e2eedd1c1bb8e5b01f78e366d843ae3d5ebd8668f909a608f88e039c6"
+  },
+  "9|tcga_rcc|train": {
+   "n": 612,
+   "n_unique": 612,
+   "sha256": "a49e34a4792814ce0f515fb0204f0ff7d78ebe756f8b1a078793c6cfa259dd28"
+  },
+  "9|tcga_rcc|val": {
+   "n": 75,
+   "n_unique": 75,
+   "sha256": "1fc08fc10a9278461930989d39d39562f7872a053a38a999d35ccaebbb11cb26"
+  },
+  "9|tcga_rcc|test": {
+   "n": 81,
+   "n_unique": 81,
+   "sha256": "652a26e08cc32d97009c7425a7eb325717299c1dae65dc816ea249ae215a94b4"
+  },
+  "10|tcga_rcc|train": {
+   "n": 618,
+   "n_unique": 618,
+   "sha256": "f1b33c1932a684b1dfc876ce845b6e46dc8efc3c48df0abd6810f89d2618e65d"
+  },
+  "10|tcga_rcc|val": {
+   "n": 76,
+   "n_unique": 76,
+   "sha256": "81c6e91dd9965800ade942851b3754d1b2f195e18bed6a75ae2af6774b7f3491"
+  },
+  "10|tcga_rcc|test": {
+   "n": 74,
+   "n_unique": 74,
+   "sha256": "ba1edf3fac5ce9597d4c645be1e8034da79ab554b981f7de1d4555a9042227bf"
+  },
+  "1|tcga_brca|train": {
+   "n": 763,
+   "n_unique": 763,
+   "sha256": "3e44b9b7d50c6ac01b8216b112f0a40d8743ccf434ebf3bb419956ed40e9a789"
+  },
+  "1|tcga_brca|val": {
+   "n": 96,
+   "n_unique": 96,
+   "sha256": "05e96efb915f42c1d87e664a37b741e4185505a8d16e441a56cce67d17fd8cc0"
+  },
+  "1|tcga_brca|test": {
+   "n": 93,
+   "n_unique": 93,
+   "sha256": "90736888266ca2fc22786ef998e8c6f2990ffeb124960461c0efeebd0596c06f"
+  },
+  "2|tcga_brca|train": {
+   "n": 764,
+   "n_unique": 764,
+   "sha256": "61b20401de673a08ee6d8d5615d61d3020ba0da6b9fd2b9b09ac686d92ae7e75"
+  },
+  "2|tcga_brca|val": {
+   "n": 93,
+   "n_unique": 93,
+   "sha256": "6cc5434401723fc5b5e22f25bfcbe54ceb94cffc2f4bbf77aeff0000befd3d6e"
+  },
+  "2|tcga_brca|test": {
+   "n": 95,
+   "n_unique": 95,
+   "sha256": "ca8766d063655d80dfc00c32a6ab6739bcc795b069cc17e789dee34ca26d33e4"
+  },
+  "3|tcga_brca|train": {
+   "n": 763,
+   "n_unique": 763,
+   "sha256": "9b8a42f8f473b69757abddff2029fae588d209382c0a936a372f38113833e0b2"
+  },
+  "3|tcga_brca|val": {
+   "n": 93,
+   "n_unique": 93,
+   "sha256": "3a3c507b3aeba00ef7364036e02d0e36f08f35c2b9d5e6ec5328ddf8ed018a79"
+  },
+  "3|tcga_brca|test": {
+   "n": 96,
+   "n_unique": 96,
+   "sha256": "b372ddfefe4f209528a8320acb4548b46a60bb5c597434c33938e0120dc7d184"
+  },
+  "4|tcga_brca|train": {
+   "n": 762,
+   "n_unique": 762,
+   "sha256": "5221729b660a53f9e6c8b927abb3665f2d713541c3e71fb9a8f2ac4e5d058c8f"
+  },
+  "4|tcga_brca|val": {
+   "n": 96,
+   "n_unique": 96,
+   "sha256": "c362b380493502ad23333aae19ae8a44879a0f6ca81c2225f7dc949308d735d8"
+  },
+  "4|tcga_brca|test": {
+   "n": 94,
+   "n_unique": 94,
+   "sha256": "588f8e047dff07fc642f05536577162c8df222a845ae3e6dee2f9af9014a4bb3"
+  },
+  "5|tcga_brca|train": {
+   "n": 763,
+   "n_unique": 763,
+   "sha256": "29503af6b736ea40383e92736d1988781eca88713a303cebe2b18bac22026f7b"
+  },
+  "5|tcga_brca|val": {
+   "n": 95,
+   "n_unique": 95,
+   "sha256": "6cae883e8bc9ac687099aa40a0b140ea0337278bcb9f72c965e56d5f26983359"
+  },
+  "5|tcga_brca|test": {
+   "n": 94,
+   "n_unique": 94,
+   "sha256": "decb2a03949b0fbd6a8f39c060e4be894b3f099d3bb4df45a55ca575599d92ca"
+  },
+  "6|tcga_brca|train": {
+   "n": 758,
+   "n_unique": 758,
+   "sha256": "59e0da80927717a6064218fb8ff00f2f2bbc708cd29b30468a186af432b5c5af"
+  },
+  "6|tcga_brca|val": {
+   "n": 96,
+   "n_unique": 96,
+   "sha256": "8d4a3eb3306db74be838a8cc7b0953ce66fed9a347d8713e573f88974945f263"
+  },
+  "6|tcga_brca|test": {
+   "n": 98,
+   "n_unique": 98,
+   "sha256": "a6016754ddb53d0ffd3b599e74311fab9edbfb12103952a620555f3639b3176d"
+  },
+  "7|tcga_brca|train": {
+   "n": 760,
+   "n_unique": 760,
+   "sha256": "ca48d4b76f14b6f42ad6f34b7e7050be8f4a70feef577869f8aef2d8801eee79"
+  },
+  "7|tcga_brca|val": {
+   "n": 96,
+   "n_unique": 96,
+   "sha256": "331a3359b8ff270376f07b638b8258bb234521be745de5e255c28e901fb7d129"
+  },
+  "7|tcga_brca|test": {
+   "n": 96,
+   "n_unique": 96,
+   "sha256": "deb39a33d4c60c1ef8ccaa451001845232d7863b31221635ead959fddab0b6a0"
+  },
+  "8|tcga_brca|train": {
+   "n": 762,
+   "n_unique": 762,
+   "sha256": "6c8904ce46088773100a2362ce25728f51ec61707d5623d26678cc137d9d1d53"
+  },
+  "8|tcga_brca|val": {
+   "n": 94,
+   "n_unique": 94,
+   "sha256": "3c032db71f6d790f169c01fd3fb2aa91b17baf580613ae591f786019478e5972"
+  },
+  "8|tcga_brca|test": {
+   "n": 96,
+   "n_unique": 96,
+   "sha256": "c2ddbc5c8c3ba9210e043079949edc9e821ad1d13a91a3c7dc7ac535e31037d9"
+  },
+  "9|tcga_brca|train": {
+   "n": 760,
+   "n_unique": 760,
+   "sha256": "aac803be6cf6b0a8143e24b61c55e062c238c66733e91b913d2914053ece9d36"
+  },
+  "9|tcga_brca|val": {
+   "n": 93,
+   "n_unique": 93,
+   "sha256": "514eb31083844d199c1e3c7936c118199e93ee3eeb27322c3354cfe80c70f852"
+  },
+  "9|tcga_brca|test": {
+   "n": 99,
+   "n_unique": 99,
+   "sha256": "f5ae1faa20d19cd31f9e5f6f403db6f1b9d5efe7debc53fe75c3383e37a84728"
+  },
+  "10|tcga_brca|train": {
+   "n": 763,
+   "n_unique": 763,
+   "sha256": "90c7a3eafdbc4cbbd0bdfb8cd91c30bda1e489c3b36d94aa964d578026b25115"
+  },
+  "10|tcga_brca|val": {
+   "n": 98,
+   "n_unique": 98,
+   "sha256": "4663ca67d58ab4516edef79329b69cf2e0f2a0583cabab751e0d07c8997303bd"
+  },
+  "10|tcga_brca|test": {
+   "n": 91,
+   "n_unique": 91,
+   "sha256": "a4357b6ebc34f83c04a6a388362483616b0e2c797d8174629f07f49866161d8c"
+  },
+  "1|tcga_lung|train": {
+   "n": 774,
+   "n_unique": 774,
+   "sha256": "d2a8d6761c37153ed48e90fb32a24929cfa970ded178f5f9c092f792aff2ca13"
+  },
+  "1|tcga_lung|val": {
+   "n": 96,
+   "n_unique": 96,
+   "sha256": "8314f5fbcbb10fd136b88f2f107d8153035c037359c3f61de5fd638fdb2556be"
+  },
+  "1|tcga_lung|test": {
+   "n": 95,
+   "n_unique": 95,
+   "sha256": "83449edaf563974acf461674dbac7e3617f5164e8db9d6ec2d72cc1b2953373b"
+  },
+  "2|tcga_lung|train": {
+   "n": 761,
+   "n_unique": 761,
+   "sha256": "2fee1821fbb9b0f7d77a90527f544287d7a70974e300432802f6adf1e176e8ba"
+  },
+  "2|tcga_lung|val": {
+   "n": 109,
+   "n_unique": 109,
+   "sha256": "b7e281b6752a084b5ec18709827a9a14dfb6efcdf02c7bd664e4f2e29e25e9f0"
+  },
+  "2|tcga_lung|test": {
+   "n": 95,
+   "n_unique": 95,
+   "sha256": "b79e4f57f6c7f2adf98da499273741a2f64d9ae5c6b9d405de2e53c699304b3f"
+  },
+  "3|tcga_lung|train": {
+   "n": 765,
+   "n_unique": 765,
+   "sha256": "219e6319ebed0bcdd6390bece5944657af59049fa920eef1f838866e1307b0a2"
+  },
+  "3|tcga_lung|val": {
+   "n": 93,
+   "n_unique": 93,
+   "sha256": "a4acf4393da171e2d08bed89d5949a760394f713e730fa691f85d038e162829f"
+  },
+  "3|tcga_lung|test": {
+   "n": 107,
+   "n_unique": 107,
+   "sha256": "c2d9329fedb629ffc6cd1b043c77b41b6026764628c690c1093ab626a3563992"
+  },
+  "4|tcga_lung|train": {
+   "n": 756,
+   "n_unique": 756,
+   "sha256": "acd57e72143aef8de691b1a46599864729bff1d1e13f483ad8534b15ee2216b7"
+  },
+  "4|tcga_lung|val": {
+   "n": 97,
+   "n_unique": 97,
+   "sha256": "5496636f7a74760557b26653f8a3db6632d31aba68609e2337bd7c574363c3cc"
+  },
+  "4|tcga_lung|test": {
+   "n": 112,
+   "n_unique": 112,
+   "sha256": "8a56f3d497d6b0158c025017757edc1a9d1c50b0d12fc609b64c1f64d7ac031e"
+  },
+  "5|tcga_lung|train": {
+   "n": 764,
+   "n_unique": 764,
+   "sha256": "412011e5ca3b76965d1c71c2f3e0bca60d7c6bbaba6d90eba97f0cbacc5e77aa"
+  },
+  "5|tcga_lung|val": {
+   "n": 105,
+   "n_unique": 105,
+   "sha256": "b7c5e322f5cdbf2cf1f7087617787cc608c0140532c21f8c1b330e7ce179c641"
+  },
+  "5|tcga_lung|test": {
+   "n": 96,
+   "n_unique": 96,
+   "sha256": "1f49a0decc177e79c8d601829e8222309a80c8d201477ba5f522f60e7c370093"
+  },
+  "6|tcga_lung|train": {
+   "n": 759,
+   "n_unique": 759,
+   "sha256": "80749753e2fe3bc722d990c30f16fc7cde6fadb8c142a827aa3f24c0ad6f192d"
+  },
+  "6|tcga_lung|val": {
+   "n": 118,
+   "n_unique": 118,
+   "sha256": "a40d161ec17fdef5ded8efc7ee690ed5a2ae5c7237968ef2c8759c4b546a4f5c"
+  },
+  "6|tcga_lung|test": {
+   "n": 88,
+   "n_unique": 88,
+   "sha256": "caf049f8704c4b1d4d31f94c450cd737e81898bc7591615fd0939d90152a866a"
+  },
+  "7|tcga_lung|train": {
+   "n": 774,
+   "n_unique": 774,
+   "sha256": "414d7f6ff09f1441e2a46c32972be04783650ceef706e8909c08325de2d383bb"
+  },
+  "7|tcga_lung|val": {
+   "n": 94,
+   "n_unique": 94,
+   "sha256": "355bd1655912189c8f0ec8a15c21dda8d3501cdca2cfdbf7674df3c6368bdf4d"
+  },
+  "7|tcga_lung|test": {
+   "n": 97,
+   "n_unique": 97,
+   "sha256": "6e45f6b5e1410987b0eac7af0a99f27ddf53f5cf5211861377cb5c2a8b46cb33"
+  },
+  "8|tcga_lung|train": {
+   "n": 777,
+   "n_unique": 777,
+   "sha256": "b6703f89fe4ad6e37d10bebf2cdb32bdcf9cf280b10d25d4613cf57d4d443a3b"
+  },
+  "8|tcga_lung|val": {
+   "n": 95,
+   "n_unique": 95,
+   "sha256": "16de388e2c6c50d0675f19c02c3fc58577b435006bc83566f94f2244338c4ee2"
+  },
+  "8|tcga_lung|test": {
+   "n": 93,
+   "n_unique": 93,
+   "sha256": "5810e87a27490a9589a82745a783be375d42fa8df36d1286d548305d81b23376"
+  },
+  "9|tcga_lung|train": {
+   "n": 762,
+   "n_unique": 762,
+   "sha256": "d4d44296f3d25d7fb4b02f3b8e6cfe4c85a7e51e8b8bb956413677d525655760"
+  },
+  "9|tcga_lung|val": {
+   "n": 111,
+   "n_unique": 111,
+   "sha256": "8a41b93bcd304ddd44a52c8e395b0e3a40ceeba20b8d9423ea2e4bef8b7812b2"
+  },
+  "9|tcga_lung|test": {
+   "n": 92,
+   "n_unique": 92,
+   "sha256": "c4c5cb8bff30f40188653cfedbfd64236d2e2df71d93080191c603d133eb25e2"
+  },
+  "10|tcga_lung|train": {
+   "n": 771,
+   "n_unique": 771,
+   "sha256": "addf741bc83a68ba8fc2b8f928e2dc3ebf70025868b602cc17d0eacde693739a"
+  },
+  "10|tcga_lung|val": {
+   "n": 104,
+   "n_unique": 104,
+   "sha256": "d8a1206b05745fc0aa478fdc1da6655c19607d0af38b226e94fd9029d0773128"
+  },
+  "10|tcga_lung|test": {
+   "n": 90,
+   "n_unique": 90,
+   "sha256": "dbafba6824592d209cbb23978da50b458075e376ad064e51d9ca739849292e8b"
+  }
+ },
+ "files": {
+  "tcga_esca/table": {
+   "name": "TCGA_ESCA_path_subtype_x10_processed.csv",
+   "sha256": "ce4328d1aad2c68a04b3125493cd3cec2acce646447446d86ca98ac0ed403705"
+  },
+  "tcga_esca/fold_1.npz": {
+   "sha256": "28a6b008f14841847c2947b13f27cae91e249ca7640b8c24c5affa91748b280f",
+   "patients": {
+    "train": {
+     "n": 118,
+     "sha256": "6207c169623b93dae610ae188d30eda65a3892be0f2890bb62e90147e1bf4903"
+    },
+    "val": {
+     "n": 15,
+     "sha256": "416b451d9a2f20afcfce5d464b75fa10f18cf2f898c73de44bc5587f2700f8ab"
+    },
+    "test": {
+     "n": 15,
+     "sha256": "20c2a1442f937ebc7635b47f6c5cfbc86808b42a9f0983aeb2e1b8ad9de61792"
+    }
+   }
+  },
+  "tcga_esca/fold_2.npz": {
+   "sha256": "c978cc43e0483912ffaf13a4daf34dee27d9d23ea9e67547dfcd89be3b46849b",
+   "patients": {
+    "train": {
+     "n": 118,
+     "sha256": "5c8ad664ac15d2fbc80c95c859e67d48d5530abfe74b2000aa8a27f07af81c67"
+    },
+    "val": {
+     "n": 15,
+     "sha256": "891fa7144f30318ba333a4d8228ed3b7cf0ef1fa546280613f9866ebeb7300bf"
+    },
+    "test": {
+     "n": 15,
+     "sha256": "68309d2617ec56ce612597176d34a914eb892b57b19e1f148b8e49ed643da547"
+    }
+   }
+  },
+  "tcga_esca/fold_3.npz": {
+   "sha256": "41a60595d526981fbd2292ed69d9ebfee4a2438b5bacc55b96d2526f1268f002",
+   "patients": {
+    "train": {
+     "n": 118,
+     "sha256": "566e8cdc454fd346aefe44085729ba58f682aac80ab649c7bf62f23951e7cca1"
+    },
+    "val": {
+     "n": 15,
+     "sha256": "cfd21f8b5615f17d2b746009ad7cb6bcfa99cf3870f574b37bd15770cdbef4c6"
+    },
+    "test": {
+     "n": 15,
+     "sha256": "ae0001d7737ca3a269a9948565acda0f9b4c24834f4ed6da2b70ce6d9b72861c"
+    }
+   }
+  },
+  "tcga_esca/fold_4.npz": {
+   "sha256": "d374634a92959213c22752d603f7c9f3d689c14c82fa68854cbc0b17f4e01d0c",
+   "patients": {
+    "train": {
+     "n": 118,
+     "sha256": "b7e4803cd7718135b16ce6f0b99758df95eefdafff1433877098ee0ce6615634"
+    },
+    "val": {
+     "n": 15,
+     "sha256": "582d26338a9b31fec43a91e18fe9a273f1539958f3e9c64d1413274d7edd2a94"
+    },
+    "test": {
+     "n": 15,
+     "sha256": "94f489a7f26c1b02fec727c0de319a544f9d4117790d71206a1230384adc322e"
+    }
+   }
+  },
+  "tcga_esca/fold_5.npz": {
+   "sha256": "5d851d23a8260d36e0ba502d1321f408990bc5adb389ed6af31639b70582ddf1",
+   "patients": {
+    "train": {
+     "n": 118,
+     "sha256": "81e9aae5704921322b2a7e88c586e132f1156dc26cebdbd1e8369c2c64a4bb46"
+    },
+    "val": {
+     "n": 15,
+     "sha256": "15a1672c6950805e7e2d1ac0c1657ea2a22628a07218ed1a47aceb3451518334"
+    },
+    "test": {
+     "n": 15,
+     "sha256": "25da2d2d9c8fb86597c467a265e5ebe4b596289072ca533b21520308f0e177b8"
+    }
+   }
+  },
+  "tcga_esca/fold_6.npz": {
+   "sha256": "f289f2112571c46c9f7765dc386440f40c76c5441f10ad52eed6e102a113b3e3",
+   "patients": {
+    "train": {
+     "n": 118,
+     "sha256": "05b745e85dbe7dfcbae0c203cd2664b5bdab46f11fea326c72b1158149c4d3d0"
+    },
+    "val": {
+     "n": 15,
+     "sha256": "5d45b865d19eb5745c0e589fed6812eb2bfaca508e7c553e231d8f61222e85df"
+    },
+    "test": {
+     "n": 15,
+     "sha256": "1e8383f2d44f37806d8ee5be610768f22a74702bef2f5fb9534d7669e9a68fb4"
+    }
+   }
+  },
+  "tcga_esca/fold_7.npz": {
+   "sha256": "4bc06bda6ec5f9819081b2f1b36d85629a2e47561a44f4ea1a1be36cffbbee5e",
+   "patients": {
+    "train": {
+     "n": 118,
+     "sha256": "c0a92926d4d445f6e3ad16b90b2d788abe84df6e9996c9885f3978353c7f1f04"
+    },
+    "val": {
+     "n": 15,
+     "sha256": "07cf3086ef4060d92ca503908173a6f040df36d3d6de71df57eedbae4f9ded3b"
+    },
+    "test": {
+     "n": 15,
+     "sha256": "35443385c11cf072566fd3fb658712b7fce7c1c8337ced8443e20d689292d8a3"
+    }
+   }
+  },
+  "tcga_esca/fold_8.npz": {
+   "sha256": "41d4d47fc574b1856544fcb213675842f45b7e6ec1a56c188cc3759f5e84df9b",
+   "patients": {
+    "train": {
+     "n": 118,
+     "sha256": "ecd9e938a9773a4de47ee25d64360f9775efc8a18586eff39c3ee868b7d29fc9"
+    },
+    "val": {
+     "n": 15,
+     "sha256": "0cf67cd62ddcd0dc54403b5f3d748f1dd4f0d2e645dda4a1bf432639fb948179"
+    },
+    "test": {
+     "n": 15,
+     "sha256": "6ecd5316042269789524cf0cbad3693d985b35df7f904c0cc53d8f695d02198a"
+    }
+   }
+  },
+  "tcga_esca/fold_9.npz": {
+   "sha256": "1457478d09db999af00e59cc31958d43813bd814ea1ad152122d3873f6de50a0",
+   "patients": {
+    "train": {
+     "n": 119,
+     "sha256": "71d7a66c96012387d7cab2e9c8abb627feaf8f423f28c5afedabc4765b857b7c"
+    },
+    "val": {
+     "n": 15,
+     "sha256": "dceb4045da49cbf0f99c8fef4a56bc1be6bacc0ffff71449b624a16cdd3e86ad"
+    },
+    "test": {
+     "n": 14,
+     "sha256": "7f16ba2b54e54205cb1502dad9f1d2442cc984fa23338d28f035842f2520c301"
+    }
+   }
+  },
+  "tcga_esca/fold_10.npz": {
+   "sha256": "eb3d0b6b65fb761fb710567b7312a2b17146a951132d47e291d6523e86f29dd2",
+   "patients": {
+    "train": {
+     "n": 119,
+     "sha256": "f9e86db8feba238fb3f2780fa8321c6d2281074e0b676fb2c9508f1d6f1cbf75"
+    },
+    "val": {
+     "n": 15,
+     "sha256": "6db5de8a8f24044ff7228625917f3396d39bc2aaf053b6574f7201322da3a823"
+    },
+    "test": {
+     "n": 14,
+     "sha256": "1e3aa6fcf6b9e012a36fa2db32f9e74807120ed3da620f4c98aa7aba2fc1de5d"
+    }
+   }
+  },
+  "tcga_rcc/table": {
+   "name": "TCGA_RCC_path_subtype_x10_processed.csv",
+   "sha256": "a160e6793bd95d2b41724d694f97cdfadbe89eaf19e792ee6bd8de3fbd22b258"
+  },
+  "tcga_rcc/fold_1.npz": {
+   "sha256": "1d9d2392201d7dc7936c999dcec778fcda739ca1092564cf0977594c560aed3c",
+   "patients": {
+    "train": {
+     "n": 590,
+     "sha256": "d9b07c6ce82a18919620e6197b67b0565e2a6161d81515543ac89ec2f7341d7e"
+    },
+    "val": {
+     "n": 74,
+     "sha256": "54045da9389219bbdaa8a46d235aaa9a1bb00dab3e7a8462886f96c241273863"
+    },
+    "test": {
+     "n": 74,
+     "sha256": "079e0f869b5404c33bcd58369655bfcfa244f985f97a7cea36c72c28baec71fa"
+    }
+   }
+  },
+  "tcga_rcc/fold_2.npz": {
+   "sha256": "ad395a006f10a8c7977233fe62366e9c4509c232256a2b4839a219a3817cf1e5",
+   "patients": {
+    "train": {
+     "n": 590,
+     "sha256": "9284a563a1971e0f4acc68895399806f4fd31e5c937376ad2cc5ece10ad8619e"
+    },
+    "val": {
+     "n": 74,
+     "sha256": "2856afc24348a0d79575c34269674da0a0925bc341197e5297f13a220ce9c082"
+    },
+    "test": {
+     "n": 74,
+     "sha256": "d9e5a2bf0ef37661a0fb0cf4459bc81a0726c276a288b7b24987eb2c67646e71"
+    }
+   }
+  },
+  "tcga_rcc/fold_3.npz": {
+   "sha256": "65d6d201a7b5aeab69be8f3a70efd0072eda8cfddd1b3161b1e622a6a0d64da4",
+   "patients": {
+    "train": {
+     "n": 590,
+     "sha256": "c6200a5fc1607851bb4a1995b45cb816730a2438a1c4533b272a1608c2d3860c"
+    },
+    "val": {
+     "n": 74,
+     "sha256": "57ed25e949518a3bcd83f740e572ffa2a49bb2b7639403bcc351e35fe6e7df91"
+    },
+    "test": {
+     "n": 74,
+     "sha256": "4528e1b3ab398f69dc358f808cad2a64e7b8fa949488258da09bda7411af90e6"
+    }
+   }
+  },
+  "tcga_rcc/fold_4.npz": {
+   "sha256": "174bb1aae0e95e1efb1b83ca83df59bd6e836e80a903775079be4d26a00a6507",
+   "patients": {
+    "train": {
+     "n": 590,
+     "sha256": "0822725f51127f671ada6a8cbdb54c272f151d9b38b11a96f36ad27e2961aed9"
+    },
+    "val": {
+     "n": 74,
+     "sha256": "c7d05e82d7a2b761853b29c0f42a7c7e64813b351532e7fe8e31016c8edbda94"
+    },
+    "test": {
+     "n": 74,
+     "sha256": "710fcf9e2b05cb7ca3f09c6c1fca5a292e03f1de7fd273b5d6e94af42d26d121"
+    }
+   }
+  },
+  "tcga_rcc/fold_5.npz": {
+   "sha256": "e289bb712a2a510409478676a48b5fbaf83766c96a123a46dcf7f332d0df77a9",
+   "patients": {
+    "train": {
+     "n": 590,
+     "sha256": "0951cafbf4e635cd10918585ef619d992636e58de44e60c8f96513f96f838595"
+    },
+    "val": {
+     "n": 74,
+     "sha256": "a4cd951d62f7f154a05ab49a02c8709d98b1bb7f3c878c3d479c559954cfbdbf"
+    },
+    "test": {
+     "n": 74,
+     "sha256": "12becd588fe384cdc7d93d672fe3d63dc3c03d58501564a0d7c082da93281465"
+    }
+   }
+  },
+  "tcga_rcc/fold_6.npz": {
+   "sha256": "bd2734771f58e36ff4673d682c36c2d27b2e03ae631b1ada3796443d989ad4aa",
+   "patients": {
+    "train": {
+     "n": 590,
+     "sha256": "878b031a1741048400f0844b52594b954e82eaad451595bc3bf02e00f0bb063c"
+    },
+    "val": {
+     "n": 74,
+     "sha256": "f5fbd702cf000c1a9deb75cda06d0f91f8678dc1eaac07d398e97e3c58967bfc"
+    },
+    "test": {
+     "n": 74,
+     "sha256": "ffc4e3b5bdfe900e7afeca298db77e3ff74fd7c8fbd0d9405ef96cdccf943cab"
+    }
+   }
+  },
+  "tcga_rcc/fold_7.npz": {
+   "sha256": "6124f4bc830c852f175b3b22833ca19402740f10a197411273e6807460cacdea",
+   "patients": {
+    "train": {
+     "n": 590,
+     "sha256": "b662b2f130944edbec8b4450b7f02b3d542a27723d8f4e934c7a43675f861113"
+    },
+    "val": {
+     "n": 74,
+     "sha256": "6b807c6e0aa9e463506b337e74ebba4facc4d4f7d3ee2b81dca54ec0f44df4ce"
+    },
+    "test": {
+     "n": 74,
+     "sha256": "1a90984dfcd8dd66fda77126e58abadb0c4442798ab8af75ea9289320db96f84"
+    }
+   }
+  },
+  "tcga_rcc/fold_8.npz": {
+   "sha256": "c4f6f4eb101bd397a399e4d9556864afd14ba442eccae751da01262e84579565",
+   "patients": {
+    "train": {
+     "n": 590,
+     "sha256": "0c7a76f016a80cf5b3ccaf7f6a9b6e78132a092ffa2184242df3be0e213b0bb4"
+    },
+    "val": {
+     "n": 74,
+     "sha256": "b8c4e62d4c87518285de5b6849bfe4668e4eb7b14755ef76d024fedc3a8a6ccf"
+    },
+    "test": {
+     "n": 74,
+     "sha256": "47fb028b0590d07eb49d37d3c4b433e90502be3cb40e51d85759f611db6493b5"
+    }
+   }
+  },
+  "tcga_rcc/fold_9.npz": {
+   "sha256": "e5d351125d988c3d09ff83b2d19391a41081d51a9fc4132768374dc893a33c85",
+   "patients": {
+    "train": {
+     "n": 591,
+     "sha256": "54ef2724c4978ad9f9417d1902dfd381a79b9d986877948d89548561b4760a61"
+    },
+    "val": {
+     "n": 74,
+     "sha256": "e68e18cd9207fc5517dc746700814172ffe8fc7262da395d2cb19081d1c7d810"
+    },
+    "test": {
+     "n": 73,
+     "sha256": "e10dc2059186cbd375882f598430d3b6f8f6f261f2807382a25cb47c03e9b96b"
+    }
+   }
+  },
+  "tcga_rcc/fold_10.npz": {
+   "sha256": "79e4ab1960382ce216ec2a6635a8e0668a0b368f47799dfe4d36e74470e1fb18",
+   "patients": {
+    "train": {
+     "n": 591,
+     "sha256": "c33dac66d293aa60fbe57dcdd8f0e82780ce7d5877fc91f38a85fea59788910a"
+    },
+    "val": {
+     "n": 74,
+     "sha256": "bbb13df97e320a014c1a64b67f930373bd8e2b5baebfcddfbcd835148feab7a2"
+    },
+    "test": {
+     "n": 73,
+     "sha256": "0e212f68219054b68cbd2d9b89ca3518c9a869fb9d03bb6774bf4cbee638f369"
+    }
+   }
+  },
+  "tcga_brca/table": {
+   "name": "TCGA_BRCA_path_subtype_x10_processed.csv",
+   "sha256": "e6d27501822df16e363f5f591c85a6d99fafcf97cc72788d9934a4270dfc85e5"
+  },
+  "tcga_brca/fold_1.npz": {
+   "sha256": "8508790e82973e2eb76358d7e443dad6080ad161bcf190bcd1f945c83354fe23",
+   "patients": {
+    "train": {
+     "n": 712,
+     "sha256": "70ad96ea1e7b13e8353291afbee0e3724c566fb303b6ce9ce6cb6be0be87e1e2"
+    },
+    "val": {
+     "n": 89,
+     "sha256": "91c73d70f29faaa56ab5edbf572d7996f3bb596dc8a62a30f3ed13e8959af622"
+    },
+    "test": {
+     "n": 90,
+     "sha256": "9926478dc4e1e19cb85b26fcd562b42004578820c625b273c651ba71d21e9cdc"
+    }
+   }
+  },
+  "tcga_brca/fold_2.npz": {
+   "sha256": "109d639bf3721c6bdcb60b56e2547bada9c82119cfacf3547f76e63f031c2e3e",
+   "patients": {
+    "train": {
+     "n": 712,
+     "sha256": "a064f8582ccc33ecf89137eb6377dc011abf3949e2ac8586703b399ffa225f03"
+    },
+    "val": {
+     "n": 90,
+     "sha256": "66f97c0e231e9960a12f9aa8e9f54992e1afa4009e56dd60befbce7d127b36eb"
+    },
+    "test": {
+     "n": 89,
+     "sha256": "45a5b48340f231f6c6614e8b60129e2fcdef0e6e6f1133bafdf873b99a1dff78"
+    }
+   }
+  },
+  "tcga_brca/fold_3.npz": {
+   "sha256": "b237195c7b40f54b8ecda7d7b025b4d0cbb33e6526d2fcc8599a6d7a73495572",
+   "patients": {
+    "train": {
+     "n": 712,
+     "sha256": "6732ead603e24ae16b59a438612aa84e989418d4c4ef1dc2b6f0f1d534d57706"
+    },
+    "val": {
+     "n": 90,
+     "sha256": "c547dbcb02737e9e012bf6e28a3219c45744ce5c3982c50b46a7dcadf7e578a6"
+    },
+    "test": {
+     "n": 89,
+     "sha256": "dfb26ae3db220bd45b437c4285d18625a27c37cc847a1a69eb91c6d527fed475"
+    }
+   }
+  },
+  "tcga_brca/fold_4.npz": {
+   "sha256": "13c15149394d5c3388bb2dbcc15d9492f626a1d1766a464aeb2c1266d6c98632",
+   "patients": {
+    "train": {
+     "n": 712,
+     "sha256": "b2a5a3e937579d39802459a59ba0c465a11384ecda0df8d94376e65290cc60e5"
+    },
+    "val": {
+     "n": 90,
+     "sha256": "591e72ed223c23919101c29f377b9aea6755ccc5a9909a22860b2bae9fb47979"
+    },
+    "test": {
+     "n": 89,
+     "sha256": "d2ee257cf77f12e3e5b2427e546eb4ae63f7933903dae45ee9afb733b61055d3"
+    }
+   }
+  },
+  "tcga_brca/fold_5.npz": {
+   "sha256": "2763ec8f11a0a37ae24d748517630deecd6c7b5b07e9ad491a50c64a848c4b46",
+   "patients": {
+    "train": {
+     "n": 712,
+     "sha256": "d3d8cc80ebb759b17e202e16cb2bf20ec4ccca1a34a0d4d21fb68e436a0ba2d2"
+    },
+    "val": {
+     "n": 90,
+     "sha256": "cb41df456cfabe5c93016cf1fa73e32d5f713ba14d73d8a02c54c0ad0d3510c5"
+    },
+    "test": {
+     "n": 89,
+     "sha256": "defadf6f666fa97259de9bbb7ad5601b6a5c9a6fd7faa2d5432ecfb78123e686"
+    }
+   }
+  },
+  "tcga_brca/fold_6.npz": {
+   "sha256": "4b3a38b16b9724f8aa9d732eee9f35d0d62a4121ab6c4bbf3b1d9f5ad9c5f267",
+   "patients": {
+    "train": {
+     "n": 712,
+     "sha256": "7aa92e13c40c1d2b97971f6a135d9944ad25a581e3f40a04fe342daef032d1ba"
+    },
+    "val": {
+     "n": 90,
+     "sha256": "c674b49395f5add0085b0bd949aa0e3507610001064e03849768f63159af1660"
+    },
+    "test": {
+     "n": 89,
+     "sha256": "68836e00fcfcde91c53882b04cf25c7249357a8ee6413d7916f4d285fde71556"
+    }
+   }
+  },
+  "tcga_brca/fold_7.npz": {
+   "sha256": "49c540f792f710c0e4e8c2a41ba066ae22820813c64ab2b031a964d356e329ff",
+   "patients": {
+    "train": {
+     "n": 712,
+     "sha256": "0b40e01aec09f5791d330d08a6dff192721128076a47ae007ab0e4e5f5ad2db2"
+    },
+    "val": {
+     "n": 90,
+     "sha256": "035ba8edaa3b906829d82b49d7bcbf9d14f8ec917e7568a7eb5bd6118c14632b"
+    },
+    "test": {
+     "n": 89,
+     "sha256": "bd330a0544bf890b4214bc3dbe35e458218a12e3923fa125c7a3c6064f2f794d"
+    }
+   }
+  },
+  "tcga_brca/fold_8.npz": {
+   "sha256": "db1a65f7e46f409f2b19eef8a3c53d82c4b53db53dc153869a960e118f8b07f4",
+   "patients": {
+    "train": {
+     "n": 712,
+     "sha256": "1fd6c0754cd807b17f408720fc09c6c8da25180e193e29703d163fc459c818c1"
+    },
+    "val": {
+     "n": 90,
+     "sha256": "ca3282fc5f5af8aae35e32458f14c3aeaf40856fd075985685ed4d662275b218"
+    },
+    "test": {
+     "n": 89,
+     "sha256": "0c08f62cc7f439aed420ebf51197089c21dd6d03954b02d55d2d57b321dbe5cc"
+    }
+   }
+  },
+  "tcga_brca/fold_9.npz": {
+   "sha256": "55293ba02e7d13501e43eb679235a5ab6ec117f3c2c84e4bb8ed67f1cf44d0dd",
+   "patients": {
+    "train": {
+     "n": 712,
+     "sha256": "d58989f4d985a9123540ab70e6048e63252f34df95e3b5342a04d4b9b7720e45"
+    },
+    "val": {
+     "n": 90,
+     "sha256": "1cd1a301fbf2af83880917d12dc0da8a12980c3dfc9e46cf802f0efbaec2993e"
+    },
+    "test": {
+     "n": 89,
+     "sha256": "09e3ffe5165bd92de2618f98c1a8007d1f97322a356358f4cf41e02470f988ef"
+    }
+   }
+  },
+  "tcga_brca/fold_10.npz": {
+   "sha256": "2c9e342eac98327d6c910c72f79bc2077b0131e796aad9f93918e60e92209123",
+   "patients": {
+    "train": {
+     "n": 712,
+     "sha256": "169e0711e8555ad1b5a13b928d215bb1cdd34cff41990bcbce2d73613219deef"
+    },
+    "val": {
+     "n": 90,
+     "sha256": "8585f447fb5877896ccf56b3701e1ede206794b897c977e332c39023d3902eb3"
+    },
+    "test": {
+     "n": 89,
+     "sha256": "a3b80d45f15cbc2bee0f83cca95fd709759cffad65d474b9a862fa98b5b8ef14"
+    }
+   }
+  },
+  "tcga_lung/table": {
+   "name": "TCGA_LUNG_path_subtype_x10_processed.csv",
+   "sha256": "ee4b1a4c29266c84213670a898bb19c276c7a9d4ebf5502cad1f2b22614f95e6"
+  },
+  "tcga_lung/fold_1.npz": {
+   "sha256": "2543ea6401651eeda8c37b4f28f4d0a75a8e709b428f3105fa58cdbe99a86a13",
+   "patients": {
+    "train": {
+     "n": 694,
+     "sha256": "40e4ec74e20ee05b9735ff44b34fa8576b978c92ad347edad01bdaccb6a4ba2e"
+    },
+    "val": {
+     "n": 87,
+     "sha256": "83212ae40adf1d2a9bac24b78d61d21f0c522420e03240ee1e2b23d5fa31f235"
+    },
+    "test": {
+     "n": 87,
+     "sha256": "e4f2c8630a0261db8737f7f677fc9e3542d79b786e071fe2af84761bd76c64b3"
+    }
+   }
+  },
+  "tcga_lung/fold_2.npz": {
+   "sha256": "e18329e28fad96d614fce28c60365d732e6b99e95c8d406c179d3dd180751fa5",
+   "patients": {
+    "train": {
+     "n": 694,
+     "sha256": "04256a03a30e65b727b6f258267b240f8e6659b00378a4a7e4e2c0954bd74574"
+    },
+    "val": {
+     "n": 87,
+     "sha256": "aaedc58adcb6df9119f66a0a2dad3f2e922011bddbabe9d72191fddc8ec0b1fc"
+    },
+    "test": {
+     "n": 87,
+     "sha256": "b6433178f519b42d279f200090009c92c2f8c49df8be90b535455493378e8dab"
+    }
+   }
+  },
+  "tcga_lung/fold_3.npz": {
+   "sha256": "1a27fc71e0aed6bfb567c0a87c52e6fbb523e576a15c835397904942743e20ee",
+   "patients": {
+    "train": {
+     "n": 694,
+     "sha256": "2a1bea7976fa71794d232c0c8f86f4d3e965c99d08b207eb1467188004161643"
+    },
+    "val": {
+     "n": 87,
+     "sha256": "a2a993d7018b252f4733f76d3e3bbc01606c184e093c33454c650ccf5a44ac11"
+    },
+    "test": {
+     "n": 87,
+     "sha256": "4740dc1b1086ec6454a4e269f3486eba781ab2e8a0fd94463b80bd5674bf8bd0"
+    }
+   }
+  },
+  "tcga_lung/fold_4.npz": {
+   "sha256": "fb61430263d385d869ca73a73224507ac3de7dced1b0955b7a0e06f64400e475",
+   "patients": {
+    "train": {
+     "n": 694,
+     "sha256": "20b868de0c86eff01d44219333cf6ca24c64055499e6600aa316eaa6798e874d"
+    },
+    "val": {
+     "n": 87,
+     "sha256": "cd8da37c3a9f1df9cbe62e0437756662875a99037fc5f56668adfa7f9bd427d4"
+    },
+    "test": {
+     "n": 87,
+     "sha256": "bbc21d57cf89648a9d2ece996412c3859f1788fc34734e1ce5bda23e93965341"
+    }
+   }
+  },
+  "tcga_lung/fold_5.npz": {
+   "sha256": "e5e9fbadd053a0bf4d2ebc36438a5799953b4f080b88acf8d7239d38b1580abe",
+   "patients": {
+    "train": {
+     "n": 694,
+     "sha256": "4bf275118c18a13334700ab23fb25b9684dee5ebd4ffb970b9bda7bedccef9c3"
+    },
+    "val": {
+     "n": 87,
+     "sha256": "550befbd1bc6d36c21213f74142442f63091d5cd0799b628a78590744a8f68cd"
+    },
+    "test": {
+     "n": 87,
+     "sha256": "4f9404be1286d8182eb739aac82cb558b84b0f156a1924a42cee14853f41ac03"
+    }
+   }
+  },
+  "tcga_lung/fold_6.npz": {
+   "sha256": "6039693694c0cc05dd361df69a79e682fa98ed867cf3c44f48d559e04fe131e1",
+   "patients": {
+    "train": {
+     "n": 694,
+     "sha256": "6684dd1d22633f3cfb1a567d1bd2b793196e6cf7f04e33012bb92cc2e10737ba"
+    },
+    "val": {
+     "n": 87,
+     "sha256": "8521c8320fafca7bdc2c366b7613944cbe9394c807f4a85074efaf5641326d94"
+    },
+    "test": {
+     "n": 87,
+     "sha256": "9bc1b7d3aa9f997d89fae78e1b97c01d80cf943b05f8bba7116462c808aec10e"
+    }
+   }
+  },
+  "tcga_lung/fold_7.npz": {
+   "sha256": "66bc7edd94ad17bd229a1b697d5d1508ba44bf1ede4b5c8d5eb8e6cb1afef5b1",
+   "patients": {
+    "train": {
+     "n": 694,
+     "sha256": "510f3ca17474b5afb9198e5b9c85fc978be29357ea1fb92549d3275c0610a805"
+    },
+    "val": {
+     "n": 87,
+     "sha256": "79cfc36a6c00e05f19137780be6b9fb1c919d003bb757d0cce2b97233bf6a26c"
+    },
+    "test": {
+     "n": 87,
+     "sha256": "762461b0a094b047b86513627ae47e43c06a294b3f28fad1052a252d0baa1b61"
+    }
+   }
+  },
+  "tcga_lung/fold_8.npz": {
+   "sha256": "6c0d8c311d6aa98c554c0986a74f5773540634519a3af1cb7cec510ace16494b",
+   "patients": {
+    "train": {
+     "n": 694,
+     "sha256": "3e41d19fce04f65ff8eecf5f3665aa9eb08e61682680c3ae4e4672effe8a3ea6"
+    },
+    "val": {
+     "n": 87,
+     "sha256": "feac590a04e5b375d54db8ebfde9b9df02ecdf83e607730e4678ff9a31d02a6d"
+    },
+    "test": {
+     "n": 87,
+     "sha256": "e207479eebd5df8c33d3a267eefb6744a91bd2828df4598b0535e9c79905e0a7"
+    }
+   }
+  },
+  "tcga_lung/fold_9.npz": {
+   "sha256": "915bdaa9703fa8931496901f6bc0c5535d758a422da8d50af09e6a3f87b06a99",
+   "patients": {
+    "train": {
+     "n": 695,
+     "sha256": "b86aa8714786d1e596a0bba9a634ef9eddbed7a75691d5e05d4d16ffbb3d413c"
+    },
+    "val": {
+     "n": 87,
+     "sha256": "8b75dd625840eadc35b7505069b02d412f71cc888ca09313bb91e85a773dc467"
+    },
+    "test": {
+     "n": 86,
+     "sha256": "05cad48c3caab90a2f7cb22848bfb74450e0dd0fb3ae439b9e9d9e39057b7fdf"
+    }
+   }
+  },
+  "tcga_lung/fold_10.npz": {
+   "sha256": "ae7e56d3ff80c57c6469bd691a36a26a10984dc259eb3ce175032db8ffb18a70",
+   "patients": {
+    "train": {
+     "n": 695,
+     "sha256": "1951fdfb9e6e5f04ee71f93f8768fc01c144873a7e5285f706802a49621f952d"
+    },
+    "val": {
+     "n": 87,
+     "sha256": "691fb44c7f85236a2a0bc0a3e927d02b48560461bd46ea4c340c0f6845cde818"
+    },
+    "test": {
+     "n": 86,
+     "sha256": "e94558cdb1860a802686c9c6d2ff9273df1284216e1f1648863f5837bd415984"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "display_name": "QPMIL-VL",
+ "k6": "k6.json",
+ "primary": {
+  "reverse": "reverse_b8",
+  "paper": "paper_b16"
+ },
+ "published": {
+  "reverse": {
+   "ACC": "0.859 ± 0.032",
+   "MaskedACC": "0.925 ± 0.018",
+   "Forgetting": "0.064 ± 0.031",
+   "table": "Tab. 2"
+  },
+  "paper": {
+   "ACC": "0.890 ± 0.021",
+   "MaskedACC": "0.930 ± 0.018",
+   "Forgetting": "0.027 ± 0.014",
+   "table": "Tab. 1"
+  }
+ },
+ "machine_date": {
+  "reverse": "RunPod A100-SXM4-80GB，2026-09-08（bp_every_batch 8）",
+  "paper": "RunPod RTX 4090，2026-09-07（bp_every_batch 16）"
+ },
+ "ours": "Mac M1 Pro（CPU），2026-10-02／03"
+}
