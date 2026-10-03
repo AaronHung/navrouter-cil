@@ -1,0 +1,29 @@
+[2026-10-03 12:12:11] stage=init done=0/0 failed=0 run_all start folds=1-10 py=/Users/aaron/venvs/navcil/bin/python
+[2026-10-03 12:12:11] stage=vec done=0/0 failed=0 start
+[2026-10-03 12:15:46] stage=vec done=30/30 failed=0 end rc=0
+[2026-10-03 12:15:48] stage=chk done=0/0 failed=0 start
+[2026-10-03 12:15:53] stage=chk done=11/11 failed=1 end rc=3
+[2026-10-03 12:15:54] stage=hp done=0/0 failed=2 hp skipped（chk 失敗（PREREG-19 細則 14））
+[2026-10-03 12:15:54] stage=f2 done=0/0 failed=3 f2 skipped（chk 失敗（PREREG-19 細則 14））
+[2026-10-03 12:15:54] stage=f4 done=0/0 failed=4 f4 skipped（chk 失敗（PREREG-19 細則 14））
+[2026-10-03 12:15:54] stage=f5 done=0/0 failed=5 f5 skipped（chk 失敗（PREREG-19 細則 14））
+[2026-10-03 12:15:54] stage=f6 done=0/0 failed=6 f6 skipped（chk 失敗（PREREG-19 細則 14））
+[2026-10-03 12:15:54] stage=f7 done=0/0 failed=6 start
+[2026-10-03 12:15:57] stage=f7 done=1/1 failed=6 end rc=0
+[2026-10-03 12:16:00] stage=all done=0/0 failed=6 run_all finished
+[2026-10-03 14:58:40] stage=init done=0/0 failed=0 run_all start folds=1-10 py=/Users/aaron/venvs/navcil/bin/python
+[2026-10-03 14:58:40] stage=vec done=30/30 failed=0 skip（已完成）
+[2026-10-03 14:58:40] stage=chk done=11/11 failed=0 start
+[2026-10-03 14:58:48] stage=chk done=11/11 failed=0 end rc=0
+[2026-10-03 14:58:50] stage=hp done=0/0 failed=0 start
+[2026-10-03 14:59:11] stage=hp done=10/10 failed=0 end rc=0
+[2026-10-03 14:59:13] stage=f2 done=0/0 failed=0 start
+[2026-10-03 14:59:21] stage=f2 done=22/22 failed=0 end rc=0
+[2026-10-03 14:59:23] stage=f4 done=0/0 failed=0 start
+[2026-10-03 14:59:29] stage=f4 done=11/11 failed=0 end rc=0
+[2026-10-03 14:59:31] stage=f5 done=0/0 failed=0 start
+[2026-10-03 14:59:40] stage=f5 done=11/11 failed=0 end rc=0
+[2026-10-03 14:59:42] stage=f6 done=0/0 failed=0 start
+[2026-10-03 14:59:49] stage=f6 done=11/11 failed=0 end rc=0
+[2026-10-03 14:59:51] stage=f7 done=1/1 failed=0 skip（已完成）
+[2026-10-03 14:59:53] stage=all done=0/0 failed=0 run_all finished

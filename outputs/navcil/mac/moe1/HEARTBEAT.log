@@ -1,0 +1,23 @@
+[2026-10-02 21:35:24] stage=init done=0/0 failed=0 run_all start folds=1-10 epochs=5 py=/Users/aaron/venvs/navcil/bin/python
+[2026-10-02 21:35:24] stage=s1 done=0/0 failed=0 start
+[2026-10-02 21:35:27] stage=s1 done=10/10 failed=0 end rc=0
+[2026-10-02 21:35:28] stage=s2 done=0/0 failed=0 start
+[2026-10-02 21:35:33] stage=s2 done=20/20 failed=0 end rc=0
+[2026-10-02 21:35:34] stage=s3 done=0/0 failed=0 start
+[2026-10-02 21:39:08] stage=s3 done=20/20 failed=0 end rc=0
+[2026-10-02 21:39:10] stage=s4 done=0/0 failed=0 start
+[2026-10-02 21:50:24] stage=s4 done=32/120 failed=0 heartbeat
+[2026-10-02 22:05:24] stage=s4 done=74/120 failed=0 heartbeat
+[2026-10-02 22:14:42] stage=s4 done=120/120 failed=0 end rc=0
+[2026-10-02 22:14:45] stage=s5 done=0/0 failed=0 start
+[2026-10-02 22:18:54] stage=s5 done=30/30 failed=0 end rc=0
+[2026-10-02 22:18:57] stage=s6 done=0/0 failed=0 start
+[2026-10-02 22:20:24] stage=s6 done=6/120 failed=0 heartbeat
+[2026-10-02 22:35:24] stage=s6 done=59/120 failed=0 heartbeat
+[2026-10-02 22:50:24] stage=s6 done=113/120 failed=0 heartbeat
+[2026-10-02 22:52:58] stage=s6 done=120/120 failed=0 end rc=0
+[2026-10-02 22:53:01] stage=s7 done=0/0 failed=0 start
+[2026-10-02 23:05:24] stage=s7 done=61/150 failed=0 heartbeat
+[2026-10-02 23:20:24] stage=s7 done=97/150 failed=0 heartbeat
+[2026-10-02 23:33:22] stage=s7 done=150/150 failed=0 end rc=0
+[2026-10-02 23:33:26] stage=all done=0/0 failed=0 run_all finished

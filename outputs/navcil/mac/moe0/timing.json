@@ -1,0 +1,23 @@
+{
+ "moe0/val_fold1": 11.38,
+ "moe0/test_fold1": 20.75,
+ "moe0/val_fold2": 11.36,
+ "moe0/test_fold2": 21.44,
+ "moe0/val_fold3": 9.83,
+ "moe0/test_fold3": 21.87,
+ "moe0/val_fold4": 9.83,
+ "moe0/test_fold4": 22.41,
+ "moe0/val_fold5": 10.33,
+ "moe0/test_fold5": 20.98,
+ "moe0/val_fold6": 11.42,
+ "moe0/test_fold6": 20.78,
+ "moe0/val_fold7": 10.28,
+ "moe0/test_fold7": 20.72,
+ "moe0/val_fold8": 9.86,
+ "moe0/test_fold8": 20.17,
+ "moe0/val_fold9": 11.06,
+ "moe0/test_fold9": 20.17,
+ "moe0/val_fold10": 10.81,
+ "moe0/test_fold10": 19.01,
+ "run/val,test/1-10": 314.53
+}

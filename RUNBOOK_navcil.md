@@ -79,3 +79,33 @@ $PY scripts/nc8_report.py                                         # 從程式推
 3. **nc7_report.py／nc8_report.py 的實際執行指令：沒有 log。** logs/ 裡只有 nc7_i6.log、nc8_batch.log。報告指令是從 docstring 推回來的，當初是否設定了 `PYTHONNOUSERSITE=1` 無法確認。
 4. **MSI 實測值：沒有取得。** 沒有 ssh alias（已查 ~/.ssh/config 的全部 `Host` 行）。`192.168.10.107` 是否就是 MSI 無從判斷，沒有嘗試連線。
 5. **「任務文字描述」：** I6／AR 路徑沒有使用任務層級的文字，只用亞型文字。organ_keys 只在 NC-1 使用。如果報告所說的「任務描述」另有所指，目前沒有找到。
+
+## FINAL 定案系統（2026-10-03）
+
+**定義（FINAL＝MOE-4 的 P-4）**：任務由 AR（γ = 1e-3）判定；該任務的 I6(r = 2) head 四輪各 16（λ\* = 1.5）選 64 個 patch；原始 Z 等權平均後 L2 正規化得 v(s)；[v; 1] 做累加式 8 類 ridge（γ = 1e-3），在 τ̂ 的兩類內 argmax。seed 42–46。主系統（P-main）＝同一 head 與 AR，最後一步用 mean_vec 與文字 cosine。
+
+**分支與 commit**：分支 `moe-4`（bde6fbb 為 MOE-5 開始前的 HEAD）；MOE-5 整理批的 commit 與合併見 `git log`（主分支 `main`，tag `final-20261003`）。
+
+**重現 FINAL_RESULTS.md 的 A 表**（只讀既有產物，不需重跑）：
+- 主系統五 seed 與 FINAL 五 seed、seed 42：`outputs/navcil/mac/moe4/f2.json` → `h1_avg["P-main"]`、`h1_avg["P-4"]`、`h1["P-main(42)"]`、`h1["P-4(42)"]`。
+- 主系統與 FINAL 的 Masked ACC（seed 42）：`outputs/navcil/mac/moe1/s2.json`（Table 1 定義）。FINAL 的 Masked 等於其 WP。
+- 儲存：`outputs/navcil/mac/moe4/f5.json` → `systems`。
+- zero-shot：`outputs/navcil/mac/nc1/metrics.json` → `cil["無 gate：zero-shot 8 類（top-64）|reverse"]`。
+- LIN8：`outputs/navcil/mac/nc5/metrics.json` → `lin8.test`。
+- QPMIL-VL：`reference/external_baselines.json`（已發表值，非同折）。
+
+**重跑（若需要）**：MOE-4 整批 `scripts/moe4_run_all.sh`（`MOE4_PY` 指定 python，`NAVCIL_MACHINE=mac`）；主系統 nc8 批次見 `RUNBOOK_navcil.md` 上方 §3。
+
+**批次對照表**
+
+| 批次 | PREREG | AMENDMENT | REPORT | 主要內容 |
+|---|---|---|---|---|
+| NC-1 ～ NC-15 | PREREG-2 ～ PREREG-15 | AMENDMENT-1 ～ 4 | `REPORT_stage1-3.md` ～ `REPORT_stage17.md` | 主系統與負結果（見 FINAL_RESULTS F 表） |
+| MOE-0 | PREREG-16 | AMENDMENT-5（B4 修正，G-M3 維持未通過） | `REPORT_moe0.md`、`AUDIT_wp.md` | 診斷 B1–B5 |
+| MOE-1 | PREREG-17 | AMENDMENT-5 的後續用法 | `REPORT_moe1.md` | M3 確認、G1／G2、隨機特徵 |
+| MOE-2 | PREREG-18 | — | `REPORT_moe2.md` | 證據向量 LR 的多 seed 確認 |
+| MOE-3 | PREREG-19 | AMENDMENT-6（K4 γ 1e8 → 1e10） | `REPORT_moe3.md` | 不用 head 的向量、文字起點 ridge |
+| MOE-4 | PREREG-20 | — | `REPORT_moe4.md` | 定案確認（P-4 的 G-CONF 未通過；G-TRAJ、G-ONE 通過） |
+| MOE-5 | — | — | `FINAL_RESULTS.md`、`FINAL_EXAMPLE.md`（部分） | 整理批，不跑新實驗 |
+
+**已知的標示問題**：`REPORT_moe4.md` H5 與 `moe4/f5.json` 把 P-4 的儲存寫成 A_w／B_w，依 PREREG-20 應為 A_v／B_v；位元組數相同，數字不受影響。

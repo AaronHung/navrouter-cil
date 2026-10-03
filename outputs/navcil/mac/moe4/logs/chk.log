@@ -1,0 +1,5 @@
+[2026-10-03 16:06:05] start chk folds=1-10
+[16:06:10] MOE-4 chk folds=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] out=moe4 threads=8
+[16:06:19] chk：{"K1": {"max_abs_fold_diff": 0.0, "stage_acc_max_abs": 0.0, "wp_mean": {"reverse": 0.9339697867631912, "paper": 0.9339697867631912}, "cil_mean": {"reverse": 0.9128020942211151, "paper": 0.9128020942211151}, "pass": true, "rounding_checked": true}, "K2": {"max_abs_fold_diff": 0.0, "wp_mean": {"reverse": 0.9457090586423874, "paper": 0.9457090586423874}, "cil_mean": {"reverse": 0.925213934481144, "paper": 0.925213934481144}, "pass": true, "rounding_checked": true}, "K3": {"max_abs_fold_diff": 0.0, "pass": true}, "K4": {"max_abs_fold_diff": 0.0, "per_seed": {"43": {"reverse": 0.0, "paper": 0.0}, "44": {"reverse": 0.0, "paper": 0.0}, "45": {"reverse": 0.0, "paper": 0.0}, "46": {"reverse": 0.0, "paper": 0.0}}, "pass": true}, "K5": {"max_abs_cos": 0.0, "argmax_equal": true, "pass": true}}
+[16:06:19] chk: 完成（8s）
+[2026-10-03 16:06:19] exit=0

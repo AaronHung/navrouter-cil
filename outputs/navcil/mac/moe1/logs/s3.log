@@ -1,0 +1,25 @@
+[2026-10-02 21:35:34] start s3 folds=1-10 epochs=5
+[21:35:36] MOE-1 s3 folds=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] out=moe1 threads=8 epochs=5
+[21:35:48] infer s42cells_val_fold1.pt: n=283 11s
+[21:35:58] infer s42cells_test_fold1.pt: n=279 11s
+[21:36:09] infer s42cells_val_fold2.pt: n=291 10s
+[21:36:19] infer s42cells_test_fold2.pt: n=286 10s
+[21:36:28] infer s42cells_val_fold3.pt: n=276 9s
+[21:36:39] infer s42cells_test_fold3.pt: n=294 11s
+[21:36:49] infer s42cells_val_fold4.pt: n=285 10s
+[21:37:00] infer s42cells_test_fold4.pt: n=300 11s
+[21:37:11] infer s42cells_val_fold5.pt: n=290 11s
+[21:37:21] infer s42cells_test_fold5.pt: n=279 10s
+[21:37:33] infer s42cells_val_fold6.pt: n=304 12s
+[21:37:43] infer s42cells_test_fold6.pt: n=279 11s
+[21:37:54] infer s42cells_val_fold7.pt: n=283 11s
+[21:38:05] infer s42cells_test_fold7.pt: n=283 11s
+[21:38:15] infer s42cells_val_fold8.pt: n=279 11s
+[21:38:25] infer s42cells_test_fold8.pt: n=280 10s
+[21:38:36] infer s42cells_val_fold9.pt: n=294 10s
+[21:38:46] infer s42cells_test_fold9.pt: n=286 10s
+[21:38:58] infer s42cells_val_fold10.pt: n=293 12s
+[21:39:07] infer s42cells_test_fold10.pt: n=269 9s
+[21:39:07] K1 通過：逐折最大絕對差 0.00e+00
+[21:39:08] s3: 完成（211s）
+[2026-10-02 21:39:08] exit=0

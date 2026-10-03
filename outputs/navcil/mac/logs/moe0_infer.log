@@ -1,0 +1,23 @@
+[2026-10-02 16:44:28] start: /Users/aaron/venvs/navcil/bin/python scripts/moe0_infer.py --device cpu 
+[16:44:30] MOE-0 infer threads=8 λ*=1.5 splits=val,test
+[16:44:41] fold 1 val: n=283 11s
+[16:45:02] fold 1 test: n=279 21s
+[16:45:13] fold 2 val: n=291 11s
+[16:45:35] fold 2 test: n=286 21s
+[16:45:45] fold 3 val: n=276 10s
+[16:46:07] fold 3 test: n=294 22s
+[16:46:16] fold 4 val: n=285 10s
+[16:46:39] fold 4 test: n=300 22s
+[16:46:49] fold 5 val: n=290 10s
+[16:47:10] fold 5 test: n=279 21s
+[16:47:22] fold 6 val: n=304 11s
+[16:47:42] fold 6 test: n=279 21s
+[16:47:53] fold 7 val: n=283 10s
+[16:48:13] fold 7 test: n=283 21s
+[16:48:23] fold 8 val: n=279 10s
+[16:48:43] fold 8 test: n=280 20s
+[16:48:54] fold 9 val: n=294 11s
+[16:49:15] fold 9 test: n=286 20s
+[16:49:25] fold 10 val: n=293 11s
+[16:49:44] fold 10 test: n=269 19s
+[2026-10-02 16:49:45] exit=0

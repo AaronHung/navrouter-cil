@@ -1,0 +1,10 @@
+[2026-10-03 14:58:50] start hp folds=1-10
+[14:58:53] MOE-3 hp folds=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] out=moe3 threads=8
+[14:59:10] RDG:u64：選定 {'gamma': 0.001, 'edge_gamma': False}
+[14:59:10] RDG:g0：選定 {'gamma': 0.001, 'edge_gamma': False}
+[14:59:10] RDG:s42：選定 {'gamma': 0.001, 'edge_gamma': False}
+[14:59:10] ANC:u64：選定 {'gamma': 0.001, 'edge_gamma': True, 'alpha': 0.5, 'edge_alpha': True}
+[14:59:10] ANC:g0：選定 {'gamma': 0.001, 'edge_gamma': True, 'alpha': 0.5, 'edge_alpha': True}
+[14:59:10] ANC:s42：選定 {'gamma': 0.001, 'edge_gamma': True, 'alpha': 0.5, 'edge_alpha': True}
+[14:59:10] hp: 完成（18s）
+[2026-10-03 14:59:11] exit=0
