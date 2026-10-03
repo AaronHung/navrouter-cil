@@ -1,0 +1,533 @@
+[2026-10-02 22:53:01] start s7 folds=1-10 epochs=5
+[22:53:03] MOE-1 s7 folds=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] out=moe1 threads=8 epochs=5
+[22:53:03] K1 通過：逐折最大絕對差 0.00e+00
+[22:53:08] S7 隨機特徵 γ* = 10.0（validation WP {0.01: 0.8542882740497589, 0.1: 0.8961009338498116, 1.0: 0.9309003949165344, 10.0: 0.9431110337376595}）
+[22:53:16] I6 r=2 seed 42 fold 1 tcga_esca: train n=120／120 params=1033 epochs=5
+[22:53:18]     epoch 1/5 n=120 loss=0.2818 read=0.3s compute=0.6s
+[22:53:18]     epoch 2/5 n=120 loss=0.2321 read=0.2s compute=0.5s
+[22:53:19]     epoch 3/5 n=120 loss=0.1597 read=0.2s compute=0.6s
+[22:53:20]     epoch 4/5 n=120 loss=0.1127 read=0.2s compute=0.6s
+[22:53:21]     epoch 5/5 n=120 loss=0.0906 read=0.2s compute=0.5s
+[22:53:21] K3 通過：權重逐位元相同
+[22:53:21] I6 r=2 seed 45 fold 1 tcga_esca: train n=120／120 params=1033 epochs=5
+[22:53:21]     epoch 1/5 n=120 loss=0.2818 read=0.2s compute=0.5s
+[22:53:22]     epoch 2/5 n=120 loss=0.2226 read=0.2s compute=0.5s
+[22:53:23]     epoch 3/5 n=120 loss=0.1382 read=0.2s compute=0.5s
+[22:53:24]     epoch 4/5 n=120 loss=0.1376 read=0.2s compute=0.5s
+[22:53:25]     epoch 5/5 n=120 loss=0.1161 read=0.2s compute=0.6s
+[22:53:25] I6 r=2 seed 45 fold 1 tcga_rcc: train n=616／616 params=1033 epochs=5
+[22:53:30]     epoch 1/5 n=616 loss=0.3250 read=1.8s compute=3.4s
+[22:53:35]     epoch 2/5 n=616 loss=0.2413 read=1.5s compute=3.2s
+[22:53:40]     epoch 3/5 n=616 loss=0.1927 read=1.5s compute=3.2s
+[22:53:45]     epoch 4/5 n=616 loss=0.1768 read=1.5s compute=3.3s
+[22:53:50]     epoch 5/5 n=616 loss=0.1666 read=1.5s compute=3.3s
+[22:53:50] I6 r=2 seed 45 fold 1 tcga_brca: train n=763／763 params=1033 epochs=5
+[22:53:55]     epoch 1/5 n=763 loss=0.4053 read=1.8s compute=3.6s
+[22:54:01]     epoch 2/5 n=763 loss=0.3024 read=1.6s compute=3.5s
+[22:54:06]     epoch 3/5 n=763 loss=0.2838 read=1.6s compute=3.4s
+[22:54:11]     epoch 4/5 n=763 loss=0.2666 read=1.6s compute=3.4s
+[22:54:16]     epoch 5/5 n=763 loss=0.2516 read=1.6s compute=3.5s
+[22:54:17] I6 r=2 seed 45 fold 1 tcga_lung: train n=774／774 params=1033 epochs=5
+[22:54:22]     epoch 1/5 n=774 loss=0.7172 read=2.0s compute=3.7s
+[22:54:28]     epoch 2/5 n=774 loss=0.4852 read=1.9s compute=3.7s
+[22:54:34]     epoch 3/5 n=774 loss=0.3598 read=1.9s compute=3.7s
+[22:54:39]     epoch 4/5 n=774 loss=0.2958 read=1.9s compute=3.6s
+[22:54:45]     epoch 5/5 n=774 loss=0.2595 read=1.8s compute=3.6s
+[22:54:45] I6 r=2 seed 45 fold 2 tcga_esca: train n=120／120 params=1033 epochs=5
+[22:54:46]     epoch 1/5 n=120 loss=0.2815 read=0.3s compute=0.6s
+[22:54:47]     epoch 2/5 n=120 loss=0.2428 read=0.2s compute=0.6s
+[22:54:47]     epoch 3/5 n=120 loss=0.2031 read=0.2s compute=0.5s
+[22:54:48]     epoch 4/5 n=120 loss=0.1503 read=0.2s compute=0.6s
+[22:54:49]     epoch 5/5 n=120 loss=0.1112 read=0.2s compute=0.5s
+[22:54:49] I6 r=2 seed 45 fold 2 tcga_rcc: train n=613／613 params=1033 epochs=5
+[22:54:54]     epoch 1/5 n=613 loss=0.4453 read=1.7s compute=3.1s
+[22:54:59]     epoch 2/5 n=613 loss=0.4457 read=1.5s compute=3.2s
+[22:55:04]     epoch 3/5 n=613 loss=0.4480 read=1.5s compute=3.1s
+[22:55:08]     epoch 4/5 n=613 loss=0.4466 read=1.4s compute=3.1s
+[22:55:13]     epoch 5/5 n=613 loss=0.4453 read=1.5s compute=3.1s
+[22:55:13] I6 r=2 seed 45 fold 2 tcga_brca: train n=764／764 params=1033 epochs=5
+[22:55:19]     epoch 1/5 n=764 loss=0.4570 read=1.8s compute=3.4s
+[22:55:24]     epoch 2/5 n=764 loss=0.3245 read=1.6s compute=3.4s
+[22:55:30]     epoch 3/5 n=764 loss=0.3052 read=1.9s compute=4.5s
+[22:55:36]     epoch 4/5 n=764 loss=0.2918 read=1.6s compute=3.4s
+[22:55:41]     epoch 5/5 n=764 loss=0.2803 read=1.7s compute=3.6s
+[22:55:41] I6 r=2 seed 45 fold 2 tcga_lung: train n=761／761 params=1033 epochs=5
+[22:55:49]     epoch 1/5 n=761 loss=0.7606 read=2.2s compute=4.9s
+[22:55:55]     epoch 2/5 n=761 loss=0.4925 read=2.0s compute=4.2s
+[22:56:02]     epoch 3/5 n=761 loss=0.3909 read=2.0s compute=4.8s
+[22:56:09]     epoch 4/5 n=761 loss=0.3437 read=2.0s compute=4.7s
+[22:56:15]     epoch 5/5 n=761 loss=0.3023 read=2.0s compute=4.3s
+[22:56:15] I6 r=2 seed 45 fold 3 tcga_esca: train n=120／120 params=1033 epochs=5
+[22:56:16]     epoch 1/5 n=120 loss=0.2757 read=0.3s compute=0.6s
+[22:56:17]     epoch 2/5 n=120 loss=0.2598 read=0.2s compute=0.6s
+[22:56:18]     epoch 3/5 n=120 loss=0.2402 read=0.2s compute=0.6s
+[22:56:19]     epoch 4/5 n=120 loss=0.2051 read=0.2s compute=0.6s
+[22:56:20]     epoch 5/5 n=120 loss=0.1700 read=0.2s compute=0.6s
+[22:56:20] I6 r=2 seed 45 fold 3 tcga_rcc: train n=617／617 params=1033 epochs=5
+[22:56:25]     epoch 1/5 n=617 loss=0.3067 read=1.7s compute=3.5s
+[22:56:30]     epoch 2/5 n=617 loss=0.2236 read=1.5s compute=3.4s
+[22:56:35]     epoch 3/5 n=617 loss=0.1997 read=1.5s compute=3.4s
+[22:56:41]     epoch 4/5 n=617 loss=0.1839 read=1.6s compute=3.6s
+[22:56:46]     epoch 5/5 n=617 loss=0.1804 read=1.6s compute=3.6s
+[22:56:46] I6 r=2 seed 45 fold 3 tcga_brca: train n=763／763 params=1033 epochs=5
+[22:56:52]     epoch 1/5 n=763 loss=0.4402 read=1.8s compute=3.8s
+[22:56:58]     epoch 2/5 n=763 loss=0.3032 read=1.8s compute=4.3s
+[22:57:04]     epoch 3/5 n=763 loss=0.2760 read=1.8s compute=4.2s
+[22:57:11]     epoch 4/5 n=763 loss=0.2649 read=1.8s compute=4.2s
+[22:57:16]     epoch 5/5 n=763 loss=0.2488 read=1.7s compute=3.9s
+[22:57:16] I6 r=2 seed 45 fold 3 tcga_lung: train n=765／765 params=1033 epochs=5
+[22:57:23]     epoch 1/5 n=765 loss=0.7932 read=2.1s compute=4.1s
+[22:57:29]     epoch 2/5 n=765 loss=0.5459 read=1.8s compute=3.8s
+[22:57:35]     epoch 3/5 n=765 loss=0.4343 read=2.0s compute=4.3s
+[22:57:41]     epoch 4/5 n=765 loss=0.3770 read=1.9s compute=4.0s
+[22:57:47]     epoch 5/5 n=765 loss=0.3388 read=1.9s compute=4.0s
+[22:57:47] I6 r=2 seed 45 fold 4 tcga_esca: train n=119／119 params=1033 epochs=5
+[22:57:48]     epoch 1/5 n=119 loss=0.3802 read=0.3s compute=0.6s
+[22:57:49]     epoch 2/5 n=119 loss=0.3449 read=0.2s compute=0.6s
+[22:57:50]     epoch 3/5 n=119 loss=0.3065 read=0.2s compute=0.6s
+[22:57:51]     epoch 4/5 n=119 loss=0.2576 read=0.2s compute=0.6s
+[22:57:52]     epoch 5/5 n=119 loss=0.2610 read=0.2s compute=0.6s
+[22:57:52] I6 r=2 seed 45 fold 4 tcga_rcc: train n=613／613 params=1033 epochs=5
+[22:57:58]     epoch 1/5 n=613 loss=0.2713 read=1.8s compute=3.8s
+[22:58:03]     epoch 2/5 n=613 loss=0.1750 read=1.7s compute=3.6s
+[22:58:08]     epoch 3/5 n=613 loss=0.1524 read=1.7s compute=3.7s
+[22:58:14]     epoch 4/5 n=613 loss=0.1329 read=1.7s compute=3.5s
+[22:58:19]     epoch 5/5 n=613 loss=0.1349 read=1.7s compute=3.8s
+[22:58:20] I6 r=2 seed 45 fold 4 tcga_brca: train n=762／762 params=1033 epochs=5
+[22:58:26]     epoch 1/5 n=762 loss=0.3822 read=2.0s compute=4.1s
+[22:58:32]     epoch 2/5 n=762 loss=0.2992 read=1.7s compute=3.9s
+[22:58:37]     epoch 3/5 n=762 loss=0.2655 read=1.7s compute=3.8s
+[22:58:43]     epoch 4/5 n=762 loss=0.2536 read=1.7s compute=3.7s
+[22:58:49]     epoch 5/5 n=762 loss=0.2345 read=1.7s compute=4.0s
+[22:58:49] I6 r=2 seed 45 fold 4 tcga_lung: train n=756／756 params=1033 epochs=5
+[22:58:55]     epoch 1/5 n=756 loss=0.7955 read=2.0s compute=3.8s
+[22:59:01]     epoch 2/5 n=756 loss=0.5357 read=1.9s compute=4.0s
+[22:59:07]     epoch 3/5 n=756 loss=0.3837 read=1.9s compute=3.9s
+[22:59:13]     epoch 4/5 n=756 loss=0.3368 read=1.9s compute=4.2s
+[22:59:19]     epoch 5/5 n=756 loss=0.2795 read=1.9s compute=4.2s
+[22:59:19] I6 r=2 seed 45 fold 5 tcga_esca: train n=120／120 params=1033 epochs=5
+[22:59:20]     epoch 1/5 n=120 loss=0.2894 read=0.3s compute=0.7s
+[22:59:21]     epoch 2/5 n=120 loss=0.2795 read=0.2s compute=0.8s
+[22:59:22]     epoch 3/5 n=120 loss=0.2581 read=0.2s compute=0.6s
+[22:59:23]     epoch 4/5 n=120 loss=0.2141 read=0.2s compute=0.6s
+[22:59:24]     epoch 5/5 n=120 loss=0.1806 read=0.2s compute=0.6s
+[22:59:24] I6 r=2 seed 45 fold 5 tcga_rcc: train n=619／619 params=1033 epochs=5
+[22:59:30]     epoch 1/5 n=619 loss=0.3291 read=1.7s compute=3.6s
+[22:59:35]     epoch 2/5 n=619 loss=0.2513 read=1.6s compute=3.5s
+[22:59:40]     epoch 3/5 n=619 loss=0.2313 read=1.6s compute=3.5s
+[22:59:45]     epoch 4/5 n=619 loss=0.2210 read=1.6s compute=3.4s
+[22:59:50]     epoch 5/5 n=619 loss=0.2059 read=1.6s compute=3.5s
+[22:59:50] I6 r=2 seed 45 fold 5 tcga_brca: train n=763／763 params=1033 epochs=5
+[22:59:57]     epoch 1/5 n=763 loss=0.3980 read=1.9s compute=4.1s
+[23:00:03]     epoch 2/5 n=763 loss=0.3116 read=1.8s compute=4.1s
+[23:00:09]     epoch 3/5 n=763 loss=0.2855 read=1.8s compute=3.9s
+[23:00:14]     epoch 4/5 n=763 loss=0.2676 read=1.7s compute=3.8s
+[23:00:20]     epoch 5/5 n=763 loss=0.2481 read=1.7s compute=3.8s
+[23:00:20] I6 r=2 seed 45 fold 5 tcga_lung: train n=764／764 params=1033 epochs=5
+[23:00:26]     epoch 1/5 n=764 loss=0.7277 read=2.0s compute=3.8s
+[23:00:32]     epoch 2/5 n=764 loss=0.4495 read=1.9s compute=3.9s
+[23:00:38]     epoch 3/5 n=764 loss=0.3665 read=1.9s compute=3.9s
+[23:00:44]     epoch 4/5 n=764 loss=0.3168 read=1.9s compute=4.0s
+[23:00:50]     epoch 5/5 n=764 loss=0.2980 read=1.9s compute=3.8s
+[23:00:50] I6 r=2 seed 45 fold 6 tcga_esca: train n=119／119 params=1033 epochs=5
+[23:00:51]     epoch 1/5 n=119 loss=0.2797 read=0.3s compute=0.6s
+[23:00:52]     epoch 2/5 n=119 loss=0.2566 read=0.2s compute=0.6s
+[23:00:52]     epoch 3/5 n=119 loss=0.2340 read=0.2s compute=0.6s
+[23:00:53]     epoch 4/5 n=119 loss=0.1981 read=0.2s compute=0.6s
+[23:00:54]     epoch 5/5 n=119 loss=0.1774 read=0.2s compute=0.6s
+[23:00:54] I6 r=2 seed 45 fold 6 tcga_rcc: train n=616／616 params=1033 epochs=5
+[23:01:00]     epoch 1/5 n=616 loss=0.3759 read=1.7s compute=3.8s
+[23:01:05]     epoch 2/5 n=616 loss=0.2229 read=1.6s compute=3.8s
+[23:01:12]     epoch 3/5 n=616 loss=0.1920 read=1.7s compute=4.3s
+[23:01:18]     epoch 4/5 n=616 loss=0.1832 read=1.7s compute=4.5s
+[23:01:24]     epoch 5/5 n=616 loss=0.1696 read=1.7s compute=4.2s
+[23:01:24] I6 r=2 seed 45 fold 6 tcga_brca: train n=758／758 params=1033 epochs=5
+[23:01:31]     epoch 1/5 n=758 loss=0.4026 read=2.0s compute=4.8s
+[23:01:38]     epoch 2/5 n=758 loss=0.2668 read=1.8s compute=4.9s
+[23:01:45]     epoch 3/5 n=758 loss=0.2428 read=1.8s compute=4.5s
+[23:01:52]     epoch 4/5 n=758 loss=0.2196 read=1.8s compute=4.8s
+[23:01:58]     epoch 5/5 n=758 loss=0.2174 read=1.8s compute=4.8s
+[23:01:59] I6 r=2 seed 45 fold 6 tcga_lung: train n=759／759 params=1033 epochs=5
+[23:02:06]     epoch 1/5 n=759 loss=0.8994 read=2.1s compute=5.2s
+[23:02:14]     epoch 2/5 n=759 loss=0.8996 read=2.1s compute=5.7s
+[23:02:22]     epoch 3/5 n=759 loss=0.6993 read=2.1s compute=5.8s
+[23:02:29]     epoch 4/5 n=759 loss=0.4927 read=2.0s compute=4.7s
+[23:02:36]     epoch 5/5 n=759 loss=0.3776 read=2.1s compute=4.5s
+[23:02:36] I6 r=2 seed 45 fold 7 tcga_esca: train n=120／120 params=1033 epochs=5
+[23:02:37]     epoch 1/5 n=120 loss=0.3722 read=0.3s compute=0.7s
+[23:02:38]     epoch 2/5 n=120 loss=0.3089 read=0.2s compute=0.8s
+[23:02:39]     epoch 3/5 n=120 loss=0.2334 read=0.2s compute=0.7s
+[23:02:40]     epoch 4/5 n=120 loss=0.1846 read=0.2s compute=0.7s
+[23:02:41]     epoch 5/5 n=120 loss=0.1444 read=0.2s compute=0.7s
+[23:02:41] I6 r=2 seed 45 fold 7 tcga_rcc: train n=615／615 params=1033 epochs=5
+[23:02:48]     epoch 1/5 n=615 loss=0.3292 read=1.8s compute=4.4s
+[23:02:53]     epoch 2/5 n=615 loss=0.2443 read=1.6s compute=4.0s
+[23:03:00]     epoch 3/5 n=615 loss=0.2221 read=1.7s compute=4.5s
+[23:03:06]     epoch 4/5 n=615 loss=0.2078 read=1.6s compute=4.1s
+[23:03:12]     epoch 5/5 n=615 loss=0.1995 read=1.6s compute=4.3s
+[23:03:12] I6 r=2 seed 45 fold 7 tcga_brca: train n=760／760 params=1033 epochs=5
+[23:03:19]     epoch 1/5 n=760 loss=0.4554 read=1.9s compute=4.6s
+[23:03:25]     epoch 2/5 n=760 loss=0.3186 read=1.8s compute=4.5s
+[23:03:32]     epoch 3/5 n=760 loss=0.2861 read=1.8s compute=4.7s
+[23:03:39]     epoch 4/5 n=760 loss=0.2670 read=1.8s compute=4.6s
+[23:03:46]     epoch 5/5 n=760 loss=0.2596 read=1.9s compute=5.2s
+[23:03:46] I6 r=2 seed 45 fold 7 tcga_lung: train n=774／774 params=1033 epochs=5
+[23:03:53]     epoch 1/5 n=774 loss=0.8514 read=2.1s compute=4.6s
+[23:04:00]     epoch 2/5 n=774 loss=0.8498 read=1.9s compute=4.5s
+[23:04:06]     epoch 3/5 n=774 loss=0.8434 read=1.8s compute=4.0s
+[23:04:12]     epoch 4/5 n=774 loss=0.8110 read=1.8s compute=3.9s
+[23:04:17]     epoch 5/5 n=774 loss=0.7943 read=1.8s compute=3.9s
+[23:04:18] I6 r=2 seed 45 fold 8 tcga_esca: train n=120／120 params=1033 epochs=5
+[23:04:19]     epoch 1/5 n=120 loss=0.1948 read=0.3s compute=0.8s
+[23:04:20]     epoch 2/5 n=120 loss=0.1491 read=0.2s compute=0.7s
+[23:04:21]     epoch 3/5 n=120 loss=0.1040 read=0.2s compute=0.6s
+[23:04:21]     epoch 4/5 n=120 loss=0.0655 read=0.2s compute=0.7s
+[23:04:22]     epoch 5/5 n=120 loss=0.0613 read=0.2s compute=0.7s
+[23:04:22] I6 r=2 seed 45 fold 8 tcga_rcc: train n=617／617 params=1033 epochs=5
+[23:04:28]     epoch 1/5 n=617 loss=0.3425 read=1.7s compute=3.8s
+[23:04:34]     epoch 2/5 n=617 loss=0.2547 read=1.5s compute=3.6s
+[23:04:40]     epoch 3/5 n=617 loss=0.2234 read=1.7s compute=4.3s
+[23:04:45]     epoch 4/5 n=617 loss=0.2025 read=1.6s compute=3.8s
+[23:04:51]     epoch 5/5 n=617 loss=0.1826 read=1.6s compute=3.8s
+[23:04:51] I6 r=2 seed 45 fold 8 tcga_brca: train n=762／762 params=1033 epochs=5
+[23:04:57]     epoch 1/5 n=762 loss=0.4239 read=1.8s compute=4.2s
+[23:05:04]     epoch 2/5 n=762 loss=0.3028 read=1.8s compute=4.7s
+[23:05:11]     epoch 3/5 n=762 loss=0.2670 read=1.8s compute=4.5s
+[23:05:17]     epoch 4/5 n=762 loss=0.2623 read=1.7s compute=4.3s
+[23:05:23]     epoch 5/5 n=762 loss=0.2488 read=1.7s compute=4.4s
+[23:05:23] I6 r=2 seed 45 fold 8 tcga_lung: train n=777／777 params=1033 epochs=5
+[23:05:30]     epoch 1/5 n=777 loss=0.7762 read=2.1s compute=4.7s
+[23:05:37]     epoch 2/5 n=777 loss=0.5629 read=1.9s compute=4.5s
+[23:05:44]     epoch 3/5 n=777 loss=0.4052 read=2.0s compute=4.7s
+[23:05:51]     epoch 4/5 n=777 loss=0.3289 read=2.0s compute=4.8s
+[23:05:58]     epoch 5/5 n=777 loss=0.2892 read=2.0s compute=4.8s
+[23:05:58] I6 r=2 seed 45 fold 9 tcga_esca: train n=121／121 params=1033 epochs=5
+[23:05:59]     epoch 1/5 n=121 loss=0.2846 read=0.3s compute=0.7s
+[23:06:00]     epoch 2/5 n=121 loss=0.2596 read=0.2s compute=0.7s
+[23:06:01]     epoch 3/5 n=121 loss=0.2419 read=0.2s compute=0.7s
+[23:06:02]     epoch 4/5 n=121 loss=0.2023 read=0.2s compute=0.7s
+[23:06:03]     epoch 5/5 n=121 loss=0.1749 read=0.2s compute=0.7s
+[23:06:03] I6 r=2 seed 45 fold 9 tcga_rcc: train n=612／612 params=1033 epochs=5
+[23:06:09]     epoch 1/5 n=612 loss=0.3445 read=1.8s compute=4.1s
+[23:06:14]     epoch 2/5 n=612 loss=0.2184 read=1.6s compute=3.9s
+[23:06:20]     epoch 3/5 n=612 loss=0.1950 read=1.6s compute=3.8s
+[23:06:26]     epoch 4/5 n=612 loss=0.1888 read=1.6s compute=3.9s
+[23:06:31]     epoch 5/5 n=612 loss=0.1720 read=1.6s compute=3.7s
+[23:06:31] I6 r=2 seed 45 fold 9 tcga_brca: train n=760／760 params=1033 epochs=5
+[23:06:38]     epoch 1/5 n=760 loss=0.4119 read=1.9s compute=4.3s
+[23:06:44]     epoch 2/5 n=760 loss=0.3103 read=1.7s compute=4.2s
+[23:06:50]     epoch 3/5 n=760 loss=0.2762 read=1.7s compute=4.1s
+[23:06:56]     epoch 4/5 n=760 loss=0.2530 read=1.7s compute=4.2s
+[23:07:02]     epoch 5/5 n=760 loss=0.2352 read=1.7s compute=4.2s
+[23:07:02] I6 r=2 seed 45 fold 9 tcga_lung: train n=762／762 params=1033 epochs=5
+[23:07:09]     epoch 1/5 n=762 loss=0.8307 read=2.0s compute=4.3s
+[23:07:15]     epoch 2/5 n=762 loss=0.6622 read=1.8s compute=4.0s
+[23:07:21]     epoch 3/5 n=762 loss=0.4814 read=1.9s compute=4.1s
+[23:07:28]     epoch 4/5 n=762 loss=0.3956 read=1.9s compute=4.5s
+[23:07:34]     epoch 5/5 n=762 loss=0.3412 read=1.9s compute=4.3s
+[23:07:34] I6 r=2 seed 45 fold 10 tcga_esca: train n=121／121 params=1033 epochs=5
+[23:07:35]     epoch 1/5 n=121 loss=0.3554 read=0.4s compute=0.8s
+[23:07:36]     epoch 2/5 n=121 loss=0.2917 read=0.2s compute=0.7s
+[23:07:37]     epoch 3/5 n=121 loss=0.2088 read=0.2s compute=0.7s
+[23:07:38]     epoch 4/5 n=121 loss=0.1698 read=0.2s compute=0.7s
+[23:07:39]     epoch 5/5 n=121 loss=0.1561 read=0.2s compute=0.7s
+[23:07:39] I6 r=2 seed 45 fold 10 tcga_rcc: train n=618／618 params=1033 epochs=5
+[23:07:45]     epoch 1/5 n=618 loss=0.3325 read=1.7s compute=3.8s
+[23:07:51]     epoch 2/5 n=618 loss=0.2208 read=1.6s compute=4.0s
+[23:07:57]     epoch 3/5 n=618 loss=0.1865 read=1.6s compute=4.0s
+[23:08:02]     epoch 4/5 n=618 loss=0.1792 read=1.6s compute=4.0s
+[23:08:08]     epoch 5/5 n=618 loss=0.1665 read=1.6s compute=3.9s
+[23:08:08] I6 r=2 seed 45 fold 10 tcga_brca: train n=763／763 params=1033 epochs=5
+[23:08:14]     epoch 1/5 n=763 loss=0.3641 read=1.8s compute=4.1s
+[23:08:20]     epoch 2/5 n=763 loss=0.2715 read=1.7s compute=4.1s
+[23:08:27]     epoch 3/5 n=763 loss=0.2566 read=1.7s compute=4.4s
+[23:08:33]     epoch 4/5 n=763 loss=0.2402 read=1.7s compute=4.2s
+[23:08:39]     epoch 5/5 n=763 loss=0.2209 read=1.7s compute=4.1s
+[23:08:39] I6 r=2 seed 45 fold 10 tcga_lung: train n=771／771 params=1033 epochs=5
+[23:08:45]     epoch 1/5 n=771 loss=0.7865 read=2.0s compute=4.2s
+[23:08:52]     epoch 2/5 n=771 loss=0.6083 read=2.0s compute=4.5s
+[23:08:59]     epoch 3/5 n=771 loss=0.4694 read=2.1s compute=4.9s
+[23:09:06]     epoch 4/5 n=771 loss=0.4079 read=2.0s compute=4.4s
+[23:09:12]     epoch 5/5 n=771 loss=0.3682 read=1.9s compute=4.3s
+[23:09:12] I6 r=2 seed 46 fold 1 tcga_esca: train n=120／120 params=1033 epochs=5
+[23:09:13]     epoch 1/5 n=120 loss=0.2783 read=0.3s compute=0.7s
+[23:09:14]     epoch 2/5 n=120 loss=0.2314 read=0.2s compute=0.7s
+[23:09:15]     epoch 3/5 n=120 loss=0.1553 read=0.2s compute=0.7s
+[23:09:16]     epoch 4/5 n=120 loss=0.1355 read=0.2s compute=0.6s
+[23:09:17]     epoch 5/5 n=120 loss=0.1077 read=0.2s compute=0.6s
+[23:09:17] I6 r=2 seed 46 fold 1 tcga_rcc: train n=616／616 params=1033 epochs=5
+[23:09:23]     epoch 1/5 n=616 loss=0.2874 read=1.7s compute=3.8s
+[23:09:29]     epoch 2/5 n=616 loss=0.2373 read=1.6s compute=3.9s
+[23:09:34]     epoch 3/5 n=616 loss=0.2055 read=1.6s compute=3.7s
+[23:09:39]     epoch 4/5 n=616 loss=0.1823 read=1.5s compute=3.4s
+[23:09:45]     epoch 5/5 n=616 loss=0.1742 read=1.6s compute=3.7s
+[23:09:45] I6 r=2 seed 46 fold 1 tcga_brca: train n=763／763 params=1033 epochs=5
+[23:09:51]     epoch 1/5 n=763 loss=0.4069 read=1.9s compute=4.1s
+[23:09:58]     epoch 2/5 n=763 loss=0.2948 read=1.8s compute=4.7s
+[23:10:04]     epoch 3/5 n=763 loss=0.2713 read=1.8s compute=4.3s
+[23:10:10]     epoch 4/5 n=763 loss=0.2600 read=1.7s compute=4.3s
+[23:10:16]     epoch 5/5 n=763 loss=0.2467 read=1.7s compute=4.2s
+[23:10:17] I6 r=2 seed 46 fold 1 tcga_lung: train n=774／774 params=1033 epochs=5
+[23:10:23]     epoch 1/5 n=774 loss=0.7363 read=2.1s compute=4.5s
+[23:10:30]     epoch 2/5 n=774 loss=0.5661 read=2.0s compute=4.6s
+[23:10:37]     epoch 3/5 n=774 loss=0.4244 read=1.9s compute=4.5s
+[23:10:44]     epoch 4/5 n=774 loss=0.3699 read=2.0s compute=4.6s
+[23:10:50]     epoch 5/5 n=774 loss=0.3465 read=2.0s compute=4.6s
+[23:10:50] I6 r=2 seed 46 fold 2 tcga_esca: train n=120／120 params=1033 epochs=5
+[23:10:51]     epoch 1/5 n=120 loss=0.2851 read=0.3s compute=0.7s
+[23:10:52]     epoch 2/5 n=120 loss=0.2443 read=0.2s compute=0.7s
+[23:10:53]     epoch 3/5 n=120 loss=0.1968 read=0.2s compute=0.7s
+[23:10:54]     epoch 4/5 n=120 loss=0.1417 read=0.2s compute=0.7s
+[23:10:55]     epoch 5/5 n=120 loss=0.1104 read=0.2s compute=0.8s
+[23:10:55] I6 r=2 seed 46 fold 2 tcga_rcc: train n=613／613 params=1033 epochs=5
+[23:11:01]     epoch 1/5 n=613 loss=0.3997 read=1.7s compute=4.0s
+[23:11:07]     epoch 2/5 n=613 loss=0.2499 read=1.6s compute=3.9s
+[23:11:13]     epoch 3/5 n=613 loss=0.2158 read=1.6s compute=4.0s
+[23:11:18]     epoch 4/5 n=613 loss=0.1901 read=1.6s compute=4.0s
+[23:11:24]     epoch 5/5 n=613 loss=0.1820 read=1.6s compute=4.0s
+[23:11:24] I6 r=2 seed 46 fold 2 tcga_brca: train n=764／764 params=1033 epochs=5
+[23:11:30]     epoch 1/5 n=764 loss=0.7330 read=1.8s compute=4.2s
+[23:11:37]     epoch 2/5 n=764 loss=0.7182 read=1.7s compute=4.3s
+[23:11:43]     epoch 3/5 n=764 loss=0.7062 read=1.8s compute=4.4s
+[23:11:50]     epoch 4/5 n=764 loss=0.6757 read=1.7s compute=4.3s
+[23:11:56]     epoch 5/5 n=764 loss=0.6757 read=1.8s compute=4.3s
+[23:11:56] I6 r=2 seed 46 fold 2 tcga_lung: train n=761／761 params=1033 epochs=5
+[23:12:02]     epoch 1/5 n=761 loss=0.8105 read=2.0s compute=4.1s
+[23:12:09]     epoch 2/5 n=761 loss=0.6412 read=2.0s compute=4.6s
+[23:12:16]     epoch 3/5 n=761 loss=0.4160 read=2.0s compute=4.5s
+[23:12:22]     epoch 4/5 n=761 loss=0.3528 read=2.1s compute=4.5s
+[23:12:29]     epoch 5/5 n=761 loss=0.3119 read=1.9s compute=4.6s
+[23:12:29] I6 r=2 seed 46 fold 3 tcga_esca: train n=120／120 params=1033 epochs=5
+[23:12:30]     epoch 1/5 n=120 loss=0.2778 read=0.3s compute=0.7s
+[23:12:31]     epoch 2/5 n=120 loss=0.2647 read=0.2s compute=0.7s
+[23:12:32]     epoch 3/5 n=120 loss=0.2379 read=0.2s compute=0.7s
+[23:12:33]     epoch 4/5 n=120 loss=0.2116 read=0.2s compute=0.7s
+[23:12:34]     epoch 5/5 n=120 loss=0.1694 read=0.2s compute=0.7s
+[23:12:34] I6 r=2 seed 46 fold 3 tcga_rcc: train n=617／617 params=1033 epochs=5
+[23:12:40]     epoch 1/5 n=617 loss=0.3382 read=1.8s compute=4.1s
+[23:12:46]     epoch 2/5 n=617 loss=0.2363 read=1.6s compute=4.0s
+[23:12:52]     epoch 3/5 n=617 loss=0.1984 read=1.6s compute=3.9s
+[23:12:58]     epoch 4/5 n=617 loss=0.1872 read=1.6s compute=4.2s
+[23:13:04]     epoch 5/5 n=617 loss=0.1687 read=1.6s compute=4.2s
+[23:13:04] I6 r=2 seed 46 fold 3 tcga_brca: train n=763／763 params=1033 epochs=5
+[23:13:11]     epoch 1/5 n=763 loss=0.4699 read=1.9s compute=4.6s
+[23:13:18]     epoch 2/5 n=763 loss=0.3009 read=1.8s compute=4.6s
+[23:13:24]     epoch 3/5 n=763 loss=0.2832 read=1.8s compute=4.2s
+[23:13:30]     epoch 4/5 n=763 loss=0.2705 read=1.8s compute=4.5s
+[23:13:37]     epoch 5/5 n=763 loss=0.2593 read=1.8s compute=4.4s
+[23:13:37] I6 r=2 seed 46 fold 3 tcga_lung: train n=765／765 params=1033 epochs=5
+[23:13:44]     epoch 1/5 n=765 loss=0.8324 read=2.1s compute=4.7s
+[23:13:51]     epoch 2/5 n=765 loss=0.6764 read=2.0s compute=4.6s
+[23:13:58]     epoch 3/5 n=765 loss=0.4499 read=2.0s compute=4.8s
+[23:14:04]     epoch 4/5 n=765 loss=0.3850 read=1.9s compute=4.6s
+[23:14:11]     epoch 5/5 n=765 loss=0.3670 read=1.9s compute=4.6s
+[23:14:11] I6 r=2 seed 46 fold 4 tcga_esca: train n=119／119 params=1033 epochs=5
+[23:14:12]     epoch 1/5 n=119 loss=0.3781 read=0.3s compute=0.7s
+[23:14:13]     epoch 2/5 n=119 loss=0.3562 read=0.2s compute=0.7s
+[23:14:14]     epoch 3/5 n=119 loss=0.3089 read=0.2s compute=0.6s
+[23:14:15]     epoch 4/5 n=119 loss=0.2661 read=0.2s compute=0.6s
+[23:14:16]     epoch 5/5 n=119 loss=0.2312 read=0.2s compute=0.7s
+[23:14:16] I6 r=2 seed 46 fold 4 tcga_rcc: train n=613／613 params=1033 epochs=5
+[23:14:21]     epoch 1/5 n=613 loss=0.2914 read=1.7s compute=3.6s
+[23:14:27]     epoch 2/5 n=613 loss=0.1585 read=1.6s compute=4.0s
+[23:14:33]     epoch 3/5 n=613 loss=0.1270 read=1.6s compute=4.0s
+[23:14:39]     epoch 4/5 n=613 loss=0.1220 read=1.6s compute=4.0s
+[23:14:44]     epoch 5/5 n=613 loss=0.1126 read=1.6s compute=3.9s
+[23:14:44] I6 r=2 seed 46 fold 4 tcga_brca: train n=762／762 params=1033 epochs=5
+[23:14:51]     epoch 1/5 n=762 loss=0.3985 read=1.9s compute=4.2s
+[23:14:57]     epoch 2/5 n=762 loss=0.2740 read=1.9s compute=4.5s
+[23:15:04]     epoch 3/5 n=762 loss=0.2581 read=1.8s compute=4.5s
+[23:15:10]     epoch 4/5 n=762 loss=0.2411 read=1.8s compute=4.4s
+[23:15:17]     epoch 5/5 n=762 loss=0.2414 read=1.7s compute=4.3s
+[23:15:17] I6 r=2 seed 46 fold 4 tcga_lung: train n=756／756 params=1033 epochs=5
+[23:15:23]     epoch 1/5 n=756 loss=0.8031 read=2.0s compute=4.3s
+[23:15:30]     epoch 2/5 n=756 loss=0.7890 read=1.9s compute=4.3s
+[23:15:36]     epoch 3/5 n=756 loss=0.6706 read=1.9s compute=4.3s
+[23:15:42]     epoch 4/5 n=756 loss=0.5443 read=1.8s compute=4.1s
+[23:15:49]     epoch 5/5 n=756 loss=0.4505 read=1.9s compute=4.3s
+[23:15:49] I6 r=2 seed 46 fold 5 tcga_esca: train n=120／120 params=1033 epochs=5
+[23:15:50]     epoch 1/5 n=120 loss=0.2896 read=0.3s compute=0.6s
+[23:15:50]     epoch 2/5 n=120 loss=0.2832 read=0.2s compute=0.6s
+[23:15:51]     epoch 3/5 n=120 loss=0.2446 read=0.2s compute=0.7s
+[23:15:52]     epoch 4/5 n=120 loss=0.2333 read=0.2s compute=0.6s
+[23:15:53]     epoch 5/5 n=120 loss=0.1955 read=0.2s compute=0.6s
+[23:15:53] I6 r=2 seed 46 fold 5 tcga_rcc: train n=619／619 params=1033 epochs=5
+[23:15:59]     epoch 1/5 n=619 loss=0.3187 read=1.7s compute=3.9s
+[23:16:04]     epoch 2/5 n=619 loss=0.2387 read=1.5s compute=3.7s
+[23:16:10]     epoch 3/5 n=619 loss=0.2065 read=1.6s compute=3.8s
+[23:16:15]     epoch 4/5 n=619 loss=0.1816 read=1.5s compute=3.7s
+[23:16:21]     epoch 5/5 n=619 loss=0.1779 read=1.6s compute=3.7s
+[23:16:21] I6 r=2 seed 46 fold 5 tcga_brca: train n=763／763 params=1033 epochs=5
+[23:16:27]     epoch 1/5 n=763 loss=0.4419 read=1.8s compute=4.1s
+[23:16:33]     epoch 2/5 n=763 loss=0.3052 read=1.6s compute=4.0s
+[23:16:39]     epoch 3/5 n=763 loss=0.2818 read=1.7s compute=4.1s
+[23:16:44]     epoch 4/5 n=763 loss=0.2673 read=1.6s compute=3.6s
+[23:16:50]     epoch 5/5 n=763 loss=0.2462 read=1.7s compute=3.9s
+[23:16:50] I6 r=2 seed 46 fold 5 tcga_lung: train n=764／764 params=1033 epochs=5
+[23:16:57]     epoch 1/5 n=764 loss=0.7462 read=2.0s compute=4.0s
+[23:17:03]     epoch 2/5 n=764 loss=0.4608 read=2.0s compute=4.3s
+[23:17:09]     epoch 3/5 n=764 loss=0.3656 read=1.8s compute=3.8s
+[23:17:15]     epoch 4/5 n=764 loss=0.3142 read=1.9s compute=3.9s
+[23:17:21]     epoch 5/5 n=764 loss=0.2966 read=1.8s compute=3.8s
+[23:17:21] I6 r=2 seed 46 fold 6 tcga_esca: train n=119／119 params=1033 epochs=5
+[23:17:22]     epoch 1/5 n=119 loss=0.2838 read=0.3s compute=0.6s
+[23:17:22]     epoch 2/5 n=119 loss=0.2696 read=0.2s compute=0.6s
+[23:17:23]     epoch 3/5 n=119 loss=0.2484 read=0.2s compute=0.8s
+[23:17:24]     epoch 4/5 n=119 loss=0.2322 read=0.2s compute=0.6s
+[23:17:25]     epoch 5/5 n=119 loss=0.2004 read=0.2s compute=0.7s
+[23:17:25] I6 r=2 seed 46 fold 6 tcga_rcc: train n=616／616 params=1033 epochs=5
+[23:17:31]     epoch 1/5 n=616 loss=0.3328 read=1.7s compute=3.7s
+[23:17:36]     epoch 2/5 n=616 loss=0.2067 read=1.5s compute=3.6s
+[23:17:42]     epoch 3/5 n=616 loss=0.1946 read=1.6s compute=3.8s
+[23:17:48]     epoch 4/5 n=616 loss=0.1809 read=1.6s compute=4.1s
+[23:17:53]     epoch 5/5 n=616 loss=0.1670 read=1.6s compute=3.9s
+[23:17:54] I6 r=2 seed 46 fold 6 tcga_brca: train n=758／758 params=1033 epochs=5
+[23:18:00]     epoch 1/5 n=758 loss=0.4169 read=1.9s compute=4.7s
+[23:18:07]     epoch 2/5 n=758 loss=0.2803 read=1.7s compute=4.2s
+[23:18:13]     epoch 3/5 n=758 loss=0.2488 read=1.8s compute=4.5s
+[23:18:20]     epoch 4/5 n=758 loss=0.2385 read=1.8s compute=4.4s
+[23:18:26]     epoch 5/5 n=758 loss=0.2224 read=1.7s compute=4.1s
+[23:18:26] I6 r=2 seed 46 fold 6 tcga_lung: train n=759／759 params=1033 epochs=5
+[23:18:32]     epoch 1/5 n=759 loss=0.8808 read=2.0s compute=4.2s
+[23:18:38]     epoch 2/5 n=759 loss=0.7949 read=1.9s compute=4.2s
+[23:18:45]     epoch 3/5 n=759 loss=0.7661 read=1.9s compute=4.2s
+[23:18:51]     epoch 4/5 n=759 loss=0.7454 read=1.9s compute=4.2s
+[23:18:57]     epoch 5/5 n=759 loss=0.7397 read=1.9s compute=4.4s
+[23:18:57] I6 r=2 seed 46 fold 7 tcga_esca: train n=120／120 params=1033 epochs=5
+[23:18:58]     epoch 1/5 n=120 loss=0.3753 read=0.3s compute=0.6s
+[23:18:59]     epoch 2/5 n=120 loss=0.3463 read=0.2s compute=0.6s
+[23:19:00]     epoch 3/5 n=120 loss=0.2885 read=0.2s compute=0.6s
+[23:19:01]     epoch 4/5 n=120 loss=0.2089 read=0.2s compute=0.6s
+[23:19:02]     epoch 5/5 n=120 loss=0.1667 read=0.2s compute=0.7s
+[23:19:02] I6 r=2 seed 46 fold 7 tcga_rcc: train n=615／615 params=1033 epochs=5
+[23:19:08]     epoch 1/5 n=615 loss=0.3332 read=1.7s compute=4.0s
+[23:19:14]     epoch 2/5 n=615 loss=0.2356 read=1.6s compute=4.0s
+[23:19:19]     epoch 3/5 n=615 loss=0.2125 read=1.6s compute=3.9s
+[23:19:25]     epoch 4/5 n=615 loss=0.2041 read=1.6s compute=4.1s
+[23:19:31]     epoch 5/5 n=615 loss=0.1877 read=1.6s compute=3.9s
+[23:19:31] I6 r=2 seed 46 fold 7 tcga_brca: train n=760／760 params=1033 epochs=5
+[23:19:37]     epoch 1/5 n=760 loss=0.4580 read=1.9s compute=4.3s
+[23:19:44]     epoch 2/5 n=760 loss=0.3073 read=1.7s compute=4.3s
+[23:19:50]     epoch 3/5 n=760 loss=0.2694 read=1.7s compute=4.4s
+[23:19:56]     epoch 4/5 n=760 loss=0.2587 read=1.7s compute=4.1s
+[23:20:02]     epoch 5/5 n=760 loss=0.2491 read=1.7s compute=4.0s
+[23:20:02] I6 r=2 seed 46 fold 7 tcga_lung: train n=774／774 params=1033 epochs=5
+[23:20:09]     epoch 1/5 n=774 loss=0.8248 read=2.0s compute=4.2s
+[23:20:15]     epoch 2/5 n=774 loss=0.5613 read=1.9s compute=4.0s
+[23:20:21]     epoch 3/5 n=774 loss=0.4375 read=1.8s compute=4.0s
+[23:20:27]     epoch 4/5 n=774 loss=0.3730 read=1.8s compute=4.0s
+[23:20:33]     epoch 5/5 n=774 loss=0.3204 read=1.9s compute=4.3s
+[23:20:33] I6 r=2 seed 46 fold 8 tcga_esca: train n=120／120 params=1033 epochs=5
+[23:20:34]     epoch 1/5 n=120 loss=0.1948 read=0.3s compute=0.7s
+[23:20:35]     epoch 2/5 n=120 loss=0.1488 read=0.2s compute=0.7s
+[23:20:36]     epoch 3/5 n=120 loss=0.1145 read=0.2s compute=0.8s
+[23:20:37]     epoch 4/5 n=120 loss=0.0692 read=0.2s compute=0.7s
+[23:20:38]     epoch 5/5 n=120 loss=0.0620 read=0.2s compute=0.8s
+[23:20:38] I6 r=2 seed 46 fold 8 tcga_rcc: train n=617／617 params=1033 epochs=5
+[23:20:44]     epoch 1/5 n=617 loss=0.3328 read=1.7s compute=4.1s
+[23:20:52]     epoch 2/5 n=617 loss=0.2398 read=1.8s compute=5.1s
+[23:20:58]     epoch 3/5 n=617 loss=0.1957 read=1.7s compute=4.2s
+[23:21:03]     epoch 4/5 n=617 loss=0.1762 read=1.6s compute=3.9s
+[23:21:09]     epoch 5/5 n=617 loss=0.1801 read=1.7s compute=4.2s
+[23:21:10] I6 r=2 seed 46 fold 8 tcga_brca: train n=762／762 params=1033 epochs=5
+[23:21:16]     epoch 1/5 n=762 loss=0.4177 read=1.9s compute=4.7s
+[23:21:23]     epoch 2/5 n=762 loss=0.3069 read=1.7s compute=4.2s
+[23:21:29]     epoch 3/5 n=762 loss=0.2840 read=1.7s compute=4.3s
+[23:21:35]     epoch 4/5 n=762 loss=0.2611 read=1.8s compute=4.6s
+[23:21:43]     epoch 5/5 n=762 loss=0.2484 read=1.9s compute=6.0s
+[23:21:44] I6 r=2 seed 46 fold 8 tcga_lung: train n=777／777 params=1033 epochs=5
+[23:21:52]     epoch 1/5 n=777 loss=0.7688 read=2.5s compute=6.0s
+[23:22:01]     epoch 2/5 n=777 loss=0.6145 read=2.3s compute=5.7s
+[23:22:07]     epoch 3/5 n=777 loss=0.4475 read=2.0s compute=4.7s
+[23:22:14]     epoch 4/5 n=777 loss=0.3672 read=1.9s compute=4.6s
+[23:22:21]     epoch 5/5 n=777 loss=0.3313 read=2.0s compute=4.7s
+[23:22:21] I6 r=2 seed 46 fold 9 tcga_esca: train n=121／121 params=1033 epochs=5
+[23:22:22]     epoch 1/5 n=121 loss=0.2871 read=0.3s compute=0.7s
+[23:22:23]     epoch 2/5 n=121 loss=0.2807 read=0.2s compute=0.7s
+[23:22:24]     epoch 3/5 n=121 loss=0.2611 read=0.2s compute=0.7s
+[23:22:25]     epoch 4/5 n=121 loss=0.2359 read=0.2s compute=0.7s
+[23:22:26]     epoch 5/5 n=121 loss=0.2070 read=0.2s compute=0.8s
+[23:22:26] I6 r=2 seed 46 fold 9 tcga_rcc: train n=612／612 params=1033 epochs=5
+[23:22:32]     epoch 1/5 n=612 loss=0.2802 read=1.8s compute=4.2s
+[23:22:38]     epoch 2/5 n=612 loss=0.1780 read=1.7s compute=4.1s
+[23:22:44]     epoch 3/5 n=612 loss=0.1603 read=1.6s compute=4.0s
+[23:22:50]     epoch 4/5 n=612 loss=0.1452 read=1.7s compute=4.2s
+[23:22:56]     epoch 5/5 n=612 loss=0.1326 read=1.6s compute=3.9s
+[23:22:56] I6 r=2 seed 46 fold 9 tcga_brca: train n=760／760 params=1033 epochs=5
+[23:23:02]     epoch 1/5 n=760 loss=0.4461 read=1.8s compute=4.2s
+[23:23:09]     epoch 2/5 n=760 loss=0.2911 read=1.7s compute=4.4s
+[23:23:15]     epoch 3/5 n=760 loss=0.2703 read=1.7s compute=4.1s
+[23:23:21]     epoch 4/5 n=760 loss=0.2514 read=1.7s compute=4.2s
+[23:23:27]     epoch 5/5 n=760 loss=0.2416 read=1.8s compute=4.4s
+[23:23:27] I6 r=2 seed 46 fold 9 tcga_lung: train n=762／762 params=1033 epochs=5
+[23:23:34]     epoch 1/5 n=762 loss=0.8306 read=2.0s compute=4.2s
+[23:23:40]     epoch 2/5 n=762 loss=0.6117 read=1.9s compute=4.3s
+[23:23:47]     epoch 3/5 n=762 loss=0.4425 read=1.9s compute=4.3s
+[23:23:53]     epoch 4/5 n=762 loss=0.3607 read=1.9s compute=4.2s
+[23:23:59]     epoch 5/5 n=762 loss=0.3050 read=1.9s compute=4.3s
+[23:23:59] I6 r=2 seed 46 fold 10 tcga_esca: train n=121／121 params=1033 epochs=5
+[23:24:01]     epoch 1/5 n=121 loss=0.3663 read=0.3s compute=0.8s
+[23:24:01]     epoch 2/5 n=121 loss=0.2843 read=0.2s compute=0.7s
+[23:24:02]     epoch 3/5 n=121 loss=0.1956 read=0.2s compute=0.7s
+[23:24:03]     epoch 4/5 n=121 loss=0.1679 read=0.2s compute=0.7s
+[23:24:04]     epoch 5/5 n=121 loss=0.1351 read=0.2s compute=0.7s
+[23:24:04] I6 r=2 seed 46 fold 10 tcga_rcc: train n=618／618 params=1033 epochs=5
+[23:24:10]     epoch 1/5 n=618 loss=0.3383 read=1.6s compute=3.6s
+[23:24:15]     epoch 2/5 n=618 loss=0.2300 read=1.5s compute=3.6s
+[23:24:20]     epoch 3/5 n=618 loss=0.2015 read=1.5s compute=3.7s
+[23:24:26]     epoch 4/5 n=618 loss=0.1734 read=1.5s compute=3.8s
+[23:24:32]     epoch 5/5 n=618 loss=0.1566 read=1.7s compute=4.2s
+[23:24:32] I6 r=2 seed 46 fold 10 tcga_brca: train n=763／763 params=1033 epochs=5
+[23:24:39]     epoch 1/5 n=763 loss=0.4170 read=1.9s compute=4.5s
+[23:24:45]     epoch 2/5 n=763 loss=0.2834 read=1.8s compute=4.5s
+[23:24:52]     epoch 3/5 n=763 loss=0.2557 read=1.9s compute=4.5s
+[23:24:58]     epoch 4/5 n=763 loss=0.2402 read=1.8s compute=4.5s
+[23:25:04]     epoch 5/5 n=763 loss=0.2215 read=1.7s compute=4.2s
+[23:25:05] I6 r=2 seed 46 fold 10 tcga_lung: train n=771／771 params=1033 epochs=5
+[23:25:11]     epoch 1/5 n=771 loss=0.8006 read=2.0s compute=4.2s
+[23:25:17]     epoch 2/5 n=771 loss=0.6495 read=1.9s compute=4.2s
+[23:25:24]     epoch 3/5 n=771 loss=0.4968 read=1.9s compute=4.3s
+[23:25:31]     epoch 4/5 n=771 loss=0.3778 read=2.0s compute=4.7s
+[23:25:37]     epoch 5/5 n=771 loss=0.3448 read=1.9s compute=4.6s
+[23:25:49] infer seed45_val_fold1.pt: n=283 12s
+[23:26:01] infer seed45_test_fold1.pt: n=279 12s
+[23:26:13] infer seed45_val_fold2.pt: n=291 12s
+[23:26:24] infer seed45_test_fold2.pt: n=286 11s
+[23:26:34] infer seed45_val_fold3.pt: n=276 10s
+[23:26:46] infer seed45_test_fold3.pt: n=294 12s
+[23:26:57] infer seed45_val_fold4.pt: n=285 11s
+[23:27:09] infer seed45_test_fold4.pt: n=300 12s
+[23:27:20] infer seed45_val_fold5.pt: n=290 12s
+[23:27:31] infer seed45_test_fold5.pt: n=279 11s
+[23:27:43] infer seed45_val_fold6.pt: n=304 12s
+[23:27:53] infer seed45_test_fold6.pt: n=279 11s
+[23:28:05] infer seed45_val_fold7.pt: n=283 12s
+[23:28:16] infer seed45_test_fold7.pt: n=283 11s
+[23:28:26] infer seed45_val_fold8.pt: n=279 10s
+[23:28:36] infer seed45_test_fold8.pt: n=280 10s
+[23:28:47] infer seed45_val_fold9.pt: n=294 11s
+[23:28:57] infer seed45_test_fold9.pt: n=286 10s
+[23:29:11] infer seed45_val_fold10.pt: n=293 14s
+[23:29:21] infer seed45_test_fold10.pt: n=269 10s
+[23:29:34] infer seed46_val_fold1.pt: n=283 13s
+[23:29:46] infer seed46_test_fold1.pt: n=279 11s
+[23:29:59] infer seed46_val_fold2.pt: n=291 13s
+[23:30:10] infer seed46_test_fold2.pt: n=286 12s
+[23:30:20] infer seed46_val_fold3.pt: n=276 10s
+[23:30:32] infer seed46_test_fold3.pt: n=294 11s
+[23:30:43] infer seed46_val_fold4.pt: n=285 11s
+[23:30:56] infer seed46_test_fold4.pt: n=300 13s
+[23:31:08] infer seed46_val_fold5.pt: n=290 13s
+[23:31:21] infer seed46_test_fold5.pt: n=279 13s
+[23:31:34] infer seed46_val_fold6.pt: n=304 13s
+[23:31:48] infer seed46_test_fold6.pt: n=279 14s
+[23:31:59] infer seed46_val_fold7.pt: n=283 11s
+[23:32:10] infer seed46_test_fold7.pt: n=283 11s
+[23:32:23] infer seed46_val_fold8.pt: n=279 13s
+[23:32:37] infer seed46_test_fold8.pt: n=280 13s
+[23:32:48] infer seed46_val_fold9.pt: n=294 11s
+[23:32:59] infer seed46_test_fold9.pt: n=286 11s
+[23:33:11] infer seed46_val_fold10.pt: n=293 12s
+[23:33:21] infer seed46_test_fold10.pt: n=269 10s
+[23:33:21] s7: 完成（2418s）
+[2026-10-02 23:33:22] exit=0

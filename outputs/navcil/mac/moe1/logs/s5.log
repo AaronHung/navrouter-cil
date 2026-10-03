@@ -1,0 +1,16 @@
+[2026-10-02 22:14:45] start s5 folds=1-10 epochs=5
+[22:14:47] MOE-1 s5 folds=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] out=moe1 threads=8 epochs=5
+[22:14:47] K1 通過：逐折最大絕對差 0.00e+00
+[22:15:13] infer s42v_train_fold1.pt: n=2273 26s
+[22:15:37] infer s42v_train_fold2.pt: n=2258 24s
+[22:16:01] infer s42v_train_fold3.pt: n=2265 24s
+[22:16:26] infer s42v_train_fold4.pt: n=2250 24s
+[22:16:50] infer s42v_train_fold5.pt: n=2266 24s
+[22:17:13] infer s42v_train_fold6.pt: n=2252 23s
+[22:17:36] infer s42v_train_fold7.pt: n=2269 23s
+[22:18:02] infer s42v_train_fold8.pt: n=2276 26s
+[22:18:29] infer s42v_train_fold9.pt: n=2255 27s
+[22:18:54] infer s42v_train_fold10.pt: n=2273 25s
+[22:18:54] S5 LR γ* = 0.001（validation WP {0.001: 0.9384013146162034, 0.01: 0.9350992381572724, 0.1: 0.9318931296467781}）
+[22:18:54] s5: 完成（247s）
+[2026-10-02 22:18:54] exit=0
