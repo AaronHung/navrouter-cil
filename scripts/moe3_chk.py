@@ -4,7 +4,7 @@
   K1 主系統 seed 42 對 nc8/per_fold.json
   K2 RDG(γ = 1e-3)、輸入 v0：t = 4 的 test WP／CIL ACC 對 moe2/e2.json 的 LR0
   K3 ANC(γ, α = 0) 與 RDG(γ) 的 W（u_64、reverse、t = 4、γ = 1e-2、第一折）
-  K4 ANC(γ = 1e8, α = 1)、輸入 v0：test 告訴任務判定與 TXT（v0）逐張相同（t = 4、兩序、每折）
+  K4 ANC(γ = 1e10, α = 1；AMENDMENT-6，原為 1e8)、輸入 v0：test 告訴任務判定與 TXT（v0）逐張相同（t = 4、兩序、每折）
   K5 TXT（v0）每任務 WP 對 MOE-0 B2 的「g = 0」列；另每折對 moe0 快取 g0_cos8 的 2 類 argmax
 
     NAVCIL_MACHINE=mac python scripts/moe3_chk.py --device cpu [--folds 1-10] [--out moe3]
@@ -19,7 +19,7 @@ import torch
 import moe3_common as T
 from moe3_common import C, E, M
 
-G_K2, G_K3, G_K4 = 1e-3, 1e-2, 1e8
+G_K2, G_K3, G_K4 = 1e-3, 1e-2, 1e10          # K4 的 γ：AMENDMENT-6（PREREG-19 原為 1e8）
 
 
 def body(run: T.Run) -> dict:
@@ -29,7 +29,7 @@ def body(run: T.Run) -> dict:
     e2 = json.loads((run.m2 / "e2.json").read_text())
     k2 = {"max_abs_fold_diff": 0.0, "wp": {o: [] for o in T.ORDER_NAMES}, "cil": {o: [] for o in T.ORDER_NAMES}}
     k3 = None
-    k4 = {"diff": {o: 0 for o in T.ORDER_NAMES}, "n": 0, "d_txt_min_abs": float("inf")}
+    k4 = {"gamma": G_K4, "diff": {o: 0 for o in T.ORDER_NAMES}, "n": 0, "d_txt_min_abs": float("inf")}
     k5 = {"per_task": [[] for _ in range(4)], "cache_max_abs": 0.0}
     for f in run.folds:
         D = T.data(run, "test", f)

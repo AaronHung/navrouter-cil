@@ -83,7 +83,7 @@ def gates(J) -> list[str]:
 
 
 def kchecks(J) -> list[str]:
-    out = ["## 一致性檢查 K1–K5（PREREG-19「一致性檢查」；細則 9–13）", "",
+    out = ["## 一致性檢查 K1–K5（PREREG-19「一致性檢查」；細則 9–13；K4 的 γ 依 AMENDMENT-6）", "",
            "| 檢查 | 階段 | 結果 | 判準 | 通過 |", "|---|---|---|---|---|"]
     ok = lambda k: "是" if k["pass"] else "否"   # noqa: E731
     for s in STAGES:
@@ -100,7 +100,7 @@ def kchecks(J) -> list[str]:
         k = c["K3"]
         out.append(f"| K3 ANC(γ, α = 0) 與 RDG(γ) 的 W | CHK | 最大絕對差 {k['max_abs']:.2e}（{KN[k['kind']]}、γ = {k['gamma']:g}、fold {k['fold']}、{k['order']}、t = 4） | ≤ 1e-10 | {ok(k)} |")
         k = c["K4"]
-        out.append(f"| K4 ANC(γ = 1e8, α = 1)、v0 對 TXT（v0） | CHK | 告訴任務判定不同 {k['diff']['reverse']}／{k['diff']['paper']} 張（共 {k['n']} 張；t = 4）；"
+        out.append(f"| K4 ANC(γ = {k.get('gamma', 1e8):g}, α = 1)、v0 對 TXT（v0）（AMENDMENT-6；原 γ = 1e8） | CHK | 告訴任務判定不同 {k['diff']['reverse']}／{k['diff']['paper']} 張（共 {k['n']} 張；t = 4）；"
                    f"TXT 的 \\|d\\| 最小值 {k['d_txt_min_abs']:.2e} | 0 張 | {ok(k)} |")
         k = c["K5"]
         b2 = f"{k['b2_max_abs']:.2e}" if k["b2_comparable"] else "非十折，不可比"
@@ -288,7 +288,7 @@ def main() -> int:
             "MOE-3：定案批 — 不用 head 的證據向量、以文字為起點的 ridge 判讀、逐階段結果（Mac CPU，十折，reverse 與 paper 兩序）", "",
             "機器：mac（Apple M1 Pro）、`--device cpu`、`torch.set_num_threads(8)`、torch 2.11.0；closed-form 一律 float64；四任務等權。"
             "所有數字來自同一台、同一批（`scripts/moe3_run_all.sh`）；只算向量與 closed-form，不訓練；沿用 MOE-2 的程式與快取（v(42)、四輪的 v0）。"
-            "判準與操作定義見 `PREREG-19.md`。", "",
+            "判準與操作定義見 `PREREG-19.md`；K4 的 γ 依 `AMENDMENT-6.md` 由 1e8 改為 1e10（其餘不變）。", "",
             "u_K = 不用 head、依 s0 一次取前 K 個 patch 的等權平均向量；TXT = 與兩類文字比 cosine；RDG(γ)：W = (A + γI)⁻¹ B；"
             "ANC(γ, α)：W = (A + γI)⁻¹ (B + γ·α·T)；CIL 的 TP 一律 AR（γ = 1e-3）。", "",
             "各階段狀態：" + "、".join(f"{s.upper()} {status[s]}" for s in STAGES) +
@@ -310,6 +310,13 @@ def main() -> int:
     for p in fails:
         lines = p.read_text().strip().splitlines()
         body += [f"### {p.name}", "", "```"] + lines[:3] + (["…"] if len(lines) > 9 else []) + lines[3:][-6:] + ["```", ""]
+    prior = sorted((root / "attempt1").glob("FAILED_*.txt"))
+    if prior:
+        body += ["### 第一次執行（AMENDMENT-6 之前；`attempt1/`）", "",
+                 "第一次十折執行中 `chk` 因 K4（γ = 1e8）不符而停，`hp`、`f2`、`f4`、`f5`、`f6` 未執行；AMENDMENT-6 之後續跑。", ""]
+    for p in prior:
+        lines = p.read_text().strip().splitlines()
+        body += [f"#### attempt1/{p.name}", "", "```"] + lines[:3] + (["…"] if len(lines) > 9 else []) + lines[3:][-6:] + ["```", ""]
     dec = BASE / "moe3" / "DECISIONS.md"
     body += ["## DECISIONS.md（執行前與執行中的判斷）", "", dec.read_text().strip() if dec.exists() else "（無）", ""]
     body += ["## 各階段實際耗時", "", "| 階段 | 開始 | 結束 | 秒（run_all 計） | 結束碼 | 階段內計時（秒） |", "|---|---|---|---|---|---|"]
