@@ -134,6 +134,10 @@ def main() -> None:
                     w(f"| {sysname} | {mk} | {pm(r['a'])} | {pm(r['b'])} | {sg(r['mean_diff'])} | {r['wins']}／{r['losses']}／{r['ties']} | "
                       f"{better} | {pv(r['p_sign'])} |")
             w("")
+            md = meta.get("machine_date", {}).get(o)
+            if md:
+                w(f"表註（機器與日期）：{disp} 的數字在 {md} 產生；我方 FINAL 與主系統在 {meta.get('ours', '—')} 產生。外部對照不受 AGENTS.md 紅線 4 約束（PI 2026-10-03 裁決）。")
+                w("")
             if o in pub:
                 q = pub[o]
                 w(f"表註（發表值，非同折，不進配對）：{q['table']}　ACC {q['ACC']}、Masked ACC {q['MaskedACC']}、Forgetting {q['Forgetting']}。")
@@ -181,13 +185,13 @@ def main() -> None:
     w("## C　全量重算（seed 42；十折 mean ± sd；`ABLATION_full.csv`）")
     w("")
     w("- 每列每 (order, fold) 的逐折值與 done 標記在 `ext1/c/<row>/`；CSV 另含 FINAL、MAIN、ONE64 的 seed 43–46 各列。")
-    w("- Masked ACC（Table 1 定義）：向量／證據取自 τ̂ 的 expert，在真實任務兩類內 argmax。Masked ACC（oracle 定義）＝告訴任務的 WP。主表用 Table 1 定義。")
-    w("- 空格（—）：該列的既有定義沒有這個量（見 DECISIONS D17、D20）。")
+    w("- Masked ACC（Table 1 定義）：向量／證據取自 τ̂ 的 expert，在真實任務兩類內 argmax；主表用這個定義。Masked ACC（oracle 定義）＝告訴任務的 WP，CSV 兩欄同值，報告只列 WP。")
+    w("- 空格（—）：該列的既有定義沒有這個量（見 DECISIONS D17、D20）。**融合系統（M3、G1、G2、RF）的 Masked ACC 不進任何表（PI 2026-10-03 裁決，DECISIONS D15 作廢）：CSV 兩個 Masked 欄對這四列留空，WP 與 CIL ACC 照列。**")
     w("")
     for o in ORDERS:
         w(f"### C-1　t = 4，序 {o}")
         w("")
-        w("| row | 說明 | CIL ACC | WP＝Masked（oracle） | Masked（Table 1） | Forgetting | BWT | 儲存 bytes（T = 4） |")
+        w("| row | 說明 | CIL ACC | WP（告訴任務） | Masked（Table 1） | Forgetting | BWT | 儲存 bytes（T = 4） |")
         w("|---|---|---|---|---|---|---|---|")
         for row, desc in ROWS:
             a = A[(row, o, 4)]
@@ -199,12 +203,12 @@ def main() -> None:
     for o in ORDERS:
         w(f"### C-2　逐階段，序 {o}（t = 1 ／ 2 ／ 3 ／ 4）")
         w("")
-        w("| row | CIL ACC | Masked（Table 1） | Masked（oracle）＝WP |")
+        w("| row | CIL ACC | Masked（Table 1） | WP（告訴任務） |")
         w("|---|---|---|---|")
         for row, _ in ROWS:
             if row.startswith("M2"):
                 continue
-            f = lambda c: " ／ ".join(pm(ms(A[(row, o, t)][c])) for t in range(1, 5))   # noqa: E731
+            f = lambda c: " ／ ".join((pm(ms(A[(row, o, t)][c])) if A[(row, o, t)].get(c) else "—") for t in range(1, 5))   # noqa: E731
             w(f"| {row} | {f('CIL_ACC')} | {f('MaskedACC_table1')} | {f('WP')} |")
         w("")
     w("### K7　重算一致性（與既有數字逐格差 ≤ 1e-4）")
@@ -223,7 +227,7 @@ def main() -> None:
     else:
         w("沒有差 > 1e-4 的格。**K7 通過。**")
     w("")
-    w("K7 沒有涵蓋的格（沒有既有數字可比，本批第一次算出）：FINAL 與各 ridge／融合列的 Masked ACC（Table 1 定義）；M1、G1、G2、RF 的 t < 4、Forgetting、BWT；"
+    w("K7 沒有涵蓋的格（沒有既有數字可比，本批第一次算出）：FINAL 與各 ridge 列的 Masked ACC（Table 1 定義）；M1、G1、G2、RF 的 t < 4、Forgetting、BWT；"
       "K32、K128、K256 的 t < 4、Forgetting、BWT。")
     w("")
 
@@ -314,12 +318,10 @@ def main() -> None:
     w("")
     w("| 項目 | 原因 | 需要的決定 |")
     w("|---|---|---|")
-    w("| B2–B5、K8（MergeSlide 同折數字） | 補充 4 的停止條件成立 | 從 PORT.md 的做法 1–5 選一個；做法 1 需要 TITAN 權限、CONCH v1.5 特徵與 GPU |")
-    w("| 指令中的「M1、M2」 | repo 內沒有定義；本批取 MOE-0 B5、B2（DECISIONS D2） | 確認對應是否正確 |")
+    w("| B2–B5、K8（MergeSlide 同折數字） | 補充 4 的停止條件成立；不跑（`outputs/external/mergeslide/DECISION.md`） | 從做法 1–5 選一個；做法 1 需要約 2.6 TB 的原始 WSI 與一台 GPU pod（DECISION.md） |")
     w("| M2 的 CIL、t < 4 | 既有快取沒有 τ̂ 文字 × 換 head 的版本（DECISIONS D17） | 是否要重讀特徵檔新算 |")
-    w("| 外部配對表跨機器 | 外部數字在 RunPod GPU，我方在 Mac CPU（DECISIONS D26） | AGENTS.md 紅線 4 是否適用於外部對照 |")
-    w("| reverse 的外部批次 | 取 b8（論文設定）；b16 的 K6 不過（DECISIONS D8） | 確認主表用 b8 |")
-    w("| 融合系統的 Masked ACC（Table 1 定義） | 本批新訂的延伸定義（DECISIONS D15） | 若主表要列 M3／G1／G2／RF 的這一欄，確認定義 |")
+    w("")
+    w("已由 PI 裁決（2026-10-03，見 DECISIONS D2、D10、D15、D26）：M1 = MOE-0 B5、M2 = MOE-0 B2；外部對照不受紅線 4 約束、表註寫機器與日期；融合系統的 Masked ACC 不進任何表；外部方法評估器的 `acc@mid` 是不含 test 資訊的 argmax 正確率，不換欄。reverse 的外部批次取 b8（DECISIONS D8）未被推翻。")
     w("")
     w("## 失敗")
     w("")

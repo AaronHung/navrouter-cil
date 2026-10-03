@@ -45,6 +45,7 @@ STORAGE = {"ZS8": (0, 0), "LIN8": (1_052_676, 4_104), "MAIN": (1_052_676, 10_280
            "K64": (2_105_352, 10_252), "K128": (2_105_352, 10_252), "K256": (2_105_352, 10_252),
            "ANC": (2_105_352, 10_252), "ANC_v0": (2_105_352, 10_252), "ANC_v42": (2_105_352, 14_384),
            "M3": (1_052_676, 12_340), "CONCAT": (5_255_176, 18_480)}
+FUSED = ("M3", "G1", "G2", "RF")                       # 融合系統：Masked ACC 欄一律留空
 ROW_ORDER = (["ZS8", "LIN8", "MAIN", "FINAL", "NOHEAD", "ONE64", "K32", "K64", "K128", "K256", "M1"]
              + [f"M2_head_{t}" for t in TASK_SHORT] + ["M2_g0", "M3", "G1", "G2", "ANC", "ANC_v0", "ANC_v42", "CONCAT", "RF"]
              + [f"{n}_s{s}" for n in ("FINAL", "MAIN", "ONE64") for s in SEEDS[1:]])
@@ -257,6 +258,11 @@ def do_fold(cx: Ctx, f: int, o: str, todo: list[str]) -> None:
             out[row] = {"acc_t": [None] * 4, "mk1_t": [None] * 4, "wp_t": [None, None, None, C.eq4(wt)], "forgetting": None,
                         "bwt": None, "wp_task4": wt, "ok4": None}
 
+    for row in FUSED:                                  # PI 2026-10-03 裁決：融合系統的 Masked ACC 不進任何表（DECISIONS D15 作廢）
+        if row in out:
+            out[row]["mk1_t"] = [None] * 4
+            out[row].pop("Rm_t1", None); out[row].pop("Rm_orc", None)
+
     for row, res in out.items():
         cx.save(row, o, f, res)
 
@@ -270,7 +276,8 @@ def assemble(cx: Ctx, folds: list[int]) -> Path:
 
     def emit(w, row, o, f, r, sp):
         for t in range(4):
-            w.writerow([row, o, f, t + 1, fm(r["acc_t"][t]), fm(r["wp_t"][t]), fm(r["mk1_t"][t]), fm(r["wp_t"][t]),
+            orc = None if row in FUSED else r["wp_t"][t]                  # 融合系統：兩種 Masked 都留空；WP 欄照填
+            w.writerow([row, o, f, t + 1, fm(r["acc_t"][t]), fm(r["wp_t"][t]), fm(r["mk1_t"][t]), fm(orc),
                         fm(r["forgetting"]) if t == 3 else "", fm(r["bwt"]) if t == 3 else "",
                         "" if sp is None else sp[0] + (t + 1) * sp[1]])
 
