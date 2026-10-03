@@ -1,0 +1,15 @@
+[2026-10-03 15:50:18] stage=init done=0/0 failed=0 run_all start folds=1-10 py=/opt/miniconda3/bin/python
+[2026-10-03 15:50:18] stage=vec done=0/0 failed=0 start
+[2026-10-03 16:05:18] stage=vec done=27/30 failed=0 heartbeat
+[2026-10-03 16:06:05] stage=vec done=30/30 failed=0 end rc=0
+[2026-10-03 16:06:06] stage=chk done=0/0 failed=0 start
+[2026-10-03 16:06:19] stage=chk done=10/11 failed=0 end rc=0
+[2026-10-03 16:06:19] stage=f2 done=0/0 failed=0 start
+[2026-10-03 16:06:34] stage=f2 done=11/11 failed=0 end rc=0
+[2026-10-03 16:06:34] stage=f3 done=0/0 failed=0 start
+[2026-10-03 16:06:45] stage=f3 done=11/11 failed=0 end rc=0
+[2026-10-03 16:06:45] stage=f4 done=0/0 failed=0 start
+[2026-10-03 16:06:57] stage=f4 done=11/11 failed=0 end rc=0
+[2026-10-03 16:06:57] stage=f5 done=0/0 failed=0 start
+[2026-10-03 16:07:01] stage=f5 done=0/0 failed=0 end rc=0
+[2026-10-03 16:07:02] stage=all done=0/0 failed=0 run_all finished

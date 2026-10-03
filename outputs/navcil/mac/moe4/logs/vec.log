@@ -1,0 +1,34 @@
+[2026-10-03 15:50:18] start vec folds=1-10
+[15:50:23] MOE-4 vec folds=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] out=moe4 threads=8
+[15:51:19] vec w fold1 train: n=2273 56s
+[15:51:42] vec w fold1 val: n=283 22s
+[15:52:03] vec w fold1 test: n=279 21s
+[15:52:55] vec w fold2 train: n=2258 52s
+[15:53:18] vec w fold2 val: n=291 23s
+[15:53:40] vec w fold2 test: n=286 22s
+[15:54:32] vec w fold3 train: n=2265 52s
+[15:54:51] vec w fold3 val: n=276 19s
+[15:55:12] vec w fold3 test: n=294 21s
+[15:56:03] vec w fold4 train: n=2250 51s
+[15:56:24] vec w fold4 val: n=285 21s
+[15:56:45] vec w fold4 test: n=300 21s
+[15:57:35] vec w fold5 train: n=2266 50s
+[15:57:56] vec w fold5 val: n=290 20s
+[15:58:15] vec w fold5 test: n=279 20s
+[15:59:07] vec w fold6 train: n=2252 51s
+[15:59:31] vec w fold6 val: n=304 24s
+[15:59:52] vec w fold6 test: n=279 21s
+[16:00:45] vec w fold7 train: n=2269 54s
+[16:01:06] vec w fold7 val: n=283 21s
+[16:01:28] vec w fold7 test: n=283 21s
+[16:02:22] vec w fold8 train: n=2276 54s
+[16:02:45] vec w fold8 val: n=279 23s
+[16:03:05] vec w fold8 test: n=280 20s
+[16:03:54] vec w fold9 train: n=2255 49s
+[16:04:16] vec w fold9 val: n=294 22s
+[16:04:35] vec w fold9 test: n=286 19s
+[16:05:22] vec w fold10 train: n=2273 47s
+[16:05:45] vec w fold10 val: n=293 22s
+[16:06:04] vec w fold10 test: n=269 19s
+[16:06:05] vec: 完成（942s）
+[2026-10-03 16:06:05] exit=0
