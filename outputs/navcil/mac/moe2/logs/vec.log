@@ -1,0 +1,44 @@
+[2026-10-03 09:57:36] start vec folds=1-10
+[09:57:39] MOE-2 vec folds=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] out=moe2 threads=8
+[09:59:39] vec vec_train_fold1.pt: n=2273 119s
+[10:00:26] vec vec_val_fold1.pt: n=283 48s
+[10:01:09] vec vec_test_fold1.pt: n=279 43s
+[10:01:09] fold 1 快取檢查通過：{'a_s42_train_maxabs': 0.0, 'b_seed_cos_maxabs': 0.0, 'b_argmax_equal': True, 'c_one42_cos_maxabs': 0.0, 'c_argmax_equal': True, 'd_g0_cos_maxabs': 0.0, 'd_argmax_equal': True, 'pass': True}
+[10:03:02] vec vec_train_fold2.pt: n=2258 113s
+[10:03:50] vec vec_val_fold2.pt: n=291 48s
+[10:04:37] vec vec_test_fold2.pt: n=286 47s
+[10:04:37] fold 2 快取檢查通過：{'a_s42_train_maxabs': 0.0, 'b_seed_cos_maxabs': 0.0, 'b_argmax_equal': True, 'c_one42_cos_maxabs': 0.0, 'c_argmax_equal': True, 'd_g0_cos_maxabs': 0.0, 'd_argmax_equal': True, 'pass': True}
+[10:06:28] vec vec_train_fold3.pt: n=2265 111s
+[10:07:05] vec vec_val_fold3.pt: n=276 37s
+[10:07:54] vec vec_test_fold3.pt: n=294 49s
+[10:07:54] fold 3 快取檢查通過：{'a_s42_train_maxabs': 0.0, 'b_seed_cos_maxabs': 0.0, 'b_argmax_equal': True, 'c_one42_cos_maxabs': 0.0, 'c_argmax_equal': True, 'd_g0_cos_maxabs': 0.0, 'd_argmax_equal': True, 'pass': True}
+[10:09:45] vec vec_train_fold4.pt: n=2250 111s
+[10:10:33] vec vec_val_fold4.pt: n=285 47s
+[10:11:24] vec vec_test_fold4.pt: n=300 51s
+[10:11:24] fold 4 快取檢查通過：{'a_s42_train_maxabs': 0.0, 'b_seed_cos_maxabs': 0.0, 'b_argmax_equal': True, 'c_one42_cos_maxabs': 0.0, 'c_argmax_equal': True, 'd_g0_cos_maxabs': 0.0, 'd_argmax_equal': True, 'pass': True}
+[10:13:19] vec vec_train_fold5.pt: n=2266 115s
+[10:14:04] vec vec_val_fold5.pt: n=290 45s
+[10:14:46] vec vec_test_fold5.pt: n=279 42s
+[10:14:46] fold 5 快取檢查通過：{'a_s42_train_maxabs': 0.0, 'b_seed_cos_maxabs': 0.0, 'b_argmax_equal': True, 'c_one42_cos_maxabs': 0.0, 'c_argmax_equal': True, 'd_g0_cos_maxabs': 0.0, 'd_argmax_equal': True, 'pass': True}
+[10:16:40] vec vec_train_fold6.pt: n=2252 113s
+[10:17:31] vec vec_val_fold6.pt: n=304 51s
+[10:18:14] vec vec_test_fold6.pt: n=279 43s
+[10:18:14] fold 6 快取檢查通過：{'a_s42_train_maxabs': 0.0, 'b_seed_cos_maxabs': 0.0, 'b_argmax_equal': True, 'c_one42_cos_maxabs': 0.0, 'c_argmax_equal': True, 'd_g0_cos_maxabs': 0.0, 'd_argmax_equal': True, 'pass': True}
+[10:20:05] vec vec_train_fold7.pt: n=2269 111s
+[10:20:53] vec vec_val_fold7.pt: n=283 48s
+[10:21:39] vec vec_test_fold7.pt: n=283 46s
+[10:21:39] fold 7 快取檢查通過：{'a_s42_train_maxabs': 0.0, 'b_seed_cos_maxabs': 0.0, 'b_argmax_equal': True, 'c_one42_cos_maxabs': 0.0, 'c_argmax_equal': True, 'd_g0_cos_maxabs': 0.0, 'd_argmax_equal': True, 'pass': True}
+[10:23:30] vec vec_train_fold8.pt: n=2276 110s
+[10:24:20] vec vec_val_fold8.pt: n=279 50s
+[10:25:19] vec vec_test_fold8.pt: n=280 59s
+[10:25:19] fold 8 快取檢查通過：{'a_s42_train_maxabs': 0.0, 'b_seed_cos_maxabs': 0.0, 'b_argmax_equal': True, 'c_one42_cos_maxabs': 0.0, 'c_argmax_equal': True, 'd_g0_cos_maxabs': 0.0, 'd_argmax_equal': True, 'pass': True}
+[10:27:08] vec vec_train_fold9.pt: n=2255 108s
+[10:27:54] vec vec_val_fold9.pt: n=294 47s
+[10:28:38] vec vec_test_fold9.pt: n=286 44s
+[10:28:39] fold 9 快取檢查通過：{'a_s42_train_maxabs': 0.0, 'b_seed_cos_maxabs': 0.0, 'b_argmax_equal': True, 'c_one42_cos_maxabs': 0.0, 'c_argmax_equal': True, 'd_g0_cos_maxabs': 0.0, 'd_argmax_equal': True, 'pass': True}
+[10:30:40] vec vec_train_fold10.pt: n=2273 121s
+[10:31:23] vec vec_val_fold10.pt: n=293 43s
+[10:32:03] vec vec_test_fold10.pt: n=269 40s
+[10:32:03] fold 10 快取檢查通過：{'a_s42_train_maxabs': 0.0, 'b_seed_cos_maxabs': 0.0, 'b_argmax_equal': True, 'c_one42_cos_maxabs': 0.0, 'c_argmax_equal': True, 'd_g0_cos_maxabs': 0.0, 'd_argmax_equal': True, 'pass': True}
+[10:32:03] vec: 完成（2063s）
+[2026-10-03 10:32:03] exit=0

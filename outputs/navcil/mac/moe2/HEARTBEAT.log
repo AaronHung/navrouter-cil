@@ -1,0 +1,22 @@
+[2026-10-03 09:57:36] stage=init done=0/0 failed=0 run_all start folds=1-10 py=/Users/aaron/venvs/navcil/bin/python
+[2026-10-03 09:57:36] stage=vec done=0/0 failed=0 start
+[2026-10-03 10:12:36] stage=vec done=12/30 failed=0 heartbeat
+[2026-10-03 10:27:36] stage=vec done=25/30 failed=0 heartbeat
+[2026-10-03 10:32:03] stage=vec done=30/30 failed=0 end rc=0
+[2026-10-03 10:32:06] stage=e1 done=0/0 failed=0 start
+[2026-10-03 10:32:12] stage=e1 done=8/8 failed=0 end rc=0
+[2026-10-03 10:32:13] stage=e2 done=0/0 failed=0 start
+[2026-10-03 10:32:19] stage=e2 done=8/8 failed=0 end rc=0
+[2026-10-03 10:32:21] stage=e3 done=0/0 failed=0 start
+[2026-10-03 10:32:25] stage=e3 done=2/2 failed=0 end rc=0
+[2026-10-03 10:32:27] stage=e4 done=0/0 failed=0 start
+[2026-10-03 10:32:35] stage=e4 done=7/7 failed=0 end rc=0
+[2026-10-03 10:32:37] stage=e5 done=0/0 failed=0 start
+[2026-10-03 10:32:45] stage=e5 done=7/7 failed=0 end rc=0
+[2026-10-03 10:32:47] stage=e6 done=0/0 failed=0 start
+[2026-10-03 10:32:55] stage=e6 done=4/4 failed=0 end rc=0
+[2026-10-03 10:32:57] stage=e7 done=0/0 failed=0 start
+[2026-10-03 10:33:06] stage=e7 done=21/21 failed=0 end rc=0
+[2026-10-03 10:33:07] stage=e8 done=0/0 failed=0 start
+[2026-10-03 10:33:09] stage=e8 done=1/1 failed=0 end rc=0
+[2026-10-03 10:33:12] stage=all done=0/0 failed=0 run_all finished
