@@ -21,3 +21,5 @@ EXT-2 的判斷紀錄（2026-10-03）。每條：做了什麼判斷、為什麼�
 | D17 | 另做了 FINAL-B − {主系統, zero-shot, LIN8} 的逐折配對與 bootstrap（B1 附表）。 | 指令 A 要「同等完整」；FINAL-A 在 REPORT_ext1 的 D1 有這一組。 |
 | D18 | A 的 γ 敏感度表（test，五個 γ）只作事後描述；γ\_B 由 validation 決定，不因這張表更動。 | 細則 6、17；同 EXT-1 D3 的處理。 |
 | D19 | `.done` 標記不進版控；`ext2/a/` 的逐折 JSON、兩個 CSV、`a.json`、`b.json`、`cost.json`、`d.json`、`example.json` 進版控。 | 沿用 EXT-1 D29。 |
+| D20 | （收尾，2026-10-03）REPORT 0-5 更正：原表的「y、B 的 shape、A」三列答的是 TP（AR）的 ridge，讀出的 ridge 只寫在表後一句話。現把三列標明「TP（AR）」，並新增 0-5b：讀出 ridge 的 B 是**每類一欄**（t = 4 時 [513, 8]），W [513, 8]，在 τ̂ 兩欄內 argmax（d = 第一類 − 第二類 ≥ 0 判第一類）；不是每任務一欄、閾值判類。貼出程式原文與行號；fold 1、reverse、t = 4 的 A、B、W 存成 `ext2/readout_fold1_reverse_t4.pt` 後讀回印 shape（`scripts/ext2_readout.py`、`ext2/readout.json`）。數字沒有任何更動。 | PI 要求說清楚。既有產物原本沒有存 B、W（每次由快取累加求解），所以「實際存檔」是本次才存的；`.pt` 依 `.gitignore` 不進版控。每任務一欄的是 TP（AR）的 B（[513, 4]），兩者在原版容易混淆。 |
+| D21 | 【PI 裁決，2026-10-03】FINAL-B 的定義維持 PREREG-22（四輪各 16、λ = 1.5）；「一次 top-64」列為消融，不取代定義。總表加表註：四輪 − 一次 top-64 的差異不顯著（+0.0015，贏／輸／平手 7／2／1，p = 0.1797，bootstrap 95% CI [−0.0005, +0.0034] 跨 0）；外部對照的 Masked 欄為告訴任務定義。 | 定義在看 test 之前已登記；差異不顯著不構成改定義的理由，改了反而是看 test 之後才選。 |

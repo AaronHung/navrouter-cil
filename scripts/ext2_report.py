@@ -380,14 +380,55 @@ def main() -> None:
     w("| TP 的 x 是「patch 平均後 L2 再補 1」還是「L2 後平均」 | **patch 平均後 L2，再補 1**。`mean_norm(Z)` 先 `X.mean(0)`（原始 patch 特徵，範數約 25，未先正規化）再 `F.normalize`；`aug` 轉 float64 並接常數 1 → 513 維 | "
       "`selector/cil_ops.py:31-36`；快取處 `scripts/nc8_batch.py:116`（train）、`scripts/moe0_infer.py:62`（validation／test）；`scripts/nc5_report.py:151-154`；呼叫 `scripts/nc8_report.py:79`、`scripts/moe1_common.py:128` |")
     w("| TP 的 γ | **1e-3**（`G_AR`） | `scripts/moe1_common.py:36`、`:126`；求解 `scripts/nc8_report.py:87` |")
-    w("| 讀出的 y 是 one-hot {0,1} 還是 ±1 | **one-hot {0,1}**。B 的第 p 欄 = 任務 p 全部 train slide 的 x 之和（`X.sum(0)`，權重 1.0），等於 XᵀY、Y 為 one-hot；沒有 −1 | `scripts/nc8_report.py:80`、`:86` |")
-    w(f"| B 的 shape | **[513, t]**（每學一個任務多一欄）；t = 4 時 [513, 4]。本批實測 AR 的 W shape {tuple(a['storage']['shapes']['W_ar_t4'])} | `scripts/nc8_report.py:76`、`:86-87` |")
-    w("| A 是否跨任務共用累加 | **是**。單一個 513 × 513 的 A，對已學任務逐一 `A += XᵀX`；沒有每任務各自的 A。實作上每個（折、序、t）從快取的 train mean_vec 把前 t 個任務重新加總一次，數值等同逐任務累加 | `scripts/nc8_report.py:74-81` |")
+    w("| TP（AR）的 y 是 one-hot {0,1} 還是 ±1 | **one-hot {0,1}**。B 的第 p 欄 = 任務 p 全部 train slide 的 x 之和（`X.sum(0)`，權重 1.0），等於 XᵀY、Y 為 one-hot；沒有 −1 | `scripts/nc8_report.py:80`、`:86` |")
+    w(f"| TP（AR）的 B 的 shape | **[513, t]**（每任務一欄，每學一個任務多一欄；判任務時在已學任務的欄內 argmax，沒有閾值）；t = 4 時 [513, 4]。本批實測 AR 的 W shape {tuple(a['storage']['shapes']['W_ar_t4'])} | `scripts/nc8_report.py:76`、`:86-87` |")
+    w("| TP（AR）的 A 是否跨任務共用累加 | **是**。單一個 513 × 513 的 A，對已學任務逐一 `A += XᵀX`；沒有每任務各自的 A。實作上每個（折、序、t）從快取的 train mean_vec 把前 t 個任務重新加總一次，數值等同逐任務累加 | `scripts/nc8_report.py:74-81` |")
     w("| s0 的 z-score 在哪個範圍內算 | **單張 slide 內**（該張的全部 patch）：`(s − s.mean()) / (s.std() + 1e-6)`，std 為樣本標準差；輸入是一張 slide 的 `text_nav_feats(Z, f_txt)[:, 0]`。不用 train 集的統計量 | "
       "`selector/i6_expert.py:21-22`、`:37-38`；v0 的產生處 `scripts/moe2_common.py:161-163`；u_K 的產生處 `scripts/moe3_common.py:171` |")
     w("")
-    w(f"FINAL-B 判讀器的同一組問題：x = [v; 1]，v 為 64 個 patch 平均後 L2（`selector/cil_ops.py:31-36`）；γ\\_B = {a['gamma_B']:g}；y 為 one-hot（B 的類別 c 欄 = 該類 train slide 的 x 之和，"
-      f"`scripts/moe3_common.py:243`）；B 的 shape [513, 2t]，t = 4 時 {tuple(a['storage']['shapes']['B_t4'])}（`:258`）；A 跨任務共用累加（`:250-255`）。")
+    w("上表的 y、B、A 三列答的是 **TP（AR）** 的 ridge。**讀出（判讀器）的 ridge** 另列於下（EXT-2 收尾更正：原版把讀出的 ridge 只寫在表後的一句話裡，容易誤讀成「B 是每任務一欄」）。")
+    w("")
+    w("### 0-5b　讀出 ridge 的 B：定義、累加、判類（程式原文）")
+    w("")
+    w("結論：**每類一欄（t = 4 時 8 欄），在 τ̂ 的兩欄內 argmax**。不是「每任務一欄、閾值判類」。")
+    w("")
+    for title, fn, lo, hi in (("B 的每一欄的定義（`scripts/moe3_common.py:237-244`）", "moe3_common.py", 237, 244),
+                              ("跨任務累加 A、B 與求解 W（`scripts/moe3_common.py:246-263`）", "moe3_common.py", 246, 263),
+                              ("分數 = [v; 1] · W，放進固定 8 類序的欄（`scripts/ext1_c.py:121-131`）", "ext1_c.py", 121, 131),
+                              ("任務 q 兩欄的分數差與取 τ̂ 的那一個（`scripts/moe1_common.py:145-151`）", "moe1_common.py", 145, 151),
+                              ("判類（`scripts/ext1_c.py:114-118`；CIL 的呼叫在 `:100-101`）", "ext1_c.py", 114, 118),
+                              ("CIL：向量與欄都取 τ̂（`scripts/ext1_c.py:100-101`）", "ext1_c.py", 100, 101)):
+        src = (REPO_ROOT / "scripts" / fn).read_text().splitlines()
+        w(f"{title}：")
+        w("")
+        w("```python")
+        for n in range(lo, hi + 1):
+            w(f"{n}: {src[n - 1]}")
+        w("```")
+        w("")
+    rd = J(E2 / "readout.json")
+    w("| 問題 | 答案 |")
+    w("|---|---|")
+    w("| B 的一欄是什麼 | 類別 c 的欄 = 該類全部 train slide 的 x = [v; 1] 之和（`X[y == c].sum(0)`），等於 XᵀY、Y 為 **one-hot {0,1}**（每類一欄）；沒有 ±1 |")
+    w("| 累加 | 每學一個任務：`A += XᵀX`（單一個 A，跨任務共用），B 多出該任務的**兩欄**；欄依固定 8 類序排列 |")
+    w("| 判類的確切規則 | 分數 s = [v; 1] · W（v 取 τ̂ 的文字所選的 64 個 patch）；只看 τ̂ 的兩欄 s[2τ̂]、s[2τ̂ + 1]，d = s[2τ̂] − s[2τ̂ + 1]，**d ≥ 0 判第一類、否則第二類**。這就是兩欄內 argmax（平手判第一類，與 argmax 取較小索引一致）；沒有另外的閾值，其他六欄不參與 |")
+    w("| 告訴任務（WP） | 同上，把 τ̂ 換成真實任務 |")
+    w("")
+    ck = rd["check"]
+    w(f"實際存檔（`{rd['file']}`；fold {rd['fold']}、{rd['order']} 序、t = {rd['t']}、γ = {rd['gamma']:g}；由 `scripts/ext2_readout.py` 存檔後讀回印出。"
+      "既有產物原本沒有存 A、B、W，每次由快取的 train 向量累加求解；`.pt` 依 `.gitignore` 不進版控，數字在 `ext2/readout.json`）：")
+    w("")
+    w("| 量 | shape | 說明 |")
+    w("|---|---|---|")
+    w(f"| A | {tuple(rd['A_shape'])} | {rd['dtype']}；右下角 = {rd['A_last']:.0f}（train 張數） |")
+    w(f"| **B** | **{tuple(rd['B_shape'])}** | 欄 = " + "、".join(rd["columns"]) + "；最後一列（常數 1 那一維）= 每類的 train 張數 "
+      + "、".join(f"{x:.0f}" for x in rd["B_last_row"]) + f"（合計 {rd['B_last_row_sum']:.0f}） |")
+    w(f"| **W** | **{tuple(rd['W_shape'])}** | solve(A + γI, B) |")
+    w("| 逐階段的 B／W | " + "、".join(f"t = {t}：{tuple(v['B_shape'])}" for t, v in rd["stages"].items()) + " | 每學一個任務多兩欄 |")
+    w(f"| 對照：TP（AR）的 W | {tuple(rd['AR_W_shape'])} | 每任務一欄（" + "、".join(rd["AR_columns"]) + "），在已學任務的欄內 argmax 得 τ̂ |")
+    w("")
+    w(f"規則核對（fold 1 全部 test {ck['n_test']} 張、t = 4）：「τ̂ 兩欄內 argmax」與「d ≥ 0 判第一類」逐張不同 {ck['argmax_vs_d_rule_diff']} 張；d = 0 的平手 {ck['n_ties']} 張；"
+      f"與 A 階段的 FINAL-B 判定不同 {ck['pred_diff_vs_A_stage']} 張。另：若不限制在 τ̂ 兩欄、直接取 8 欄全域 argmax，落在 τ̂ 兩欄之外的有 {ck['global8_argmax_outside_tau_pair']} 張（只是這一折的觀察；系統的規則是限制在 τ̂ 兩欄內）。")
     w("")
     w("## A　FINAL-B 全套（十折兩序，t = 1…4）")
     w("")
@@ -485,7 +526,7 @@ def main() -> None:
                 disp = metas[p.name]["display_name"]
                 notes = ext_notes(metas[p.name], e[o], o, disp)
                 w(f"註 1（{disp}）：{notes[0].replace('表註（機器與日期）：', '')}{notes[1].replace('表註（批次與匯入欄）：', '')}"
-                  f"它的 Masked ACC 是告訴任務的版本（對應我方的 WP），不是 Table 1 定義；WP 欄不另填。每任務參數、儲存、訓練秒數既有產物沒有，填「—」。")
+                  f"**它的 Masked 欄為告訴任務定義**（告訴真實任務後在該任務兩類內判；對應我方的 WP 欄），不是 Table 1 定義（τ̂ 的證據、真實任務兩類內判），兩者不可直接當同一欄比較；WP 欄不另填。每任務參數、儲存、訓練秒數既有產物沒有，填「—」。")
                 w("")
         w("註 2：zero-shot 與 LIN8 沒有 expert，Masked ACC 的兩種定義相同，WP 欄與 Masked 欄同值。每任務參數 ＝ 由該任務 train 資料得到的數值個數（head 1,033、判讀器 B 兩欄 1,026、AR 的 B 一欄 513；LIN8 為 B 兩欄 1,026），"
           "不含兩類文字特徵（1,024 個，計入儲存 bytes）。共用的 A 不在這兩欄內（見 A-6）。")
@@ -493,6 +534,11 @@ def main() -> None:
         w(f"註 3：訓練秒數是本批在 fold 1 量到的部分（讀該任務的 train 特徵檔 ＋ mean_vec ＋ 該系統的 slide 向量 ＋ closed-form 累加與求解；CPU、8 執行緒），**不含 head 訓練**。"
           f"head 訓練沒有在本批重跑；MOE-1 批（2026-10-02，同一台）的既有紀錄為每顆 head 5 個 epoch 的 wall 秒數，四個 seed × 十折平均："
           + "、".join(f"{TASKS[i]} {hd[t]:.2f}" for i, t in enumerate(TKEYS)) + "（seed 42 沒有紀錄）。FINAL-B 與 LIN8、zero-shot 不需要這一項。")
+        w("")
+        kk = [v for k, v in b["K"][o].items() if "K64" in k][0]["ACC"]
+        w(f"註 4：FINAL-B 用四輪各 16。改成一次 top-64（依 s0 一次取前 64 個）的 CIL ACC 為 {pm(S['FINALB_K64']['ACC'])}；四輪 − 一次 top-64 的差異**不顯著**："
+          f"平均差 {sg(kk['mean_diff'])}，贏／輸／平手 {kk['wins']}／{kk['losses']}／{kk['ties']}，exact binomial p = {pv(kk['p_sign'])}，"
+          f"bootstrap 95% CI [{sg(kk['boot_ci95'][0])}, {sg(kk['boot_ci95'][1])}]（跨 0）。FINAL-B 的定義維持四輪，一次 top-64 列為消融（A-8；DECISIONS D21）。")
         w("")
     w("訓練秒數的組成（fold 1；秒）：")
     w("")
