@@ -10,3 +10,9 @@ Traceback (most recent call last):
     raise T.CheckFailed(f"{'、'.join(bad)} 不符：" + json.dumps({k: res[k] for k in bad}, ensure_ascii=False))
 moe1_common.CheckFailed: K4 不符：{"K4": {"diff": {"reverse": 1, "paper": 1}, "n": 2835, "d_txt_min_abs": 4.887580871582031e-06, "pass": false}}
 [2026-10-03 12:15:53] exit=3
+[2026-10-03 14:58:40] start chk folds=1-10
+[14:58:45] MOE-3 chk folds=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] out=moe3 threads=8
+[14:58:45] K1 通過：逐折最大絕對差 0.00e+00
+[14:58:47] K2–K5：{"K2": {"max_abs_fold_diff": 0.0, "wp_mean": {"reverse": 0.9435181438922882, "paper": 0.9435181438922882}, "cil_mean": {"reverse": 0.9213563561439514, "paper": 0.9213563561439514}, "pass": true, "rounding_checked": true}, "K3": {"fold": 1, "gamma": 0.01, "kind": "u64", "order": "reverse", "max_abs": 0.0, "pass": true}, "K4": {"gamma": 10000000000.0, "diff": {"reverse": 0, "paper": 0}, "n": 2835, "d_txt_min_abs": 4.887580871582031e-06, "pass": true}, "K5": {"cache_max_abs": 0.0, "wp_t_mean": [0.9545833349227906, 0.941507738828659, 0.8063516438007354, 0.8839670062065125], "b2_ref": [0.9545833349227906, 0.941507738828659, 0.8063516438007354, 0.8839670062065125], "b2_comparable": true, "b2_max_abs": 0.0, "pass": true}}
+[14:58:47] chk: 完成（2s）
+[2026-10-03 14:58:47] exit=0

@@ -324,7 +324,7 @@ def main() -> int:
     if tsv.exists():
         for line in tsv.read_text().strip().splitlines():
             x = line.split("\t")
-            body.append(f"| {x[0].upper()} | {x[1]} | {x[2]} | {x[3]} | {x[4]} | {J[x[0]]['wall_s'] if x[0] in J else '—'} |")
+            body.append(f"| {x[0].upper()} | {x[1]} | {x[2]} | {x[3]} | {x[4]} | {J[x[0]]['wall_s'] if x[0] in J and x[4] == '0' else '—'} |")
     else:
         for s in J:
             body.append(f"| {s.upper()} | — | {J[s]['finished']} | — | 0 | {J[s]['wall_s']} |")
