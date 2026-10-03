@@ -1,0 +1,248 @@
+{
+ "stage": "d",
+ "finished": "2026-10-03T20:11:35",
+ "dataset_root": "/Users/aaron/research/can_dataset",
+ "path_feat": "/{}/feats-l1-s256_{}/pt_files",
+ "conch_path_feat": "CONCH",
+ "feat_format": "pt",
+ "tasks": {
+  "tcga_esca": {
+   "subdirs": [
+    "datasplit",
+    "feats-l1-s256_CONCH",
+    "feats-l1-s256_CONCH/pt_files",
+    "table"
+   ],
+   "file_ext_counts": {
+    "": 1,
+    ".npz": 10,
+    ".csv": 1,
+    ".pt": 158
+   },
+   "feat_dir": "tcga_esca/feats-l1-s256_CONCH/pt_files",
+   "n_feat_files": 158,
+   "example_file": "TCGA-2H-A9GF-01Z-00-DX1.FA1016AF-3FE3-45DC-A77B-F1ACC2B33B2A.pt",
+   "python_type": "Tensor",
+   "shape": [
+    7060,
+    512
+   ],
+   "dtype": "torch.float32",
+   "keys": null,
+   "coord_like_files": [],
+   "has_coords": false
+  },
+  "tcga_rcc": {
+   "subdirs": [
+    "datasplit",
+    "feats-l1-s256_CONCH",
+    "feats-l1-s256_CONCH/pt_files",
+    "table"
+   ],
+   "file_ext_counts": {
+    "": 1,
+    ".npz": 10,
+    ".csv": 1,
+    ".pt": 937
+   },
+   "feat_dir": "tcga_rcc/feats-l1-s256_CONCH/pt_files",
+   "n_feat_files": 937,
+   "example_file": "TCGA-2K-A9WE-01Z-00-DX1.ED8ADE3B-D49B-403B-B4EB-BD11D91DD676.pt",
+   "python_type": "Tensor",
+   "shape": [
+    7274,
+    512
+   ],
+   "dtype": "torch.float32",
+   "keys": null,
+   "coord_like_files": [],
+   "has_coords": false
+  },
+  "tcga_brca": {
+   "subdirs": [
+    "datasplit",
+    "feats-l1-s256_CONCH",
+    "feats-l1-s256_CONCH/pt_files",
+    "table"
+   ],
+   "file_ext_counts": {
+    "": 2,
+    ".npz": 10,
+    ".csv": 1,
+    ".pt": 1133
+   },
+   "feat_dir": "tcga_brca/feats-l1-s256_CONCH/pt_files",
+   "n_feat_files": 1133,
+   "example_file": "TCGA-3C-AALI-01Z-00-DX1.F6E9A5DF-D8FB-45CF-B4BD-C6B76294C291.pt",
+   "python_type": "Tensor",
+   "shape": [
+    3624,
+    512
+   ],
+   "dtype": "torch.float32",
+   "keys": null,
+   "coord_like_files": [],
+   "has_coords": false
+  },
+  "tcga_lung": {
+   "subdirs": [
+    "datasplit",
+    "feats-l1-s256_CONCH",
+    "feats-l1-s256_CONCH/pt_files",
+    "table"
+   ],
+   "file_ext_counts": {
+    "": 2,
+    ".npz": 10,
+    ".csv": 1,
+    ".pt": 1054
+   },
+   "feat_dir": "tcga_lung/feats-l1-s256_CONCH/pt_files",
+   "n_feat_files": 1054,
+   "example_file": "TCGA-05-4244-01Z-00-DX1.d4ff32cd-38cf-40ea-8213-45c2b100ac01.pt",
+   "python_type": "Tensor",
+   "shape": [
+    743,
+    512
+   ],
+   "dtype": "torch.float32",
+   "keys": null,
+   "coord_like_files": [],
+   "has_coords": false
+  }
+ },
+ "has_coords_any": false,
+ "magnification_strings": {
+  "feat_dir_name": "feats-l1-s256_CONCH",
+  "table_name": "TCGA_<TASK>_path_subtype_x10_processed.csv",
+  "note": "目錄名的 l1、s256 與標籤表檔名的 x10 是檔名字樣；特徵檔內沒有倍率欄位"
+ },
+ "local_slides": [
+  {
+   "file": "slides/0dec98aa-fb71-4367-8d39-6a71ae06e442/TCGA-A8-A09K-01Z-00-DX1.41B2DF5F-C0E1-43BB-BAA5-2946A9EC4650.svs",
+   "size_bytes": 1044914964,
+   "in_feats": [
+    "tcga_brca"
+   ],
+   "in_fold1_test": []
+  },
+  {
+   "file": "slides/1bf2c09e-854f-414f-9b5e-2ad8a5176abd/TCGA-C8-A1HI-01Z-00-DX1.C6D0F8B8-55ED-477F-BAF7-AA05D0449CC8.svs",
+   "size_bytes": 933681451,
+   "in_feats": [
+    "tcga_brca"
+   ],
+   "in_fold1_test": []
+  },
+  {
+   "file": "slides/2b5c424a-e8d9-4412-b612-e3adcf98dffd/TCGA-AC-A62V-01Z-00-DX1.2D8994FD-58B8-43C1-B99D-AA964E7DFD60.svs",
+   "size_bytes": 57528662,
+   "in_feats": [
+    "tcga_brca"
+   ],
+   "in_fold1_test": []
+  },
+  {
+   "file": "slides/3631967b-07b8-4275-92fb-6f66abe465ec/TCGA-AQ-A0Y5-01Z-00-DX1.f68f5b49-30fa-4fb6-bec6-5da9f6809d02.svs",
+   "size_bytes": 885611509,
+   "in_feats": [
+    "tcga_brca"
+   ],
+   "in_fold1_test": [
+    "tcga_brca"
+   ],
+   "fold1_cil_correct": {
+    "FINALB": true,
+    "FINALA_seed42": true
+   }
+  },
+  {
+   "file": "slides/4730b23e-aea1-49a2-ba63-2231fd88b592/TCGA-E2-A14P-01Z-00-DX1.663B02FF-C64B-41A6-8685-FD61CD76F9C6.svs",
+   "size_bytes": 1597343893,
+   "in_feats": [
+    "tcga_brca"
+   ],
+   "in_fold1_test": []
+  },
+  {
+   "file": "slides/4eec69ca-381b-4c17-b3e9-49492d71560e/TCGA-5L-AAT1-01Z-00-DX1.F3449A5B-2AC4-4ED7-BF44-4C8946CDB47D.svs",
+   "size_bytes": 592769341,
+   "in_feats": [
+    "tcga_brca"
+   ],
+   "in_fold1_test": [
+    "tcga_brca"
+   ],
+   "fold1_cil_correct": {
+    "FINALB": false,
+    "FINALA_seed42": true
+   }
+  },
+  {
+   "file": "slides/52f4cb6c-d5b2-4e12-b664-22e85c4ad780/TCGA-A2-A0YM-01Z-00-DX1.A48B4C96-2CC5-464C-98B7-F0F92AE56533.svs",
+   "size_bytes": 863053399,
+   "in_feats": [
+    "tcga_brca"
+   ],
+   "in_fold1_test": []
+  },
+  {
+   "file": "slides/554855d7-4e21-406b-8f9f-458b1e7c89c9/TCGA-A7-A0CD-01Z-00-DX1.F045B9C8-049C-41BF-8432-EF89F236D34D.svs",
+   "size_bytes": 280966835,
+   "in_feats": [
+    "tcga_brca"
+   ],
+   "in_fold1_test": []
+  },
+  {
+   "file": "slides/7a57f6ca-7b02-4eed-8709-036fbcb5746e/TCGA-AR-A24Q-01Z-00-DX1.69DC7E35-DC0D-4F20-88DA-04C25F28628C.svs",
+   "size_bytes": 1954679231,
+   "in_feats": [
+    "tcga_brca"
+   ],
+   "in_fold1_test": []
+  },
+  {
+   "file": "slides/997dbd8f-9f16-4fc2-8627-d29ee0d74ebe/TCGA-AC-A8OP-01Z-00-DX1.A2AF501D-7DCD-4BE7-93A4-EBCAF0C0D54E.svs",
+   "size_bytes": 325803132,
+   "in_feats": [
+    "tcga_brca"
+   ],
+   "in_fold1_test": []
+  },
+  {
+   "file": "slides_samples/wsi_01.svs",
+   "size_bytes": 57528662,
+   "in_feats": [],
+   "in_fold1_test": []
+  },
+  {
+   "file": "slides_samples/wsi_02.svs",
+   "size_bytes": 1044914964,
+   "in_feats": [],
+   "in_fold1_test": []
+  },
+  {
+   "file": "wsi-demo01/openslide-demo/wsi_01.svs",
+   "size_bytes": 57528662,
+   "in_feats": [],
+   "in_fold1_test": []
+  }
+ ],
+ "n_local_slides": 13,
+ "n_local_in_feats": 10,
+ "n_local_in_fold1_test": 2,
+ "other_coord_files_under_WSI_data": [],
+ "libs": {
+  "openslide": false,
+  "tifffile": false
+ },
+ "D2": {
+  "done": false,
+  "reason": "特徵檔是單一 tensor [N, 512]，沒有逐 patch 座標；can_dataset 下沒有 .h5 或含 coord 字樣的檔"
+ },
+ "D3": {
+  "done": false,
+  "reason": "D2 沒有做（沒有座標可畫）；且 openslide、tifffile 都未安裝"
+ }
+}
