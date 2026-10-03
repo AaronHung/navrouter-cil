@@ -1,0 +1,35 @@
+[2026-10-03 12:12:11] start vec folds=1-10
+[12:12:14] MOE-3 vec folds=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] out=moe3 threads=8
+[12:12:29] vec u_train_fold1.pt: n=2273 15s
+[12:12:33] vec u_val_fold1.pt: n=283 4s
+[12:12:37] vec u_test_fold1.pt: n=279 4s
+[12:12:50] vec u_train_fold2.pt: n=2258 13s
+[12:12:55] vec u_val_fold2.pt: n=291 5s
+[12:12:59] vec u_test_fold2.pt: n=286 4s
+[12:13:13] vec u_train_fold3.pt: n=2265 14s
+[12:13:17] vec u_val_fold3.pt: n=276 4s
+[12:13:21] vec u_test_fold3.pt: n=294 4s
+[12:13:35] vec u_train_fold4.pt: n=2250 13s
+[12:13:38] vec u_val_fold4.pt: n=285 4s
+[12:13:43] vec u_test_fold4.pt: n=300 4s
+[12:13:55] vec u_train_fold5.pt: n=2266 13s
+[12:13:59] vec u_val_fold5.pt: n=290 4s
+[12:14:03] vec u_test_fold5.pt: n=279 4s
+[12:14:16] vec u_train_fold6.pt: n=2252 13s
+[12:14:20] vec u_val_fold6.pt: n=304 4s
+[12:14:24] vec u_test_fold6.pt: n=279 4s
+[12:14:37] vec u_train_fold7.pt: n=2269 13s
+[12:14:41] vec u_val_fold7.pt: n=283 4s
+[12:14:44] vec u_test_fold7.pt: n=283 4s
+[12:14:58] vec u_train_fold8.pt: n=2276 13s
+[12:15:01] vec u_val_fold8.pt: n=279 4s
+[12:15:05] vec u_test_fold8.pt: n=280 4s
+[12:15:18] vec u_train_fold9.pt: n=2255 13s
+[12:15:22] vec u_val_fold9.pt: n=294 4s
+[12:15:26] vec u_test_fold9.pt: n=286 4s
+[12:15:38] vec u_train_fold10.pt: n=2273 12s
+[12:15:42] vec u_val_fold10.pt: n=293 4s
+[12:15:46] vec u_test_fold10.pt: n=269 3s
+[12:15:46] vec：範數最大差 2.98e-07；patch 數 < K 的張數 {16: 0, 32: 0, 64: 30, 128: 60, 256: 290}
+[12:15:46] vec: 完成（212s）
+[2026-10-03 12:15:46] exit=0

@@ -1,0 +1,8 @@
+[2026-10-03T12:15:52] 階段 chk 失敗（folds=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]）
+Traceback (most recent call last):
+  File "/Users/aaron/research/01_navrouter-cil/scripts/moe3_common.py", line 129, in stage_main
+    res = body(run)
+          ^^^^^^^^^
+  File "/Users/aaron/research/01_navrouter-cil/scripts/moe3_chk.py", line 86, in body
+    raise T.CheckFailed(f"{'、'.join(bad)} 不符：" + json.dumps({k: res[k] for k in bad}, ensure_ascii=False))
+moe1_common.CheckFailed: K4 不符：{"K4": {"diff": {"reverse": 1, "paper": 1}, "n": 2835, "d_txt_min_abs": 4.887580871582031e-06, "pass": false}}
